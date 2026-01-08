@@ -98,6 +98,21 @@
       }
     }
 
+    /* Overlay text alignment */
+    {% if section.settings.overlay_text_alignment == 'left' %}
+    #section-id-{{ section.id }} .overlay-text.overlay-text--for-banner.image-overlay__over.overlay-text--align-left {
+      text-align: left;
+    }
+    {% elsif section.settings.overlay_text_alignment == 'center' %}
+    #section-id-{{ section.id }} .overlay-text.overlay-text--for-banner.image-overlay__over.overlay-text--align-center {
+      text-align: center;
+    }
+    {% elsif section.settings.overlay_text_alignment == 'right' %}
+    #section-id-{{ section.id }} .overlay-text.overlay-text--for-banner.image-overlay__over.overlay-text--align-right {
+      text-align: right;
+    }
+    {% endif %}
+
     /* Custom CSS */
     .overlay-text__inner {
       display: flex;
@@ -251,7 +266,7 @@
     {%- endif -%}
 
     {%- if show_overlay_text -%}
-      <div class="overlay-text overlay-text--for-banner overlay--v-{{ section.settings.text_alignment | split: ' ' | first }} image-overlay__over">
+      <div class="overlay-text overlay-text--for-banner overlay--v-{{ section.settings.text_alignment | split: ' ' | first }} image-overlay__over {% if section.settings.overlay_text_alignment != blank %}overlay-text--align-{{ section.settings.overlay_text_alignment }}{% endif %}">
         <div class="overlay-text__inner mobile-switch overlay--flex-pos-{{ section.settings.text_alignment | split: ' ' | last }}">
           <div class="overlay-text__text">
             {%- if section.settings.subheading != blank -%}
@@ -793,6 +808,31 @@
         }
       ],
       "default": "no_change"
+    },
+    {
+      "type": "select",
+      "id": "overlay_text_alignment",
+      "label": "Overlay text alignment",
+      "info": "Controls text alignment for overlay text content",
+      "options": [
+        {
+          "value": "",
+          "label": "Default"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": ""
     },
     {
       "type": "range",
