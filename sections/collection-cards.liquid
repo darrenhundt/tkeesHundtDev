@@ -1,0 +1,248 @@
+{% style %}
+  .section-id-{{ section.id }} .collection-listing .product-list {
+    justify-content: center;
+    gap: 10%;
+    margin-left: 0;
+    padding: 2%;
+  }
+
+  .collection-card {
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 20%;
+    margin: 15px;
+    /* min-height: 200px; */
+  }
+  .collection-card-text-wrapper {
+    color: black;
+  }
+  .collection-card-heading {
+    font-family: 'Bebas Neue';
+    font-size: 1.6rem;
+  }
+  .collection-card-subheading {
+    font-size: 0.8rem;
+    margin-top: -10px;
+  }
+  .collection-card-button {
+    padding: 10px 30px;
+    background-color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 50%;
+    margin: 0 3%;
+    border: 1px solid #aaa;
+  }
+  .collection-card-button:hover {
+    border: 1px solid #333;
+  }
+  @media (max-width: 768px) {
+    .section-id-{{ section.id }} .collection-listing .product-list {
+      gap: 6%;
+    }
+  .collection-card {
+    width: 48%;
+    gap: 10px;
+    /* padding: 10% 0; */
+    padding: 10px;
+    margin: 0;
+  }
+  .collection-card-heading {
+    font-size: 1.5rem;
+  }
+  .collection-card-subheading {
+    /* font-size: 0.75rem; */
+  }
+  .collection-card-button {
+    width: auto;
+    padding: 8px 15px;
+    font-size: 0.7rem;
+  }
+  }
+{% endstyle %}
+<div
+  class="section-id-{{ section.id }} collection-slider-row for-collections {% if section.settings.use_alt_bg %}use-alt-bg{% endif %}"
+  data-section-type="featured-collections"
+>
+  <div class="container{% if section.settings.enable_carousel %} container--not-mobile{% endif %}{% if section.settings.full_width %} container--no-max{% endif %}">
+    <div class="{% if section.settings.enable_carousel %}collection-slider{% endif %}">
+      {% if section.settings.title != blank %}
+        <h2 class="hometitle h4-style align-center has-paging" data-cc-animate>
+          {% if section.settings.enable_carousel -%}
+            <a class="prev ltr-icon" href="#">{% render 'svg-chevron-left' %}</a>
+          {%- endif %}
+          {% if section.settings.title == blank %}
+            <span class="has-paging__title">&nbsp;</span>
+          {% else %}
+            <span class="has-paging__title">{{ section.settings.title | escape }}</span>
+          {% endif %}
+          {% if section.settings.enable_carousel -%}
+            <a class="next ltr-icon" href="#">{% render 'svg-chevron-right' %}</a>
+          {%- endif %}
+        </h2>
+      {% endif %}
+      <div class="collection-listing" data-cc-animate="cc-fade-in-up">
+        <div class="product-list product-list--per-row-{{ section.settings.grid }} product-list--per-row-mob-{{ settings.prod_thumb_mob_per_row }} product-list--image-shape-{{ settings.coll_grid_image_shape }} {% if section.settings.enable_carousel %}carousel{% endif %}">
+          {% for block in section.blocks %}
+            {% assign collection = collections[block.settings.collection] %}
+            <div class="collection-card" style="background-color: {{ block.settings.collection_card_bg }}">
+              <div class="collection-card-text-wrapper">
+                <div class="collection-card-heading">{{ block.settings.collection_card_heading }}</div>
+                <div class="collection-card-subheading">{{ block.settings.collection_card_subheading }}</div>
+              </div>
+              <a href="{{ collection.url }}" class="collection-card-button">{{ block.settings.button_text }}</a>
+            </div>
+          {% endfor %}
+
+          {% comment %}
+            {% if section.blocks.size > 0 %}
+              {%- liquid
+                if settings.coll_grid_image_shape == 'portrait-23'
+                  assign chosen_aspect_ratio = 0.67
+                elsif settings.coll_grid_image_shape == 'portrait-45'
+                  assign chosen_aspect_ratio = 0.8
+                elsif settings.coll_grid_image_shape == 'square'
+                  assign chosen_aspect_ratio = 1.0
+                elsif settings.coll_grid_image_shape == 'landscape-54'
+                  assign chosen_aspect_ratio = 1.25
+                elsif settings.coll_grid_image_shape == 'landscape-32'
+                  assign chosen_aspect_ratio = 1.50
+                elsif settings.coll_grid_image_shape == 'tallest'
+                  assign chosen_aspect_ratio = 999
+                  for block in section.blocks
+                    assign collection = collections[block.settings.collection]
+                    if collection != blank
+                      assign collection_image = block.settings.image | default: collection.featured_image
+                      if collection_image.aspect_ratio < chosen_aspect_ratio
+                        assign chosen_aspect_ratio = collection_image.aspect_ratio
+                      endif
+                    endif
+                  endfor
+                else
+                  assign chosen_aspect_ratio = 0
+                  for block in section.blocks
+                    assign collection = collections[block.settings.collection]
+                    if collection != blank
+                      assign collection_image = block.settings.image | default: collection.featured_image
+                      if collection_image.aspect_ratio > chosen_aspect_ratio
+                        assign chosen_aspect_ratio = collection_image.aspect_ratio
+                      endif
+                    endif
+                  endfor
+                endif
+              -%}
+
+              {% for block in section.blocks %}
+                {% assign collection = collections[block.settings.collection] %}
+
+                {% unless collection == blank %}
+                  {% render 'collection-block',
+                    collection: collection,
+                    custom_attrs: block.shopify_attributes,
+                    manual_image_load: section.settings.enable_carousel,
+                    custom_image: block.settings.image,
+                    custom_aspect_ratio: chosen_aspect_ratio
+                  %}
+                {% else %}
+                  {% render 'onboarding-collection-block', forloop: forloop %}
+                {% endunless %}
+              {% endfor %}
+
+            {% else %}
+              {% for i in (1..6) %}
+                {% render 'onboarding-collection-block', forloop: forloop %}
+              {% endfor %}
+            {% endif %}
+          {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection cards",
+  "class": "section-collection-list",
+  "max_blocks": 20,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Collection list"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_carousel",
+      "label": "Enable carousel",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "label": "Collections per row",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "checkbox",
+      "id": "use_alt_bg",
+      "label": "Use alternate section color",
+      "default": true
+    },
+    {
+      "id": "full_width",
+      "type": "checkbox",
+      "label": "Full page width",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "color",
+          "id": "collection_card_bg",
+          "label": "Card bg color"
+        },
+        {
+          "type": "text",
+          "id": "collection_card_heading",
+          "label": "Card heading"
+        },
+        {
+          "type": "text",
+          "id": "collection_card_subheading",
+          "label": "Card subheading"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection cards",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

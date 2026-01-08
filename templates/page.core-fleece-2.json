@@ -1,0 +1,312 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "102af2fd-1ee0-45f0-97cf-9f7376f9b8a6": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "h2 {font-family: bebas neue; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/core-fleece-hero-place.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/place-holder-4-5_5a6795c3-fecd-4227-8077-2e7acda3a740.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "Core Fleece",
+        "title_size": 66,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "<p>An exercise in maximal minimalism.<br\/><\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full image-overlay--bg-shadow"
+      }
+    },
+    "08d2bc39-0290-4486-bc36-07934eb3c6da": {
+      "type": "product-list",
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #333; letter-spacing: 1px;}",
+        ".product-block__title {font-family: \"Bebas Neue\"; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "Core Fleece",
+        "product_list": [
+          "core-fleece-crewneck-white",
+          "core-fleece-hoodie-eggshell-mix",
+          "core-fleece-jogger-grey-mix",
+          "core-fleece-sport-jogger-black",
+          "core-fleece-crewneck-sand",
+          "core-fleece-hoodie-white",
+          "core-fleece-jogger-eggshell-mix",
+          "core-fleece-jogger-midnight-navy",
+          "core-fleece-crewneck-eggshell-mix",
+          "core-fleece-hoodie-grey-mix",
+          "core-fleece-jogger-sand",
+          "core-fleece-jogger-black",
+          "core-fleece-crewneck-grey-mix",
+          "core-fleece-hoodie-midnight-navy",
+          "core-fleece-jogger-white",
+          "core-fleece-sport-jogger-grey-mix",
+          "core-fleece-crewneck-black",
+          "core-fleece-hoodie-black",
+          "core-fleece-sport-jogger-eggshell-mix",
+          "core-fleece-sport-jogger-white",
+          "core-fleece-crewneck-midnight-navy",
+          "core-fleece-hoodie-sand",
+          "core-fleece-sport-jogger-sand",
+          "core-fleece-sport-jogger-midnight-navy"
+        ],
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    },
+    "145a44f5-9a79-44a9-9a49-7108aa44ec42": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15981930447023__145a44f5-9a79-44a9-9a49-7108aa44ec42-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The orginal go-to for cozy.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "d36bed7d-ec63-47ed-9bd3-5f8c017fb905": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Core Fleece",
+            "button_link": "https:\/\/tkees.com\/collections\/core-fleece",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15981930447023__145a44f5-9a79-44a9-9a49-7108aa44ec42-text-1",
+        "d36bed7d-ec63-47ed-9bd3-5f8c017fb905"
+      ],
+      "custom_css": [
+        ".fully-spaced-row--small {margin-top: 10px; margin-bottom: 80px;}",
+        ".button-row__button {font-family: \"Bebas Neue\"; font-size: 16px; letter-spacing: 1.2px; padding: 0.9em 50px 0.9em;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "7536549e-576f-483c-b202-d815cddea854": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cropped-place-holder-1_98e4a157-ebd4-4f35-bd90-3860062da68e.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/warmcore-cropped-edit-category.gif",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 56,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center left",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "6c359eb4-784e-4f1e-b324-6549eb615edf": {
+      "type": "product-list",
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #333; letter-spacing: 1px;}",
+        ".product-block__title {font-family: \"Bebas Neue\"; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "The Cropped Edit",
+        "product_list": [
+          "core-fleece-cropped-half-zip-white",
+          "core-fleece-cropped-hoodie-eggshell-mix",
+          "core-fleece-wide-leg-pant-black",
+          "core-fleece-cropped-hoodie-white",
+          "core-fleece-cropped-half-zip-black",
+          "core-fleece-wide-leg-pant-eggshell-mix",
+          "core-fleece-cropped-hoodie-black",
+          "core-fleece-cropped-half-zip-eggshell-mix",
+          "core-fleece-wide-leg-pant-white"
+        ],
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    },
+    "796cd5bc-9355-41f5-b510-d8974a83e58e": {
+      "type": "rich-text",
+      "blocks": {
+        "381705cd-9f1a-4a52-a406-04c41e124d1b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cropped silhouettes and high-waisted bottoms<br\/><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "6a3d143b-d6cc-4d05-8106-4c953580efc9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Cropped",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "381705cd-9f1a-4a52-a406-04c41e124d1b",
+        "6a3d143b-d6cc-4d05-8106-4c953580efc9"
+      ],
+      "custom_css": [
+        ".fully-spaced-row--small {margin-top: 10px; margin-bottom: 80px;}",
+        ".button-row__button {font-family: \"Bebas Neue\"; font-size: 16px; letter-spacing: 1.2px; padding: 0.9em 50px 0.9em;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "9a8927ec-2290-4401-941a-b441831ec7eb": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cropped-place-holder-1_98e4a157-ebd4-4f35-bd90-3860062da68e.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/warmcore-oversized-capsule-category_2.gif",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 56,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center left",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "b41d1297-d9b8-417e-b966-ac3c9282e968": {
+      "type": "product-list",
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #333; letter-spacing: 1px;}",
+        ".product-block__title {font-family: \"Bebas Neue\"; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "The Oversized Capsule",
+        "product_list": [
+          "core-fleece-oversized-half-zip-white",
+          "core-fleece-oversized-hoodie-eggshell-mix",
+          "oversized-tee-grey-mix",
+          "rider-legging-midnight-navy",
+          "core-fleece-oversized-hoodie-white",
+          "core-fleece-oversized-half-zip-eggshell-mix",
+          "core-fleece-oversized-hoodie-midnight-navy",
+          "rider-legging-eggshell-mix",
+          "core-fleece-oversized-hoodie-grey-mix",
+          "oversized-tee-eggshell-mix",
+          "core-fleece-oversized-half-zip-midnight-navy",
+          "core-fleece-oversized-half-zip-grey-mix",
+          "oversized-tee-midnight-navy",
+          "oversized-tee-white",
+          "rider-legging-grey-mix",
+          "rider-legging-white"
+        ],
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    },
+    "2a9103b3-ecec-43ab-972f-2f66fc911918": {
+      "type": "rich-text",
+      "blocks": {
+        "cf556b56-8cb0-4183-aa0b-9878508a6996": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Larger-than-life shapes for an expansive state.<br\/><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "0288912b-d834-49a0-ac0e-3f2c198dce20": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Oversized",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "cf556b56-8cb0-4183-aa0b-9878508a6996",
+        "0288912b-d834-49a0-ac0e-3f2c198dce20"
+      ],
+      "custom_css": [
+        ".fully-spaced-row--small {margin-top: 10px; margin-bottom: 80px;}",
+        ".button-row__button {font-family: \"Bebas Neue\"; font-size: 16px; letter-spacing: 1.2px; padding: 0.9em 50px 0.9em;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "102af2fd-1ee0-45f0-97cf-9f7376f9b8a6",
+    "08d2bc39-0290-4486-bc36-07934eb3c6da",
+    "145a44f5-9a79-44a9-9a49-7108aa44ec42",
+    "7536549e-576f-483c-b202-d815cddea854",
+    "6c359eb4-784e-4f1e-b324-6549eb615edf",
+    "796cd5bc-9355-41f5-b510-d8974a83e58e",
+    "9a8927ec-2290-4401-941a-b441831ec7eb",
+    "b41d1297-d9b8-417e-b966-ac3c9282e968",
+    "2a9103b3-ecec-43ab-972f-2f66fc911918"
+  ]
+}

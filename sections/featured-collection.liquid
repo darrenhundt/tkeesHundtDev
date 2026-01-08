@@ -1,0 +1,282 @@
+{%- liquid
+  if section.settings.enable_carousel
+    assign product_limit = 20
+  else
+    assign product_limit = section.settings.grid | times: section.settings.rows
+  endif
+  assign collection = collections[section.settings.collection]
+-%}
+
+{% style %}
+  {% if section.settings.use_alt_carousel %}
+    .section-id-{{ section.id }} .collection-listing {
+      overflow: hidden;
+    }
+    .section-id-{{ section.id }} .product-list {
+      display: flex;
+      gap: var(--homepage-gap);
+    }
+    .section-id-{{ section.id }} .product-block {
+      flex: 0 0 calc((100% - ({{ section.settings.grid | minus: 1 }} * 12px)) / {{ section.settings.grid }});
+      width: calc((100% - ({{ section.settings.grid | minus: 1 }} * 12px)) / {{ section.settings.grid }});
+    }
+    .section-id-{{ section.id }} .carousel-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      background: white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .section-id-{{ section.id }} .carousel-nav.prev {
+      left: 10px;
+    }
+    .section-id-{{ section.id }} .carousel-nav.next {
+      right: 10px;
+    }
+    .section-id-{{ section.id }} .carousel-nav svg {
+      width: 20px;
+      height: 20px;
+    }
+    .section-id-{{ section.id }} .collection-listing .product-block {
+      padding-left: var(--homepage-gap);
+    }
+  {% endif %}
+  {% if section.settings.hide_swatches %}
+    .section-id-{{ section.id }} .product-block-options {
+      display: none !important;
+    }
+  {% endif %}
+{% endstyle %}
+
+<div
+  class="section-id-{{ section.id }} collection-slider-row {% if section.settings.use_alt_bg %}use-alt-bg{% endif %}"
+  data-section-type="featured-collection"
+  data-components="accordion,modal,price-range"
+>
+  <div class="container{% if section.settings.enable_carousel %} container--not-mobile{% endif %}{% if section.settings.full_width %} container--no-max{% endif %}">
+    <div class="{% if section.settings.enable_carousel %}collection-slider{% endif %}">
+      <h2
+        class="hometitle h4-style align-{{ section.settings.heading_alignment }}{% unless section.settings.use_alt_carousel %} has-paging{% endunless %} {% if section.settings.title == blank %}hidden{% endif %}"
+        data-cc-animate
+        data-cc-animate-delay="0.3s"
+      >
+        {% if section.settings.enable_carousel and section.settings.use_alt_carousel == false %}
+          <a class="prev ltr-icon" href="#">{% render 'svg-chevron-left' %}</a>
+        {% endif %}
+        <a class="has-paging__title" href="{{ collection.url }}"
+          ><span>{{ section.settings.title | escape }}</span></a
+        >
+        {% if section.settings.enable_carousel and section.settings.use_alt_carousel == false %}
+          <a class="next ltr-icon" href="#">{% render 'svg-chevron-right' %}</a>
+        {% endif %}
+      </h2>
+
+      {%- if section.settings.show_view_all -%}
+        <div class="view-all align-center" data-cc-animate data-cc-animate-delay="0.3s">
+          <a class="small-feature-link" href="{{ collection.url }}">{{ 'collections.general.view_all' | t }}</a>
+        </div>
+      {%- endif -%}
+
+      <div class="collection-listing" data-cc-animate="cc-fade-in-up">
+        {% if section.settings.enable_carousel and section.settings.use_alt_carousel %}
+          <a class="carousel-nav prev" href="#" onclick="return false;">{% render 'svg-chevron-left' %}</a>
+          <a class="carousel-nav next" href="#" onclick="return false;">{% render 'svg-chevron-right' %}</a>
+        {% endif %}
+        <div class="product-list product-list--per-row-{{ section.settings.grid }} product-list--per-row-mob-{{ settings.prod_thumb_mob_per_row }} product-list--image-shape-{{ settings.prod_thumb_shape }} {% if section.settings.enable_carousel %}carousel{% endif %}">
+          {% if section.settings.collection == blank %}
+            {% for i in (1..product_limit) %}
+              {% render 'onboarding-product-block', forloop: forloop %}
+            {% endfor %}
+          {% else %}
+            {%- liquid
+              if settings.prod_thumb_shape == 'portrait-23'
+                assign chosen_aspect_ratio = 0.67
+              elsif settings.prod_thumb_shape == 'portrait-45'
+                assign chosen_aspect_ratio = 0.8
+              elsif settings.prod_thumb_shape == 'square'
+                assign chosen_aspect_ratio = 1.0
+              elsif settings.prod_thumb_shape == 'landscape-54'
+                assign chosen_aspect_ratio = 1.25
+              elsif settings.prod_thumb_shape == 'landscape-32'
+                assign chosen_aspect_ratio = 1.50
+              elsif settings.prod_thumb_shape == 'tallest'
+                assign chosen_aspect_ratio = 99
+                for product in collection.products limit: product_limit
+                  if product.featured_media.preview_image.aspect_ratio < chosen_aspect_ratio
+                    assign chosen_aspect_ratio = product.featured_media.preview_image.aspect_ratio
+                  endif
+                endfor
+              else
+                assign chosen_aspect_ratio = 0
+                for product in collection.products limit: product_limit
+                  if product.featured_media.preview_image.aspect_ratio > chosen_aspect_ratio
+                    assign chosen_aspect_ratio = product.featured_media.preview_image.aspect_ratio
+                  endif
+                endfor
+              endif
+            -%}
+            {% for product in collection.products limit: product_limit %}
+              {% if section.settings.enable_carousel and section.settings.use_alt_carousel %}
+                {% if forloop.first %}
+                  {% assign first_product = product %}
+                {% else %}
+                  {% render 'product-block',
+                    product: product,
+                    manual_image_load: section.settings.enable_carousel,
+                    custom_aspect_ratio: chosen_aspect_ratio,
+                    no_swiping: section.settings.enable_carousel,
+                    no_quick_buy_markup: section.settings.enable_carousel
+                  %}
+                {% endif %}
+              {% else %}
+                {% render 'product-block',
+                  product: product,
+                  manual_image_load: section.settings.enable_carousel,
+                  custom_aspect_ratio: chosen_aspect_ratio,
+                  no_swiping: section.settings.enable_carousel,
+                  no_quick_buy_markup: section.settings.enable_carousel
+                %}
+              {% endif %}
+            {% endfor %}
+            {% if section.settings.enable_carousel and section.settings.use_alt_carousel and first_product %}
+              {% render 'product-block',
+                product: first_product,
+                manual_image_load: section.settings.enable_carousel,
+                custom_aspect_ratio: chosen_aspect_ratio,
+                no_swiping: section.settings.enable_carousel,
+                no_quick_buy_markup: section.settings.enable_carousel
+              %}
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if settings.quickbuy_style != 'off' and section.settings.enable_carousel %}
+    <div class="quickbuy-container">
+      <a href="#" class="close-detail" aria-label="{{ 'products.quick_buy.close' | t }}" tabindex="-1">
+        {%- render 'svg-x' -%}
+      </a>
+      <div class="inner"></div>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Featured collection",
+  "class": "section-featured-collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Featured collection"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show product vendor",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_carousel",
+      "label": "Enable carousel",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "use_alt_carousel",
+      "label": "Use alternate carousel style",
+      "info": "Places navigation arrows over the first and last products",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_swatches",
+      "label": "Hide product swatches",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "label": "Products per row",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "label": "Rows",
+      "info": "Does not apply to carousel layout",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "use_alt_bg",
+      "label": "Use alternate section color",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": "Show 'View all' link",
+      "default": true
+    },
+    {
+      "id": "full_width",
+      "type": "checkbox",
+      "label": "Full page width",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured collection",
+      "settings": {
+        "title": "Featured collection"
+      }
+    }
+  ]
+}
+{% endschema %}

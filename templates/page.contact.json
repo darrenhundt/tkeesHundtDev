@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-contact",
+      "blocks": {
+        "name": {
+          "type": "name_input",
+          "settings": {
+            "half_width": true
+          }
+        },
+        "email": {
+          "type": "email_input",
+          "settings": {
+            "half_width": true
+          }
+        },
+        "message": {
+          "type": "message_input",
+          "settings": {
+            "half_width": false
+          }
+        },
+        "274057a6-fb2f-4c6f-80ef-f1810f26142e": {
+          "type": "custom_dropdown",
+          "settings": {
+            "title": "Custom dropdown",
+            "multiple_options": "Sizing Test",
+            "half_width": false
+          }
+        }
+      },
+      "block_order": [
+        "name",
+        "email",
+        "message",
+        "274057a6-fb2f-4c6f-80ef-f1810f26142e"
+      ],
+      "settings": {
+        "show_page_title": true,
+        "use_columns": true,
+        "contact_title": "Contact us",
+        "contact_text": ""
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

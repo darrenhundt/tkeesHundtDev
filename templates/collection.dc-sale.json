@@ -1,0 +1,145 @@
+{
+  "sections": {
+    "140d5777-cbff-4092-9436-ea5d1ab7ef91": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "h1 {font-family: \"Bebas Neue\"; color: #5d3a2b; letter-spacing: 1.2px; margin-bottom: -2px;}",
+        ".overlay-text {color: #5d3a2b;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/memorial-day-sale-collection-desktop_2276b648-ff25-46de-81ff-646283044d43.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/memorial-day-sale-collection-mobile_51a81c52-87ae-422c-af37-db71b723fb53.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 500,
+        "height_mobile": 300,
+        "image_link": "",
+        "subheading": "",
+        "title": "Say Goodbye",
+        "title_size": 56,
+        "title_size_mobile": 26,
+        "use_h1": true,
+        "text": "<p>Up to 75% off select styles<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "bottom left",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "custom_css": [
+        ".h3-style {display: none;}",
+        ".product-block__title {font-family: \"Bebas Neue\"; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "no_background",
+        "coll_num_per_page_int": 48,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "all",
+        "show_filter_counts": false,
+        "show_disabled_filters": false,
+        "ajax_products": true,
+        "enable_sticky_filter": false,
+        "filter_two_columns": false,
+        "coll_show_sort": false,
+        "coll_show_feat": false,
+        "enable_subcoll": false,
+        "subcoll_menu": "",
+        "subcoll_style": "gallery",
+        "subcoll_gall_shape": "l-21",
+        "image_position": "bottom center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": true,
+        "subcoll_gall_overlay_style": "shadow",
+        "subcoll_gall_text_alignment": "bottom left",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    },
+    "6a8f9be1-86b6-4fd7-b84a-724975fc0042": {
+      "type": "collection-list",
+      "blocks": {
+        "38dbfee8-13d8-425e-8675-611f98864581": {
+          "type": "collection",
+          "settings": {
+            "collection": "flip-flop",
+            "image": "shopify:\/\/shop_images\/footwear-categories-flip-flop.jpg"
+          }
+        },
+        "2d0d0047-8ebc-455a-8567-386de3843f23": {
+          "type": "collection",
+          "settings": {
+            "collection": "multi-strap",
+            "image": "shopify:\/\/shop_images\/footwear-categories-straps.jpg"
+          }
+        },
+        "7e4d9364-1c27-483a-918b-bcbd86e22b54": {
+          "type": "collection",
+          "settings": {
+            "collection": "ankle-tie-up",
+            "image": "shopify:\/\/shop_images\/footwear-categories-ankles-1.jpg"
+          }
+        },
+        "ab97f276-9ffc-455d-93c1-53affeee8c7e": {
+          "type": "collection",
+          "settings": {
+            "collection": "criss-cross",
+            "image": "shopify:\/\/shop_images\/footwear-categories-crisscross.jpg"
+          }
+        },
+        "c1b6213d-c49d-4d06-a4da-201bf34d17dc": {
+          "type": "collection",
+          "settings": {
+            "collection": "slides-mules",
+            "image": "shopify:\/\/shop_images\/footwear-categories-slides.jpg"
+          }
+        },
+        "f0dd34e3-8d2f-4775-b16f-753301852742": {
+          "type": "collection",
+          "settings": {
+            "collection": "toe-loop",
+            "image": "shopify:\/\/shop_images\/footwear-categories-toe-loop.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "38dbfee8-13d8-425e-8675-611f98864581",
+        "2d0d0047-8ebc-455a-8567-386de3843f23",
+        "7e4d9364-1c27-483a-918b-bcbd86e22b54",
+        "ab97f276-9ffc-455d-93c1-53affeee8c7e",
+        "c1b6213d-c49d-4d06-a4da-201bf34d17dc",
+        "f0dd34e3-8d2f-4775-b16f-753301852742"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".product-block__title {text-transform: uppercase; font-family: \"Bebas Neue\"; font-size: 18px; color: #5d3a2b; letter-spacing: 1px;}",
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #5d3a2b; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "SHOP BY CATEGORY",
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "140d5777-cbff-4092-9436-ea5d1ab7ef91",
+    "main",
+    "6a8f9be1-86b6-4fd7-b84a-724975fc0042"
+  ]
+}

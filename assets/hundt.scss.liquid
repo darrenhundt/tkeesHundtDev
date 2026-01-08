@@ -1,0 +1,127 @@
+/*** D Hundt Custom Styles ***/
+
+// ============================================================================
+// TABLE OF CONTENTS
+// ============================================================================
+// 1. Variables
+// 2. Typography
+// 3. Colors
+// 4. Layout
+// 5. Components
+// 6. Sections
+// 7. Pages
+// 8. Utilities
+// 9. Responsive
+// ============================================================================
+
+// ============================================================================
+// 1. Variables
+// ============================================================================
+
+// ============================================================================
+// 2. Typography
+// ============================================================================
+
+// ============================================================================
+// 3. Colors
+// ============================================================================
+
+// ============================================================================
+// 4. Layout
+// ============================================================================
+
+// ============================================================================
+// 5. Components
+// ============================================================================
+
+// ============================================================================
+// 6. Sections
+// ============================================================================
+.section-image-overlay-blocks {
+
+    @media (max-width: 1000px) {
+        [data-testid="form-row"]:nth-child(2) [data-testid="form-component"] {
+            padding-bottom: 5px!important;
+            padding-top: 0!important;
+            line-height: 120%;
+        }
+
+
+        [data-testid="form-row"]:nth-child(2) [data-testid="form-component"] span {
+            font-size: 11px!important;
+            font-weight: 400!important;
+        }
+        [data-testid="form-row"]:nth-child(1) [data-testid="form-component"] span {
+            font-size: 24px!important;
+            line-height: 100%;
+        }
+
+        input, button {
+            max-height: 30px!important;
+        }
+    }
+    .overlay-content-box__button-row {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .overlay-content-box__accent-image {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+    
+    }
+    .image-overlay {
+        height: 100%;
+    }
+    .overlay-text__button {
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+    }
+    .image-overlay-block:first-child {
+
+    }
+    .image-overlay-block:last-child {
+
+    }
+}
+.section-image-with-klaviyo-form {
+    margin-bottom: 20px;
+    .overlay-text .overlay-text__inner {
+        @media (min-width: 900px) {
+            padding-right: 15vw;
+        }
+        @media (min-width: 1100px) {
+            padding-right: 22vw;
+        }
+    }
+    .rimage-outer-wrapper {
+        @media (min-width: 900px) {
+            background-position: 40% 50%!important;
+        }
+    }
+    @media (max-width: 767px) {
+        .rimage-outer-wrapper {
+            background-position: 0% 50%!important;
+        }
+        .overlay-text__inner.overlay--flex-pos-end {
+            justify-content: flex-start!important;
+        }
+    }
+}
+
+// ============================================================================
+// 7. Pages
+// ============================================================================
+/* hide banner on depict templates */
+.depict-template .banner {
+  //display: none; might just do it in the customizer 
+}
+
+// ============================================================================
+// 8. Utilities
+// ============================================================================
+
+// ============================================================================
+// 9. Responsive
+// ============================================================================

@@ -1,0 +1,22 @@
+
+<script>
+       //console.log("start cpl");
+       var variant_id = "{{current_variant.id}}";
+       var variant_sku = "{{current_variant.sku}}";
+       var quantity =   "{{current_variant.inventory_quantity}}";
+       var quantity_2 = "{{current_variant.inventory_quantity}}";
+       //addMessages(variant_id); // calling the message app when the page load
+       var product_title = "{{product.title}}";
+       var product_id = "{{product.id}}";
+       // console.log(product_title);
+       // console.log(product_id);
+       // console.log(quantity);
+       sessionStorage.setItem("ABCDEF", "{{product.id}}" );
+       sessionStorage.setItem("vendorCPL", "{{product.vendor}}" );
+       setTimeout(function() {
+          var Session_color = sessionStorage.getItem("Session_color");
+        //  console.log("completeYourLook");
+        //  console.log(Session_color);
+          completeYourLook(Session_color,product_id,"{{product.vendor}}");       // calling the message app when the page load
+       }, 600);
+  </script>  

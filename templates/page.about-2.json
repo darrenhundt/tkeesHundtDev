@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".majortitle {display: none;}"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    },
+    "3f8815a5-03f5-43a4-80b5-e305a0fb9746": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subheading": "",
+        "title": "Image with text",
+        "use_h1": false,
+        "text": "<p>Pair text with an image to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.<\/p>",
+        "button_label": "Read more",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "fca9f644-4dbb-47bb-a511-848803cd3f4e": {
+      "type": "custom-row",
+      "disabled": true,
+      "blocks": {
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "Subheading",
+            "title": "Tell your story",
+            "text": "<p>Pair text with an image to tell a story<\/p>",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Welcome",
+            "text": "<p>Use this text to share information about your store with your customers.<\/p><p>Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "8db903e9-d622-4d78-974f-8392b1a7c7df": {
+          "type": "html",
+          "settings": {
+            "width": "half",
+            "code": "test"
+          }
+        }
+      },
+      "block_order": [
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-0",
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-1",
+        "8db903e9-d622-4d78-974f-8392b1a7c7df"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3f8815a5-03f5-43a4-80b5-e305a0fb9746",
+    "fca9f644-4dbb-47bb-a511-848803cd3f4e"
+  ]
+}

@@ -1,0 +1,866 @@
+
+
+<script>
+
+      window.addEventListener('click', outsideClick);
+      function outsideClick(e) {
+          $('#theTest').hide();
+      }
+  
+      function completeYourLook(color,product_id,vendor){ 
+            document.getElementById("suggestion_main").innerHTML = '';  
+            sessionStorage.setItem("Session_color", color);  
+            var scriptUrl = "http://tkeesconnections.appspot.com/ShowJson/"+product_id+"/"+color;
+            $.ajax({
+              url: scriptUrl,
+              type: 'get',
+              dataType: 'json',
+              async: true,
+              success: function(data) {
+                
+          		var allproduct =  [{"id" : 0, "price" : "$", "title" : "a" } 
+                                   {% paginate collections.all.products by 1000 %}
+                                   {% for product in collections.all.products %}
+                                       ,{"id" : {{ product.id }} , "price" : "{{ product.price | money | replace: '"', '' }}" ,"title" : "{{ product.title}}", "available" : "{{product.available }}" , "compare_at_price" : "{{ product.compare_at_price | money | replace: '"', '' }}" }
+                                   {% endfor %}
+                                   {% endpaginate %}                                       
+                                  ];                
+
+                var result = data;                          
+                var products = result.data;
+                //console.log('xpto');
+                //console.log('--------------> '+vendor);
+                  count_b =0;
+                  if (vendor == 'Footwear'){
+                      var count_b = 0;
+                      var count_Footwear = 0;
+                      var count_Clothing = 0;
+                      var all_prod_cart =''; 
+                      for (i = 0; i < products.length; i++) {  
+                             var substring = '' + products[i].product_id;
+                                if ((products[i].other_type_product == 'Footwear') && (count_Footwear < 2) ) {
+                                    count_Footwear++;
+                                    //console.log('Footwear ' + count_Footwear);
+                                    all_prod_cart =  all_prod_cart + '  ' + products[i].product_id ;
+                                }else if ((products[i].other_type_product == 'Clothing') && (count_Clothing < 1) ) {
+                                    var all_prod_cart =  all_prod_cart + '  ' + products[i].product_id ; 
+                                    count_Clothing++;
+                                    //console.log('Clothing ' + count_Clothing);
+                                }                    
+      
+                                count_b = count_Footwear +  count_Clothing;
+                                console.log('Total ' + count_b); 
+                                if (count_b == 3){
+                                  //console.log('is 3');
+                                  break;
+                                }
+                                
+ 
+                      }
+               } 
+    
+                if (vendor == 'Clothing'){
+                        var count_b = 0;
+                        var count_Footwear = 0;
+                        var count_Clothing = 0;
+                        var all_prod_cart =''; 
+                        for (i = 0; i < products.length; i++) {  
+                               var substring = '' + products[i].product_id;
+
+                                  if ((products[i].other_type_product == 'Clothing') && (count_Clothing < 2) ) {
+                                      count_Clothing++;
+                                      //console.log('Clothing ' + count_Clothing);
+                                      all_prod_cart =  all_prod_cart + '  ' + products[i].product_id ;
+                                  }else if ((products[i].other_type_product == 'Footwear') && (count_Footwear < 1) ) {
+                                      var all_prod_cart =  all_prod_cart + '  ' + products[i].product_id ; 
+                                      count_Footwear++;
+                                      //console.log('count_Footwear ' + count_Footwear);
+                                  }                    
+        
+                                  count_b = count_Footwear +  count_Clothing;
+                                  console.log('Total ' + count_b); 
+                                  if (count_b == 3){
+                                    //console.log('is 3');
+                                    break;
+                                  }
+ 
+                        }
+                 } 
+                if (count_b<3) {
+                        var count_b = 0;
+                        var count_Footwear = 0;
+                        var count_Clothing = 0;
+                        var all_prod_cart =''; 
+                        for (i = 0; i < products.length; i++) {  
+                                  var all_prod_cart =  all_prod_cart + '  ' + products[i].product_id ; 
+                                  count_Footwear++;
+                                  count_b = count_Footwear +  count_Clothing;
+                                  //console.log('Total ' + count_b); 
+                                  if (count_b == 3){
+                                    //console.log('is 3');
+                                    break;
+                                  }   
+                        }
+               } 
+
+                if (vendor == 'Clothing'){
+                  var form_title = 'Complete The Look'; 
+                }else{
+                  var form_title = products[0].form_title; 
+                }
+
+  
+                count_b = 0;
+                var strhtml =  '<div class="suggestion_title" ><h1 class="suggestion_title_h1">  '+form_title+'  </h1>   </div>';                                  
+                var javaScriptCode='';                        
+				for (i = 0; i < products.length; i++) {  
+
+                   var substring = '' + products[i].product_id;
+                   if ((all_prod_cart.includes(substring))){
+
+                  
+                      if (count_b == 3){
+                        //console.log('is 2');
+                        break;
+                      }
+                      count_b++;   
+
+                  
+                         for (var w = 0; w < allproduct.length; w++){
+                              if (allproduct[w].id == products[i].product_id){
+                                            var price   		   =  allproduct[w].price;  
+                                            var compare_at_price =  allproduct[w].compare_at_price;  
+                              }
+                          }     
+                                         
+                         strhtml = strhtml +   '<div class="suggestion_container" >';   
+                         strhtml = strhtml +    '  <form id="suggestionForm'+i+'">';
+                         strhtml = strhtml +    '         <div class="suggestion_col1" >';
+                         strhtml = strhtml +    '           <div id="theImageSpan'+i+'" style="width: 100%; height: 100%; position:relative;">';
+      
+                                    
+        				 strhtml = strhtml +    '           <div id="soldoutornot'+i+'"></div>' ;  
+
+
+                        var colors = products[i].colors;
+                        var count_select =0;
+                        for (j = 0; j < colors.length; j++) {  
+                              //console.log(colors[j].selected);
+                              if((count_select<1)&&(colors[j].selected == 'selected')){ 
+                                selected_src = colors[j].src;
+                              }  
+                              if (colors[j].selected == 'selected'){ 
+                               count_select++;
+                              }
+                        }                     
+
+
+      
+                         if (count_select>0){
+                           strhtml = strhtml +    '           <img src="'+products[i].src+'" width="100%" >';
+                         }
+                         else{
+                           strhtml = strhtml +    '           <img src="'+products[i].src+'" width="100%" >';
+                         }
+
+                         var prtitle = products[i].title;
+                         prtitle = prtitle.split("-"); 
+                      
+                         strhtml = strhtml +    '           </div>';
+                         strhtml = strhtml +    '         </div>';
+                         strhtml = strhtml +    '         <div class="suggestion_col2" >';
+                         strhtml = strhtml +    '             <div class="sugestion_title_product_div" >';
+                         strhtml = strhtml +    '               <label class="sugestion_product"><a href="'+products[i].handle+'"  class="sugestion_product_title">'+prtitle[0]+'</a></label>';
+                      
+                         strhtml = strhtml +    '                 <input id="product_'+i+'" name="product_'+i+'"  type="hidden" value="'+products[i].product_id+'">';                
+                         strhtml = strhtml +    '                 <input id="color_'+i+'" name="color_'+i+'"  type="hidden" value="'+colors[0].color+'">';                
+                      
+                         strhtml = strhtml +    '             </div>';
+                         strhtml = strhtml +    '             <div class="suggestion_color" >';
+                         strhtml = strhtml +    '                  <label>Color</label> <span class="label__value">'+colors[0].color+'</span> <span id="quantityNow'+i+'"></span> ';
+                      
+                     
+                         var colors = products[i].colors;
+  
+                         strhtml = strhtml +    '             </div>';
+                         strhtml = strhtml +    '           <div class="suggestion_Size" >';
+                        // strhtml = strhtml +    '                 <label>Size <span id="quantityNow'+i+'"></span> </label> ';
+                         var sizes = products[i].sizes;
+                         strhtml = strhtml +  '<select name="size_'+i+'" id="size_'+i+'" class="suggestion_select" onChange="changeVariantID_'+i+'();">';
+                         strhtml = strhtml +  '   <option value="">Select size</option> ';
+                              for (j = 0; j < sizes.length; j++) {  
+                                    strhtml = strhtml + '<option value="'+sizes[j].size+'" >'+sizes[j].size+'</option>';
+                              }
+                         strhtml = strhtml +  '</select>';                
+                         strhtml = strhtml +    '           </div>';
+                         strhtml = strhtml +    '                 <input id="variants_'+i+'" name="variants_'+i+'"  type="hidden" value="">';
+                         strhtml = strhtml +    '<div class="suggestion_button" id="suggestion_button'+i+'" >';
+                         strhtml = strhtml +    '           <div id=addbutton'+i+'> ';
+                         strhtml = strhtml +    ' 				<label name="add-suggestion" id="add-suggestion" class="button  button-suggestion"  disabled>Add - '+price+'</label>';
+        				   strhtml = strhtml +    '           </div>';
+                      
+                      
+      
+                         strhtml = strhtml +    "           <div id=addwaitlist"+i+" style='display: none;'>  <label class='button waitList button-suggestion' style='width : 100% !important'>    <center><a href='#' class='waitList' >  ";
+                         strhtml = strhtml + 	  "                Sold Out</a></center></label>";
+                         strhtml = strhtml + 	  "         </div> " ;  
+                      
+                         strhtml = strhtml +    '</div>';
+                      
+                      
+                      
+                      
+                         strhtml = strhtml +    '       </div>';
+                         strhtml = strhtml +    '   </form>';
+                         strhtml = strhtml +    '</div><div class="suggestion_container" ></div>';
+       
+                          var arraycolor = '{"color" : "" , "scr" : "" }';
+                          for (j = 0; j < colors.length; j++) {  
+                            arraycolor =  arraycolor + ',{"color" : "'+colors[j].color+'" , "src" : "'+colors[j].src+'" }' ;
+                          }
+      
+                         javaScriptCode = javaScriptCode +    ' function changeimage_'+i+'(){';
+                         javaScriptCode = javaScriptCode + 		' console.log("test");';
+      
+                       
+                         javaScriptCode = javaScriptCode + 		' var test = addCplInsights('+products[i].product_id+',"'+products[i].title+'","Color Interaction");';
+                        
+                         javaScriptCode = javaScriptCode + 		" var colors = '["+arraycolor+"]';";
+                         javaScriptCode = javaScriptCode + 		'  var jsonObj = JSON.parse(colors);';
+                     
+                         javaScriptCode = javaScriptCode + 		' var thecolor = $("#color_'+i+'").val();';
+                         javaScriptCode = javaScriptCode + 		' var thesize = $("#size_'+i+'").val();';
+                         javaScriptCode = javaScriptCode + 		' var theproduct = $("#product_'+i+'").val();';
+                         javaScriptCode = javaScriptCode + 		' var thetitle = theproduct + thecolor + " / " + thesize;';
+                      
+                         javaScriptCode = javaScriptCode + 		' var variant_id = searchVariant(thetitle);';    
+                         javaScriptCode = javaScriptCode + 		' $("#variants_'+i+'").val(variant_id);';                    
+                         javaScriptCode = javaScriptCode + 		' document.getElementById("soldoutornot'+i+'").innerHTML = "";';
+          
+                         javaScriptCode = javaScriptCode + 		' thetitle = theproduct + thecolor;';  
+                         javaScriptCode = javaScriptCode + 		' var src   = searchVariantbyColor(thetitle);';    
+                         javaScriptCode = javaScriptCode + 		'$("#theImageSpan'+i+'").html("<div id=soldoutornot'+i+'></div><img src="+src+" width=100% >");';
+                      
+                         javaScriptCode = javaScriptCode + 		 ' console.log(variant_id); ';
+                         javaScriptCode = javaScriptCode + 		 ' total = all_variants(variant_id,"inventory"); ';
+                         javaScriptCode = javaScriptCode + 		 ' console.log(total); ';
+                     
+                         javaScriptCode = javaScriptCode + 		'if(total>0){'; 
+                         javaScriptCode = javaScriptCode + 		'   if(variant_id>0){'; 
+                      
+                      
+                          javaScriptCode = javaScriptCode + 		'   $("#addwaitlist'+i+'").hide();';                
+                         javaScriptCode = javaScriptCode + 		'   $("#addbutton'+i+'").show();'; 
+                      
+                         javaScriptCode = javaScriptCode + 		'     document.getElementById("addbutton'+i+'").innerHTML = ';
+                         javaScriptCode = javaScriptCode + 		"     '<label name=add-suggestion id=add-suggestion" + ' class="button  button-suggestion" ' + "onclick=addtocartSuggestion_"+i+"();>Add - "+price+"</label>'" ;             
+                         javaScriptCode = javaScriptCode + 		'   }else{';
+                         javaScriptCode = javaScriptCode + 		'   $("#addwaitlist'+i+'").hide();';                 
+                         javaScriptCode = javaScriptCode + 		'   $("#addbutton'+i+'").show();';                 
+                         javaScriptCode = javaScriptCode + 		'     document.getElementById("addbutton'+i+'").innerHTML = ';
+                         javaScriptCode = javaScriptCode + 		"   '<label name=add-suggestion id=add-suggestion " + ' class="button  button-suggestion" disabled>Add - '+price+'</label>'+"';" ;     
+                         javaScriptCode = javaScriptCode + 		' document.getElementById("soldoutornot'+i+'").innerHTML = "";';
+                         javaScriptCode = javaScriptCode + 		'   }  ';  
+      
+                         javaScriptCode = javaScriptCode + 		'}else{';       
+                      
+                         javaScriptCode = javaScriptCode + 		'   $("#addbutton'+i+'").hide();'; 
+                         javaScriptCode = javaScriptCode + 		'   $("#addwaitlist'+i+'").show();';                 
+       
+                         //javaScriptCode = javaScriptCode + 		' document.getElementById("soldoutornot'+i+'").innerHTML = "&nbsp;SOLD OUT&nbsp;";';
+                         //javaScriptCode = javaScriptCode + 		'$("#soldoutornot'+i+'" ).addClass( "tag_soldout" );';                
+      
+                    
+                      
+                         javaScriptCode = javaScriptCode +        '} ';        
+      
+                      
+      
+                      
+                         javaScriptCode = javaScriptCode + 		'if(total >0){'; 
+                      
+                         javaScriptCode = javaScriptCode + 		'if((total >= 5) && (total <= 10)){'; 
+                         javaScriptCode = javaScriptCode + 		'    document.getElementById("quantityNow'+i+'").innerHTML = "&nbsp;- Only A Few Left";'; 
+                         javaScriptCode = javaScriptCode + 		'}else if(total < 5){'; 
+                         javaScriptCode = javaScriptCode + 		'    document.getElementById("quantityNow'+i+'").innerHTML = "&nbsp;- "+total+" Left";'; 
+                         javaScriptCode = javaScriptCode + 		'} else {'; 
+                         javaScriptCode = javaScriptCode + 		'    document.getElementById("quantityNow'+i+'").innerHTML = "";'; 
+                         javaScriptCode = javaScriptCode + 		'}  ';                  
+                         javaScriptCode = javaScriptCode + 		'} else {'; 
+                         javaScriptCode = javaScriptCode + 		'    document.getElementById("quantityNow'+i+'").innerHTML = "";'; 
+                         javaScriptCode = javaScriptCode + 		'}  ';                     
+                      
+                      
+                         javaScriptCode = javaScriptCode +        'console.log(variant_id); ';    
+                         javaScriptCode = javaScriptCode + 		'if(variant_id==0){'; 
+                         javaScriptCode = javaScriptCode + 		'   $("#addwaitlist'+i+'").hide();';                 
+                         javaScriptCode = javaScriptCode + 		'   $("#addbutton'+i+'").show();'; 
+                         javaScriptCode = javaScriptCode + 		' document.getElementById("addbutton'+i+'").innerHTML = ';
+                         javaScriptCode = javaScriptCode + 		"   '<label name=add-suggestion id=add-suggestion " + ' class="button  button-suggestion" disabled>Add - '+price+'</label>'+"';" ;   
+                         javaScriptCode = javaScriptCode + 		' document.getElementById("soldoutornot'+i+'").innerHTML = "";';   
+                         javaScriptCode = javaScriptCode +        '} ';                 
+                                      
+                      
+                         javaScriptCode = javaScriptCode +    '  } '; 
+                         
+                
+                      
+                         javaScriptCode = javaScriptCode +    ' function changeVariantID_'+i+'(){';
+                         javaScriptCode = javaScriptCode + 		'document.getElementById("soldoutornot'+i+'").innerHTML = "";';    
+      
+                         javaScriptCode = javaScriptCode + 		' var test = addCplInsights('+products[i].product_id+',"'+products[i].title+'","Size Interaction");';
+                         javaScriptCode = javaScriptCode + 		' var thecolor = $("#color_'+i+'").val();';
+                         javaScriptCode = javaScriptCode + 		' var thesize = $("#size_'+i+'").val();';
+                         javaScriptCode = javaScriptCode + 		' var theproduct = $("#product_'+i+'").val();';
+                         javaScriptCode = javaScriptCode + 		' var thetitle = theproduct + thecolor + " / " + thesize;';
+                         javaScriptCode = javaScriptCode + 		' var variant_id = searchVariant(thetitle);';
+                         javaScriptCode = javaScriptCode + 		' $("#variants_'+i+'").val(variant_id);';   
+                      
+                      
+                         javaScriptCode = javaScriptCode + 		 ' console.log(variant_id); ';
+                         javaScriptCode = javaScriptCode + 		 ' total = all_variants(variant_id,"inventory"); ';
+                         javaScriptCode = javaScriptCode + 		 ' console.log(total); ';
+                      
+                         javaScriptCode = javaScriptCode + 		'if(total>0){'; 
+                         javaScriptCode = javaScriptCode + 		'   if(variant_id>0){'; 
+                         javaScriptCode = javaScriptCode + 		'   $("#addwaitlist'+i+'").hide();';                 
+                         javaScriptCode = javaScriptCode + 		'   $("#addbutton'+i+'").show();';                 
+                         javaScriptCode = javaScriptCode + 		'     document.getElementById("addbutton'+i+'").innerHTML = ';
+                         javaScriptCode = javaScriptCode + 		"     '<label name=add-suggestion id=add-suggestion" + ' class="button  button-suggestion" ' + "onclick=addtocartSuggestion_"+i+"();>Add - "+price+"</label>';" ;  
+                         javaScriptCode = javaScriptCode + 		' document.getElementById("soldoutornot'+i+'").innerHTML = "";';     
+                         javaScriptCode = javaScriptCode + 		'   }else{';
+                         javaScriptCode = javaScriptCode + 		'   $("#addwaitlist'+i+'").hide();';                 
+                         javaScriptCode = javaScriptCode + 		'   $("#addbutton'+i+'").show();';                 
+                         javaScriptCode = javaScriptCode + 		'     document.getElementById("addbutton'+i+'").innerHTML = ';
+                         javaScriptCode = javaScriptCode + 		"   '<label name=add-suggestion id=add-suggestion " + ' class="button  button-suggestion" disabled>Add - '+price+'</label>'+"';" ;  
+                         javaScriptCode = javaScriptCode + 		' document.getElementById("soldoutornot'+i+'").innerHTML = "";';                    
+                         javaScriptCode = javaScriptCode + 		'   }  ';  
+      
+                         javaScriptCode = javaScriptCode + 		'}else{';               
+                         javaScriptCode = javaScriptCode + 		'   $("#addbutton'+i+'").hide();'; 
+                         javaScriptCode = javaScriptCode + 		'   $("#addwaitlist'+i+'").show();'; 
+                        
+                      
+      
+           //              javaScriptCode = javaScriptCode + 		' document.getElementById("soldoutornot'+i+'").innerHTML = "&nbsp;SOLD OUT&nbsp;";';
+      
+      //                   javaScriptCode = javaScriptCode + 		'$("#soldoutornot'+i+'" ).addClass( "tag_soldout" );';                
+                      
+                      
+                         javaScriptCode = javaScriptCode +        '} ';         
+                      
+                      
+                      
+                      
+                         javaScriptCode = javaScriptCode + 		'if(total >0){'; 
+                      
+                         javaScriptCode = javaScriptCode + 		'if((total >= 5) && (total <= 10)){'; 
+                         javaScriptCode = javaScriptCode + 		'    document.getElementById("quantityNow'+i+'").innerHTML = "&nbsp;- Only A Few Left";'; 
+                         javaScriptCode = javaScriptCode + 		'}else if(total < 5){'; 
+                         javaScriptCode = javaScriptCode + 		'    document.getElementById("quantityNow'+i+'").innerHTML = "&nbsp;- "+total+" Left";'; 
+                         javaScriptCode = javaScriptCode + 		'} else {'; 
+                         javaScriptCode = javaScriptCode + 		'    document.getElementById("quantityNow'+i+'").innerHTML = "";'; 
+                         javaScriptCode = javaScriptCode + 		'}  ';                  
+                         javaScriptCode = javaScriptCode + 		'} else {'; 
+                         javaScriptCode = javaScriptCode + 		'    document.getElementById("quantityNow'+i+'").innerHTML = "";'; 
+                         javaScriptCode = javaScriptCode + 		'}  ';                   
+                      
+                         javaScriptCode = javaScriptCode +        'console.log(variant_id); ';   
+                         javaScriptCode = javaScriptCode + 		'if(variant_id==0){'; 
+                         javaScriptCode = javaScriptCode + 		'   $("#addwaitlist'+i+'").hide();';                  
+                         javaScriptCode = javaScriptCode + 		'   $("#addbutton'+i+'").show();';                 
+                         javaScriptCode = javaScriptCode + 		' document.getElementById("addbutton'+i+'").innerHTML = ';
+                         javaScriptCode = javaScriptCode + 		"   '<label name=add-suggestion id=add-suggestion class=btn disabled>Add - "+price+"</label>';" ;
+                         javaScriptCode = javaScriptCode + 		' document.getElementById("soldoutornot'+i+'").innerHTML = "";';                
+                      
+                         javaScriptCode = javaScriptCode +        '} ';                  
+                      
+                      
+                         javaScriptCode = javaScriptCode +    '  } '; 
+                      
+                      
+      
+                      
+                           javaScriptCode = javaScriptCode +    ' function addtocartSuggestion_'+i+'(){';
+                         javaScriptCode = javaScriptCode + 		'  addtocartSuggestion($("#variants_'+i+'").val());';
+                         javaScriptCode = javaScriptCode +    '  } '; 
+                      
+                         
+                         javaScriptCode = javaScriptCode +    ' function openbiswindow'+i+'(){';
+                         javaScriptCode = javaScriptCode + 		' var variantId = $("#variants_'+i+'").val();';
+                         javaScriptCode = javaScriptCode + 		' var productId = $("#product_'+i+'").val();';  
+                      
+                         javaScriptCode = javaScriptCode +    '     console.log(variantId); '; 
+                         javaScriptCode = javaScriptCode +    '     console.log(productId); '; 
+                      
+                         javaScriptCode = javaScriptCode +    '  } '; 
+      
+                      
+                      
+                      
+                      }  
+                    
+                      var variants = result.variants;  
+                      
+                         
+                          var arrayVARIANTS = '{"id" : "" , "title" : "" , "product_id_color" : "" }';
+                          for (j = 0; j < variants.length; j++) {  
+                            arrayVARIANTS =  arrayVARIANTS + ',{"id" : "'+variants[j].variant_id+'" , "title" : "'+variants[j].product_id + variants[j].title+'" , "product_id_color" : "'+variants[j].product_id + variants[j].color +'" }' ;
+                          }                   
+                         
+      
+                         
+                     javaScriptCode = javaScriptCode +    ' function searchVariant(thetitle){';
+                     javaScriptCode = javaScriptCode + 		" var variants = '["+arrayVARIANTS+"]';";
+                     javaScriptCode = javaScriptCode + 		'  var jsonObj = JSON.parse(variants);';
+                     javaScriptCode = javaScriptCode + 		'  try {';      
+                     javaScriptCode = javaScriptCode + 		'    var variant_id = jsonObj.find(x => x.title == thetitle).id;';      
+                     javaScriptCode = javaScriptCode + 		'  } catch(e) {';    
+      			   javaScriptCode = javaScriptCode + 		'    var variant_id = 0;';                    
+       			   javaScriptCode = javaScriptCode + 		'  } ';                                     
+                     javaScriptCode = javaScriptCode + 		' return variant_id;';
+                     javaScriptCode = javaScriptCode +    '  } ';                    
+                                           
+      
+                         
+                     javaScriptCode = javaScriptCode +    ' function searchVariantbyColor(thecolor){';
+                     javaScriptCode = javaScriptCode + 		" var variants = '["+arrayVARIANTS+"]';";
+                     javaScriptCode = javaScriptCode + 		'  var jsonObj = JSON.parse(variants);';
+                     javaScriptCode = javaScriptCode + 		'  var variant_id = jsonObj.find(x => x.product_id_color == thecolor).id;';      
+                     javaScriptCode = javaScriptCode + 		'  var src = all_variants(variant_id,"image");';      
+                     javaScriptCode = javaScriptCode + 		'  return src;';
+                     javaScriptCode = javaScriptCode +    '  } ';                       
+       
+                         //console.log(strhtml);
+      				document.getElementById("suggestion_main").innerHTML = strhtml ;                                   
+                                               
+                    
+                    
+                      addScript('inject',javaScriptCode);
+              
+                
+                }
+              } 
+            });            
+           
+                                   
+    }      
+ 
+    function addScript(inject,code) {
+      var _in = document.getElementById('inject');
+      var scriptNode = document.createElement('script');
+      scriptNode.innerHTML = code;
+      _in.appendChild(scriptNode);
+    }  
+  
+  
+    function addtocartSuggestion(variant){
+          //console.log('the cart item is => ' + variant);
+          var items = [
+              { quantity: 1, id: variant , tags: 'cpl_form' }
+            ];
+          $.ajax({
+            type: "POST",
+            url: '/cart/add.json',
+            data: { items: items },
+            success: function(data) {
+              console.log('success');
+            },
+            dataType: 'application/json'
+          });
+          setTimeout(function() {
+            jQuery.getJSON('/cart.js', function(cart) {
+    		 let cartData = cart.items;
+              var test = addcarthistory(variant, cart.token);
+              document.documentElement.dispatchEvent(new CustomEvent('theme:cartchanged', { bubbles: true, cancelable: false }));
+        	});
+          }, 400);   
+      
+         console.log('Simulating Click');
+         setTimeout(function() {
+           addToCartOk_CPL_Look(variant);
+         }, 800);   
+      
+      }      
+      
+
+  function addcarthistory(variant,token){
+    //console.log(variant);
+    //console.log(token);
+    var scriptUrl = "https://tkeesconnections.appspot.com/storageInfoCPL/"+variant+"/"+token+"/product/cplook/";
+    console.log(scriptUrl);
+    $.ajax({
+      url: scriptUrl,
+      type: 'get',
+      dataType: 'json',
+      async: true,
+      success: function(data) {
+          console.log("insert data to cplook table"); 
+      } 
+    });      
+    return 'ok';
+  }  
+
+  function addCplInsights(product_id,title,desc){
+    console.log(product_id);
+    console.log(title);
+    console.log(desc);
+    var scriptUrl = "https://tkeesconnections.appspot.com/storageinsightsCPL/"+title+"/"+desc+"/0/product/"+product_id;
+    console.log(scriptUrl);
+    $.ajax({
+      url: scriptUrl,
+      type: 'get',
+      dataType: 'json',
+      async: true,
+      success: function(data) {
+          console.log("insert data to cplook table"); 
+      } 
+    });      
+    return 'ok';
+  }    
+  
+  
+  function all_variants(theid,searching){
+      var allvariants =  [{"id" : 0, "price" : "$", "inventory_quantity" : "a" } 
+                        {% paginate collections.all.products by 1000 %}
+                        {% for product in collections.all.products %}
+                         {% for variant in product.variants %} 
+                          ,{"id" : {{ variant.id }} , "image_id" : "{{ variant.image | img_url: '720x720' }}" , "price" : "{{ variant.price | money | replace: '"', '' }}" ,"inventory_quantity" : "{{ variant.inventory_quantity}}", "compare_at_price" : "{{ variant.compare_at_price | money | replace: '"', '' }}" }
+                         {% endfor %} 
+                        {% endfor %}
+                        {% endpaginate %}                           
+                         ];           
+                             
+     console.log("all_variants"); 
+     console.log(theid); 
+     console.log(searching); 
+                      
+                             
+     if (searching == 'image') {                              
+       try {    
+       		var image = allvariants.find(x => x.id == theid).image_id;     
+       }catch(e) {    
+		    var image = 0;                    
+       }                                  
+       return image;
+     }else{
+       try {    
+       		var inventory_quantity = allvariants.find(x => x.id == theid).inventory_quantity;     
+       }catch(e) {    
+		    var inventory_quantity = 0;                    
+       }         
+       console.log(inventory_quantity);  
+       console.log("all_variants return"); 
+       return inventory_quantity;                   
+     }
+  }
+  
+ 
+  
+
+  /*  function productDetails(theid){
+            
+
+          var scriptUrl = "https://tkeesconnections.appspot.com/showProduct_datails/"+theid;
+          console.log(scriptUrl);
+          $.ajax({
+            url: scriptUrl,
+            type: 'get',
+            dataType: 'json',
+            async: false,
+            success: function(data) {
+                const myJSON = JSON.stringify(data);
+                const withoutFirstAndLast = myJSON.slice(1, -1);
+                //console.log(data); 
+                //console.log(withoutFirstAndLast); 
+                          
+                          
+                sessionStorage.setItem("withoutFirstAndLast", withoutFirstAndLast );   
+            } 
+          });                            
+                          
+          return sessionStorage.getItem("withoutFirstAndLast");                 
+                          
+                          
+  }*/
+  
+  
+
+
+function addToCartOk_CPL_Look(id) { 
+
+      var product_title = all_variants_II(id,'product_title');  
+      var variant_title = all_variants_II(id,'title'); 
+      var theimg = all_variants_II(id,'image');
+      
+      //cartCount++; 
+ //     $('#imageCart').html('<img src="'+theimg+'" width="80%">  '); 
+      var imagecart    = '<img src="'+theimg+'" width="80%">  '; 
+      var produtitle   = product_title; 
+      var varianttitle = variant_title; 
+
+//      $('#produtitle').html(product_title); 
+ //     $('#varianttitle').html(variant_title); 
+      
+
+      setTimeout(function() {
+      jQuery.getJSON('/cart.js', function(cart) {
+        
+        console.log(cart);
+        
+        let items = cart.items;
+        var final_price = 0;
+        var freevall = 12500;
+        // console.log(sessionStorage.getItem("price_with_currency"));
+        var pricecurrency = sessionStorage.getItem("price_with_currency");
+        console.log(pricecurrency);
+        var selectedcurrency = 'usd';
+        if(pricecurrency.includes("EUR")){
+          var selectedcurrency = 'eur';
+          var selectedcurrency2 = 'EUR';
+          var locale = 'de-DE';
+        } else if(pricecurrency.includes("USD")){
+          var selectedcurrency = 'usd';
+          var selectedcurrency2 = 'USD';
+          var locale = 'en-US';          
+        } else if(pricecurrency.includes("CAD")){
+          var selectedcurrency = 'cad';
+          var selectedcurrency2 = 'CAD';
+          var locale = 'en-ca';          
+        }  else if(pricecurrency.includes("AUD")){
+          var selectedcurrency = 'aud';
+          var selectedcurrency2 = 'AUD';
+          var locale = 'en-AU';          
+        }  else if(pricecurrency.includes("GBP")){
+          var selectedcurrency = 'gbp';
+          var selectedcurrency2 = 'GBP';
+          var locale = 'en-IN';          
+        }  else if(pricecurrency.includes("ILS")){
+          var selectedcurrency = 'ils';
+          var selectedcurrency2 = 'en_IL';
+          var locale = '';          
+        } else if(pricecurrency.includes("JPY")){
+          var selectedcurrency = 'jpy';
+          var selectedcurrency2 = 'JPY';
+          var locale = 'ja-JP';          
+        } else if(pricecurrency.includes("NIS")){
+          var selectedcurrency = 'ils';
+          var selectedcurrency2 = '';
+          var locale = 'en_IL';          
+        } else {
+          var selectedcurrency = 'usd';
+           var selectedcurrency2 = 'USD';  
+          var locale = 'en-US';          
+        }              
+
+        var price = all_variants_II(id,'price');
+
+        console.log('===>'+price);
+
+
+        var unitprice = price + ' ' + selectedcurrency2;
+
+        sessionStorage.setItem("unitprice", unitprice );
+       
+
+        var nextotal_cart = cart.total_price;
+
+
+
+        const number = (nextotal_cart / 100).toFixed(2);
+        
+       
+ 
+
+          if ((selectedcurrency2 == 'CAD') || (selectedcurrency2 == 'AUD') || (selectedcurrency2 == 'USD')){
+              var nextotal_cart = (new Intl.NumberFormat(locale, { style: 'currency', currency: selectedcurrency2 }).format(number)) + ' ' + selectedcurrency2;
+          }else{
+              var nextotal_cart = (new Intl.NumberFormat(locale, { style: 'currency', currency: selectedcurrency2 }).format(number)) ;
+          }
+         console.log(nextotal_cart);
+         sessionStorage.setItem("cartSubtotal", nextotal_cart );
+
+        
+        
+         
+         var url= "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd/"+selectedcurrency+".json"
+              console.log(url);
+                  var scriptUrl = url;
+                  $.ajax({
+                    url: scriptUrl,
+                    type: 'get',
+                    dataType: 'json',
+                    async: false,
+                    success: function(data) {
+                      var result = data;
+                      var pricecurrency = sessionStorage.getItem("price_with_currency");
+                      
+                      console.log(pricecurrency);
+                      
+                      if(pricecurrency.includes("EUR")){
+                        sessionStorage.setItem("jsoncurrency", result.eur );  
+                      } else if(pricecurrency.includes("USD")){
+                        sessionStorage.setItem("jsoncurrency", result.usd );  
+                      } else if(pricecurrency.includes("CAD")){
+                        sessionStorage.setItem("jsoncurrency", result.cad );  
+                      }  else if(pricecurrency.includes("AUD")){
+                        sessionStorage.setItem("jsoncurrency", result.aud );  
+                      }  else if(pricecurrency.includes("GBP")){
+                        sessionStorage.setItem("jsoncurrency", result.gbp );  
+                      }  else if(pricecurrency.includes("ILS")){
+                        sessionStorage.setItem("jsoncurrency", result.ils );  
+                      } else if(pricecurrency.includes("JPY")){
+                        sessionStorage.setItem("jsoncurrency", result.jpy );  
+                      } else if(pricecurrency.includes("NIS")){
+                        sessionStorage.setItem("jsoncurrency", result.ils );  
+                      }else{
+                        sessionStorage.setItem("jsoncurrency", result.usd ); 
+                      }
+                    } 
+                  });
+ });
+      }, 400);  
+
+                  setTimeout(function() {
+                     console.log("came here");
+                     var cartSubtotal = sessionStorage.getItem("cartSubtotal");
+                     var unitprice = sessionStorage.getItem("unitprice");      
+
+                     //var cartLink = document.querySelector('.cart-link__icon');
+                     //cartLink.click();
+                    
+                     openModal(imagecart,produtitle,varianttitle,cartSubtotal,unitprice);
+                  }, 600);    
+  
+  }  
+
+  function openModal(imagecart,produtitle,varianttitle,cartSubtotal,unitprice){
+    console.log("came here 2");
+    var $content =  '<div id="theTest"  style="display:block !important;">'+
+                    '  <div class="cart-summary-overlay">'+
+                    '  <div class="cart-summary-overlay__row-head">'+
+                    '    <div class="cart-summary-overlay__column-image"><div class="cart-summary-overlay__column-title">Just added</div></div>'+
+                    '    <div class="cart-summary-overlay__column-item"> <div class="cart-summary-overlay__column-title">Item</div>    </div>'+
+                    '    <div class="cart-summary-overlay__column-price-region"><div class="cart-summary-overlay__column-price"> <div class="cart-summary-overlay__column-title">Item price</div> </div>'+
+                    '      <div class="cart-summary-overlay__column-quantity"><div class="cart-summary-overlay__column-title">Qty</div> </div>'+
+                    '      <div class="cart-summary-overlay__column-total">  <div class="cart-summary-overlay__column-title">Total price</div></div>'+
+                    '   </div>'+
+                    '    <div class="cart-summary-overlay__column-subtotal"> <div class="cart-summary-overlay__column-title">Excl. shipping</div>   </div> </div>'+
+                    '    <div class="cart-summary-overlay__row-body" data-item-key="40186903625807:035974c19d745aa058ee5cedee66c9c5"> <div id="imageCart" class="cart-summary-overlay__column-image">'+imagecart+'</div>'+
+                    '      <div class="cart-summary-overlay__column-item"><div id="produtitle" class="cart-summary-overlay__title">'+produtitle+'</div> '+
+                    '            <div  class="cart-summary-overlay__variants">'+
+                    '              <div class="cart-summary-overlay__variant">'+
+                    '                <span id="varianttitle" class="cart-summary-overlay__variant-value">'+varianttitle+'</span>'+
+                    '              </div>'+
+                    '            </div>'+
+                    '        <div class="cart-summary-overlay__mobile-price-row">'+
+                    '          <div class="cart-summary-overlay__mobile-unit-price">'+
+                    '            <div><span id="unitprice" class="theme-money">'+unitprice+'</span></div></div>'+
+                    '          <div class="cart-summary-overlay__mobile-quantity"> Qty <span class="cart-summary-overlay__quantity">1</span></div>'+
+                    '          <div class="cart-summary-overlay__mobile-line-price"> <span id="unitprice2" class="theme-money">'+unitprice+'</span> </div>'+
+                    '        </div></div>'+
+                    '      <div class="cart-summary-overlay__column-price-region">'+
+                    '        <div class="cart-summary-overlay__column-price">'+
+                    '          <span class="cart-summary-overlay__unit-price">'+
+                    '            <div><span id="unitprice3" class="theme-money">'+unitprice+'</span></div>'+
+                    '          </span>'+
+                    '        </div>'+
+                    '        <div class="cart-summary-overlay__column-quantity">'+
+                    '          <span class="cart-summary-overlay__quantity">1</span>'+
+                    '        </div>'+
+                    '        <div class="cart-summary-overlay__column-total">'+
+                    '          <div class="cart-summary-overlay__line-price">'+
+                    '            <div  id="unitprice4"  class="theme-money">'+unitprice+'</div>'+
+                    '          </div>'+
+                    '        </div>'+                           
+                    '      </div>'+
+                    '      <div class="cart-summary-overlay__column-subtotal">'+
+                    '        <span class="cart-summary-overlay__subtotal"><span class="cart-summary-overlay__subtotal-mobile-title">Subtotal</span>'+
+                    '          <span id="cartSubtotal"  class="cart-summary-overlay__subtotal-amount theme-money">'+cartSubtotal+'</span>'+
+                    '          <div class="cart-summary-overlay__note">Excl. shipping&nbsp;</div>'+
+                    '        </span>'+
+                    '      </div>'+
+                    '    </div>'+
+                    '  <div class="cart-summary-overlay__actions">'+
+                    '    <a class="button altcolour shop-more" href="#">Keep Shopping</a>'+
+                    '    <a class="button to-cart" href="/cart">Cart</a>'+
+                    '  </div>'+
+                    '</div>'+
+                    '</div>';
+    
+     $('body').prepend($content);
+
+    
+  }
+
+function all_variants_II(theid,searching){
+
+      console.log(theid);
+      console.log(searching);
+      var allvariants =  [{"id" : 0,"title" : "a", "price" : "$", "inventory_quantity" : 0 } 
+                        {% paginate collections.all.products by 1000 %}
+                        {% for product in collections.all.products %}
+                         {% for variant in product.variants %} 
+                          ,{"id" : {{ variant.id }} ,"title" : "{{ variant.title }}" , "product_title" : "{{ product.title }}" , "image_id" : "{{ variant.image | img_url: '720x720' }}" , "price" : "{{ variant.price | money | replace: '"', '' }}" ,"inventory_quantity" : {{ variant.inventory_quantity}}, "compare_at_price" : "{{ variant.compare_at_price | money | replace: '"', '' }}" }
+                         {% endfor %} 
+                        {% endfor %}
+                        {% endpaginate %}                           
+                         ];        
+
+
+     console.log (allvariants);
+                             
+     if (searching == 'image') {                              
+       try {    
+       		var data = allvariants.find(x => x.id == theid).image_id;     
+       }catch(e) {    
+		    var data = 0;                    
+       }                                  
+       return data;
+     }  
+
+     if (searching == 'product_title') {                              
+       try {    
+       		var data = allvariants.find(x => x.id == theid).product_title;     
+       }catch(e) {    
+		    var data = 0;                    
+       }                                  
+       return data;
+     }  
+   
+
+     if (searching == 'price') {                              
+       try {    
+       		var data = allvariants.find(x => x.id == theid).price;     
+       }catch(e) {    
+		    var data = 0;                    
+       }                                  
+       return data;
+     }  
+
+
+     if (searching == 'title') {                              
+       try {    
+       		var data = allvariants.find(x => x.id == theid).title;     
+       }catch(e) {    
+		    var data = 0;                    
+       }                                  
+       return data;
+     }  
+   
+    if (searching == 'inventory_quantity') {         
+       
+       try {    
+       		var data = allvariants.find(x => x.id == theid).inventory_quantity;     
+       }catch(e) {    
+		    var data = 0;                    
+       }                                  
+       return data;
+     }  
+
+
+  }
+  
+  
+  
+</script>  

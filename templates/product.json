@@ -1,0 +1,277 @@
+{
+  "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {}
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": true
+          }
+        },
+        "753e4117-2b37-43b2-a5f8-569f0b334cb9": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>{{ product.metafields.custom.message_box_2.value }}<\/p>",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": true,
+            "box_color": "#f8f8f8",
+            "show_in_quickbuy": false
+          }
+        },
+        "960d024c-736a-4731-8a1d-296e8659facc": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": false,
+            "select_first_variant": false,
+            "variant_style": "dropdown",
+            "disable_unavailable_variants": false,
+            "show_size_chart": true,
+            "size_chart_variant": "US Size",
+            "size_chart_page": "{{ product.metafields.custom.size_chart.value }}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_backorder_text": false,
+            "show_pickup_availability": false
+          }
+        },
+        "34c979bc-c5f4-4877-af10-3d88dad467f5": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>{{ product.metafields.custom.message_box_1.value }}<\/p>",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#faf4e4",
+            "show_in_quickbuy": false
+          }
+        },
+        "8827be58-9f9e-4f59-9bae-d0845e48f099": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!--Message APP-->\n<div id=\"preorderboxvariant\">\n              <\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "a230265c-4572-4039-862a-7de712efc08d": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!-- Shoppay -->               \n<style>\n.shopify-installments{\n  font-size: 8px !important;\n}\n.shopify-installments__content{\n  font-size: 8px !important;\n}\n.shopify-installments__learn-more{\n  font-size: 8px !important;\n}\n<\/style>\n\n   {%- form 'product', product, id: product_form_installments_id -%}\n                    <input type=\"hidden\" name=\"id\" value=\"{% if current_variant %}{{ current_variant.id }}{% endif %}\">\n                    {{ form | payment_terms }}\n                  {%- endform -%}",
+            "show_in_quickbuy": false
+          }
+        },
+        "0aa2d0d3-cf95-46b7-bdff-9366173f1331": {
+          "type": "popup",
+          "settings": {
+            "text": "{{ product.metafields.custom.pop_up_link.value }}",
+            "style": "link",
+            "page": "sale-items",
+            "show_in_quickbuy": false
+          }
+        },
+        "7101dd45-27e4-4abd-9af1-27aa48970273": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "9de4eb28-efd8-4167-9fe2-c1a04c8925e9": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!--crossell code-->\n{%- render 'CartWindowCompleteYourLook' -%}\n      {%- render 'completeYourLook' -%}            \n      {%- render 'completeYourLookCSS' -%}\n      {%- render 'completeYourLookJS' -%}\n\n      <div id=\"suggestion_main\" ><\/div>  \n\n      <div id=\"inject\"><\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "product_recos_y8H8Fw": {
+          "type": "product_recos",
+          "settings": {
+            "title": "You may also like",
+            "product_list": "{{ product.metafields[\"shopify--discovery--product_recommendation\"].related_products.value }}"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": true,
+            "open_tab": true,
+            "icon": "",
+            "show_in_quickbuy": true
+          }
+        },
+        "c9f709f7-928d-469c-a9b2-be58da36e708": {
+          "type": "accordion",
+          "settings": {
+            "title": "Fit and Details",
+            "icon": "ruler",
+            "content": "<p>{{ product.metafields.custom.product_details_and_sizing.value }}<\/p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": true
+          }
+        },
+        "283d3637-7103-443a-ba5d-26a1a0f1765b": {
+          "type": "accordion",
+          "settings": {
+            "title": "Care Info",
+            "icon": "washing",
+            "content": "<p>{{ product.metafields.custom.care_info.value }}<\/p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": true
+          }
+        },
+        "970cfd7e-12bb-4824-b8cb-07b9582143c3": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div id=\"reviewaccordion\"  class=\"product-detail-accordion reviewaccordion\">\n  <div class=\"cc-accordion cc-initialized\" data-allow-multi-open=\"true\">\n    <details class=\"cc-accordion-item\">\n      <summary class=\"cc-accordion-item__title\"><div class=\"with-icon\">\n                            <svg class=\"icon icon--small icon--type-star\" stroke-width=\"1\" aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M8 1c.21 0 .4.13.47.33l1.62 4.54 4.92.1a.5.5 0 01.29.9l-3.92 2.9 1.42 4.58a.5.5 0 01-.75.56L8 12.17 3.95 14.9a.5.5 0 01-.75-.56l1.42-4.58L.7 6.87a.5.5 0 01.29-.9l4.92-.1 1.62-4.54A.5.5 0 018 1zm0 2L6.74 6.52a.5.5 0 01-.46.33l-3.8.08L5.5 9.17a.5.5 0 01.18.55l-1.1 3.56 3.14-2.13a.5.5 0 01.56 0l3.15 2.13-1.1-3.56a.5.5 0 01.17-.55l3.02-2.23-3.8-.08a.5.5 0 01-.46-.33L8 2.99z\"><\/path><\/svg>\n                            <span class=\"with-icon__beside\">Reviews\n          \n                        \n                        <\/span>\n\n<\/span>\n                          <\/div><\/summary>\n      <div class=\"cc-accordion-item__panel\">\n        <div class=\"cc-accordion-item__content rte cf\">\n              <div id=\"tabreviewsII\">\n                <div data-oke-reviews-widget data-oke-reviews-product-id=\"shopify-{{ product.id }}\"><\/div>\n              <\/div><\/div>\n      <\/div>\n    <\/details>\n  <\/div>\n<\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "f8156daf-4737-4668-b61b-838c6e7e5f0c": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<span id=\"statement_label_1\" class=\"INDmenuBtn-text\">Accessibility Statement<\/span>",
+            "show_in_quickbuy": false
+          }
+        },
+        "7ca37adc-33a6-477a-942e-6e0b29f7d4be": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<script>\nwindow.addEventListener('load', function() {\nvar _learnq = window._learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}\/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price\/100,\n      $value: data.total_price\/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price\/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', cart]);\n        klAjax = false;\n      }\n  }))\n};\n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}\/cart\/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch));\nvar klAjax = true;\nvar atcButtons = document.querySelectorAll(\"form[action*='\/cart\/add'] button[type='submit']\");\nfor (var i = 0; i < atcButtons.length; i++) {\n    atcButtons[i].addEventListener(\"click\", function() {\n      if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', item]);\n        klAjax = false;\n      }\n    })\n}\n});\n<\/script>",
+            "show_in_quickbuy": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "vendor",
+        "divider",
+        "753e4117-2b37-43b2-a5f8-569f0b334cb9",
+        "960d024c-736a-4731-8a1d-296e8659facc",
+        "buy_buttons",
+        "34c979bc-c5f4-4877-af10-3d88dad467f5",
+        "8827be58-9f9e-4f59-9bae-d0845e48f099",
+        "a230265c-4572-4039-862a-7de712efc08d",
+        "0aa2d0d3-cf95-46b7-bdff-9366173f1331",
+        "7101dd45-27e4-4abd-9af1-27aa48970273",
+        "9de4eb28-efd8-4167-9fe2-c1a04c8925e9",
+        "product_recos_y8H8Fw",
+        "description",
+        "c9f709f7-928d-469c-a9b2-be58da36e708",
+        "283d3637-7103-443a-ba5d-26a1a0f1765b",
+        "970cfd7e-12bb-4824-b8cb-07b9582143c3",
+        "f8156daf-4737-4668-b61b-838c6e7e5f0c",
+        "7ca37adc-33a6-477a-942e-6e0b29f7d4be"
+      ],
+      "custom_css": [
+        ".small-feature-link {color: #982f36; font-size: 14px; font-weight: bold; text-decoration-color: #982f36;}",
+        ".title {font-family: \"Bebas Neue\"; font-size: 26px; letter-spacing: 1.2px;}",
+        "@media (max-width: 768px) {.title {font-size: 24px; }}"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "gallery_size": "large",
+        "gallery_layout": "columns-2",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "enable_var_img_grouping": true,
+        "var_img_grouping_option": "Color,Colour,Couleur,Farbe",
+        "ctm_label_heading": ""
+      }
+    },
+    "fe75e456-b167-4287-863c-83c79f4b45be": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "{{ product.metafields.custom.featured_collection_name.value }}",
+        "collection": "{{ product.metafields.custom.you_may_also_like_pdp.value }}",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": true,
+        "full_width": false
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "title": "YOU MAY ALSO LIKE",
+        "show_vendor": false,
+        "grid": 5
+      }
+    },
+    "ad3b77e9-733a-4703-9745-1c2b547ef05f": {
+      "type": "product-template-product-list",
+      "disabled": true,
+      "settings": {
+        "title": "YOU MAY ALSO LIKE",
+        "product_list": [],
+        "hide_if_empty": false,
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": true
+      }
+    },
+    "58963b4f-bb70-48f6-bc89-4a410f775acc": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": false,
+        "code": "<h1 class=\"title\" id=\"shopify-product-reviews\" >Reviews<\/h1>\n<div id=\"tabreviews\">\n<div data-oke-reviews-widget data-oke-reviews-product-id=\"shopify-{{ product.id }}\"><\/div><\/div>"
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "settings": {}
+    }
+  },
+  "order": [
+    "shogun-helper",
+    "shogun-above",
+    "main",
+    "fe75e456-b167-4287-863c-83c79f4b45be",
+    "recommendations",
+    "ad3b77e9-733a-4703-9745-1c2b547ef05f",
+    "58963b4f-bb70-48f6-bc89-4a410f775acc",
+    "shogun-below"
+  ]
+}

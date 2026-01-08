@@ -1,0 +1,28 @@
+{% if product.metafields.custom.colors_products_redirection != blank %}
+  <div class="custom_productTile_block">
+    <label class="ctm_label">{{ section.settings.ctm_label_heading }}:</label>
+    {% assign data = product.metafields.custom.colors_products_redirection | split:',' %}
+    {% for datas in data %}
+      {% assign prdt = all_products[datas] %} 
+      {% assign complete_title = prdt.title | split: '-' %}
+      {% assign last_title = complete_title | last %}
+      <span class="custom_prdt_title title_visible-{{ forloop.index }}">
+      {% if product.handle == prdt.handle %}
+      {{ last_title }}
+      {% endif %}
+      </span>
+    {% endfor %}
+  <span class="currentTitleAfterSplit"></span>
+  </div>
+{% endif %}
+<div class="meta-rel custom_colors_block"> 
+  {% assign data = product.metafields.custom.colors_products_redirection | split:',' %}
+  {% for data in data %}
+    {% assign productGetFromMetafield = all_products[data] %}
+    {% assign swatch_image = 'color_' | append: forloop.index %}
+     {% assign complete_title = productGetFromMetafield.title | split: '-' %}
+      {% assign last_title = complete_title | last %}
+    <a href="{{ productGetFromMetafield.url }}"  class="{% if product.handle == productGetFromMetafield.handle %}custom_selected_product{%endif%} cstm_colors metafieldProductsTitle" data-current-title="{{ last_title }}" title="{{ productGetFromMetafield.title }}">
+    <img src="{{ productGetFromMetafield.featured_image | img_url: '200x' }}" alt="{{ productGetFromMetafield.media.alt }}"></a>
+  {% endfor %}
+</div>

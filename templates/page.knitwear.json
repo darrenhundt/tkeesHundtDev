@@ -1,0 +1,410 @@
+{
+  "sections": {
+    "image_with_text_overlay_custom_8mccVC": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        ".overlay-text__inner {margin-bottom: 25%;}",
+        ".title-cont-font {}",
+        ".title-font {font-size: calc(100vw * 0.16); font-weight: bold; font-family: \"Bely\";}",
+        ".overlay-text__rte {margin: auto; font-weight: 100; letter-spacing: 25px;}",
+        ".overlay-text__rte.large-text {font-size: calc(100vw * 0.045);}",
+        "@media (max-width: 990px) {.overlay-text__rte {letter-spacing: 5px; } .overlay-text__rte.large-text {font-size: calc(100vw * 0.035); }}",
+        "@media (max-width: 1360px) {.title-font {font-size: calc(100vw * 0.15); }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hero_1.webp",
+        "image_position": "top center",
+        "mobile_image_position": "center bottom",
+        "height": "adapt",
+        "height_desktop": 1000,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "Knitwear",
+        "primary_heading_font": "theme_default",
+        "title_cont": "",
+        "separate_heading_text": true,
+        "second_heading_font": "theme_default",
+        "title_size": 96,
+        "title_size_mobile": 32,
+        "use_h1": false,
+        "text": "<p>collection<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "default",
+        "text_alignment": "bottom center",
+        "text_justification": "center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_9E3WTC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NtzqgE": {
+          "type": "heading",
+          "settings": {
+            "title": "YOUR FOREVER SWEATERS...AND MORE",
+            "use_h1": false
+          }
+        },
+        "text_4f9Hd3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover a thoughtfully curated collection of knitwear and layering pieces made to endure.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_yfxFAA": {
+          "type": "button",
+          "settings": {
+            "button_label": "START COLLECTING",
+            "button_link": "shopify:\/\/collections\/knits",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NtzqgE",
+        "text_4f9Hd3",
+        "button_yfxFAA"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: 10px; font-size: 2em; font-family: \"Bebas Neue\";}",
+        ".lightly-spaced-row p {font-size: 0.8em;}",
+        "@media (max-width: 990px) {.majortitle:first-of-type {margin-top: -20px; margin-bottom: 10px; font-size: 1.2em; font-family: \"Bebas Neue\"; } .lightly-spaced-row p {font-size: 0.8em; } .button-row a.button-row__button {font-size: 0.8em; }}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_with_custom_sizes_nWPUwA": {
+      "type": "gallery-with-custom-sizes",
+      "blocks": {
+        "image_row_HpGMXg": {
+          "type": "image-row",
+          "settings": {
+            "image-1": "shopify:\/\/shop_images\/Hero_8.webp"
+          }
+        },
+        "image_row_9JUtPb": {
+          "type": "image-row",
+          "settings": {
+            "image-1": "shopify:\/\/shop_images\/Hero_5.webp",
+            "image-2": "shopify:\/\/shop_images\/Hero_3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_row_HpGMXg",
+        "image_row_9JUtPb"
+      ],
+      "settings": {
+        "image_link": "",
+        "gallery_margins": 8,
+        "gallery_margins_mobile": 0
+      }
+    },
+    "rich_text_UXziap": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_qeCzEc": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "text_dbdrbi": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>PARISIAN RENDEZ-VOUS<\/strong><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "text_Rztz66": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From tees to cardigans, made from luxurious high-end cashmere, these timeless essentials will remain a lasting part of your wardrobe for years to come.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_gCFzXa": {
+          "type": "button",
+          "settings": {
+            "button_label": "EXPLORE COLLECTION",
+            "button_link": "shopify:\/\/collections\/knits",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_qeCzEc",
+        "text_dbdrbi",
+        "text_Rztz66",
+        "button_gCFzXa"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: 10px; font-size: 2em; font-family: \"Bebas Neue\";}",
+        ".lightly-spaced-row p {font-size: 0.8em;}",
+        "@media (max-width: 990px) {.majortitle:first-of-type {margin-top: -20px; margin-bottom: 10px; font-size: 1.2em; font-family: \"Bebas Neue\"; } .lightly-spaced-row p {font-size: 0.8em; } .button-row a.button-row__button {font-size: 0.8em; }}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "image_with_text_overlay_custom_rdGJNT": {
+      "type": "image-with-text-overlay__custom",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hero_6.webp",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "theme_default",
+        "title_cont": "",
+        "separate_heading_text": false,
+        "second_heading_font": "theme_default",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "default",
+        "text_alignment": "center center",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_naaeTj": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_E8zbqc": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "text_EidLQK": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>PARISIAN RENDEZ-VOUS<\/strong><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "text_4kYjqj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dress yourself in understated luxury that is made to last forever.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_qNLFrP": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/knits",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_E8zbqc",
+        "text_EidLQK",
+        "text_4kYjqj",
+        "button_qNLFrP"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: 10px; font-size: 2em; font-family: \"Bebas Neue\";}",
+        ".lightly-spaced-row p {font-size: 0.8em;}",
+        "@media (max-width: 990px) {.majortitle:first-of-type {margin-top: -20px; margin-bottom: 10px; font-size: 1.2em; font-family: \"Bebas Neue\"; } .lightly-spaced-row p {font-size: 0.8em; } .button-row a.button-row__button {font-size: 0.8em; }}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "rich_text_G6J4xE": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_3ybWC6": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "text_N7Ed7e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“I wear our clothes everyday, and I wanted fabrics that were as amazing after I wore them on repeat, as they were the day that I first wore them.” she explains. \"We went to France to work with one of the best mills in the world. This place was simply amazing, so <br\/>advanced. They are producing fabrics that are almost unbelievable\". <br\/><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "text_WFWbRB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>She explained \"They produce for TKEES what they produce for brands with $400 t-shirts. Not just similar, like the exact same thing.\"<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_JnfQHN": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/collections\/knits",
+            "button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_3ybWC6",
+        "text_N7Ed7e",
+        "text_WFWbRB",
+        "button_JnfQHN"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "a.btn {font-size: 1rem; padding: 1em 3em; border-radius: 0;}",
+        ".fully-spaced-row--medium {margin-top: -50px;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_nHjqkc": {
+      "type": "gallery",
+      "blocks": {
+        "image_pdPArU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LS_6.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_DYRjww": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LS_5.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_pdPArU",
+        "image_DYRjww"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".gallery__item {width: 45vw; height: 69vw;}"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "image_with_text_overlay_custom_FNk9hh": {
+      "type": "image-with-text-overlay__custom",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hero_9.webp",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "theme_default",
+        "title_cont": "",
+        "separate_heading_text": false,
+        "second_heading_font": "theme_default",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "default",
+        "text_alignment": "center center",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_custom_8mccVC",
+    "rich_text_9E3WTC",
+    "gallery_with_custom_sizes_nWPUwA",
+    "rich_text_UXziap",
+    "image_with_text_overlay_custom_rdGJNT",
+    "rich_text_naaeTj",
+    "rich_text_G6J4xE",
+    "gallery_nHjqkc",
+    "image_with_text_overlay_custom_FNk9hh"
+  ]
+}

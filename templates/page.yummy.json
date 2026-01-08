@@ -1,0 +1,379 @@
+{
+  "sections": {
+    "image_with_text_overlay_custom_8mccVC": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        ".title-cont-font {font-size: 5rem;}",
+        ".subheading-adjust {\/* color: #c09b7c; *\/ color: black; font-size: 2em; margin-top: 0px; font-weight: bold; letter-spacing: 19.5px; padding-left: 20px;}",
+        "@media (max-width: 990px) {.subheading-adjust {font-size: 0.9em; margin-top: -10px; letter-spacing: 4.3px; padding-left: 5px; } .title-cont-font {font-size: 1.5rem; } .overlay-text__text {margin-top: 20%; }}",
+        ".title-font {color: black;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hero_919f0696-0a79-4d55-95d4-f4eeeed0d7bd.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Hero_919f0696-0a79-4d55-95d4-f4eeeed0d7bd.jpg",
+        "image_position": "bottom center",
+        "mobile_image_position": "center bottom",
+        "height": "adapt",
+        "height_desktop": 1000,
+        "height_mobile": 460,
+        "image_link": "shopify:\/\/collections\/yummy-collection",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "Bebas Neue",
+        "title_cont": "",
+        "separate_heading_text": false,
+        "second_heading_font": "Snell Roundhand",
+        "title_size": 96,
+        "title_size_mobile": 32,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "default",
+        "text_alignment": "center end",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_4enh9c": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GJGeP7": {
+          "type": "heading",
+          "settings": {
+            "title": "they're back...but butter",
+            "use_h1": false
+          }
+        },
+        "text_H6qGfV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our new \"Yummy\" sweatsuits are made from what feels like air whipped cotton, making them light, breathable, while still keeping you warm.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "text_hYRNNT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We've perfected the classics by focusing on what really counts: dreamy comfort, premium quality and timeless design.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "button_qHBJH4": {
+          "type": "button",
+          "settings": {
+            "button_label": "feel the yum",
+            "button_link": "shopify:\/\/collections\/yummy-collection",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GJGeP7",
+        "text_H6qGfV",
+        "text_hYRNNT",
+        "button_qHBJH4"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: 10px; font-size: 2em; font-family: \"Bebas Neue\";}",
+        "@media (max-width: 990px) {.majortitle:first-of-type {margin-top: -20px; margin-bottom: 10px; font-size: 1.2em; font-family: \"Bebas Neue\"; } .rte.lightly-spaced-row p {font-size: 0.8em; } .button-row a.button-row__button {font-size: 0.8em; }}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_with_custom_sizes_mFxmiK": {
+      "type": "gallery-with-custom-sizes",
+      "blocks": {
+        "image_row_Gy3JBt": {
+          "type": "image-row",
+          "settings": {
+            "image-1": "shopify:\/\/shop_images\/Sweats_hero_13.jpg",
+            "image-2": "shopify:\/\/shop_images\/Sweats_hero_30.jpg"
+          }
+        },
+        "image_row_KBGHdV": {
+          "type": "image-row",
+          "settings": {
+            "image-1": "shopify:\/\/shop_images\/Sweats_hero_16.jpg",
+            "image-2": "shopify:\/\/shop_images\/Sweats_hero_25.jpg",
+            "image-3": "shopify:\/\/shop_images\/Sweats_hero_10b.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_row_Gy3JBt",
+        "image_row_KBGHdV"
+      ],
+      "settings": {
+        "image_link": "",
+        "gallery_margins": 8,
+        "gallery_margins_mobile": 3
+      }
+    },
+    "rich_text_UXziap": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WRHYhf": {
+          "type": "heading",
+          "settings": {
+            "title": "five classic colors.  Three classic silhouettes",
+            "use_h1": false
+          }
+        },
+        "text_dbdrbi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We choose colors that last a lifetime: Heather Grey, Bone, Camel, Forest, and Black.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "image_cinriD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sweats_swatches.jpg",
+            "image_width": 260,
+            "url": ""
+          }
+        },
+        "button_gCFzXa": {
+          "type": "button",
+          "settings": {
+            "button_label": "get yummy",
+            "button_link": "shopify:\/\/collections\/yummy-collection",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WRHYhf",
+        "text_dbdrbi",
+        "image_cinriD",
+        "button_gCFzXa"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: 10px; font-size: 2em; font-family: \"Bebas Neue\";}",
+        "@media (max-width: 990px) {.majortitle:first-of-type {margin-top: -20px; margin-bottom: 10px; font-size: 1.2em; font-family: \"Bebas Neue\"; } .rte.lightly-spaced-row p {font-size: 0.8em; } .button-row a.button-row__button {font-size: 0.8em; } .lightly-spaced-row.inline-width-container {max-width: 150px; margin-bottom: -20px; }}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "image_with_text_overlay_custom_tAC8r8": {
+      "type": "image-with-text-overlay__custom",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/FindYourNude.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "theme_default",
+        "title_cont": "",
+        "separate_heading_text": false,
+        "second_heading_font": "theme_default",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "default",
+        "text_alignment": "center center",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "featured_collection_hnANgF": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "EXPLORE",
+        "collection": "lily-nudes",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": true,
+        "full_width": true
+      }
+    },
+    "rich_text_QYftj3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mbnkzh": {
+          "type": "heading",
+          "settings": {
+            "title": "NUDES ON YOU",
+            "use_h1": false
+          }
+        },
+        "text_exfbPm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Available in our top three colors<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_mbnkzh",
+        "text_exfbPm"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: -2px; font-size: 2.5em; font-family: \"Bebas Neue\";}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_with_custom_sizes_8YRxDB": {
+      "type": "gallery-with-custom-sizes",
+      "blocks": {
+        "image_row_xVAcmp": {
+          "type": "image-row",
+          "settings": {
+            "image-1": "shopify:\/\/shop_images\/Sweats_hero_27.jpg",
+            "image-2": "shopify:\/\/shop_images\/Sweats_hero_21.jpg"
+          }
+        },
+        "image_row_88hj9j": {
+          "type": "image-row",
+          "settings": {
+            "image-1": "shopify:\/\/shop_images\/Sweats_hero_9.jpg",
+            "image-2": "shopify:\/\/shop_images\/Sweats_hero_3-crop.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_row_xVAcmp",
+        "image_row_88hj9j"
+      ],
+      "settings": {
+        "image_link": "",
+        "gallery_margins": 8,
+        "gallery_margins_mobile": 0
+      }
+    },
+    "rich_text_7xQECd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tR8rGg": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Our \"Yummy\" Collection feels absolutely delicious on your skin.",
+            "use_h1": false
+          }
+        },
+        "text_ziLMEp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our \"Yummy\" Collection feels absolutely delicious on your skin.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "button_h3Ed4i": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "EXPLORE",
+            "button_link": "shopify:\/\/collections\/lily-nudes",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tR8rGg",
+        "text_ziLMEp",
+        "button_h3Ed4i"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: 10px; font-size: 2em; font-family: \"Bebas Neue\";}",
+        "@media (max-width: 990px) {.majortitle:first-of-type {margin-top: -20px; margin-bottom: 10px; font-size: 1.2em; font-family: \"Bebas Neue\"; } .rte.lightly-spaced-row p {font-size: 0.8em; } .button-row a.button-row__button {font-size: 0.8em; }}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "image_with_text_overlay_custom_Wmnxf9": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        ".image-overlay {margin: 5%;}",
+        ".overlay-text__button.button.eos24-button {color: black; background: #f7f4f0; font-weight: bold; border-radius: 0; line-height: 0.5em; font-size: 1rem; padding: 1em 2.4em;}",
+        "@media (max-width: 768px) {.overlay-text__button.button.eos24-button {font-size: 0.8rem; padding: 1em 2.4em; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/LP_image_3.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "shopify:\/\/collections\/yummy-collection",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "theme_default",
+        "title_cont": "",
+        "separate_heading_text": false,
+        "second_heading_font": "theme_default",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "Whip it up",
+        "button_url_1": "shopify:\/\/collections\/yummy-collection",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "eos24",
+        "text_alignment": "top end",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_custom_8mccVC",
+    "rich_text_4enh9c",
+    "gallery_with_custom_sizes_mFxmiK",
+    "rich_text_UXziap",
+    "image_with_text_overlay_custom_tAC8r8",
+    "featured_collection_hnANgF",
+    "rich_text_QYftj3",
+    "gallery_with_custom_sizes_8YRxDB",
+    "rich_text_7xQECd",
+    "image_with_text_overlay_custom_Wmnxf9"
+  ]
+}

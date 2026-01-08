@@ -1,0 +1,31 @@
+<div class="container cf" data-cc-animate>
+  <div class="page-header cf">
+    <h1 class="majortitle">Collections Template List</h1>
+  </div>
+  
+  <div class="rte" style="padding: 20px 0;">
+    {% assign shop_name = shop.permanent_domain | remove: '.myshopify.com' %}
+    <ul style="list-style: none; padding: 0;">
+      {% for collection in collections %}
+        {% assign template_name = collection.template_suffix | default: 'main-collection' %}
+        {% assign is_depict = false %}
+        {% if template_name contains 'depict' %}
+          {% assign is_depict = true %}
+        {% endif %}
+        <li style="padding: 10px 0; border-bottom: 1px solid #eee;">
+          <strong><a href="{{ collection.url }}" target="_blank">{{ collection.title }}</a></strong> (<a href="https://admin.shopify.com/store/{{ shop_name }}/collections/{{ collection.id }}" target="_blank">{{ collection.handle }}</a>)<br>
+          <span style="color: {% if is_depict %}red; font-weight: bold;{% else %}#666;{% endif %}">Template: {{ template_name }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Collections List",
+    "class": "page-section-spacing",
+    "settings": []
+  }
+{% endschema %}
+

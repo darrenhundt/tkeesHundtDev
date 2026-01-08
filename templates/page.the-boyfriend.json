@@ -1,0 +1,223 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "3f8815a5-03f5-43a4-80b5-e305a0fb9746": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".h1-style {font-family: \"Bebas Neue\"; font-size: 26px; color: #5d3a2b; letter-spacing: 2px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/the-boyfriend-flip-flop-cream-4_9b6046d8-c093-4e35-a6f7-8c857561f9e7.jpg",
+        "image_2": "shopify:\/\/shop_images\/boyfriend_cream_on-figure_f8172d37-e4d5-4bf7-bb7d-713cf19abb4a.jpg",
+        "image_width": 560,
+        "subheading": "",
+        "title": "The Boyfriend",
+        "use_h1": false,
+        "text": "<p>Introducing \"The Boyfriend\" collection by Tkees – where comfort meets chic, making every step you take a fashion statement. Slip into the laid-back elegance of our cream-colored flip-flop and experience a level of comfort like never before.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/products\/boyfriend-cream",
+        "button_style": "secondary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "732469a3-cce7-455f-a163-f7eb1e507462": {
+      "type": "multi-column",
+      "blocks": {
+        "template--15961884721327__732469a3-cce7-455f-a163-f7eb1e507462-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image": "shopify:\/\/shop_images\/ugc-boyfriend-cream-1_0e730a40-e5c8-42f2-ba39-422aac48c2ba.jpg",
+            "image_width": 700,
+            "title": "Unmatched Comfort",
+            "text": "<p>Made with premium, soft leather for a cushioned and snug fit, keeping your feet happy all day long<\/p>",
+            "button_label": "",
+            "link": "shopify:\/\/products\/boyfriend-cream"
+          }
+        },
+        "template--15961884721327__732469a3-cce7-455f-a163-f7eb1e507462-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image": "shopify:\/\/shop_images\/ugc-boyfriend-cream-1_0e730a40-e5c8-42f2-ba39-422aac48c2ba.jpg",
+            "image_width": 700,
+            "title": "Timeless Design",
+            "text": "<p>Effortlessly blend with any style, making them a must-have addition to your footwear collection.<\/p>",
+            "button_label": "",
+            "link": "shopify:\/\/products\/boyfriend-cream"
+          }
+        },
+        "template--15961884721327__732469a3-cce7-455f-a163-f7eb1e507462-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image": "shopify:\/\/shop_images\/ugc-boyfriend-cream-1_0e730a40-e5c8-42f2-ba39-422aac48c2ba.jpg",
+            "image_width": 700,
+            "title": "Durable and Reliable",
+            "text": "<p>Crafted with utmost care for long-lasting comfort and style, season after season.<\/p>",
+            "button_label": "",
+            "link": "shopify:\/\/products\/boyfriend-cream"
+          }
+        }
+      },
+      "block_order": [
+        "template--15961884721327__732469a3-cce7-455f-a163-f7eb1e507462-text_block-1",
+        "template--15961884721327__732469a3-cce7-455f-a163-f7eb1e507462-text_block-2",
+        "template--15961884721327__732469a3-cce7-455f-a163-f7eb1e507462-text_block-3"
+      ],
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #5d3a2b; letter-spacing: 2px; padding-bottom: 30px;}",
+        ".text-column__title {font-family: \"Bebas Neue\"; font-size: 20px; color: #5d3a2b; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;}",
+        ".text-column__text {margin-bottom: 12px;}"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "left",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "5877b030-fa85-4070-b829-a7256c1d7d45": {
+      "type": "product-list",
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #5d3a2b; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "FIND YOUR BOYFRIEND",
+        "product_list": [
+          "boyfriend-cream",
+          "boyfriend-lee",
+          "boyfriend-pout",
+          "boyfriend-au-naturale",
+          "boyfriend-beach-bum",
+          "boyfriend-taro"
+        ],
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    },
+    "2fbfa32b-e625-4d68-b73b-25f709f31436": {
+      "type": "testimonials",
+      "blocks": {
+        "486fb3ed-bc2c-4b38-9c00-5588c8bd9920": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Love my new boyfriend\nThey are so comfortable and the foot bed has a nice cushion. My new go to!",
+            "author": "Kylene A.",
+            "image": "shopify:\/\/shop_images\/ugc-boyfriend-cream-1_0e730a40-e5c8-42f2-ba39-422aac48c2ba.jpg",
+            "image_alignment": "center center",
+            "image_caption": "",
+            "link": "shopify:\/\/products\/boyfriend-cream"
+          }
+        },
+        "template--15961884721327__2fbfa32b-e625-4d68-b73b-25f709f31436-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "I love these flip flops. They are so light, comfortable and versatile.",
+            "author": "Allyson F.",
+            "image": "shopify:\/\/shop_images\/boyfriend-ugc-sable-1.jpg",
+            "image_alignment": "center center",
+            "image_caption": "",
+            "link": "shopify:\/\/products\/boyfriend-cream"
+          }
+        },
+        "template--15961884721327__2fbfa32b-e625-4d68-b73b-25f709f31436-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Such a great sandal, so minimal, yet made of leather which gives it a chic, smart look.",
+            "author": "Iris. S",
+            "image_alignment": "center center",
+            "image_caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "486fb3ed-bc2c-4b38-9c00-5588c8bd9920",
+        "template--15961884721327__2fbfa32b-e625-4d68-b73b-25f709f31436-testimonial-1",
+        "template--15961884721327__2fbfa32b-e625-4d68-b73b-25f709f31436-testimonial-2"
+      ],
+      "custom_css": [
+        ".subheading {font-family: \"Bebas Neue\"; font-size: 24px; color: #5d3a2b; letter-spacing: 1px; text-align: center;}"
+      ],
+      "settings": {
+        "title": "Reviews",
+        "layout": "no-image",
+        "text_caps": false,
+        "quote_text_size": 22,
+        "quote_text_size_mobile": 15,
+        "image_shape": "square",
+        "use_alt_bg": false,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "485322ab-84c2-464f-9932-631fc105fb95": {
+      "type": "logo-list",
+      "blocks": {
+        "b024bd34-97dc-4853-b990-7e8c3ed32285": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instyle-logo.png",
+            "image_width": 280,
+            "link": "",
+            "title": ""
+          }
+        },
+        "80044d5f-6b1c-48bd-8106-a9632bf07623": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instyle-logo.png",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "1f742071-c918-4cab-946f-f7c6e8c5a3c1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instyle-logo.png",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "b024bd34-97dc-4853-b990-7e8c3ed32285",
+        "80044d5f-6b1c-48bd-8106-a9632bf07623",
+        "1f742071-c918-4cab-946f-f7c6e8c5a3c1"
+      ],
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #5d3a2b; letter-spacing: 1px;"
+      ],
+      "settings": {
+        "title": "As Seen In",
+        "image_opacity": 100,
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3f8815a5-03f5-43a4-80b5-e305a0fb9746",
+    "732469a3-cce7-455f-a163-f7eb1e507462",
+    "5877b030-fa85-4070-b829-a7256c1d7d45",
+    "2fbfa32b-e625-4d68-b73b-25f709f31436",
+    "485322ab-84c2-464f-9932-631fc105fb95"
+  ]
+}

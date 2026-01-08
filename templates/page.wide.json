@@ -1,0 +1,52 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "full_width": true
+      }
+    },
+    "e00ad9e5-a15b-4c0e-b464-cb17a0b613e8": {
+      "type": "faq-header",
+      "settings": {
+        "title": "Stockists",
+        "use_h1": false,
+        "text": "",
+        "show_search": false,
+        "show_index": true,
+        "index_heading": "How can we help?"
+      }
+    },
+    "9487ebc8-26c4-4e56-8d7e-5de26436f738": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "template--15898684358830__9487ebc8-26c4-4e56-8d7e-5de26436f738-1665082921344d88d5-0": {
+          "type": "question",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Answer<\/p>"
+          }
+        },
+        "template--15898684358830__9487ebc8-26c4-4e56-8d7e-5de26436f738-1665082921344d88d5-1": {
+          "type": "question",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Answer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15898684358830__9487ebc8-26c4-4e56-8d7e-5de26436f738-1665082921344d88d5-0",
+        "template--15898684358830__9487ebc8-26c4-4e56-8d7e-5de26436f738-1665082921344d88d5-1"
+      ],
+      "settings": {
+        "title": "Florida"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e00ad9e5-a15b-4c0e-b464-cb17a0b613e8",
+    "9487ebc8-26c4-4e56-8d7e-5de26436f738"
+  ]
+}

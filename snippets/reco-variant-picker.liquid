@@ -1,0 +1,104 @@
+{% comment %}
+  @Params:
+    section
+    block
+    product: The current product for looping options
+{% endcomment %}
+<div class="option-selectors">
+  {%- for option in product.options_with_values -%}
+    {%- capture option_id -%}{{ section.id }}-{{ product.id }}-{{ option.name | handle }}-selector{%- endcapture -%}
+    {% assign option_name = option.name | downcase %}
+    {% if option_name contains 'size' %}
+      {%- liquid
+        if block.settings.select_first_variant or product.variants.size == 1
+          assign blank_option = false
+          assign selected_value = option.selected_value
+        else
+          assign blank_option = 'products.product.no_selection' | t
+          if product.selected_variant
+            assign selected_value = option.selected_value
+          else
+            assign selected_value = ''
+          endif
+        endif
+      -%}
+
+      <div
+        class="option-selector{% if size_chart_html != empty %} option-selector--with-size-chart{% endif %}{% if uses_swatches %} option-selector--swatch{% endif %}"
+        data-selector-type="dropdown"
+        data-option-index="{{ forloop.index0 }}"
+      >
+        {% comment %}
+           {{ size_chart_html }}
+          <!-- this change is for add the inventory quantity side by side with the size /  START -->
+          {%- assign inventory_quantity = '' %}
+          {%- assign pre_order = '' %}
+          {%- for variant in product.variants -%}
+            {% assign inventory_quantity = inventory_quantity | append: variant.inventory_quantity %}
+            {% assign inventory_quantity = inventory_quantity | append: ',' %}
+            {% if variant.metafields.custom.pre_order != blank %}
+              {% assign var1 = 1 %}
+            {% else %}
+              {% assign var1 = 0 %}
+            {% endif %}
+
+            {% assign pre_order = pre_order | append: var1 %}
+            {% assign pre_order = pre_order | append: ',' %}
+
+            {% assign variant_ids = variant_ids | append: variant.id %}
+            {% assign variant_ids = variant_ids | append: ',' %}
+          {%- endfor -%}
+
+          {% assign inventory_quantity = inventory_quantity | split: ',' %}
+          {% assign pre_order = pre_order | split: ',' %}
+          {% assign variant_ids = variant_ids | split: ',' %}
+          <!-- this change is for add the inventory quantity side by side with the size /  END OF THE CODE -->
+        {% endcomment %}
+
+        <select id="reco-size-options">
+          <option value="">Select size</option>
+          {% for value in option.values %}
+            <option
+              value="{{ value.id }}"
+            >
+              {{ value.name }}
+            </option>
+          {% endfor %}
+        </select>
+
+        {% comment %}
+          {% render 'custom-select',
+            id: option_id,
+            option_values: option.values,
+            selected_value: selected_value,
+            swatches: uses_swatches,
+            blank_option: 'Select Size',
+            inventory_quantity: inventory_quantity,
+            pre_order: pre_order,
+            variant_ids: variant_ids,
+            native_form_id: form_id
+          %}
+        {% endcomment %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<script>
+  const recoSelector = document.getElementById('reco-size-options');
+  const recoSizeOptions = recoSelector.querySelectorAll('option');
+
+  recoSizeOptions.forEach((rso) => {
+    rso.addEventListener('click', (e) => {
+      const target = e.target;
+      console.log('Option clicked');
+      for (let option of recoSizeOptions) {
+        if (target == option) {
+          option.setAttribute('selected');
+        } else {
+          option.removeAttribute('selected');
+        }
+      }
+    });
+  });
+</script>

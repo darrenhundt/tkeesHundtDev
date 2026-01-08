@@ -1,0 +1,169 @@
+{
+  "sections": {
+    "140d5777-cbff-4092-9436-ea5d1ab7ef91": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "h1 {font-family: \"Bebas Neue\"; color: #fff; letter-spacing: 1.2px; margin-bottom: -2px;}",
+        ".overlay-text {color: #fff;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/labour-day-sale-desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/labour-day-sale-mobile.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 500,
+        "height_mobile": 300,
+        "image_link": "",
+        "subheading": "",
+        "title": "Labor Day Sale",
+        "title_size": 86,
+        "title_size_mobile": 50,
+        "use_h1": true,
+        "text": "<p><strong>Up to 50% off Select Styles<\/strong><\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "custom_css": [
+        ".h3-style {display: none;}",
+        ".product-block__title {font-family: \"Bebas Neue\"; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "no_background",
+        "coll_num_per_page_int": 48,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "all",
+        "show_filter_counts": false,
+        "show_disabled_filters": false,
+        "ajax_products": true,
+        "enable_sticky_filter": false,
+        "filter_two_columns": false,
+        "coll_show_sort": false,
+        "coll_show_feat": false,
+        "enable_subcoll": false,
+        "subcoll_menu": "",
+        "subcoll_style": "gallery",
+        "subcoll_gall_shape": "l-21",
+        "image_position": "bottom center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": true,
+        "subcoll_gall_overlay_style": "shadow",
+        "subcoll_gall_text_alignment": "bottom left",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    },
+    "6a8f9be1-86b6-4fd7-b84a-724975fc0042": {
+      "type": "collection-list",
+      "blocks": {
+        "38dbfee8-13d8-425e-8675-611f98864581": {
+          "type": "collection",
+          "settings": {
+            "collection": "hoodies",
+            "image": "shopify:\/\/shop_images\/clothing-categories-hoodies.jpg"
+          }
+        },
+        "2d0d0047-8ebc-455a-8567-386de3843f23": {
+          "type": "collection",
+          "settings": {
+            "collection": "joggers",
+            "image": "shopify:\/\/shop_images\/clothing-categories-joggers.jpg"
+          }
+        },
+        "7e4d9364-1c27-483a-918b-bcbd86e22b54": {
+          "type": "collection",
+          "settings": {
+            "collection": "crews-half-zips",
+            "image": "shopify:\/\/shop_images\/clothing-categories-halfzip.jpg"
+          }
+        },
+        "1ba97752-4afc-4c70-8dad-7c578abd2180": {
+          "type": "collection",
+          "settings": {
+            "collection": "pants-leggings",
+            "image": "shopify:\/\/shop_images\/clothing-categories-leggings.jpg"
+          }
+        },
+        "ab97f276-9ffc-455d-93c1-53affeee8c7e": {
+          "type": "collection",
+          "settings": {
+            "collection": "tees-tanks",
+            "image": "shopify:\/\/shop_images\/clothing-categories-tanks.jpg"
+          }
+        },
+        "1b1e78b4-5005-4f43-aa17-70c779a0ff5d": {
+          "type": "collection",
+          "settings": {
+            "collection": "shorts",
+            "image": "shopify:\/\/shop_images\/clothing-categories-shorts.jpg"
+          }
+        },
+        "8542a132-f8ba-4256-a17f-ac7f588b9314": {
+          "type": "collection",
+          "settings": {
+            "collection": "jackets-tops",
+            "image": "shopify:\/\/shop_images\/clothing-categories-tops.jpg"
+          }
+        },
+        "c1b6213d-c49d-4d06-a4da-201bf34d17dc": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses-jumpsuit",
+            "image": "shopify:\/\/shop_images\/clothing-categories-dress.jpg"
+          }
+        },
+        "733d2c21-5dae-4646-b7f3-ea4484ff1b1a": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "core-black"
+          }
+        }
+      },
+      "block_order": [
+        "38dbfee8-13d8-425e-8675-611f98864581",
+        "2d0d0047-8ebc-455a-8567-386de3843f23",
+        "7e4d9364-1c27-483a-918b-bcbd86e22b54",
+        "1ba97752-4afc-4c70-8dad-7c578abd2180",
+        "ab97f276-9ffc-455d-93c1-53affeee8c7e",
+        "1b1e78b4-5005-4f43-aa17-70c779a0ff5d",
+        "8542a132-f8ba-4256-a17f-ac7f588b9314",
+        "c1b6213d-c49d-4d06-a4da-201bf34d17dc",
+        "733d2c21-5dae-4646-b7f3-ea4484ff1b1a"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".product-block__title {text-transform: uppercase; font-family: \"Bebas Neue\"; font-size: 18px; color: #5d3a2b; letter-spacing: 1px;}",
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #5d3a2b; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "SHOP BY CATEGORY",
+        "enable_carousel": false,
+        "grid": 4,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "140d5777-cbff-4092-9436-ea5d1ab7ef91",
+    "main",
+    "6a8f9be1-86b6-4fd7-b84a-724975fc0042"
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "sections": {
+    "image_with_text_overlay_custom_8mccVC": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        ".title-cont-font {font-size: 5rem;}",
+        ".subheading-adjust {font-size: 2em; margin-top: -10px;}",
+        "@media (max-width: 990px) {.subheading-adjust {font-size: 0.9em; margin-top: -10px; } .title-cont-font {font-size: 1.5rem; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Infinity_Hero_2.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "INFINITY",
+        "primary_heading_font": "Bebas Neue",
+        "title_cont": "collection",
+        "second_heading_font": "Snell Roundhand",
+        "title_size": 96,
+        "title_size_mobile": 32,
+        "use_h1": false,
+        "text": "<p>Shimmer in motion<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center end",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_9E3WTC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MFQXFH": {
+          "type": "heading",
+          "settings": {
+            "title": "Infinity is our newest capsule collection carrying the movement of shimmer.",
+            "use_h1": false
+          }
+        },
+        "text_4f9Hd3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_N8Fgz3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Infinity",
+            "button_link": "shopify:\/\/collections\/infinity-collection",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MFQXFH",
+        "text_4f9Hd3",
+        "button_N8Fgz3"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "product_list_gADNgG": {
+      "type": "product-list",
+      "disabled": true,
+      "settings": {
+        "title": "[PLACEHOLDER PRODUCTS]",
+        "product_list": [
+          "gemma-clears-pout",
+          "infinity-lily-cream"
+        ],
+        "alt_cards": true,
+        "swatch_size": 25,
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 2,
+        "use_alt_bg": false,
+        "full_width": true
+      }
+    },
+    "gallery_bBgQ6f": {
+      "type": "gallery",
+      "blocks": {
+        "image_3Uex8d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Infinity_rose_collection.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_T9iwVA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Infinity_1.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_3Uex8d",
+        "image_T9iwVA"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 460,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_4enh9c": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YyDQjn": {
+          "type": "heading",
+          "settings": {
+            "title": "Available in 2 soft, neutral colors over 5 silhouettes.",
+            "use_h1": false
+          }
+        },
+        "text_H6qGfV": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_YyDQjn",
+        "text_H6qGfV"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "image_with_text_overlay_XkqGdQ": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Infinity_on_figure_both2.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_UXziap": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WRHYhf": {
+          "type": "heading",
+          "settings": {
+            "title": "Glimmering in the light, the collection highlights your feet with an energetic shimmer, making it perfect for weddings, soirees, or anything noteworthy.",
+            "use_h1": false
+          }
+        },
+        "text_6q8RVr": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_gCFzXa": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Infinity",
+            "button_link": "shopify:\/\/collections\/infinity-collection",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WRHYhf",
+        "text_6q8RVr",
+        "button_gCFzXa"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_jHqXme": {
+      "type": "gallery",
+      "blocks": {
+        "image_PcGFqd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Infinity_8.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_eqRNQW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Infinity_cream_lily_1jpg.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_PcGFqd",
+        "image_eqRNQW"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_QYftj3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mbnkzh": {
+          "type": "heading",
+          "settings": {
+            "title": "You can never have too much of the right shimmer.  Our delicate, handcrafted straps do just that, creating an active glow making your feet feel irresitibly sexy.",
+            "use_h1": false
+          }
+        },
+        "text_exfbPm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_mbnkzh",
+        "text_exfbPm"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_4RpJqJ": {
+      "type": "gallery",
+      "blocks": {
+        "image_wXm7pU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Infinity_on_figure_1.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_ziJ9YV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Infinity_mia_rose_2.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_wXm7pU",
+        "image_ziJ9YV"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_r3htxy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LDxkgn": {
+          "type": "heading",
+          "settings": {
+            "title": "The feeling radiates through this curated capsule of our most luxurious sandals yet.",
+            "use_h1": false
+          }
+        },
+        "text_xKpAM9": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_LDxkgn",
+        "text_xKpAM9"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "image_with_text_overlay_custom_JTqNBK": {
+      "type": "image-with-text-overlay__custom",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Infinity_on_figure_both.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "theme_default",
+        "title_cont": "",
+        "second_heading_font": "theme_default",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_gNGkLY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NEQXp9": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text",
+            "use_h1": false
+          }
+        },
+        "text_9NaMMM": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_4MkFKB": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Infinity",
+            "button_link": "shopify:\/\/collections\/infinity-collection",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NEQXp9",
+        "text_9NaMMM",
+        "button_4MkFKB"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_custom_8mccVC",
+    "rich_text_9E3WTC",
+    "product_list_gADNgG",
+    "gallery_bBgQ6f",
+    "rich_text_4enh9c",
+    "image_with_text_overlay_XkqGdQ",
+    "rich_text_UXziap",
+    "gallery_jHqXme",
+    "rich_text_QYftj3",
+    "gallery_4RpJqJ",
+    "rich_text_r3htxy",
+    "image_with_text_overlay_custom_JTqNBK",
+    "rich_text_gNGkLY"
+  ]
+}

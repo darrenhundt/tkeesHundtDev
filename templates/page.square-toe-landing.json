@@ -1,0 +1,498 @@
+{
+  "sections": {
+    "image_with_text_overlay_custom_8mccVC": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        ".title-cont-font {font-size: 5rem;}",
+        ".subheading-adjust {\/* color: #c09b7c; *\/ color: black; font-size: 2em; margin-top: 0px; font-weight: bold; letter-spacing: 19.5px; padding-left: 20px;}",
+        "@media (max-width: 990px) {.subheading-adjust {font-size: 0.9em; margin-top: -10px; letter-spacing: 4.3px; padding-left: 5px; } .title-cont-font {font-size: 1.5rem; } .overlay-text__text {margin-top: 20%; }}",
+        ".title-font {color: black;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ST_Hero_1.jpg",
+        "image_position": "bottom center",
+        "mobile_image_position": "center bottom",
+        "height": "adapt",
+        "height_desktop": 1000,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "SQUARE TOE",
+        "primary_heading_font": "Bebas Neue",
+        "title_cont": "",
+        "second_heading_font": "Snell Roundhand",
+        "title_size": 96,
+        "title_size_mobile": 32,
+        "use_h1": false,
+        "text": "<p>COLLECTION<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center end",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_9E3WTC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MFQXFH": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Meet our first ever Square Toe Flip Flop.  Sophistication with an edge.  Clean lines, modern design - pure statement.",
+            "use_h1": false
+          }
+        },
+        "text_4f9Hd3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Meet our first ever Square Toe Flip Flop.  Sophistication with an edge.  Clean lines, modern design - pure statement.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_yfxFAA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Square Toe",
+            "button_link": "shopify:\/\/collections\/square-toe-collection",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MFQXFH",
+        "text_4f9Hd3",
+        "button_yfxFAA"
+      ],
+      "custom_css": [
+        "a.btn.btn--infinity {font-size: 0.8rem; padding: 1.4em 2.8em;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_JpJzNY": {
+      "type": "gallery",
+      "blocks": {
+        "image_gtmMQq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_legs-1.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_rykDgp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-03-28_at_13.30.50_e25cd80e.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_gtmMQq",
+        "image_rykDgp"
+      ],
+      "custom_css": [],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_4enh9c": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GJGeP7": {
+          "type": "heading",
+          "settings": {
+            "title": "LILY",
+            "use_h1": false
+          }
+        },
+        "heading_YyDQjn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Still the same classic flip flop.  Now with a modern, sleek square toe design.",
+            "use_h1": false
+          }
+        },
+        "text_H6qGfV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Still the same classic flip flop.  Now with a modern, sleek square toe design.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_GJGeP7",
+        "heading_YyDQjn",
+        "text_H6qGfV"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: -2px; font-size: 2.5em; font-family: \"Bebas Neue\";}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_jHqXme": {
+      "type": "gallery",
+      "blocks": {
+        "image_PcGFqd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_legs-2.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_eqRNQW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-03-28_at_13.30.15_b0c2e09e.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_PcGFqd",
+        "image_eqRNQW"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_UXziap": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WRHYhf": {
+          "type": "heading",
+          "settings": {
+            "title": "LIRI",
+            "use_h1": false
+          }
+        },
+        "heading_HArm3A": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Our new Square Toe Liri bridges the gap between laid back comfort and fashion-forward flair.",
+            "use_h1": false
+          }
+        },
+        "subheading_xCdg8G": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Our new Square Toe Liri bridges the gap between laid back comfort and fashion-forward flair."
+          }
+        },
+        "text_dbdrbi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our new Square Toe Liri bridges the gap between laid back comfort and fashion-forward flair.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_gCFzXa": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Square Toe",
+            "button_link": "shopify:\/\/collections\/square-toe-collection",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WRHYhf",
+        "heading_HArm3A",
+        "subheading_xCdg8G",
+        "text_dbdrbi",
+        "button_gCFzXa"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: -2px; font-size: 2.5em; font-family: \"Bebas Neue\";}",
+        "a.btn.btn--infinity {font-size: 0.8rem; padding: 1.4em 2.8em;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_with_swatches_4UyRAD": {
+      "type": "gallery-with-swatches",
+      "blocks": {
+        "image_jFLDW6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/black3.jpg",
+            "alignment": "center center",
+            "enlarge_image": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": true,
+            "title_below": "Black",
+            "show_swatch": true
+          }
+        },
+        "image_FpPz8H": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cocobutter2.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": true,
+            "title_below": "Cocobutter",
+            "show_swatch": true
+          }
+        },
+        "image_LhPTPD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/white.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": true,
+            "title_below": "Cream",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_jFLDW6",
+        "image_FpPz8H",
+        "image_LhPTPD"
+      ],
+      "custom_css": [
+        "@media (max-width: 990px) {div.rimage-background {background-position: center bottom !important; } .gallery__text-under-wrapper {margin-top: 0; }}"
+      ],
+      "settings": {
+        "grid": 3,
+        "desktop_image_height": 460,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": false,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary",
+        "under_font_size": 28,
+        "under_swatch_size": 20
+      }
+    },
+    "rich_text_QYftj3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mbnkzh": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Available in our top three colors",
+            "use_h1": false
+          }
+        },
+        "text_exfbPm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Available in our top three colors<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_mbnkzh",
+        "text_exfbPm"
+      ],
+      "custom_css": [
+        ".article {margin: 30px 0;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "image_with_text_overlay_custom_JTqNBK": {
+      "type": "image-with-text-overlay__custom",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/last_image_2.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "theme_default",
+        "title_cont": "",
+        "second_heading_font": "theme_default",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_gNGkLY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NEQXp9": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Our Square Toe silhouettes allow you to elevate any outing, from casual to chic, effortlessly.",
+            "use_h1": false
+          }
+        },
+        "text_9NaMMM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Square Toe silhouettes allow you to elevate any outing, from casual to chic, effortlessly.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_4MkFKB": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Square Toe",
+            "button_link": "shopify:\/\/collections\/square-toe-collection",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NEQXp9",
+        "text_9NaMMM",
+        "button_4MkFKB"
+      ],
+      "custom_css": [
+        "a.btn.btn--infinity {font-size: 0.8rem; padding: 1.4em 2.8em;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_custom_8mccVC",
+    "rich_text_9E3WTC",
+    "gallery_JpJzNY",
+    "rich_text_4enh9c",
+    "gallery_jHqXme",
+    "rich_text_UXziap",
+    "gallery_with_swatches_4UyRAD",
+    "rich_text_QYftj3",
+    "image_with_text_overlay_custom_JTqNBK",
+    "rich_text_gNGkLY"
+  ]
+}

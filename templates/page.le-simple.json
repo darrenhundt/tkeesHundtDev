@@ -1,0 +1,660 @@
+{
+  "sections": {
+    "image_with_text_overlay_custom_8mccVC": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        ".overlay-text {}",
+        ".title-cont-font {}",
+        ".title-font {font-size: calc(100vw * 0.2); font-weight: bold;}",
+        "@media (max-width: 990px) {.overlay-text {} .title-cont-font {} .overlay-text__text {} .title-font {}}",
+        "@media (max-width: 1360px) {.title-font {font-size: calc(100vw * 0.19); }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/LS_2.jpg",
+        "image_position": "bottom center",
+        "mobile_image_position": "center bottom",
+        "height": "adapt",
+        "height_desktop": 1000,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "LE SIMPLE",
+        "primary_heading_font": "theme_default",
+        "title_cont": "",
+        "separate_heading_text": true,
+        "second_heading_font": "theme_default",
+        "title_size": 96,
+        "title_size_mobile": 32,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "default",
+        "text_alignment": "center center",
+        "text_justification": "center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_9E3WTC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_jzfqLE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>ENCORE?  COME AGAIN?<\/strong><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "text_4f9Hd3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>I thought you were done with clothing!?!<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "text_acrLxg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"I was finished with clothing, and then I went to Paris.\" explains our Creative Director Carly Burnett. \"I travelled to one of the best mills in the world (which happens to be in Paris, France) and it reignited the love I have for creating.\" <\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_yfxFAA": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP COLLECTION",
+            "button_link": "shopify:\/\/collections\/le-simple",
+            "button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "text_jzfqLE",
+        "text_4f9Hd3",
+        "text_acrLxg",
+        "button_yfxFAA"
+      ],
+      "custom_css": [
+        "a.btn {font-size: 1rem; padding: 1em 3em; border-radius: 0;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "collection_list_8pd9nU": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_fTJUKz": {
+          "type": "collection",
+          "settings": {
+            "collection": "le-simple-tanks",
+            "image": "shopify:\/\/shop_images\/tanks.jpg"
+          }
+        },
+        "collection_m8mg8K": {
+          "type": "collection",
+          "settings": {
+            "collection": "le-simple-tees",
+            "image": "shopify:\/\/shop_images\/tees_2.jpg"
+          }
+        },
+        "collection_xgNNN6": {
+          "type": "collection",
+          "settings": {
+            "collection": "le-simple-crews",
+            "image": "shopify:\/\/shop_images\/crews_3.jpg"
+          }
+        },
+        "collection_Vg46MC": {
+          "type": "collection",
+          "settings": {
+            "collection": "le-simple-shorts",
+            "image": "shopify:\/\/shop_images\/shorts.jpg"
+          }
+        },
+        "collection_cWAhWB": {
+          "type": "collection",
+          "settings": {
+            "collection": "le-simple-sets",
+            "image": "shopify:\/\/shop_images\/sets_3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_fTJUKz",
+        "collection_m8mg8K",
+        "collection_xgNNN6",
+        "collection_Vg46MC",
+        "collection_cWAhWB"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".product-block__title {text-transform: uppercase; font-weight: bold; font-family: \"Bebas Neue\"; font-size: 1.6rem; letter-spacing: 1.5px;}"
+      ],
+      "settings": {
+        "title": "SHOP BY CATEGORY",
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": true
+      }
+    },
+    "gallery_jHqXme": {
+      "type": "gallery",
+      "blocks": {
+        "image_PcGFqd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LS_3.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_eqRNQW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LS_4B.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_PcGFqd",
+        "image_eqRNQW"
+      ],
+      "custom_css": [
+        ".gallery__item {width: 45vw; height: 69vw;}"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_UXziap": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_qeCzEc": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "text_dbdrbi": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>PARISIAN RENDEZ-VOUS<\/strong><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "text_Rztz66": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"If you're going to do one thing, you have to do it really well, and before we did it OK.\" Carly says in reference to our last apparel collection. \"I loved the silhouettes, we poured days and weeks into fit, but the fabric was always kinda meh. If you're going to create basics they need to be amazing, they need to be magical. So I went to France to reimagine a collection with amazing fabric as the centre of the collection.\"<br\/><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_gCFzXa": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/collections\/le-simple",
+            "button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_qeCzEc",
+        "text_dbdrbi",
+        "text_Rztz66",
+        "button_gCFzXa"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: -2px; font-size: 2.5em; font-family: \"Bebas Neue\";}",
+        "a.btn {font-size: 1rem; padding: 1em 3em; border-radius: 0;}",
+        ".fully-spaced-row--medium {margin-top: 20px;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "image_with_text_overlay_custom_rdGJNT": {
+      "type": "image-with-text-overlay__custom",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/5_80d22198-9c02-497c-97ac-b90b81feb4fc.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "theme_default",
+        "title_cont": "",
+        "separate_heading_text": false,
+        "second_heading_font": "theme_default",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "default",
+        "text_alignment": "center center",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "gallery_QcbNj8": {
+      "type": "gallery",
+      "blocks": {
+        "image_qRFthW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LS_7.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "",
+            "show_swatch": true
+          }
+        },
+        "image_nwNtbd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LS_8.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "",
+            "show_swatch": true
+          }
+        },
+        "image_htLTr3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LS_9.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "",
+            "show_swatch": true
+          }
+        },
+        "image_4z8VFU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LS_10.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_qRFthW",
+        "image_nwNtbd",
+        "image_htLTr3",
+        "image_4z8VFU"
+      ],
+      "custom_css": [
+        ".fully-spaced-row--medium {margin-top: 2vw;}",
+        ".gallery__row {display: flex; flex-wrap: nowrap;}",
+        ".gallery__item {width: calc(100vw * 0.235); height: 35vw;}",
+        "@media screen and (max-width: 990px) {.gallery__item {margin-right: 2vw; } .gallery__item:last-of-type {margin-right: 0 !important; }}"
+      ],
+      "settings": {
+        "grid": 4,
+        "desktop_image_height": 700,
+        "height_override": false,
+        "mobile_image_height": 500,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": false,
+        "enable_row_spacing": true,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_G6J4xE": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_3ybWC6": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "text_N7Ed7e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“I wear our clothes everyday, and I wanted fabrics that were as amazing after I wore them on repeat, as they were the day that I first wore them.” she explains. \"We went to France to work with one of the best mills in the world. This place was simply amazing, so <br\/>advanced. They are producing fabrics that are almost unbelievable\". <br\/><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "text_WFWbRB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>She explained \"They produce for TKEES what they produce for brands with $400 t-shirts. Not just similar, like the exact same thing.\"<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_JnfQHN": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/collections\/le-simple",
+            "button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_3ybWC6",
+        "text_N7Ed7e",
+        "text_WFWbRB",
+        "button_JnfQHN"
+      ],
+      "custom_css": [
+        "a.btn {font-size: 1rem; padding: 1em 3em; border-radius: 0;}",
+        ".fully-spaced-row--medium {margin-top: -50px;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_nHjqkc": {
+      "type": "gallery",
+      "blocks": {
+        "image_pdPArU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LS_6.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_DYRjww": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LS_5.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_pdPArU",
+        "image_DYRjww"
+      ],
+      "custom_css": [
+        ".gallery__item {width: 45vw; height: 69vw;}"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_iLJNNK": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_gUWLA6": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "text_XzAU7c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“With our Parisian rendez-vous, the collection will develop over the next few seasons as we get into a groove. Last time we launched clothing, there was so much demand we had to react quickly, and that meant making sacrifices. This time we are only going to <br\/>sacrifice quantity for quality.\"<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "text_EjMY69": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"I'm happy to keep going over there. LOL. Send me to the Louvre, to Le Marais, croissant at a cafe.\" \"That rhymes, OMG so terrible!\"<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "text_awFVfG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“Half of the fabrics we use barely even wrinkle. It’s crazy, I can pack them in my bag, take them out and they look flawless.” <\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_qyFzjM": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/collections\/le-simple",
+            "button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_gUWLA6",
+        "text_XzAU7c",
+        "text_EjMY69",
+        "text_awFVfG",
+        "button_qyFzjM"
+      ],
+      "custom_css": [
+        "a.btn {font-size: 1rem; padding: 1em 3em; border-radius: 0;}",
+        ".fully-spaced-row--medium {margin-top: 20px;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "image_with_text_overlay_custom_FNk9hh": {
+      "type": "image-with-text-overlay__custom",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/LS_13.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "theme_default",
+        "title_cont": "",
+        "separate_heading_text": false,
+        "second_heading_font": "theme_default",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "default",
+        "text_alignment": "center center",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_bx3x7f": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_tRUcbi": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "text_zfjrRa": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>\"BRISE D'ÉTÉ\" ENSEMBLE<\/strong><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "text_NTXhkC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A French love letter from the streets of Paris, we present you with a collection that speaks to the beauty of amazing material.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_38xn9M": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/collections\/le-simple",
+            "button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_tRUcbi",
+        "text_zfjrRa",
+        "text_NTXhkC",
+        "button_38xn9M"
+      ],
+      "custom_css": [
+        "a.btn {font-size: 1rem; padding: 1em 3em; border-radius: 0;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_custom_8mccVC",
+    "rich_text_9E3WTC",
+    "collection_list_8pd9nU",
+    "gallery_jHqXme",
+    "rich_text_UXziap",
+    "image_with_text_overlay_custom_rdGJNT",
+    "gallery_QcbNj8",
+    "rich_text_G6J4xE",
+    "gallery_nHjqkc",
+    "rich_text_iLJNNK",
+    "image_with_text_overlay_custom_FNk9hh",
+    "rich_text_bx3x7f"
+  ]
+}

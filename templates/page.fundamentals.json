@@ -1,0 +1,341 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "393a7d48-5a65-4792-9d0e-128382c3661e": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "h2 {font-family: bebas neue; letter-spacing: 1px; color: #fff;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/header_desktop2_2.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/header_mobile3.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 700,
+        "height_mobile": 600,
+        "image_link": "",
+        "subheading": "",
+        "title": "The Fundamentals",
+        "title_size": 76,
+        "title_size_mobile": 36,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full"
+      }
+    },
+    "0a70291e-53e1-42ee-b17c-d8aaf98d5acc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15976017559727__0a70291e-53e1-42ee-b17c-d8aaf98d5acc-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "use_h1": false
+          }
+        },
+        "template--15976017559727__0a70291e-53e1-42ee-b17c-d8aaf98d5acc-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15976017559727__0a70291e-53e1-42ee-b17c-d8aaf98d5acc-heading-1",
+        "template--15976017559727__0a70291e-53e1-42ee-b17c-d8aaf98d5acc-text-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "664f9c1c-ccc9-4402-85a7-1bbf93544edb": {
+      "type": "image-with-text",
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}",
+        ".btn {font-family: bebas neue; font-size: 16px; letter-spacing: 1px; padding: 0.9em 50px 0.9em;"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/timelessness_3.jpg",
+        "image_2": "shopify:\/\/shop_images\/timelessness_1.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Timelessness",
+        "use_h1": false,
+        "text": "<p>Embrace minimalist, chic sandals that seamlessly weave into every season's story, becoming an ageless staple in your wardrobe.<\/p>",
+        "button_label": "Explore Tkees",
+        "button_link": "shopify:\/\/collections\/all-footwear",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "center",
+        "use_alt_bg": false
+      }
+    },
+    "bd7dba03-1929-42f7-ae21-726af3f3830a": {
+      "type": "gallery",
+      "blocks": {
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/versatility_5.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/versatility_1.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/versatility_7.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "dac5a436-2a82-45ea-aa01-99d5a0344944": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/versatility_6.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-2",
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-1",
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-3",
+        "dac5a436-2a82-45ea-aa01-99d5a0344944"
+      ],
+      "custom_css": [
+        ".slick-slider-overlay-dots {fill: #ffffff;}"
+      ],
+      "settings": {
+        "grid": 4,
+        "desktop_image_height": 400,
+        "mobile_image_height": 450,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": false,
+        "use_alt_bg": false,
+        "enable_carousel": true,
+        "overlay_style": "no_background",
+        "button_style": "primary"
+      }
+    },
+    "82a8b8b7-a2bc-49d4-9e3e-d4e3ae5007d1": {
+      "type": "rich-text",
+      "blocks": {
+        "1879506b-80e0-470d-b625-8d2dff33e919": {
+          "type": "heading",
+          "settings": {
+            "title": "Versatility",
+            "use_h1": false
+          }
+        },
+        "template--15976017559727__82a8b8b7-a2bc-49d4-9e3e-d4e3ae5007d1-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our sandals effortlessly adapt, whether they're paired with jeans, a summer dress, or your favorite beachwear. <\/p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "1879506b-80e0-470d-b625-8d2dff33e919",
+        "template--15976017559727__82a8b8b7-a2bc-49d4-9e3e-d4e3ae5007d1-text-1"
+      ],
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}",
+        ".fully-spaced-row--small {margin-top: 20px;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    },
+    "87521aed-e631-405e-97e8-230a0ec3ffca": {
+      "type": "image-with-text",
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}",
+        ".btn {font-family: bebas neue; font-size: 16px; letter-spacing: 1px; padding: 0.9em 50px 0.9em;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/craftsmanship.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Craftsmanship",
+        "use_h1": false,
+        "text": "<p>More than just aesthetics, our sandals echo integrity, quality, and durability. Crafted with a focus on detail, they aren't merely footwear; they're an investment in sustainable fashion choices.<\/p>",
+        "button_label": "Explore Tkees",
+        "button_link": "shopify:\/\/collections\/all-footwear",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "center",
+        "use_alt_bg": false
+      }
+    },
+    "5899ddde-5456-4021-94bc-c3b5a62a6a80": {
+      "type": "custom-row",
+      "blocks": {
+        "0406d08a-644c-46a8-a943-2be662e6cafe": {
+          "type": "image",
+          "settings": {
+            "width": "three-quarters",
+            "image": "shopify:\/\/shop_images\/fundamentals-sustain-page.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 400,
+            "height_mobile": 1000,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "9180c8b9-cddf-4cdb-9e9d-9cce32d14d1f": {
+          "type": "text",
+          "settings": {
+            "width": "three-quarters",
+            "subheading": "",
+            "title": "Economical & Sustainable Choices",
+            "text": "<p>Beyond the allure of fast fashion, find value in footwear that stands the test of time. With our sandals, invest in longevity and adaptability, making every step an eco-conscious one.<\/p><p><br\/><\/p>",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/all-footwear",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "0406d08a-644c-46a8-a943-2be662e6cafe",
+        "9180c8b9-cddf-4cdb-9e9d-9cce32d14d1f"
+      ],
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}",
+        ".btn {font-family: bebas neue; font-size: 16px; letter-spacing: 1px; padding: 0.9em 50px 0.9em;}",
+        ".fully-spaced-row--medium {margin-bottom: -45px;}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "65b0711d-ffb0-465f-977e-ff06997d8ac9": {
+      "type": "custom-row",
+      "blocks": {
+        "5078818f-a5b2-40e3-99af-780e0140cb76": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/craftsmanship2.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 380,
+            "height_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "e8bbf4d2-c440-4acc-acd3-d0a4f1aba0f7": {
+          "type": "text",
+          "settings": {
+            "width": "third",
+            "subheading": "",
+            "title": "Simplify. Elevate. Repeat.",
+            "text": "<p>In an era of excess, save space, make confident decisions, and foster a lifestyle free of clutter. Our sandals aren't just shoes; they're a philosophy.<br\/><\/p>",
+            "button_label": "Explore Tkees",
+            "button_link": "shopify:\/\/collections\/all-footwear",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "5078818f-a5b2-40e3-99af-780e0140cb76",
+        "e8bbf4d2-c440-4acc-acd3-d0a4f1aba0f7"
+      ],
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}",
+        ".btn {font-family: bebas neue; font-size: 16px; letter-spacing: 1px; padding: 0.9em 50px 0.9em;}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "393a7d48-5a65-4792-9d0e-128382c3661e",
+    "0a70291e-53e1-42ee-b17c-d8aaf98d5acc",
+    "664f9c1c-ccc9-4402-85a7-1bbf93544edb",
+    "bd7dba03-1929-42f7-ae21-726af3f3830a",
+    "82a8b8b7-a2bc-49d4-9e3e-d4e3ae5007d1",
+    "87521aed-e631-405e-97e8-230a0ec3ffca",
+    "5899ddde-5456-4021-94bc-c3b5a62a6a80",
+    "65b0711d-ffb0-465f-977e-ff06997d8ac9"
+  ]
+}

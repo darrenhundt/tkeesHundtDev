@@ -1,0 +1,317 @@
+{
+  "sections": {
+    "c5a220d6-1b8f-4a3f-8bb1-d7fed1283448": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bundle-save-desk-4_40fd64be-35ee-4180-bf86-7836cb29c2c0.png",
+        "mobile_image": "shopify:\/\/shop_images\/bundle-save-mobile-4.png",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background"
+      }
+    },
+    "6a8f9be1-86b6-4fd7-b84a-724975fc0042": {
+      "type": "collection-list",
+      "blocks": {
+        "7e69a794-f30a-4dbe-bc09-e24934575ecf": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-black",
+            "image": "shopify:\/\/shop_images\/pr-core-hoodie-black-cc.jpg"
+          }
+        },
+        "638f547d-da5b-46cd-b22e-a7d7154b541c": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-white"
+          }
+        },
+        "0f791528-06ff-4299-a077-a7fd3a730c07": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-grey"
+          }
+        },
+        "bf3869fd-4db8-47a8-829c-9c116fb249ba": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-beige"
+          }
+        },
+        "b4ee17c2-9376-45c8-a07d-d5451403911f": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-tan",
+            "image": "shopify:\/\/shop_images\/the-hoodie-nudes-toast-aug2022-cc-f8_97da59f1-434b-4456-90e6-261cae6d5e58.jpg"
+          }
+        },
+        "1d53496a-46b8-42c1-8a9a-2fb487d6b271": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-brown",
+            "image": "shopify:\/\/shop_images\/the-hoodie-nudes-nutmeg-aug2022-cc-f8_dae1fdb7-4a33-40da-baa6-3dced6c549b3.jpg"
+          }
+        },
+        "ab2d2c51-7d85-4bc5-9393-038d53dc7418": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-blue"
+          }
+        },
+        "ff9345f3-61be-4804-86ab-39dd5008196b": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "clothing-green",
+            "image": "shopify:\/\/shop_images\/super-rib-longsleeve-tee-moss-aug2022-cc-f8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "7e69a794-f30a-4dbe-bc09-e24934575ecf",
+        "638f547d-da5b-46cd-b22e-a7d7154b541c",
+        "0f791528-06ff-4299-a077-a7fd3a730c07",
+        "bf3869fd-4db8-47a8-829c-9c116fb249ba",
+        "b4ee17c2-9376-45c8-a07d-d5451403911f",
+        "1d53496a-46b8-42c1-8a9a-2fb487d6b271",
+        "ab2d2c51-7d85-4bc5-9393-038d53dc7418",
+        "ff9345f3-61be-4804-86ab-39dd5008196b"
+      ],
+      "custom_css": [
+        ".product-block__title {text-transform: uppercase; font-family: \"Bebas Neue\"; font-size: 16px; color: #222; letter-spacing: 1px;}",
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 22px; color: #222; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "SHOP BY COlor",
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": false
+      },
+      "disabled": true
+    },
+    "140d5777-cbff-4092-9436-ea5d1ab7ef91": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 500,
+        "height_mobile": 300,
+        "image_link": "",
+        "subheading": "",
+        "title": "compress test 2",
+        "title_size": 32,
+        "title_size_mobile": 20,
+        "use_h1": true,
+        "text": "<p>Clean lines with an <br\/>elastic ankle strap for all day wear.<\/p>",
+        "enlarge_text": false,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "bottom left",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background"
+      }
+    },
+    "main": {
+      "type": "depict-patched-main-collection",
+      "custom_css": [
+        ".h3-style {font-family: \"Bebas Neue\"; font-size: 18px; color: #222; letter-spacing: 1px;}",
+        ".product-block__title {font-family: \"Bebas Neue\"; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "no_background",
+        "coll_num_per_page_int": 48,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "all",
+        "show_filter_counts": false,
+        "show_disabled_filters": false,
+        "ajax_products": true,
+        "enable_sticky_filter": true,
+        "filter_two_columns": true,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "enable_subcoll": false,
+        "subcoll_menu": "",
+        "subcoll_style": "gallery",
+        "subcoll_gall_shape": "l-21",
+        "image_position": "bottom center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": true,
+        "subcoll_gall_overlay_style": "shadow",
+        "subcoll_gall_text_alignment": "bottom left",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    },
+    "608318be-e923-4c83-90bf-44992c130267": {
+      "type": "collection-list",
+      "blocks": {
+        "de8d211a-c9ae-40c0-82f1-36f3a549f504": {
+          "type": "collection",
+          "settings": {
+            "collection": "hoodies",
+            "image": "shopify:\/\/shop_images\/clothing-categories-hoodies.jpg"
+          }
+        },
+        "dea62025-16bb-4ff5-8353-e7177505a13b": {
+          "type": "collection",
+          "settings": {
+            "collection": "joggers",
+            "image": "shopify:\/\/shop_images\/clothing-categories-joggers.jpg"
+          }
+        },
+        "0b83eed9-b218-4892-8c0b-1750b938edc6": {
+          "type": "collection",
+          "settings": {
+            "collection": "crews-half-zips",
+            "image": "shopify:\/\/shop_images\/clothing-categories-halfzip.jpg"
+          }
+        },
+        "72fbdaee-7d7d-4dfe-a9f2-e0cdc639969d": {
+          "type": "collection",
+          "settings": {
+            "collection": "shorts",
+            "image": "shopify:\/\/shop_images\/clothing-categories-shorts.jpg"
+          }
+        },
+        "314a6ef3-152b-42bc-bda6-48e62268d63c": {
+          "type": "collection",
+          "settings": {
+            "collection": "tees-tanks",
+            "image": "shopify:\/\/shop_images\/clothing-categories-tanks.jpg"
+          }
+        },
+        "461ad2be-ff3e-4099-8174-6fd238aa74e9": {
+          "type": "collection",
+          "settings": {
+            "collection": "pants-leggings",
+            "image": "shopify:\/\/shop_images\/clothing-categories-leggings.jpg"
+          }
+        },
+        "6c5c6de2-8460-4cb0-a6fc-9c24162f7acf": {
+          "type": "collection",
+          "settings": {
+            "collection": "jackets-tops",
+            "image": "shopify:\/\/shop_images\/clothing-categories-tops.jpg"
+          }
+        },
+        "adf082a7-37d5-4980-ac25-d2598c028df4": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses-jumpsuit",
+            "image": "shopify:\/\/shop_images\/clothing-categories-dress.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "de8d211a-c9ae-40c0-82f1-36f3a549f504",
+        "dea62025-16bb-4ff5-8353-e7177505a13b",
+        "0b83eed9-b218-4892-8c0b-1750b938edc6",
+        "72fbdaee-7d7d-4dfe-a9f2-e0cdc639969d",
+        "314a6ef3-152b-42bc-bda6-48e62268d63c",
+        "461ad2be-ff3e-4099-8174-6fd238aa74e9",
+        "6c5c6de2-8460-4cb0-a6fc-9c24162f7acf",
+        "adf082a7-37d5-4980-ac25-d2598c028df4"
+      ],
+      "custom_css": [
+        ".product-block__title {text-transform: uppercase; font-family: \"Bebas Neue\"; font-size: 16px; color: #222; letter-spacing: 1px;}",
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 22px; color: #222; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "SHOP BY CATEGORY",
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    },
+    "20003708-db70-4056-aa53-f48f5e6727f1": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "collection": "power-casual",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": true,
+        "full_width": true
+      }
+    },
+    "3c77a4cf-b898-4c5b-98bd-4e3c2740e70a": {
+      "type": "product-list",
+      "disabled": true,
+      "settings": {
+        "title": "Product list",
+        "product_list": [
+          "the-boxy-crew-bisque",
+          "the-boxy-crew-black",
+          "the-boxy-crew-cafe",
+          "the-boxy-crew-cream"
+        ],
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "use_alt_bg": true,
+        "full_width": true
+      }
+    },
+    "c7723708-294f-4a98-9155-9cb063a7bed1": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "collection": "",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": true,
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "c5a220d6-1b8f-4a3f-8bb1-d7fed1283448",
+    "6a8f9be1-86b6-4fd7-b84a-724975fc0042",
+    "140d5777-cbff-4092-9436-ea5d1ab7ef91",
+    "main",
+    "608318be-e923-4c83-90bf-44992c130267",
+    "20003708-db70-4056-aa53-f48f5e6727f1",
+    "3c77a4cf-b898-4c5b-98bd-4e3c2740e70a",
+    "c7723708-294f-4a98-9155-9cb063a7bed1"
+  ]
+}

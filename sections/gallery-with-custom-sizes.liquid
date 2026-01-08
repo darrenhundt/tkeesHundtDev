@@ -1,0 +1,137 @@
+{% liquid
+  assign bottom_margin_desktop = section.settings.gallery_margins | minus: 6
+  assign bottom_margin_mobile = section.settings.gallery_margins_mobile | minus: 6
+%}
+{% style %}
+  .custom-gallery-containter {
+
+  }
+  .custom-gallery-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: {{ bottom_margin_desktop | plus: 0 }}px;
+  }
+  .custom-gallery-image {
+    margin-right: {{ section.settings.gallery_margins }}px;
+  }
+  .custom-gallery-image:last-of-type {
+    margin-right: 0;
+  }
+  @media (max-width: 768px) {
+    .custom-gallery-row {
+    margin-bottom: {{ section.settings.gallery_margins_mobile }}px;
+  }
+  }
+{% endstyle %}
+<div class="custom-gallery-container">
+  {% for block in section.blocks %}
+    <div class="custom-gallery-row">
+      <div class="custom-gallery-image">
+        <a href="{{ section.settings.image_link }}">
+          {% assign image = block.settings['image-1'] %}
+          <img
+            src="{{ image.src | image_url }}"
+            height="{{ image.height }}"
+            width="{{ image.width }}"
+            alt="{{ image.alt }}"
+          >
+        </a>
+      </div>
+      {% if block.settings['image-2'] %}
+        <div class="custom-gallery-image">
+          <a href="{{ section.settings.image_link }}">
+            {% assign image = block.settings['image-2'] %}
+            <img
+              src="{{ image.src | image_url }}"
+              height="{{ image.height }}"
+              width="{{ image.width }}"
+              alt="{{ image.alt }}"
+            >
+          </a>
+        </div>
+        {% if block.settings['image-3'] %}
+          <div class="custom-gallery-image">
+            <a href="{{ section.settings.image_link }}">
+              {% assign image = block.settings['image-3'] %}
+              <img
+                src="{{ image.src | image_url }}"
+                height="{{ image.height }}"
+                width="{{ image.width }}"
+                alt="{{ image.alt }}"
+              >
+            </a>
+          </div>
+        {% endif %}
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Gallery with Custom Sizes",
+  "settings": [
+    {
+      "type": "url",
+      "id": "image_link",
+      "label": "Link for images",
+      "info": "Used for all images"
+    },
+    {
+      "type": "range",
+      "id": "gallery_margins",
+      "label": "Gallery margins",
+      "default": 0,
+      "step": 1,
+      "unit": "px",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "gallery_margins_mobile",
+      "label": "Gallery margins",
+      "default": 0,
+      "step": 1,
+      "unit": "px",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image-row",
+      "name": "Image Row",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image-1",
+          "label": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image-2",
+          "label": "Image 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image-3",
+          "label": "Image 3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gallery with Custom Sizes",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "image-row",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

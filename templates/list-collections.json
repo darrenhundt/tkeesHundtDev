@@ -1,0 +1,47 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "a29f1d10-b6a8-48d2-945a-5fddaa8f6ce8": {
+          "type": "image",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "3d1f782e-6803-43c3-8aeb-74debe8d4fba": {
+          "type": "image",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "73ddc460-c3d0-470e-948b-72a238eee99e": {
+          "type": "image",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "0698ad10-9fea-44da-a6fd-914ef178aecc": {
+          "type": "image",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "a29f1d10-b6a8-48d2-945a-5fddaa8f6ce8",
+        "3d1f782e-6803-43c3-8aeb-74debe8d4fba",
+        "73ddc460-c3d0-470e-948b-72a238eee99e",
+        "0698ad10-9fea-44da-a6fd-914ef178aecc"
+      ],
+      "settings": {
+        "title": "Our collections",
+        "display_type": "selected",
+        "grid": 4
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "product.json",
+  "context": {
+    "market": "canada"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "970cfd7e-12bb-4824-b8cb-07b9582143c3": {
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
+        "buy_buttons": {
+          "settings": {}
+        },
+        "a230265c-4572-4039-862a-7de712efc08d": {
+          "settings": {
+            "custom_liquid": ""
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{% style %}
+  .badge-banner {
+    background-color: {{ section.settings.background_color }};
+    /* margin: 25px 0; */
+    margin: 0;
+  }
+  .badge-banner__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px 10%;
+  }
+  .badge-banner__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    .badge-banner__container {
+      padding: 20px 5%;
+    }
+  }
+{% endstyle %}
+
+<div class="badge-banner">
+  <div class="badge-banner__container">
+    {% for block in section.blocks %}
+      {% if block.type == 'badge' %}
+        <div class="badge-banner__item" {{ block.shopify_attributes }}>
+          {% if block.settings.badge_image %}
+            {{
+              block.settings.badge_image
+              | image_url: width: 100
+              | image_tag: loading: 'lazy', class: 'badge-banner__image'
+            }}
+          {% endif %}
+          {% if block.settings.badge_text != blank %}
+            <div class="badge-banner__text">{{ block.settings.badge_text }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Badge Banner",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Badge",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "badge_image",
+          "label": "Badge Image"
+        },
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Badge Text",
+          "default": "Badge Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Badge Banner",
+      "blocks": [
+        {
+          "type": "badge"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

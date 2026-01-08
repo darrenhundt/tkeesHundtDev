@@ -1,0 +1,230 @@
+{%- if product.has_only_default_variant == false -%}
+  {%- if product.variants.size > 1 or block.settings.show_single -%}
+    <div class="option-selectors" data-disable-unavailable="{{ block.settings.disable_unavailable_variants }}">
+      {%- for option in product.options_with_values -%}
+        {%- capture option_id -%}{{ section.id }}-{{ product.id }}-{{ option.name | handle }}-selector{%- endcapture -%}
+
+        {%- liquid
+          assign variant_style = block.settings.variant_style
+          assign uses_swatches = false
+          if settings.swatch_enabled and settings.swatch_option_name contains option.name
+            assign uses_swatches = true
+            if settings.swatch_style == 'dropdown'
+              assign variant_style = 'dropdown'
+            else
+              assign variant_style = 'listed'
+            endif
+          endif
+        -%}
+
+        {%- if uses_swatches and settings.swatch_method == 'image' -%}
+          <style>
+            {%- assign option_index0 = forloop.index0 -%}
+            {%- assign swatch_image_size = settings.swatch_picker_image_size | times: 2 | append: 'x' -%}
+            {%- for option_value in option.values -%}
+              {%- for variant in product.variants -%}
+                {%- if variant.options[option_index0] == option_value -%}
+                  {%- if settings.swatch_style == 'icon_square' -%}.product-form[data-product-id="{{ product.id }}"] [data-swatch="{{ option_value | replace: '"', '' | downcase }}"] { --aspect-ratio: {{ variant.featured_media.preview_image.aspect_ratio }} }{%- endif -%}
+                  .product-form[data-product-id="{{ product.id }}"] [data-swatch="{{ option_value | replace: '"', '' | downcase }}"] { --swatch-background-image: url({{ variant.featured_media.preview_image | img_url: swatch_image_size }}) }
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endfor -%}
+          </style>
+        {%- endif -%}
+
+        {%- capture size_chart_html -%}
+          {%- if block.settings.show_size_chart and block.settings.size_chart_variant contains option.name and block.settings.size_chart_page != blank -%}
+            <div class="size-chart-container">
+              <a href="{{ pages[block.settings.size_chart_page].url }}" target="_blank" class="size-chart-link cc-modal" data-cc-modal-contentelement="#size-chart-content--{{ section.id }}">
+                <span class="size-chart-link__icon">{%- render 'icon', icon: 'ruler', size: 'small' -%}</span><span class="size-chart-link__text underline">{{- 'products.product.size_chart' | t -}}</span>
+              </a>
+              <div class="size-chart-content hidden" id="size-chart-content--{{ section.id }}">
+                <div class="size-chart">
+                  <div class="size-chart__inner rte">
+                    {{ pages[block.settings.size_chart_page].content }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endcapture -%}
+
+        {%- if variant_style == 'dropdown' -%}
+          {%- liquid
+            if block.settings.select_first_variant or product.variants.size == 1
+              assign blank_option = false
+              assign selected_value = option.selected_value
+            else
+              assign blank_option = 'products.product.no_selection' | t
+              if product.selected_variant
+                assign selected_value = option.selected_value
+              else
+                assign selected_value = ''
+              endif
+            endif
+          -%}
+
+          <div
+            class="option-selector{% if size_chart_html != empty %} option-selector--with-size-chart{% endif %}{% if uses_swatches %} option-selector--swatch{% endif %}"
+            data-selector-type="dropdown"
+            data-option-index="{{ forloop.index0 }}"
+          >
+            {{ size_chart_html }}
+            <!-- this change is for add the inventory quantity side by side with the size /  START -->
+            {%- assign inventory_quantity = '' %}
+            {%- assign pre_order = '' %}
+            {%- for variant in product.variants -%}
+              {% assign inventory_quantity = inventory_quantity | append: variant.inventory_quantity %}
+              {% assign inventory_quantity = inventory_quantity | append: ',' %}
+              {% if variant.metafields.custom.pre_order != blank %}
+                {% assign var1 = 1 %}
+              {% else %}
+                {% assign var1 = 0 %}
+              {% endif %}
+
+              {% assign pre_order = pre_order | append: var1 %}
+              {% assign pre_order = pre_order | append: ',' %}
+
+              {% assign variant_ids = variant_ids | append: variant.id %}
+              {% assign variant_ids = variant_ids | append: ',' %}
+            {%- endfor -%}
+
+            {% assign inventory_quantity = inventory_quantity | split: ',' %}
+            {% assign pre_order = pre_order | split: ',' %}
+            {% assign variant_ids = variant_ids | split: ',' %}
+            <!-- this change is for add the inventory quantity side by side with the size /  END OF THE CODE -->
+            {% render 'custom-select',
+              id: option_id,
+              label: option.name,
+              option_values: option.values,
+              selected_value: selected_value,
+              swatches: uses_swatches,
+              blank_option: 'Select Size',
+              inventory_quantity: inventory_quantity,
+              pre_order: pre_order,
+              variant_ids: variant_ids
+            %}
+          </div>
+        {%- else -%}
+          <div
+            class="option-selector{% if size_chart_html != empty %} option-selector--with-size-chart{% endif %}{% if uses_swatches %} option-selector--swatch{% endif %}"
+            data-selector-type="listed"
+            data-option-index="{{ forloop.index0 }}"
+          >
+            <fieldset class="option-selector-fieldset">
+              <div class="opposing-items">
+                <legend class="label">
+                  {{ option.name }}
+                </legend>
+                <script>
+                  sessionStorage.setItem('Session_color', '{{ selected_value }}');
+                </script>
+                {{ size_chart_html }}
+              </div>
+              <div class="option-selector__btns">
+                {% assign totalcolors = 0 %}
+                {% assign data = product.metafields.custom.colors_products_redirection | split: ',' %}
+                {% for data in data %}
+                  {% assign totalcolors = totalcolors | plus: 1 %}
+                {%- endfor -%}
+                {% assign totalcolors = totalcolors | divided_by: 2 %}
+
+                {%- for value in option.values -%}
+                  <div class="meta-rel custom_colors_block">
+                    {% assign data = product.metafields.custom.colors_products_redirection | split: ',' %}
+                    {% assign data_color = product.metafields.custom.product_colors_name | split: ',' %}
+                    {% assign count = 0 %}
+                    {% assign count_II = 0 %}
+
+                    {% comment %} Extract the product base name from current product (e.g., "riley" from "riley-cocobutter") {% endcomment %}
+                    {% assign product_base = product.handle | split: '-' | first %}
+                    {% assign product_base_prefix = product_base | append: '-' %}
+
+                    {% for data in data %}
+                      {% assign count = count | plus: 1 %}
+                      {% assign productGetFromMetafield = all_products[data] %}
+                      {% assign swatch_image = 'color_' | append: forloop.index %}
+                      {% assign complete_title = productGetFromMetafield.title | split: '-' %}
+                      {% assign last_title = complete_title | last %}
+
+                      {% comment %} Fallback 1: Use custom color name if provided {% endcomment %}
+                      {% if data_color[count_II] != blank %}
+                        {% assign complete_title = data_color[count_II] %}
+                        {% assign last_title = complete_title %}
+                      {% endif %}
+                      {% assign count_II = count_II | plus: 1 %}
+
+                      {% comment %} Fallback 2: If product lookup failed, extract color from handle {% endcomment %}
+                      {% if productGetFromMetafield == blank or complete_title == blank %}
+                        {% if data contains product_base_prefix %}
+                          {% assign last_title = data | remove_first: product_base_prefix | replace: '-', ' ' %}
+                        {% else %}
+                          {% assign last_title = data | replace: '-', ' ' %}
+                        {% endif %}
+                      {% endif %}
+
+                      {% assign is_current_product = false %}
+                      {% if productGetFromMetafield != blank and product.handle == productGetFromMetafield.handle %}
+                        {% assign is_current_product = true %}
+                      {% elsif productGetFromMetafield == blank and product.handle == data %}
+                        {% assign is_current_product = true %}
+                      {% endif %}
+
+                      {% if is_current_product %}
+                        <input
+                          class="opt-btn js-option"
+                          type="radio"
+                          name="{{ option_id }}"
+                          id="{{ option_id }}-opt-{{ forloop.index0 }}"
+                          value="{{ value | escape }}"
+                          checked
+                          required
+                        >
+                      {% endif %}
+                      {% if forloop.index == 9 and totalcolors == 8 %}<div class="new-row"></div>{% endif %}
+                      {% assign product_url = productGetFromMetafield.url %}
+                      {% if product_url == blank %}
+                        {% assign product_url = '/products/' | append: data %}
+                      {% endif %}
+
+                      <div class="custom-color-swatch {% if forloop.index > option_limit and is_swatch %} product-block-options__item--truncated{% endif %}">
+                        <a
+                          href="{{ product_url }}"
+                          class="{% if is_current_product %}custom_selected_product{%endif%} cstm_colors metafieldProductsTitle"
+                          style="padding: 22px 35px 10px 0px !important;"
+                          data-current-title="{{ last_title }}"
+                          title="{{ last_title }}"
+                        >
+                          <label
+                            class="opt-label"
+                            {% if uses_swatches %}
+                              data-swatch="{{ last_title | replace: '"', '' | downcase | strip }}"
+                            {% endif %}
+                            for="{{ option_id }}-opt-{{ forloop.index0 }}"
+                          >
+                            <span class="opt-label__text">{{ value }}</span>
+
+                            {% if productGetFromMetafield != blank %}
+                              {% for tag in productGetFromMetafield.tags %}
+                                {% if tag == 'sale-dot' %}
+                                  <span style="position: absolute; color: #982f36; font-size: 50px; top: -17px; right: -6px; border-radius: 50%; font-family: emoji !important;"
+                                    >.</span
+                                  >
+                                {% endif %}
+                              {% endfor %}
+                            {% endif %}
+                          </label>
+                        </a>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {%- endfor -%}
+              </div>
+            </fieldset>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+{%- endif -%}

@@ -1,0 +1,469 @@
+{
+  "sections": {
+    "image_with_text_overlay_custom_8mccVC": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        ".title-cont-font {font-size: 5rem;}",
+        ".subheading-adjust {\/* color: #c09b7c; *\/ color: black; font-size: 2em; margin-top: 0px; font-weight: bold; letter-spacing: 19.5px; padding-left: 20px;}",
+        "@media (max-width: 990px) {.subheading-adjust {font-size: 0.9em; margin-top: -10px; letter-spacing: 4.3px; padding-left: 5px; } .title-cont-font {font-size: 1.5rem; } .overlay-text__text {margin-top: 20%; }}",
+        ".title-font {color: black;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Nudes_LP_main_1.jpg",
+        "image_position": "bottom center",
+        "mobile_image_position": "center bottom",
+        "height": "adapt",
+        "height_desktop": 1000,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "Bebas Neue",
+        "title_cont": "",
+        "second_heading_font": "Snell Roundhand",
+        "title_size": 96,
+        "title_size_mobile": 32,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center end",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_4enh9c": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GJGeP7": {
+          "type": "heading",
+          "settings": {
+            "title": "BLEND IN.  STAND OUT.",
+            "use_h1": false
+          }
+        },
+        "heading_YyDQjn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Still the same classic flip flop.  Now with a modern, sleek square toe design.",
+            "use_h1": false
+          }
+        },
+        "text_H6qGfV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Nudes are more than just flip flops. When you put them on they feel like a second skin. They’re the perfect “Go Anywhere” flip flop that adds an element of ease to any outfit.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_qHBJH4": {
+          "type": "button",
+          "settings": {
+            "button_label": "GO NUDE",
+            "button_link": "shopify:\/\/collections\/lily-nudes",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GJGeP7",
+        "heading_YyDQjn",
+        "text_H6qGfV",
+        "button_qHBJH4"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: -2px; font-size: 2.5em; font-family: \"Bebas Neue\";}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_JpJzNY": {
+      "type": "gallery",
+      "blocks": {
+        "image_gtmMQq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Core_nudes_multi_1.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_rykDgp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Core_nudes_multi_4.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_BpmknJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Core_nudes_multi_2.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_98fhrx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/feet.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_gtmMQq",
+        "image_rykDgp",
+        "image_BpmknJ",
+        "image_98fhrx"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.gallery__row .gallery__item {margin-bottom: 40px; }}"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 300,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_UXziap": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WRHYhf": {
+          "type": "heading",
+          "settings": {
+            "title": "forever shades to choose from",
+            "use_h1": false
+          }
+        },
+        "heading_HArm3A": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Our new Square Toe Liri bridges the gap between laid back comfort and fashion-forward flair.",
+            "use_h1": false
+          }
+        },
+        "subheading_xCdg8G": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Our new Square Toe Liri bridges the gap between laid back comfort and fashion-forward flair."
+          }
+        },
+        "text_dbdrbi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>There is no ONE nude. Mix or match with our wide range of tones.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_gCFzXa": {
+          "type": "button",
+          "settings": {
+            "button_label": "go nude",
+            "button_link": "shopify:\/\/collections\/lily-nudes",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WRHYhf",
+        "heading_HArm3A",
+        "subheading_xCdg8G",
+        "text_dbdrbi",
+        "button_gCFzXa"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: -2px; font-size: 2.5em; font-family: \"Bebas Neue\";}",
+        "a.btn.btn--infinity {font-size: 0.8rem; padding: 1.4em 2.8em;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "image_with_text_overlay_custom_tAC8r8": {
+      "type": "image-with-text-overlay__custom",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/FindYourNude.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "theme_default",
+        "title_cont": "",
+        "second_heading_font": "theme_default",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "featured_collection_hnANgF": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "EXPLORE",
+        "collection": "lily-nudes",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": true,
+        "full_width": true
+      }
+    },
+    "rich_text_QYftj3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mbnkzh": {
+          "type": "heading",
+          "settings": {
+            "title": "NUDES ON YOU",
+            "use_h1": false
+          }
+        },
+        "text_exfbPm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Available in our top three colors<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_mbnkzh",
+        "text_exfbPm"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: -2px; font-size: 2.5em; font-family: \"Bebas Neue\";}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_xkLkBj": {
+      "type": "gallery",
+      "blocks": {
+        "image_ediJzN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UGC_2.jpg",
+            "alignment": "bottom center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_HUGGpW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UGC_5.jpg",
+            "alignment": "bottom center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_UhgEqq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UGC_3.jpg",
+            "alignment": "bottom center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_ykYJ7t": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UGC_1.jpg",
+            "alignment": "bottom center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_ediJzN",
+        "image_HUGGpW",
+        "image_UhgEqq",
+        "image_ykYJ7t"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.gallery__row .gallery__item {margin-bottom: 40px; }}"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_7xQECd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tR8rGg": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text",
+            "use_h1": false
+          }
+        },
+        "text_ziLMEp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_h3Ed4i": {
+          "type": "button",
+          "settings": {
+            "button_label": "EXPLORE",
+            "button_link": "shopify:\/\/collections\/lily-nudes",
+            "button_style": "infinity"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tR8rGg",
+        "text_ziLMEp",
+        "button_h3Ed4i"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_custom_8mccVC",
+    "rich_text_4enh9c",
+    "gallery_JpJzNY",
+    "rich_text_UXziap",
+    "image_with_text_overlay_custom_tAC8r8",
+    "featured_collection_hnANgF",
+    "rich_text_QYftj3",
+    "gallery_xkLkBj",
+    "rich_text_7xQECd"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "sections": {
+    "9487b028-30cd-4e22-b31e-67c10f267477": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".h1-style {font-family: \"Bebas Neue\"; font-size: 26px; color: #5d3a2b; letter-spacing: 1.2px;}",
+        "div.rte {font-size: 14px;}",
+        ".btn--primary {font-family: \"Bebas Neue\"; font-size: 14px; letter-spacing: 1.2px; padding: 1em 50px 1em; background: #ece2d4; color: #5d3a2b; border: #ece2d4;}",
+        ".button.altcolour:hover {background-color: #f1f1f1;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/About_us_1b.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "ABOUT US",
+        "use_h1": false,
+        "text": "<p>TKEES was co-founded in 2009 by wife and husband duo, Carly and Jesse Burnett. After searching for the perfect barely-there flip flop that was accessible and responsibly produced—they created their own.<\/p><p>The now-iconic Lily was launched in five nude shades and set the pace for future collections of timeless wardrobe staples.<\/p>",
+        "button_label": "Shop Nudes",
+        "button_link": "shopify:\/\/collections\/lily-nudes",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "fca9f644-4dbb-47bb-a511-848803cd3f4e": {
+      "type": "custom-row",
+      "blocks": {
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/about-us-nudes.jpg",
+            "image_position": "center right",
+            "height": "adapt",
+            "height_desktop": 480,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": true,
+            "overlay_style": "no_background"
+          }
+        },
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "About Us",
+            "text": "<p>TKEES was co-founded in 2009 by wife and husband duo, Carly and Jesse Burnett. After searching for the perfect barely-there flip flop that was accessible and responsibly produced—they created their own.<\/p><p>The now-iconic Lily was launched in five nude shades and set the pace for future collections of timeless wardrobe staples.<\/p>",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/lily-nudes",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-0",
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h1-style {font-family: \"Bebas Neue\"; font-size: 26px; color: #5d3a2b; letter-spacing: 1.2px;}",
+        ".btn--primary {font-family: \"Bebas Neue\"; font-size: 16px; letter-spacing: 1.2px; padding: 1em 50px 1em; background: #ece2d4; color: #5d3a2b; border: #ece2d4;}",
+        ".button.altcolour:hover {background-color: #f1f1f1;}",
+        " {font-size: 14px;}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "7a128170-44de-4f7a-bdd7-113c7d176f79": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-family: \"Bebas Neue\"; color: #5d3a2b; letter-spacing: 1.2px;}",
+        ".overlay-text__button {font-family: \"Bebas Neue\"; font-size: 14px; letter-spacing: 1.2px; padding: 1em 50px 1em; background: #ece2d4; color: #5d3a2b; border: #ece2d4;}",
+        ".overlay-text {color: #5d3a2b;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ode-to-lily.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/ode-to-lily-mobile_2eabe3f2-c77d-4c14-bc3f-6b8036168d15.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "fixed",
+        "height_desktop": 400,
+        "height_mobile": 500,
+        "image_link": "shopify:\/\/collections\/lily-nudes",
+        "subheading": "",
+        "title": "Ode to Lily",
+        "title_size": 48,
+        "title_size_mobile": 24,
+        "use_h1": false,
+        "text": "<p>The one that started it all<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "Shop Now",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "bottom left",
+        "full_width": false,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background"
+      }
+    },
+    "b60f0dce-1776-44b1-9f21-d46259190fa6": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".h1-style {font-family: \"Bebas Neue\"; font-size: 26px; color: #5d3a2b; letter-spacing: 1.2px;}",
+        "div.rte {font-size: 14px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/About_us_2.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Design & Manufacturing",
+        "use_h1": false,
+        "text": "<p>We believe in buying better—and the same philosophy applies to how our products are made.  By investing in quality over quantity, we're able to create products and collections that outlive trends. <\/p><p>Avoiding over production, our season-less approach allows us to make long term design decisions that lead to reduced waste with our European and Brazilian partners.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "3b21fe63-9f9b-433c-ad35-69b767e6b7a2": {
+      "type": "custom-row",
+      "blocks": {
+        "6af4b006-1235-476b-ae36-a1bd3f573a49": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/design-manufacturing-tkees-mobile.jpg",
+            "image_position": "center right",
+            "height": "adapt",
+            "height_desktop": 480,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": true,
+            "overlay_style": "no_background"
+          }
+        },
+        "c744c34f-ba7c-4df1-ac19-62a29617cb9a": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Design & Manufacturing",
+            "text": "<p>We believe in buying better—and the same philosophy applies to how our products are made.  By investing in quality over quantity, we're able to create products and collections that outlive trends. <\/p><p>Avoiding over production, our season-less approach allows us to make long term design decisions that lead to reduced waste with our trusted partners in Canada, Brazil and China.<\/p>",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/lily-nudes",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "6af4b006-1235-476b-ae36-a1bd3f573a49",
+        "c744c34f-ba7c-4df1-ac19-62a29617cb9a"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h1-style {font-family: \"Bebas Neue\"; font-size: 26px; color: #5d3a2b; letter-spacing: 1.2px;}",
+        ".btn--primary {font-family: \"Bebas Neue\"; font-size: 16px; letter-spacing: 1.2px; padding: 1em 50px 1em; background: #ece2d4; color: #5d3a2b; border: #ece2d4;}",
+        ".button.altcolour:hover {background-color: #f1f1f1;"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "e3b8a72a-63ee-4832-9288-9707144360b8": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15870873731247__e3b8a72a-63ee-4832-9288-9707144360b8-1687291869efc7c07d-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Design and Manufacturing",
+            "use_h1": false
+          }
+        },
+        "template--15870873731247__e3b8a72a-63ee-4832-9288-9707144360b8-1687291869efc7c07d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe in buying better—and the same philosophy applies to how our products are made.  By investing in quality over quantity, we're able to create products and collections that outlive trends. <\/p><p>Avoiding over production, our season-less approach allows us to make long term design decisions that lead to reduced waste with our trusted partners in Canada, Brazil and China.<\/p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15870873731247__e3b8a72a-63ee-4832-9288-9707144360b8-1687291869efc7c07d-0",
+        "template--15870873731247__e3b8a72a-63ee-4832-9288-9707144360b8-1687291869efc7c07d-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h1-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #5d3a2b; letter-spacing: 1.2px;}",
+        " {font-size: 14px;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        ".majortitle {display: none;}"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "9487b028-30cd-4e22-b31e-67c10f267477",
+    "fca9f644-4dbb-47bb-a511-848803cd3f4e",
+    "7a128170-44de-4f7a-bdd7-113c7d176f79",
+    "b60f0dce-1776-44b1-9f21-d46259190fa6",
+    "3b21fe63-9f9b-433c-ad35-69b767e6b7a2",
+    "e3b8a72a-63ee-4832-9288-9707144360b8",
+    "main"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "sections": {
+    "3f8815a5-03f5-43a4-80b5-e305a0fb9746": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subheading": "",
+        "title": "Image with text",
+        "use_h1": false,
+        "text": "<p>Pair text with an image to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.<\/p>",
+        "button_label": "Read more",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a68eb6fc-8c6b-4f5b-b2b7-d0b53c4001a6": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "h2{font-family: \"Bebas Neue\"; color: #5d3a2b; letter-spacing: 1.2px; margin-bottom: -2px;}",
+        ".overlay-text {color: #5d3a2b;"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/footwear-image-desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/footwear-image-mobile.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "CARE GUIDE",
+        "title_size": 56,
+        "title_size_mobile": 36,
+        "use_h1": false,
+        "text": "<p>Learn how to care for your pieces <\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "da1ba046-2ffc-4785-b391-428f9ec78d3e": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "template--15952564715695__da1ba046-2ffc-4785-b391-428f9ec78d3e-1689607855d52d545f-0": {
+          "type": "question",
+          "settings": {
+            "title": "Leather Footwear",
+            "answer": "<p>Leather is known for its durability, softness, and ability to mold to your foot.  To reduce the signs of wear, ensure regular care and cleaning.<\/p><p><strong>How to Care<\/strong><\/p><ul><li>Using a leather cleaner, spot clean with a microfiber cloth<\/li><li>Apply a leather conditioner to avoid cracks<\/li><li>Avoid water, oils and creams that may stain the finish<\/li><li>Store in a dust bag off-season<\/li><\/ul>"
+          }
+        },
+        "template--15952564715695__da1ba046-2ffc-4785-b391-428f9ec78d3e-1689607855d52d545f-1": {
+          "type": "question",
+          "settings": {
+            "title": "Vegan Leather Footwear",
+            "answer": "<p>Made from 100% PU, vegan leather is a great alternative to our classic leather styles—plus, it's pretty low-maintenance.<\/p><p><strong>How to Care<br\/><\/strong><\/p><ul><li>Regularly clean with a soft, damp microfiber cloth<\/li><li>A mild detergent can be used for stubborn marks<\/li><li>Dry off using a microfiber cloth<\/li><li>Avoid water, oils and creams that may stain the finish<\/li><li>Store in a dust bag off-season<\/li><\/ul>"
+          }
+        },
+        "4fc6f11b-cd08-4a0a-90db-c2a86c8d4d94": {
+          "type": "question",
+          "settings": {
+            "title": "Core Clothing",
+            "answer": "<p>Made with 100% cotton terry, the key to having your pieces hold their shape and softness is all in how you care for them.<\/p><p><strong>How to Care<\/strong><\/p><ul><li>Machine wash in cold water on a gentle cycle<\/li><li>Use a mild detergent and fabric softner<\/li><li>Lay flat to dry<\/li><li>For added softness, put in the dryer on low<br\/>heat for 5 minutes<\/li><\/ul>"
+          }
+        },
+        "b53f1e80-bc87-4289-abbe-f0d6915d6ae2": {
+          "type": "question",
+          "settings": {
+            "title": "Core Fleece Clothing",
+            "answer": "<p>Made with 80% cotton, 20% polyester blend the key to having your pieces hold their shape and softness is all in how you care for them.<\/p><p><strong>How to Care<\/strong><\/p><ul><li>Machine wash in cold water on a gentle cycle<\/li><li>Use a mild detergent and fabric softener<\/li><li>Wash with similar colors<\/li><li>Lay flat to dry<\/li><li>For added softness – dry on low heat for 5 minutes<\/li><\/ul>"
+          }
+        },
+        "c84ab084-c44a-444e-b137-0b1b4cd4abd0": {
+          "type": "question",
+          "settings": {
+            "title": "Super Rib",
+            "answer": "<p>Body-hugging with just enough stretch, our Super Rib collection is made with sustainable Bamboo Rayon for softness and durability.<\/p><p><strong>How to Care<\/strong><\/p><ul><li>Machine wash in cold water on a gentle cycle<\/li><li>Use a mild detergent<\/li><li>Wash with similar colors<\/li><li>Lay flat to dry<\/li><li>Do not iron<\/li><\/ul>"
+          }
+        },
+        "6d4d916e-a07f-4586-b3c1-e4a97350b0f7": {
+          "type": "question",
+          "settings": {
+            "title": "Gauze",
+            "answer": "<p>Made wtih 100% cotton with a soft and breezy feel. Help your pieces keep their shape by treating them with extra care.<\/p><ul><li>Machine wash in cold water on a gentle cycle<\/li><li>Use a mild detergent<\/li><li>Wash with similar colors<\/li><li>Tumble dry on low<\/li><li>Do not iron<\/li><li>Can be dry cleaned<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15952564715695__da1ba046-2ffc-4785-b391-428f9ec78d3e-1689607855d52d545f-0",
+        "template--15952564715695__da1ba046-2ffc-4785-b391-428f9ec78d3e-1689607855d52d545f-1",
+        "4fc6f11b-cd08-4a0a-90db-c2a86c8d4d94",
+        "b53f1e80-bc87-4289-abbe-f0d6915d6ae2",
+        "c84ab084-c44a-444e-b137-0b1b4cd4abd0",
+        "6d4d916e-a07f-4586-b3c1-e4a97350b0f7"
+      ],
+      "custom_css": [
+        ".cc-accordion-item__title {font-family: \"Bebas Neue\"; color: #5d3a2b; letter-spacing: 1.2px; font-size: 20px;}"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".majortitle {display: none;}"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "3f8815a5-03f5-43a4-80b5-e305a0fb9746",
+    "a68eb6fc-8c6b-4f5b-b2b7-d0b53c4001a6",
+    "da1ba046-2ffc-4785-b391-428f9ec78d3e",
+    "main"
+  ]
+}

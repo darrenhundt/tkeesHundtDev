@@ -1,0 +1,84 @@
+{
+  "sections": {
+    "7fb770ac-30c7-4355-a517-5416cb5f5ec5": {
+      "type": "collection-list",
+      "blocks": {
+        "ef2c5cfe-73a5-438d-ab56-f14eaa4fd474": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "bb19e5af-c9ef-4cdc-a6e6-bce02aa863fa": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "fb3c5e82-9bcb-46b6-bd73-741eb73174c3": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "eed98dd2-23f2-4f5d-8f70-34d0f7df5c8c": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "ef2c5cfe-73a5-438d-ab56-f14eaa4fd474",
+        "bb19e5af-c9ef-4cdc-a6e6-bce02aa863fa",
+        "fb3c5e82-9bcb-46b6-bd73-741eb73174c3",
+        "eed98dd2-23f2-4f5d-8f70-34d0f7df5c8c"
+      ],
+      "settings": {
+        "title": "Shop by catergory",
+        "enable_carousel": false,
+        "grid": 4,
+        "use_alt_bg": false,
+        "full_width": true
+      },
+      "disabled": true
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "shadow",
+        "coll_num_per_page_int": 30,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": false,
+        "show_disabled_filters": false,
+        "ajax_products": false,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "enable_subcoll": true,
+        "subcoll_menu": "main-menu",
+        "subcoll_style": "gallery",
+        "subcoll_gall_shape": "l-21",
+        "image_position": "center center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": false,
+        "subcoll_gall_overlay_style": "shadow",
+        "subcoll_gall_text_alignment": "center center",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    }
+  },
+  "order": [
+    "7fb770ac-30c7-4355-a517-5416cb5f5ec5",
+    "main"
+  ]
+}

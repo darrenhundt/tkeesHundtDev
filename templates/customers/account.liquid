@@ -1,0 +1,323 @@
+<style>
+  .text--bold {
+    font-family: 'CenturyGothic-Bold';
+    text-transform: uppercase;
+    display: inline-block !important;
+    width: 100px !important;
+  }
+
+  .name-pw {
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-left: 1em;
+
+    margin: 10px !important;
+  }
+
+  /* ADA Compliant Error Styling */
+  .error-message {
+    color: #d32f2f;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+  }
+
+  .error-text {
+    font-weight: bold;
+  }
+
+  #msgerror {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    display: none; /* Hidden by default */
+  }
+
+  #msgerror:not(:empty) {
+    display: block; /* Show only when there's content */
+  }
+
+  #msgerror[role='alert'] {
+    background-color: #ffebee;
+    border: 1px solid #d32f2f;
+    color: #d32f2f;
+  }
+
+  #msgerror[role='status'] {
+    background-color: #e8f5e8;
+    border: 1px solid #4caf50;
+    color: #2e7d32;
+  }
+
+  /* Focus styles for accessibility */
+  input[aria-invalid='true'] {
+    border-color: #d32f2f;
+    box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2);
+  }
+
+  /* Ensure error messages are visible to screen readers */
+  .error-message:not(:empty) {
+    display: block !important;
+  }
+</style>
+<div id="admin_header" data-cc-animate>
+  <div class="action_link action_return note opposing-items" id="return_to_store">
+    <a href="{{ routes.root_url }}">{{ 'customer.general.return' | t }}</a>
+    <a href="{{ routes.account_logout_url }}">{{ 'layout.customer.log_out' | t }}</a>
+  </div>
+  <h2 class="title">{{ 'customer.account.title' | t }}</h2>
+</div>
+
+<div id="customer_sidebar" data-cc-animate>
+  <div id="customer_detail" class="group">
+    <h5 class="name">{{ customer.name }}</h5>
+    <p class="email note">{{ customer.email }}</p>
+    <p class="email note">
+      Birthday: {{ customer.metafields.custom.birthday | date: '%b %d, %Y' }}
+      <b><a href="#" onclick="showForm();">(Edit)</a></b>
+    </p>
+    <div id="ACCOUNT--INFORMATION--FORM" class="address note lightly-spaced-row" style="display:none">
+      <div id="msgerror" role="alert" aria-live="polite" aria-atomic="true"></div>
+      <form id="customer-update-form" onsubmit="editDataCustomer(); return false;">
+        <p class="name-pw">
+          <span class="text--bold">FIRST NAME:</span>
+          <input
+            type="text"
+            id="first_name"
+            class="input-full"
+            name="first_name"
+            value="{{customer.first_name}}"
+            autocapitalize="words"
+            style="width: 210px !important;"
+            required
+            aria-describedby="first_name_error"
+            aria-invalid="false"
+          >
+          <span id="first_name_error" class="error-message" style="display:none;"></span>
+          <input type="hidden" id="id" class="input-full" name="id" value="{{customer.id}}">
+        </p>
+        <p class="name-pw">
+          <span class="text--bold">LAST NAME:</span>
+          <input
+            type="text"
+            id="last_name"
+            class="input-full"
+            name="last_name"
+            value="{{customer.last_name}}"
+            autocapitalize="words"
+            style="width: 210px !important;"
+            aria-describedby="last_name_error"
+            aria-invalid="false"
+          >
+          <span id="last_name_error" class="error-message" style="display:none;"></span>
+        </p>
+        <p class="name-pw">
+          <span class="text--bold">BIRTHDAY:&nbsp;&nbsp;</span>
+          <input
+            type="date"
+            id="birthday"
+            name="birthday"
+            value="{{customer.metafields.custom.birthday}}"
+            max="2022-01-01"
+            style="width: 210px !important;"
+            aria-describedby="birthday_error"
+            aria-invalid="false"
+          >
+          <span id="birthday_error" class="error-message" style="display:none;"></span>
+        </p>
+        <p class="name-pw">
+          <button type="submit" class="thebutton">Submit</button>
+          <button type="button" class="thebutton" onclick="hideForm();">Cancel</button>
+        </p>
+      </form>
+    </div>
+
+    <div class="address note lightly-spaced-row">
+      {% if customer.default_address != null %}
+        <p>{{ customer.default_address.address1 }}</p>
+        {% if customer.default_address.address2 != '' %}
+          <p>{{ customer.default_address.address2 }}</p>
+        {% endif %}
+        <p>
+          {{ customer.default_address.city }},
+          {% if address.province_code %}{{ customer.default_address.province_code }}, {% endif -%}
+          {{- customer.default_address.country }}
+        </p>
+        <p>{{ customer.default_address.zip }}</p>
+        <p class="address-phone">{{ customer.default_address.phone }}</p>
+      {% endif %}
+    </div>
+
+    <a id="view_address" href="{{ routes.account_addresses_url }}">
+      {{- 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a
+    >
+  </div>
+</div>
+
+<div id="customer_orders" data-cc-animate>
+  {% paginate customer.orders by 20 %}
+    {% if customer.orders.size != 0 %}
+      <table class="responsive-table">
+        <thead>
+          <tr>
+            <th class="order_number">{{ 'customer.orders.order_number' | t }}</th>
+            <th class="date">{{ 'customer.orders.date' | t }}</th>
+            <th class="payment_status">{{ 'customer.orders.payment_status' | t }}</th>
+            <th class="fulfillment_status">{{ 'customer.orders.fulfillment_status' | t }}</th>
+            <th class="total">{{ 'customer.orders.total' | t }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for order in customer.orders %}
+            <tr class="{% if order.cancelled %}cancelled_order{% endif %}">
+              <td class="responsive-table__cell-head">
+                <span class="responsive-table__cell-label">{{ 'customer.orders.order_number' | t }}</span>
+                {{ order.name | link_to: order.customer_url }}
+                <span class="mobile-only">- {{ order.created_at | date: format: 'month_date_year' }}</span>
+                <span class="responsive-table__cell-head__icon">{% render 'svg-chevron-right' %}</span>
+              </td>
+              <td class="desktop-only">
+                <span class="note">{{ order.created_at | date: format: 'month_date_year' }}</span>
+              </td>
+              <td class="responsive-table__first-mobile-cell">
+                <span class="responsive-table__cell-label">{{ 'customer.orders.payment_status' | t }}</span>
+                <span class="status_{{ order.financial_status }}">{{ order.financial_status_label }}</span>
+              </td>
+              <td>
+                <span class="responsive-table__cell-label">{{ 'customer.orders.fulfillment_status' | t }}</span>
+                <span class="status_{{ order.fulfillment_status }}">{{ order.fulfillment_status_label }}</span>
+              </td>
+              <td>
+                <span class="responsive-table__cell-label">{{ 'customer.orders.total' | t }}</span>
+                <span class="total">
+                  {%- if settings.cart_currency_code_enabled -%}
+                    {{- order.total_price | money_with_currency -}}
+                  {%- else -%}
+                    {{- order.total_price | money -}}
+                  {%- endif -%}
+                </span>
+
+                <div class="responsive-table__more">
+                  <a href="{{ order.customer_url }}">{{ 'customer.orders.full_details_html' | t }}</a>
+                </div>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>{{ 'customer.orders.none' | t }}</p>
+    {% endif %}
+
+    <div class="pagination-row">{% render 'pagination-control', paginate: paginate %}</div>
+  {% endpaginate %}
+</div>
+
+<script>
+  function showForm() {
+    $('#ACCOUNT--INFORMATION--FORM').show();
+  }
+
+  function hideForm() {
+    $('#ACCOUNT--INFORMATION--FORM').hide();
+  }
+
+  function editDataCustomer() {
+    var first_name = $('#first_name').val();
+    var last_name = $('#last_name').val();
+    var birthday = $('#birthday').val();
+    console.log(birthday.length);
+
+    // Clear previous errors
+    clearErrors();
+
+    if (birthday.length == 0) {
+      showError('birthday', 'Please fill up your birthday.');
+      return;
+    }
+
+    if (first_name == '' || first_name == ' ') {
+      showError('first_name', 'First name is required!');
+      return;
+    }
+
+    // Show loading state
+    $('#msgerror').html('<div role="status" aria-live="polite">Updating your information...</div>');
+
+    var scriptUrl =
+      'https://tkeesconnections.appspot.com/shopify/put/customer/{{ customer.id }}/0/' +
+      first_name +
+      '/' +
+      last_name +
+      '/{{ customer.email }}/' +
+      birthday +
+      '';
+    console.log(scriptUrl);
+    $.ajax({
+      url: scriptUrl,
+      type: 'get',
+      dataType: 'json',
+      async: true,
+      success: function (data) {
+        console.log(data);
+        if (data[0]['errors']) {
+          console.log(data[0]['errors']['phone']);
+          if (data[0]['errors']) {
+            showGeneralError('ERROR: ' + data[0]['errors']['phone']);
+          }
+          if (data[0]['first_name']) {
+            showError('first_name', data[0]['errors']['first_name']);
+          }
+          if (data[0]['last_name']) {
+            showError('last_name', data[0]['errors']['last_name']);
+          }
+        } else if (data[1]['errors']) {
+          showError('birthday', 'You are using a wrong date format for your birthday!');
+        } else {
+          // Success - announce to screen readers before reload
+          $('#msgerror').html('<div role="status" aria-live="polite">Information updated successfully!</div>');
+          setTimeout(function () {
+            location.reload();
+          }, 1000);
+        }
+      },
+      error: function (xhr, status, error) {
+        console.log('External service failed:', status, error);
+        showGeneralError(
+          'Unable to update customer information at this time. Please contact support or try again later.'
+        );
+      },
+    });
+  }
+
+  function showError(fieldId, message) {
+    // Update ARIA attributes
+    $('#' + fieldId).attr('aria-invalid', 'true');
+
+    // Show field-specific error
+    $('#' + fieldId + '_error')
+      .html('<span class="error-text">' + message + '</span>')
+      .show();
+
+    // Show general error message
+    $('#msgerror').html('<div role="alert" aria-live="assertive">' + message + '</div>');
+
+    // Focus on the field with error
+    $('#' + fieldId).focus();
+  }
+
+  function showGeneralError(message) {
+    $('#msgerror').html('<div role="alert" aria-live="assertive">' + message + '</div>');
+    // Focus on the error message for screen readers
+    $('#msgerror').focus();
+  }
+
+  function clearErrors() {
+    // Clear all error messages
+    $('.error-message').hide().empty();
+    $('#msgerror').empty();
+
+    // Reset ARIA attributes
+    $('#first_name, #last_name, #birthday').attr('aria-invalid', 'false');
+  }
+</script>

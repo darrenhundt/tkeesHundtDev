@@ -1,0 +1,184 @@
+{% comment %}
+  Parameters:
+    - id {string} [required] - A unique id.
+    - native_name {string} [optional] - A unique name for the native select element (if included).
+    - native_form_id {string} [optional] - Associated form for the native select element.
+    - images {image_drop} [optional] - Preview image(s) to be shown with element
+    - preview_data {Metaobject_drop} [required] - Preview data for mono overlay including preview image and text alignment settings
+{% endcomment %}
+
+{% liquid
+  if mono_top_mobile == blank
+    assign mono_top_mobile = mono_top
+  endif
+  if mono_left_mobile == blank
+    assign mono_left_mobile = mono_left
+  endif
+  if mono_angle_mobile == blank
+    assign mono_angle_mobile = mono_angle
+  endif
+  if mono_font_mobile == blank
+    assign mono_font_mobile = mono_font_size
+  endif
+%}
+
+<style>
+    :root {
+      --mono-height: 0;
+    }
+
+    .monogram-text-wrapper {
+      margin-top: 8px;
+      transition: max-height 0.5s ease-out;
+      overflow: hidden;
+    }
+    {% comment %} .mono-absolute {
+      position: absolute;
+    } {% endcomment %}
+    .monogram-text-wrapper.hide-mono {
+      max-height: 0;
+      {% comment %} opacity: 0; {% endcomment %}
+    }
+    .monogram-text-wrapper.show-mono {
+      max-height: var(--mono-height);
+      {% comment %} opacity: 1; {% endcomment %}
+      transition: max-height 0.5s ease-out, opacity 0.3s ease-out 0.5s;
+    }
+    .font-normal {
+      font-weight: normal;
+    }
+    .mb-5 {
+      margin-bottom: 5px;
+    }
+    .mt-10 {
+      margin-top: 10px;
+    }
+    input[type='text'].w-30 {
+      width: 30% !important;
+      min-width: 115px;
+      text-transform: uppercase;
+
+    }
+    .mono-checkbox-wrapper {
+      display: flex;
+    }
+    .mono-checkbox {
+      align-self: baseline;
+      margin-right: 2%;
+    }
+    .mono-label {
+      width: 90%;
+    }
+    .mono-images-wrapper {
+      display: flex;
+      position: relative
+    }
+    .mono-image {
+      padding: 5px;
+    }
+    .mono-preview-image {
+      position: relative;
+    }
+    .mono-overlay {
+      position: absolute;
+      z-index: 500;
+      width: 100%;
+      height: 100%;
+      top: {{ mono_top }}%;
+      left: {{ mono_left }}%;
+      color: {{ mono_color }};
+      transform: rotate({{ mono_angle }}deg);
+      letter-spacing: 0.1em;
+
+      font-family: "Open Sans", sans-serif;
+      font-size: {{ mono_font_size }}px;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+    @media screen and (max-width: 500px) {
+    .mono-overlay {
+      top: {{ mono_top_mobile}}%;
+      left: {{ mono_left_mobile }}%;
+      transform: rotate({{ mono_angle_mobile }}deg);
+      font-size: {{ mono_font_mobile }}px;
+    }
+  }
+</style>
+
+<div class="monogram-text-wrapper hide-mono" id="monogram">
+  <div class="mb-5 mt-10">
+    <label class="label" for="monogram-text">Text <span class="font-normal">(3 letters max)</span></label>
+    <input
+      type="text"
+      id="mono-tag"
+      name="properties[Order Item Notes]"
+      form="{{ product_form_id }}"
+      value="Monogram"
+      type="hidden"
+      hidden
+      disabled
+    >
+    <input
+      class="monogram-text w-30"
+      type="text"
+      id="{{ id }}"
+      form="{{ product_form_id }}"
+      maxlength="3"
+      required
+    >
+  </div>
+  {% comment %} <div>Max 3 letters</div> {% endcomment %}
+  <div class="mono-checkbox-wrapper">
+    {% comment %}
+      <input
+        type="checkbox"
+        name="mono-checkbox"
+        id="{{ id }}"
+        form="{{ product_form_id }}"
+        value="affirm"
+        class="mono-checkbox"
+      >
+      <label for="mono-checkbox" class="mono-label"> I understand monogrammed items are ineligible for return </label>
+    {% endcomment %}
+
+    <label for="mono-checkbox" class="mono-label">
+      *Monogrammed items are ineligible for return*<br>
+      *Monogram appears on right foot only*
+    </label>
+  </div>
+  {% if preview_img != blank %}
+    <div class="mono-preview-image">
+      <div class="mono-overlay" id="mono-overlay">TKE</div>
+      <img
+        src="{{ preview_img | image_url }}"
+        alt="{{ preview_img.alt }}"
+        height="{{ preview_img.height }}"
+        width="{{ preview_img.width }}"
+      >
+    </div>
+  {% endif %}
+  {% if image1 != blank %}
+    <div class="mono-images-wrapper{% if image2 != blank %} mono-images-multi{% endif %}">
+      <div class="mono-image">
+        <img
+          src="{{ image1.src | image_url }}"
+          alt="{{ image1.alt }}"
+          height="{{ image1.height }}"
+          width="{{ image1.width }}"
+        >
+      </div>
+      {% if image2 != blank %}
+        <div class="mono-image">
+          <img
+            src="{{ image2.src | image_url }}"
+            alt="{{ image2.alt }}"
+            height="{{ image2.height }}"
+            width="{{ image1.width }}"
+          >
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

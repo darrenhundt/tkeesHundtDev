@@ -1,0 +1,251 @@
+{
+  "sections": {
+    "image_with_text_overlay_custom_ifYBaw": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        ".overlay-text {color: #231f20; letter-spacing: 1.5px; margin-right: 12%;}",
+        "@media (max-width: 990px) {.overlay-text {margin-right: 7%; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Platforms_1.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "Bebas Neue",
+        "title_cont": "",
+        "separate_heading_text": false,
+        "second_heading_font": "theme_default",
+        "title_size": 54,
+        "title_size_mobile": 20,
+        "use_h1": true,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "default",
+        "text_alignment": "center end",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "active_time": "",
+        "inactive_time": "",
+        "enable_header_overlap": false
+      }
+    },
+    "6a8f9be1-86b6-4fd7-b84a-724975fc0042": {
+      "type": "collection-list",
+      "blocks": {
+        "38dbfee8-13d8-425e-8675-611f98864581": {
+          "type": "collection",
+          "settings": {
+            "collection": "flip-flop",
+            "image": "shopify:\/\/shop_images\/footwear-categories-flip-flop.jpg"
+          }
+        },
+        "2d0d0047-8ebc-455a-8567-386de3843f23": {
+          "type": "collection",
+          "settings": {
+            "collection": "multi-strap",
+            "image": "shopify:\/\/shop_images\/footwear-categories-straps.jpg"
+          }
+        },
+        "7e4d9364-1c27-483a-918b-bcbd86e22b54": {
+          "type": "collection",
+          "settings": {
+            "collection": "toe-loop",
+            "image": "shopify:\/\/shop_images\/footwear-categories-toe-loop.jpg"
+          }
+        },
+        "1b1e78b4-5005-4f43-aa17-70c779a0ff5d": {
+          "type": "collection",
+          "settings": {
+            "collection": "criss-cross",
+            "image": "shopify:\/\/shop_images\/footwear-categories-crisscross.jpg"
+          }
+        },
+        "c1b6213d-c49d-4d06-a4da-201bf34d17dc": {
+          "type": "collection",
+          "settings": {
+            "collection": "slides-mules",
+            "image": "shopify:\/\/shop_images\/footwear-categories-slides.jpg"
+          }
+        },
+        "8542a132-f8ba-4256-a17f-ac7f588b9314": {
+          "type": "collection",
+          "settings": {
+            "collection": "ankle-tie-up",
+            "image": "shopify:\/\/shop_images\/footwear-categories-ankles-1.jpg"
+          }
+        },
+        "1ba97752-4afc-4c70-8dad-7c578abd2180": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "pants-leggings"
+          }
+        }
+      },
+      "block_order": [
+        "38dbfee8-13d8-425e-8675-611f98864581",
+        "2d0d0047-8ebc-455a-8567-386de3843f23",
+        "7e4d9364-1c27-483a-918b-bcbd86e22b54",
+        "1b1e78b4-5005-4f43-aa17-70c779a0ff5d",
+        "c1b6213d-c49d-4d06-a4da-201bf34d17dc",
+        "8542a132-f8ba-4256-a17f-ac7f588b9314",
+        "1ba97752-4afc-4c70-8dad-7c578abd2180"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".product-block__title {text-transform: uppercase; font-family: \"Bebas Neue\"; font-size: 16px; color: #222; letter-spacing: 1px;}",
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 22px; color: #222; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "SHOP BY CATEGORY",
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    },
+    "140d5777-cbff-4092-9436-ea5d1ab7ef91": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image_bg_color": "",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 500,
+        "height_mobile": 300,
+        "image_link": "",
+        "subheading": "",
+        "title": "compress test 2",
+        "title_size": 32,
+        "title_size_mobile": 20,
+        "use_h1": true,
+        "text": "<p>Clean lines with an <br\/>elastic ankle strap for all day wear.<\/p>",
+        "enlarge_text": false,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "bottom left",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background",
+        "enable_header_overlap": false
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "custom_css": [
+        ".h3-style {font-family: \"Bebas Neue\"; font-size: 18px; color: #222; letter-spacing: 1px;}",
+        ".product-block__title {font-family: \"Bebas Neue\"; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "show_collection_title": true,
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "no_background",
+        "coll_num_per_page_int": 48,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "all",
+        "show_filter_counts": false,
+        "show_disabled_filters": false,
+        "ajax_products": true,
+        "enable_sticky_filter": true,
+        "filter_two_columns": true,
+        "coll_show_sort": false,
+        "coll_show_feat": false,
+        "enable_subcoll": true,
+        "subcoll_menu": "",
+        "subcoll_style": "gallery",
+        "subcoll_gall_shape": "l-21",
+        "image_position": "bottom center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": true,
+        "subcoll_gall_overlay_style": "shadow",
+        "subcoll_gall_text_alignment": "bottom left",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    },
+    "20003708-db70-4056-aa53-f48f5e6727f1": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "heading_alignment": "center",
+        "collection": "power-casual",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "use_alt_carousel": false,
+        "hide_swatches": false,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": true,
+        "full_width": true
+      }
+    },
+    "3c77a4cf-b898-4c5b-98bd-4e3c2740e70a": {
+      "type": "product-list",
+      "disabled": true,
+      "settings": {
+        "title": "Product list",
+        "product_list": [
+          "the-boxy-crew-bisque",
+          "the-boxy-crew-black",
+          "the-boxy-crew-cafe",
+          "the-boxy-crew-cream"
+        ],
+        "alt_cards": false,
+        "swatch_size": 20,
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "use_alt_bg": true,
+        "full_width": true
+      }
+    },
+    "c7723708-294f-4a98-9155-9cb063a7bed1": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "heading_alignment": "center",
+        "collection": "",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "use_alt_carousel": false,
+        "hide_swatches": false,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": true,
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_custom_ifYBaw",
+    "6a8f9be1-86b6-4fd7-b84a-724975fc0042",
+    "140d5777-cbff-4092-9436-ea5d1ab7ef91",
+    "main",
+    "20003708-db70-4056-aa53-f48f5e6727f1",
+    "3c77a4cf-b898-4c5b-98bd-4e3c2740e70a",
+    "c7723708-294f-4a98-9155-9cb063a7bed1"
+  ]
+}

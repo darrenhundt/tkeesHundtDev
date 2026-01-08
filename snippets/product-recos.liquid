@@ -1,0 +1,165 @@
+{% comment %}
+  @Params:
+    title {string}: Section title from block
+    product_list {Product array}: Assigned recommendations from Search and Discovery
+    in_stock {bool}: show only recommended products with inventory
+    color_match {bool}: show only recommended products in matching color
+{% endcomment %}
+
+{% style %}
+  .product-recos-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    margin-top: -10px;
+  }
+  .product-recos-wrapper ul {
+    margin: 0;
+  }
+  .product-reco {
+    display: flex;
+    margin-bottom: 4%;
+  }
+  .product-reco:last-of-type {
+    margin-bottom: 0;
+  }
+  .recos-heading {
+    margin-bottom: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    font-weight: 400 !important;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+  }
+  .reco-image-wrapper {
+    /* margin-top: 5px; */
+    margin-right: 18px;
+    /* align-self: center; */
+    height: 100%;
+  }
+  .reco-image {
+    /* width: 33%; */
+    min-width: 123px;
+    height: 100%;
+  }
+  .reco-form {
+    flex-grow: 1;
+    padding-top: 10px;
+  }
+  .reco-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* margin-bottom: 5px; */
+    width: fit-content;
+  }
+  .reco-color {
+    margin-bottom: 8px;
+  }
+  .reco-buy-button select {
+    margin-bottom: 10px;
+  }
+  .reco-buy-button button {
+    width: 100%;
+  }
+  .reco-buy-button select option {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .variant-sold-out {
+    color: #982f36;
+    float: right;
+  }
+{% endstyle %}
+
+<div class="product-recos-wrapper">
+  <div class="recos-heading">{{ title }}</div>
+  <ul class="product-recos">
+    {% for product in product_list %}
+      {% liquid
+        assign title_arr = product.title | split: ' - '
+        assign product_title = title_arr[0]
+        assign reco_color = title_arr[1]
+        assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id
+        assign product_price = product.price | money
+        assign add_to_cart_text = 'ADD - ' | append: product_price
+      %}
+      <li class="product-reco">
+        <a href="{{ product.url }}">
+          <div class="reco-image-wrapper">
+            <div
+              class="reco-image"
+              style="background: url({{ product.featured_image | image_url: width: 200 }}); background-size: cover;"
+            ></div>
+          </div>
+        </a>
+        <div class="reco-form">
+          <a href="{{ product.url }}">
+            <div class="reco-title">{{ product_title }}</div>
+          </a>
+          <div class="reco-color">
+            <span><strong>Color : </strong></span><span>{{ reco_color }}</span>
+          </div>
+          <div class="reco-options"></div>
+          <div class="reco-buy-button">
+            {% form 'product', product, id: product_form_id, data-product-id: product.id %}
+              <select
+                name="id"
+                class="original-selector{% if product.variants.size == 1 %} hidden{% endif %}"
+                aria-label="{{ 'products.product.selector_label' | t | escape }}"
+                style="display: block; width: 100%;"
+                id="reco-variant-selector"
+              >
+                {% if product.variants.size > 1 %}
+                  <option value="">Select size</option>
+                {% endif %}
+                {% for variant in product.variants %}
+                  {% assign variant_title = variant.title | split: '/ ' | last %}
+                  <option
+                    value="{{ variant.id }}"
+                    {% if variant == current_variant %}
+                      selected="selected"
+                    {% endif %}
+                    {% if variant.available != true %}
+                      disabled
+                    {% endif %}
+                    {% if section.settings.inventory_transfers_enable and variant.incoming %}
+                      {%- if variant.next_incoming_date -%}
+                        {%- assign date = variant.next_incoming_date | date: format: 'date' -%}
+                        {%- if variant.available -%}
+                          data-inventory-transfer="{{ 'products.transfers.will_not_ship_until' | t: date: date | escape }}"
+                        {%- else -%}
+                          data-inventory-transfer="{{ 'products.transfers.will_be_in_stock_after' | t: date: date | escape }}"
+                        {%- endif -%}
+                      {%- else -%}
+                        data-inventory-transfer="{{ 'products.transfers.waiting_for_stock' | t | escape }}"
+                      {%- endif -%}
+                    {% endif %}
+                    data-stock="{% if variant.available == false %}out{% endif %}"
+                  >
+                    <div>
+                      {{ variant_title }}
+                    </div>
+                    {% if variant.available != true %}
+                      <div class="variant-sold-out">(Sold Out)</div>
+                    {% endif %}
+                  </option>
+                {% endfor %}
+              </select>
+              <button
+                id="buy_reco_button"
+                class="button"
+                type="submit"
+                data-add-to-cart-text="{{ add_to_cart_text }}"
+              >
+                {{- add_to_cart_text -}}
+              </button>
+            {% endform %}
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

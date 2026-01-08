@@ -1,0 +1,382 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "3f8815a5-03f5-43a4-80b5-e305a0fb9746": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subheading": "",
+        "title": "Image with text",
+        "use_h1": false,
+        "text": "<p>Pair text with an image to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.<\/p>",
+        "button_label": "Read more",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "fca9f644-4dbb-47bb-a511-848803cd3f4e": {
+      "type": "custom-row",
+      "blocks": {
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "Subheading",
+            "title": "Tell your story",
+            "text": "<p>Pair text with an image to tell a story<\/p>",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Welcome",
+            "text": "<p>Use this text to share information about your store with your customers.<\/p><p>Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "8db903e9-d622-4d78-974f-8392b1a7c7df": {
+          "type": "html",
+          "settings": {
+            "width": "half",
+            "code": "test"
+          }
+        }
+      },
+      "block_order": [
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-0",
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-1",
+        "8db903e9-d622-4d78-974f-8392b1a7c7df"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "image_with_text_overlay_fiRtCx": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image_bg_color": "",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "Tell your story",
+        "title": "PLAN YOUR BUY FOR",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "<p>BFCM<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "Shop this",
+        "button_url_1": "",
+        "button_label_2": "Shop all",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_custom_TBPNcf": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        ".overlay-text__text {color: white; padding-top: 6%;}",
+        ".overlay-text__title {font-size: 5rem; line-height: 8rem; padding-left: 1.1rem; text-align: left;}",
+        ".title-cont-font {font-size: 14rem;}",
+        ".overlay-text__rte {font-family: \"Bebas Neue\"; font-size: 5.8rem; margin-top: -20px;}",
+        "@media (max-width: 768px) {.overlay-text__text {margin-top: -10%; } .overlay-text__title {font-size: 1.3rem; line-height: 12rem; padding-left: 0; } .title-cont-font {font-size: 3.2rem; margin-top: -10rem; } .overlay-text__rte {font-size: 1.3rem; margin-top: -5.5rem; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Banner_BFCM_2.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "OUR",
+        "primary_heading_font": "Bebas Neue",
+        "title_cont": "BIGGEST",
+        "separate_heading_text": true,
+        "second_heading_font": "theme_default",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "<p>SALE OF THE YEAR!<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "default",
+        "text_alignment": "center center",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background"
+      }
+    },
+    "rich_text_eYXzAR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qqcHcK": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "use_h1": false
+          }
+        },
+        "text_eiAQNk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Biggest Sale Of The Year!<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_qqcHcK",
+        "text_eiAQNk"
+      ],
+      "custom_css": [
+        ".fully-spaced-row--medium {font-size: 0.8rem;}",
+        "@media (max-width: 767.98px) {.fully-spaced-row--medium {margin-top: 36px; margin-bottom: 36px; }}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    },
+    "collection_cards_pqDNGz": {
+      "type": "collection-cards",
+      "blocks": {
+        "collection_a64Khr": {
+          "type": "collection",
+          "settings": {
+            "collection": "25-off-bfcm-sale",
+            "collection_card_bg": "#e7cfb5",
+            "collection_card_heading": "25% OFF",
+            "collection_card_subheading": "FOOTWEAR",
+            "button_text": "EXPLORE"
+          }
+        },
+        "collection_XhErxd": {
+          "type": "collection",
+          "settings": {
+            "collection": "50-off-bfcm-sale",
+            "collection_card_bg": "#d2bca5",
+            "collection_card_heading": "50% OFF",
+            "collection_card_subheading": "FOOTWEAR",
+            "button_text": "EXPLORE"
+          }
+        }
+      },
+      "block_order": [
+        "collection_a64Khr",
+        "collection_XhErxd"
+      ],
+      "custom_css": [
+        ".collection-listing {margin-top: -30px;}",
+        "@media (max-width: 768px) {.collection-slider-row.for-collections {margin-top: 25px; margin-bottom: 25px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "enable_carousel": false,
+        "grid": 2,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    },
+    "rich_text_tQnUpD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QTgyGi": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "use_h1": false
+          }
+        },
+        "text_egtUJz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your favorite TKEES are going on sale and we're bringing you our best deals each day.<br\/>Here's what to expect for your Black Friday Exclusives:<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_QTgyGi",
+        "text_egtUJz"
+      ],
+      "custom_css": [
+        ".fully-spaced-row--medium {font-size: 0.8rem;}",
+        "@media (max-width: 767.98px) {.fully-spaced-row--medium {margin-top: 36px; margin-bottom: 36px; }}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    },
+    "sale_cards_MxmX7p": {
+      "type": "sale-cards",
+      "blocks": {
+        "card_3RbAji": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/hera-black-2_720x_copy.jpg",
+            "card_link": "shopify:\/\/collections\/hera-at-60-off",
+            "card_heading_inner": "Nov. 22",
+            "card_heading_below": "60% OFF - 24 HRS ONLY",
+            "card_text_list": "HERA"
+          }
+        },
+        "card_V9BLae": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/square-toe-gemma-mirror-chrome-4_720x_copy.jpg",
+            "card_link": "shopify:\/\/collections\/square-toe-mirror-gemma-square-toe-liri-60-off",
+            "card_heading_inner": "NOV. 23 & 24",
+            "card_heading_below": "60% OFF - 48 HRS ONLY",
+            "card_text_list": "MIRROR SQUARE TOE GEMMA; SQUARE TOE LIRI"
+          }
+        },
+        "card_rgVMyJ": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/infinity-mia-napa-rose-1_720x_copy.jpg",
+            "card_link": "shopify:\/\/collections\/infinity-collection-emma-60-off",
+            "card_heading_inner": "NOV. 25 & 26",
+            "card_heading_below": "60% OFF - 48 HRS ONLY",
+            "card_text_list": "INFINITY MIA NAPA; INFINITY GEMMA; INFINITY SARIT; INFINITY LILY; EMMA"
+          }
+        },
+        "card_FRY4ga": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/gemma-sandal-metallics-beach-pearl-2_78d6adcc-4e0d-46ad-9093-5bdc4fef821d_720x_copy.jpg",
+            "card_link": "shopify:\/\/collections\/caro-gemma-at-60-off",
+            "card_heading_inner": "NOV. 27 & 28",
+            "card_heading_below": "60% OFF - 48 HRS ONLY",
+            "card_text_list": "GEMMA - BEACH PEARL; GEMMA - HEATWAVE; GEMMA - SUNKISSED; CARO - OLIVE; CARO - CREAM"
+          }
+        }
+      },
+      "block_order": [
+        "card_3RbAji",
+        "card_V9BLae",
+        "card_rgVMyJ",
+        "card_FRY4ga"
+      ],
+      "settings": {
+        "title": "",
+        "enable_carousel": true,
+        "grid": 4
+      }
+    },
+    "sale_cards_6MzNtt": {
+      "type": "sale-cards",
+      "blocks": {
+        "card_YQX6Ap": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/TKEES_Hoodie_Mocha-4_720x_copy.jpg",
+            "card_link": "shopify:\/\/collections\/clothing-at-20-off",
+            "card_heading_inner": "NOV. 29",
+            "card_heading_below": "20% OFF - 24 HRS ONLY",
+            "card_text_list": "ALL CLOTHING"
+          }
+        },
+        "card_TVPjnq": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/liri-flip-flop-nudes-nude-beach-1_da318cc3-6b83-4f9d-b166-36440b0d11b7_720x_copy.jpg",
+            "card_link": "shopify:\/\/collections\/vegan-liri-collections-60-off",
+            "card_heading_inner": "NOV. 30",
+            "card_heading_below": "60% OFF - 48 HRS ONLY",
+            "card_text_list": "VEGAN COLLECTION; LIRI"
+          }
+        },
+        "card_jYpcGj": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/lily-flip-flop-cheetah-4_f51dc673-9c23-477a-aab7-4f31790fdbb1_720x_copy.jpg",
+            "card_link": "shopify:\/\/collections\/exotics-collection-60-off",
+            "card_heading_inner": "DEC. 1",
+            "card_heading_below": "60% OFF - 48 HRS ONLY",
+            "card_text_list": "CHEETAH (LILY, RILEY & GEMMA); SANDSNAKE (RILEY & GEMMA); COCOSNAKE (RILEY & GEMMA)"
+          }
+        },
+        "card_f7nnGE": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/lily-pigments-flip-flop-cerise-1_47841661-10e8-490e-91ee-b30a07874989_720x_copy.jpg",
+            "card_link": "shopify:\/\/collections\/pigments-collection-75-off",
+            "card_heading_inner": "DEC. 2",
+            "card_heading_below": "75% OFF - 48 HRS ONLY",
+            "card_text_list": "Cerise (Lily, Roe & Lilu); Emerald (Lily, Roe & Lilu); Tangerine (Lily, Roe & Lilu); Clay (Lily & Mia Napa); Sage (Lily & Mia Napa)"
+          }
+        }
+      },
+      "block_order": [
+        "card_YQX6Ap",
+        "card_TVPjnq",
+        "card_jYpcGj",
+        "card_f7nnGE"
+      ],
+      "custom_css": [
+        ".sale-card {text-transform: uppercase;}"
+      ],
+      "settings": {
+        "title": "",
+        "enable_carousel": false,
+        "grid": 4
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3f8815a5-03f5-43a4-80b5-e305a0fb9746",
+    "fca9f644-4dbb-47bb-a511-848803cd3f4e",
+    "image_with_text_overlay_fiRtCx",
+    "image_with_text_overlay_custom_TBPNcf",
+    "rich_text_eYXzAR",
+    "collection_cards_pqDNGz",
+    "rich_text_tQnUpD",
+    "sale_cards_MxmX7p",
+    "sale_cards_6MzNtt"
+  ]
+}

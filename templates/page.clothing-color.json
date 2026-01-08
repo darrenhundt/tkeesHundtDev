@@ -1,0 +1,472 @@
+{
+  "sections": {
+    "67d95f22-feec-4eb8-8cbe-28dede9822cb": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15873164837039__67d95f22-feec-4eb8-8cbe-28dede9822cb-167812515184ae1f63-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/clothing-main-homepage.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/lounge-by-tkees-banner-mobile_1.jpg",
+            "image_position": "bottom left",
+            "mobile_image_position": "left bottom",
+            "slide_link": "shopify:\/\/collections\/clothing-all",
+            "subheading": "",
+            "title": "CLOTHING",
+            "title_size": 62,
+            "title_size_mobile": 42,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15873164837039__67d95f22-feec-4eb8-8cbe-28dede9822cb-167812515184ae1f63-0"
+      ],
+      "custom_css": [
+        ".overlay-text__title {font-family: \"Bebas Neue\"; color: #fff; letter-spacing: 1.2px; margin-bottom: -2px;}",
+        ".overlay-text {color: #fff;}",
+        ".button {font-family: \"Bebas Neue\"; font-size: 16px; letter-spacing: 1.2px; padding: 1em 50px 1em; background: #ece2d4; color: #5d3a2b; margin-top: -1px;}",
+        ".button.altcolour:hover {background-color: #f1f1f1;}"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background",
+        "slide_transition": "instant",
+        "slide_navigation": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "d8ba5280-3335-4ae4-8a80-95f9d207da82": {
+      "type": "collection-list",
+      "blocks": {
+        "3ebd498a-e729-4699-9f40-f364fefbf631": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-black"
+          }
+        },
+        "079c4b13-e1dc-43c7-a975-edb5c2cfa665": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-white"
+          }
+        },
+        "bf0f1331-c113-47c8-898c-be12963470be": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-grey"
+          }
+        },
+        "22913a90-0e6c-4140-b090-14fd1d852409": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-beige"
+          }
+        },
+        "67e1b874-8102-4d88-9dfa-c44bc9ecbc2c": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-tan",
+            "image": "shopify:\/\/shop_images\/the-hoodie-nudes-toast-aug2022-cc-f8_97da59f1-434b-4456-90e6-261cae6d5e58.jpg"
+          }
+        },
+        "cf07b938-22c9-45bb-bcad-2667bfeb7bea": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-brown",
+            "image": "shopify:\/\/shop_images\/the-hoodie-nudes-nutmeg-aug2022-cc-f8_dae1fdb7-4a33-40da-baa6-3dced6c549b3.jpg"
+          }
+        },
+        "698dfc75-b324-47fe-bb54-f13395c66c46": {
+          "type": "collection",
+          "settings": {
+            "collection": "clothing-blue"
+          }
+        }
+      },
+      "block_order": [
+        "3ebd498a-e729-4699-9f40-f364fefbf631",
+        "079c4b13-e1dc-43c7-a975-edb5c2cfa665",
+        "bf0f1331-c113-47c8-898c-be12963470be",
+        "22913a90-0e6c-4140-b090-14fd1d852409",
+        "67e1b874-8102-4d88-9dfa-c44bc9ecbc2c",
+        "cf07b938-22c9-45bb-bcad-2667bfeb7bea",
+        "698dfc75-b324-47fe-bb54-f13395c66c46"
+      ],
+      "custom_css": [
+        ".product-block__title {text-transform: uppercase; font-family: \"Bebas Neue\"; font-size: 18px; color: #222; letter-spacing: 1px;}",
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #222; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "Shop by Color",
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    },
+    "1f2c147c-1cc5-4ebe-8e58-71c692993356": {
+      "type": "product-list",
+      "disabled": true,
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #5d3a2b; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "Best Sellers",
+        "product_list": [
+          "cropped-tee-white",
+          "cropped-tee-midnight-navy",
+          "core-jogger-navy",
+          "core-fleece-cropped-half-zip-eggshell-mix",
+          "core-fleece-wide-leg-pant-eggshell-mix",
+          "raw-edge-turtleneck-black",
+          "raw-edge-wide-leg-pant-black",
+          "oversized-tee-midnight-navy",
+          "rider-legging-midnight-navy"
+        ],
+        "alt_cards": false,
+        "swatch_size": 20,
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    },
+    "88f41985-9c5b-4c5b-aced-521578336635": {
+      "type": "multi-column",
+      "blocks": {
+        "template--15873164837039__88f41985-9c5b-4c5b-aced-521578336635-1678125191607dc272-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/lounge-by-tkees-tops-crews-categories_1.jpg",
+            "image_width": 500,
+            "title": "TOPS",
+            "text": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/tops"
+          }
+        },
+        "template--15873164837039__88f41985-9c5b-4c5b-aced-521578336635-1678125191607dc272-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/lounge-by-tkees-bottoms-categories_1.jpg",
+            "image_width": 500,
+            "title": "BOTTOMS",
+            "text": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/bottoms"
+          }
+        },
+        "template--15873164837039__88f41985-9c5b-4c5b-aced-521578336635-1678125191607dc272-2": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/lounge-by-tkees-sunnies-categories_1.jpg",
+            "image_width": 700,
+            "title": "SUNNIES",
+            "text": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/sunnies"
+          }
+        }
+      },
+      "block_order": [
+        "template--15873164837039__88f41985-9c5b-4c5b-aced-521578336635-1678125191607dc272-0",
+        "template--15873164837039__88f41985-9c5b-4c5b-aced-521578336635-1678125191607dc272-1",
+        "template--15873164837039__88f41985-9c5b-4c5b-aced-521578336635-1678125191607dc272-2"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #333; letter-spacing: 1px;}",
+        ".text-column__title {font-family: \"Bebas Neue\"; font-size: 20px; color: #333; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px;}",
+        ".text-column__text {margin-bottom: 12px;}"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "link",
+        "use_alt_bg": false
+      }
+    },
+    "b516d294-b318-4055-8c3a-5949792fb114": {
+      "type": "custom-row",
+      "blocks": {
+        "template--15873164837039__b516d294-b318-4055-8c3a-5949792fb114-1678223637ff812abf-0": {
+          "type": "image",
+          "settings": {
+            "width": "two-thirds",
+            "image": "shopify:\/\/shop_images\/warm-core-focus-banner-homepage.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "shopify:\/\/collections\/core-fleece",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "no_background"
+          }
+        },
+        "template--15873164837039__b516d294-b318-4055-8c3a-5949792fb114-1678223637ff812abf-1": {
+          "type": "text",
+          "settings": {
+            "width": "third",
+            "subheading": "",
+            "title": "Core Fleece",
+            "text": "<p>An exercise in maximal minimalism.<br\/>New silhouettes and colors available.<\/p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/core-fleece",
+            "button_style": "link",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--15873164837039__b516d294-b318-4055-8c3a-5949792fb114-1678223637ff812abf-0",
+        "template--15873164837039__b516d294-b318-4055-8c3a-5949792fb114-1678223637ff812abf-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h1-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #5d3a2b; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "alignment": "bottom"
+      }
+    },
+    "80f21fe0-781f-4b9a-bd56-c416f9929c86": {
+      "type": "custom-row",
+      "blocks": {
+        "e090984e-0ee7-40b0-a9d8-00f18cbcbdf0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/lounge-by-tkees-tops-crews-categories_1.jpg",
+            "image_position": "center center",
+            "height": "fixed",
+            "height_desktop": 300,
+            "height_mobile": 200,
+            "subheading": "",
+            "title": "TOPS",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "shopify:\/\/collections\/tops",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "template--16042016964783__80f21fe0-781f-4b9a-bd56-c416f9929c86-image-1": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/lounge-by-tkees-bottoms-categories_1.jpg",
+            "image_position": "center center",
+            "height": "fixed",
+            "height_desktop": 300,
+            "height_mobile": 200,
+            "subheading": "",
+            "title": "BOTTOMS",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "shopify:\/\/collections\/bottoms",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "e090984e-0ee7-40b0-a9d8-00f18cbcbdf0",
+        "template--16042016964783__80f21fe0-781f-4b9a-bd56-c416f9929c86-image-1"
+      ],
+      "custom_css": [
+        ".overlay-text__title {font-family: \"Bebas Neue\"; color: #fff; letter-spacing: 1.2px; font-size: 40px;}",
+        ".container {margin-top: 0px;}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "a7becbd7-aec0-45ca-a2a9-ee6c5434fca1": {
+      "type": "collection-list",
+      "blocks": {
+        "7bcf9577-037f-467b-b986-69c271764953": {
+          "type": "collection",
+          "settings": {
+            "collection": "hoodies",
+            "image": "shopify:\/\/shop_images\/clothing-categories-hoodies.jpg"
+          }
+        },
+        "dc781d4c-2eb5-4c0c-955f-01e9a0b7f63a": {
+          "type": "collection",
+          "settings": {
+            "collection": "joggers",
+            "image": "shopify:\/\/shop_images\/clothing-categories-joggers.jpg"
+          }
+        },
+        "e4b53131-5f5a-47e6-8dfc-2cd424dde203": {
+          "type": "collection",
+          "settings": {
+            "collection": "crews-half-zips",
+            "image": "shopify:\/\/shop_images\/clothing-categories-halfzip.jpg"
+          }
+        },
+        "eaa06541-c6ff-444b-87b4-67f05151a12b": {
+          "type": "collection",
+          "settings": {
+            "collection": "pants-leggings",
+            "image": "shopify:\/\/shop_images\/clothing-categories-leggings.jpg"
+          }
+        },
+        "e3ada38e-4803-4e88-b2a0-3cc3b90550ea": {
+          "type": "collection",
+          "settings": {
+            "collection": "tees-tanks",
+            "image": "shopify:\/\/shop_images\/clothing-categories-tanks.jpg"
+          }
+        },
+        "2ea79f00-edf4-4b8d-95b0-2ad46ae2f780": {
+          "type": "collection",
+          "settings": {
+            "collection": "shorts",
+            "image": "shopify:\/\/shop_images\/clothing-categories-shorts.jpg"
+          }
+        },
+        "fc04e852-2006-4cc2-8159-8151b9bf536c": {
+          "type": "collection",
+          "settings": {
+            "collection": "jackets-tops",
+            "image": "shopify:\/\/shop_images\/clothing-categories-tops.jpg"
+          }
+        },
+        "eae82a88-f4bf-4f00-b86f-ea3710b2a6af": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses-jumpsuit",
+            "image": "shopify:\/\/shop_images\/clothing-categories-dress.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "7bcf9577-037f-467b-b986-69c271764953",
+        "dc781d4c-2eb5-4c0c-955f-01e9a0b7f63a",
+        "e4b53131-5f5a-47e6-8dfc-2cd424dde203",
+        "eaa06541-c6ff-444b-87b4-67f05151a12b",
+        "e3ada38e-4803-4e88-b2a0-3cc3b90550ea",
+        "2ea79f00-edf4-4b8d-95b0-2ad46ae2f780",
+        "fc04e852-2006-4cc2-8159-8151b9bf536c",
+        "eae82a88-f4bf-4f00-b86f-ea3710b2a6af"
+      ],
+      "custom_css": [
+        ".product-block__title {text-transform: uppercase; font-family: \"Bebas Neue\"; font-size: 18px; color: #222; letter-spacing: 1px;}",
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #222; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "Shop by Category",
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    },
+    "26b47a9e-b46a-435c-9c72-14b34de42f95": {
+      "type": "multi-column",
+      "blocks": {
+        "0a9edae8-6614-424a-944a-646b6eb28ff2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/lounge-by-tkees-core-collections-homepage_1.jpg",
+            "image_width": 700,
+            "title": "CORE",
+            "text": "<p>An extension of our core brand values.<br\/>Minimalist hoodies, crews, tees, joggers & shorts.<br\/><\/p>",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/collections\/core-clothing"
+          }
+        },
+        "45ab1e01-7806-4179-b525-146cc8dbe039": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/CF_a.jpg",
+            "image_width": 700,
+            "title": "Core Fleece",
+            "text": "<p>An exercise in maximal minimalism.<br\/>New silhouettes and colors available.<\/p>",
+            "button_label": "SHOP NOW",
+            "link": "shopify:\/\/collections\/core-fleece"
+          }
+        },
+        "f09cf94f-ed64-4c5f-96a4-fcaa5e551111": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/power-casual-collections-homepage_6772b01a-d510-499f-9e88-a1d252ecf812.jpg",
+            "image_width": 700,
+            "title": "POWER CASUAL",
+            "text": "<p>This caspule collection was designed<br\/>to be mixed or matched at the office or on the go.<\/p>",
+            "button_label": "SHOP NOW",
+            "link": "shopify:\/\/collections\/power-casual"
+          }
+        }
+      },
+      "block_order": [
+        "0a9edae8-6614-424a-944a-646b6eb28ff2",
+        "45ab1e01-7806-4179-b525-146cc8dbe039",
+        "f09cf94f-ed64-4c5f-96a4-fcaa5e551111"
+      ],
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #222; letter-spacing: 1px;}",
+        ".text-column__title {font-family: \"Bebas Neue\"; font-size: 20px; color: #222; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px;}",
+        ".text-column__text {margin-bottom: 12px;}"
+      ],
+      "settings": {
+        "title": "Shop By Collection",
+        "text_alignment": "left",
+        "button_style": "link",
+        "use_alt_bg": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".page-header {display: none;}"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "67d95f22-feec-4eb8-8cbe-28dede9822cb",
+    "d8ba5280-3335-4ae4-8a80-95f9d207da82",
+    "1f2c147c-1cc5-4ebe-8e58-71c692993356",
+    "88f41985-9c5b-4c5b-aced-521578336635",
+    "b516d294-b318-4055-8c3a-5949792fb114",
+    "80f21fe0-781f-4b9a-bd56-c416f9929c86",
+    "a7becbd7-aec0-45ca-a2a9-ee6c5434fca1",
+    "26b47a9e-b46a-435c-9c72-14b34de42f95",
+    "main"
+  ]
+}

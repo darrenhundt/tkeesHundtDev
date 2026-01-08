@@ -1,0 +1,496 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "b3568be7-e54d-4e11-b1ab-caaae2960b43": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "h2 {font-family: bebas neue; letter-spacing: 1px;}",
+        ".button {font-family: \"Bebas Neue\"; font-size: 16px; letter-spacing: 1.2px; padding: 0.8em 50px 0.8em; background: #f1f1f1; color: #333; margin-top: -1px; opacity: 0.7;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/lily-nudes-lp-hero-desktop-2.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Hero_mobile7.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "shopify:\/\/collections\/lily-nudes",
+        "subheading": "",
+        "title": "Lily Nudes",
+        "title_size": 74,
+        "title_size_mobile": 44,
+        "use_h1": false,
+        "text": "<p>The one that started it all.<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "Find Your Shade",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "top center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full"
+      }
+    },
+    "a3a2aa9a-a255-466d-b5ae-7e277668169e": {
+      "type": "background-video",
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-family: bebas neue; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7f61a9eb797a4d74965a376726b26220.mp4",
+        "subheading": "",
+        "title": "Lily Nudes",
+        "title_size": 74,
+        "title_size_mobile": 36,
+        "use_h1": false,
+        "text": "<p>16 Shades and Counting<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "height_desktop": 460,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "4483d987-b336-4492-87df-80738b804dc0": {
+      "type": "image-with-text",
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}",
+        ".btn {font-family: \"Bebas Neue\"; font-size: 16px; letter-spacing: 1.2px; padding: 0.7em 50px 0.7em; margin-top: 15px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/lily-nudes-lp-why-nudes-1.jpg",
+        "image_2": "shopify:\/\/shop_images\/lily-nudes-lp-why-nudes-2.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Why Nudes Matter",
+        "use_h1": false,
+        "text": "<p>For us the conversation around nude shades representing a spectrum of skin tones is an important one.  The act of a barely-there sandal blending in is small, but it can be revolutionary<\/p>",
+        "button_label": "Find your Shade",
+        "button_link": "https:\/\/tkees.com\/collections\/lily-nudes",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "center",
+        "use_alt_bg": false
+      }
+    },
+    "a820a900-7b28-4876-93f7-a74f030e1f51": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15984977641647__a820a900-7b28-4876-93f7-a74f030e1f51-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "I love these flip flops! The neutral colors give them an elevated look and they are so comfortable! I would recommend them to any and everyone.",
+            "author": "Madison N.",
+            "image_alignment": "center center",
+            "image_caption": "",
+            "link": "https:\/\/tkees.com\/products\/lily-nudes-cocobutter"
+          }
+        },
+        "template--15984977641647__a820a900-7b28-4876-93f7-a74f030e1f51-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "I’ve been looking for skin color flip flops and I finally found not 1 but 2 from TKEES and I love it!",
+            "author": "Noy A.",
+            "image_alignment": "center left",
+            "image_caption": "",
+            "link": "https:\/\/tkees.com\/products\/lily-nudes-cocobutter"
+          }
+        },
+        "04b6144c-d6aa-4aea-b1f4-cfc788dfbb2f": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "This is my fourth or fifth pair. I love these sandals! Perfect neutral shade for summer",
+            "author": "Emily B",
+            "image_alignment": "center center",
+            "image_caption": "",
+            "link": "shopify:\/\/products\/lily-nudes-cocobutter"
+          }
+        },
+        "c56ffc10-0c95-4d94-b83e-fcf2d45092f5": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "The color is perfect! That's what I love most about Tkees. They are also very comfortable!",
+            "author": "Candace J.",
+            "image_alignment": "center center",
+            "image_caption": "",
+            "link": "shopify:\/\/products\/lily-nudes-cocobutter"
+          }
+        }
+      },
+      "block_order": [
+        "template--15984977641647__a820a900-7b28-4876-93f7-a74f030e1f51-testimonial-1",
+        "template--15984977641647__a820a900-7b28-4876-93f7-a74f030e1f51-testimonial-2",
+        "04b6144c-d6aa-4aea-b1f4-cfc788dfbb2f",
+        "c56ffc10-0c95-4d94-b83e-fcf2d45092f5"
+      ],
+      "custom_css": [
+        ".subheading {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; color: #333; text-align: center;}"
+      ],
+      "settings": {
+        "title": "What Everyone is Saying",
+        "layout": "no-image",
+        "text_caps": false,
+        "quote_text_size": 14,
+        "quote_text_size_mobile": 14,
+        "image_shape": "square",
+        "use_alt_bg": false,
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "cf1d2182-b33a-4d8f-bde5-cc4f688f3d62": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15984977641647__cf1d2182-b33a-4d8f-bde5-cc4f688f3d62-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Lily On You",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15984977641647__cf1d2182-b33a-4d8f-bde5-cc4f688f3d62-heading-1"
+      ],
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333;}",
+        ".container {margin-bottom: -40px;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    },
+    "17a740b1-d3a3-4a35-8ad8-91afc1cb7810": {
+      "type": "gallery",
+      "blocks": {
+        "template--15984977641647__17a740b1-d3a3-4a35-8ad8-91afc1cb7810-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lily-nudes-lp-ugc-1.jpg",
+            "alignment": "center center",
+            "enlarge_image": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/lily-nudes",
+            "text_alignment": "bottom left"
+          }
+        },
+        "25b48411-93d5-4697-8435-474385671da2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lily-nudes-lp-ugc-2.jpg",
+            "alignment": "center center",
+            "enlarge_image": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/lily-nudes",
+            "text_alignment": "bottom left"
+          }
+        },
+        "9f6b7357-10f1-46e1-b91f-c8f113c5f45d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lily-nudes-lp-ugc-3.jpg",
+            "alignment": "center center",
+            "enlarge_image": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/lily-nudes",
+            "text_alignment": "bottom left"
+          }
+        },
+        "87055974-14fd-4287-9507-8b4c7dd55138": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lily-nudes-lp-ugc-4.jpg",
+            "alignment": "center center",
+            "enlarge_image": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/lily-nudes",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "template--15984977641647__17a740b1-d3a3-4a35-8ad8-91afc1cb7810-image-1",
+        "25b48411-93d5-4697-8435-474385671da2",
+        "9f6b7357-10f1-46e1-b91f-c8f113c5f45d",
+        "87055974-14fd-4287-9507-8b4c7dd55138"
+      ],
+      "settings": {
+        "grid": 4,
+        "desktop_image_height": 400,
+        "mobile_image_height": 450,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": false,
+        "use_alt_bg": false,
+        "enable_carousel": true,
+        "overlay_style": "no_background",
+        "button_style": "primary"
+      }
+    },
+    "817c9fb1-1cb8-43e3-a3f4-694c713b6b9c": {
+      "type": "product-list",
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 20px; color: #808080; letter-spacing: 1px;}",
+        ".product-block__title {font-family: \"Bebas Neue\"; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "title": "Explore",
+        "product_list": [
+          "lily-nudes-au-naturale",
+          "lily-nudes-beach-bum",
+          "lily-nudes-cappuccino",
+          "lily-nudes-cocobutter",
+          "lily-nudes-deep-glow",
+          "lily-nudes-heatwave",
+          "lily-nudes-linen",
+          "lily-nudes-nude-beach",
+          "lily-nudes-pout",
+          "lily-nudes-praline",
+          "lily-nudes-rose",
+          "lily-nudes-sunbliss",
+          "lily-nudes-seashell",
+          "lily-nudes-hazelberry",
+          "lily-nudes-butternut",
+          "lily-nudes-sunkissed"
+        ],
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "use_alt_bg": false,
+        "full_width": false
+      }
+    },
+    "0093acc5-1064-438a-aff5-d1263236764e": {
+      "type": "rich-text",
+      "blocks": {
+        "db3a255b-b8fb-4611-bb96-e15b1647ec47": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find Your Shade",
+            "button_link": "shopify:\/\/collections\/lily-nudes",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "db3a255b-b8fb-4611-bb96-e15b1647ec47"
+      ],
+      "custom_css": [
+        ".btn {font-family: \"Bebas Neue\"; font-size: 16px; letter-spacing: 1.2px; padding: 0.8em 50px 0.8em; margin-top: -20px; margin-bottom: 40px;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    },
+    "01a4f2d6-854b-4d23-ac00-91d9d1f81384": {
+      "type": "multi-column",
+      "blocks": {
+        "template--15984046407855__01a4f2d6-854b-4d23-ac00-91d9d1f81384-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/lily-nudes-lp-barely-there.jpg",
+            "image_width": 700,
+            "title": "Barely-There",
+            "text": "<p>After finding nothing like it on the market, our minimal and barely-there sandals were created to blend in with your skin tone.<\/p>",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/lily-nudes"
+          }
+        },
+        "template--15984046407855__01a4f2d6-854b-4d23-ac00-91d9d1f81384-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/lily-nudes-lp-handmade-brazil.jpg",
+            "image_width": 700,
+            "title": "Handmade in Brazil",
+            "text": "<p>Our sandals are carefully handmade in Brazil with soft Brazillian leather and designed to mold to your foot with every wear.<\/p>",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/lily-nudes"
+          }
+        },
+        "template--15984046407855__01a4f2d6-854b-4d23-ac00-91d9d1f81384-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/lily-nudes-lp-comfort-style.jpg",
+            "image_width": 700,
+            "title": "Comfort and Style",
+            "text": "<p>We're about comfort too. Tkees sandals are designed to feel like a second skin, allowing you to move freely and confidently.<\/p>",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/lily-nudes"
+          }
+        }
+      },
+      "block_order": [
+        "template--15984046407855__01a4f2d6-854b-4d23-ac00-91d9d1f81384-text_block-2",
+        "template--15984046407855__01a4f2d6-854b-4d23-ac00-91d9d1f81384-text_block-1",
+        "template--15984046407855__01a4f2d6-854b-4d23-ac00-91d9d1f81384-text_block-3"
+      ],
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #333; letter-spacing: 1px;}",
+        ".text-column__title {font-family: \"Bebas Neue\"; font-size: 20px; color: #333; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px;}",
+        ".text-column__text {margin-bottom: 12px;}",
+        ".container {margin-top: -40px;}"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "d10104bb-5637-49dd-b503-940e98d89f45": {
+      "type": "logo-list",
+      "blocks": {
+        "6047a7b1-0378-4957-a7b3-bd7d20ef8cae": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instyle.jpg",
+            "image_width": 100,
+            "link": "https:\/\/www.instyle.com\/tkees-lily-flip-flops-review-7570796",
+            "title": ""
+          }
+        },
+        "95a8140d-8fc4-4d5b-affb-4519d4c9f268": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Elle.png",
+            "image_width": 100,
+            "link": "https:\/\/www.elle.com\/fashion\/accessories\/g7865\/best-summer-sandals-slides\/",
+            "title": ""
+          }
+        },
+        "3ab85bf1-0624-455b-bef0-7608a01ea114": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nylon-logo.jpg",
+            "image_width": 100,
+            "link": "https:\/\/www.nylon.com\/fashion\/flip-flop-trends-to-shop-2023",
+            "title": ""
+          }
+        },
+        "15444c92-ffff-42e9-b4b9-f8f6fbeb45b7": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Travel___Leisure_Co._logo.png",
+            "image_width": 100,
+            "link": "https:\/\/www.travelandleisure.com\/style\/shopping\/tkees-leather-flip-flops-nudes-review",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "6047a7b1-0378-4957-a7b3-bd7d20ef8cae",
+        "95a8140d-8fc4-4d5b-affb-4519d4c9f268",
+        "3ab85bf1-0624-455b-bef0-7608a01ea114",
+        "15444c92-ffff-42e9-b4b9-f8f6fbeb45b7"
+      ],
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; color: #333; margin-bottom: 40px;}"
+      ],
+      "settings": {
+        "title": "As Seen In",
+        "image_opacity": 70,
+        "use_alt_bg": false
+      }
+    },
+    "e1760995-c64f-4f9b-8a6b-35333daef70a": {
+      "type": "custom-row",
+      "blocks": {
+        "template--15984046407855__e1760995-c64f-4f9b-8a6b-35333daef70a-image-1": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/lily-nudes-lp-find-your-match.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "https:\/\/tkees.com\/collections\/core-fleece",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "template--15984046407855__e1760995-c64f-4f9b-8a6b-35333daef70a-text-1": {
+          "type": "text",
+          "settings": {
+            "width": "third",
+            "subheading": "",
+            "title": "Find your match",
+            "text": "<p>Explore our Lily Nudes Collection and find the shade that complements your skin tone. Whether you're heading to the beach, strolling through the city, or stepping out for a night on the town, Tkees has the perfect pair for you.<\/p>",
+            "button_label": "FInd your Shade",
+            "button_link": "https:\/\/tkees.com\/collections\/core-fleece",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15984046407855__e1760995-c64f-4f9b-8a6b-35333daef70a-image-1",
+        "template--15984046407855__e1760995-c64f-4f9b-8a6b-35333daef70a-text-1"
+      ],
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}",
+        ".btn {font-family: \"Bebas Neue\"; font-size: 16px; letter-spacing: 1.2px; padding: 0.8em 50px 0.8em; margin-top: 15px;}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b3568be7-e54d-4e11-b1ab-caaae2960b43",
+    "a3a2aa9a-a255-466d-b5ae-7e277668169e",
+    "4483d987-b336-4492-87df-80738b804dc0",
+    "a820a900-7b28-4876-93f7-a74f030e1f51",
+    "cf1d2182-b33a-4d8f-bde5-cc4f688f3d62",
+    "17a740b1-d3a3-4a35-8ad8-91afc1cb7810",
+    "817c9fb1-1cb8-43e3-a3f4-694c713b6b9c",
+    "0093acc5-1064-438a-aff5-d1263236764e",
+    "01a4f2d6-854b-4d23-ac00-91d9d1f81384",
+    "d10104bb-5637-49dd-b503-940e98d89f45",
+    "e1760995-c64f-4f9b-8a6b-35333daef70a"
+  ]
+}

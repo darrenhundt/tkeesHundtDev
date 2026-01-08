@@ -1,0 +1,409 @@
+{
+  "sections": {
+    "image_with_text_overlay_custom_8mccVC": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        ".overlay-text {margin-top: 15%;}",
+        ".title-cont-font {font-size: 4rem; margin-top: -25px;}",
+        ".title-font {color: black; font-size: 7em;}",
+        "@media (max-width: 990px) {.overlay-text {margin-top: 0%; } .title-cont-font {font-size: 1.3rem; margin-top: -10px; } .overlay-text__text {margin-top: 20%; } .title-font {font-size: 2.05rem; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hero_69ba395d-fc98-4625-8181-aefdfe43894d.jpg",
+        "image_position": "bottom center",
+        "mobile_image_position": "center bottom",
+        "height": "adapt",
+        "height_desktop": 1000,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "MIRROR",
+        "primary_heading_font": "Bebas Neue",
+        "title_cont": "Square Toe",
+        "separate_heading_text": true,
+        "second_heading_font": "theme_default",
+        "title_size": 96,
+        "title_size_mobile": 32,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center end",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_9E3WTC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MFQXFH": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "use_h1": false
+          }
+        },
+        "text_jzfqLE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bold Design.  Metallic Shine.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "text_4f9Hd3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Chrome Square Toe Collection catches and bounces light with their mirror-like finish<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_yfxFAA": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop Mirror Square Lily",
+            "button_link": "shopify:\/\/products\/square-toe-lily-mirror-chrome",
+            "button_style": "secondary"
+          }
+        },
+        "button_xTmiX6": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop Mirror Square Gemma",
+            "button_link": "shopify:\/\/products\/square-toe-gemma-mirror-chrome",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MFQXFH",
+        "text_jzfqLE",
+        "text_4f9Hd3",
+        "button_yfxFAA",
+        "button_xTmiX6"
+      ],
+      "custom_css": [
+        "a.btn.btn--infinity {font-size: 0.8rem; padding: 1.4em 2.8em;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_JpJzNY": {
+      "type": "gallery",
+      "blocks": {
+        "image_gtmMQq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chrome_12.jpg",
+            "alignment": "bottom center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_rykDgp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chrome_11b.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_gXF6zK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chrome_7.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_9GJ3dh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chrome_10b.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_gtmMQq",
+        "image_rykDgp",
+        "image_gXF6zK",
+        "image_9GJ3dh"
+      ],
+      "custom_css": [
+        ".gallery__row .gallery__item-1,.gallery__row .gallery__item-4 {max-width: 46vw;}"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_4enh9c": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GJGeP7": {
+          "type": "heading",
+          "settings": {
+            "title": "LILY",
+            "use_h1": false
+          }
+        },
+        "heading_YyDQjn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Still the same classic flip flop.  Now with a modern, sleek square toe design.",
+            "use_h1": false
+          }
+        },
+        "text_H6qGfV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enhanced with touches of gold and silver, our lily is the perfect accessory to make a statement<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_pfLb8f": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Mirror Square Lily",
+            "button_link": "shopify:\/\/products\/square-toe-lily-mirror-chrome",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GJGeP7",
+        "heading_YyDQjn",
+        "text_H6qGfV",
+        "button_pfLb8f"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: -2px; font-size: 2.5em; font-family: \"Bebas Neue\";}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_jHqXme": {
+      "type": "gallery",
+      "blocks": {
+        "image_PcGFqd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chrome_13.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_eqRNQW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chrome_10.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_wFeKFm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chrome_11.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_LPhtzm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chrome_1.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_PcGFqd",
+        "image_eqRNQW",
+        "image_wFeKFm",
+        "image_LPhtzm"
+      ],
+      "custom_css": [
+        ".gallery__row .gallery__item-2,.gallery__row .gallery__item-3 {max-width: 46vw;}"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_UXziap": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WRHYhf": {
+          "type": "heading",
+          "settings": {
+            "title": "GEMMA",
+            "use_h1": false
+          }
+        },
+        "heading_HArm3A": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Our new Square Toe Liri bridges the gap between laid back comfort and fashion-forward flair.",
+            "use_h1": false
+          }
+        },
+        "subheading_xCdg8G": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Our new Square Toe Liri bridges the gap between laid back comfort and fashion-forward flair."
+          }
+        },
+        "text_dbdrbi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Available in two polished finishes, our Gemma creates a mesmerizing effect that adds an extra dimension to your look.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_gCFzXa": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Mirror Square Gemma",
+            "button_link": "shopify:\/\/products\/square-toe-gemma-mirror-chrome",
+            "button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WRHYhf",
+        "heading_HArm3A",
+        "subheading_xCdg8G",
+        "text_dbdrbi",
+        "button_gCFzXa"
+      ],
+      "custom_css": [
+        ".majortitle:first-of-type {margin-bottom: -2px; font-size: 2.5em; font-family: \"Bebas Neue\";}",
+        "a.btn.btn--infinity {font-size: 0.8rem; padding: 1.4em 2.8em;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_custom_8mccVC",
+    "rich_text_9E3WTC",
+    "gallery_JpJzNY",
+    "rich_text_4enh9c",
+    "gallery_jHqXme",
+    "rich_text_UXziap"
+  ]
+}

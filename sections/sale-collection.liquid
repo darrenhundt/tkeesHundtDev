@@ -1,0 +1,141 @@
+{% assign card_width = 100 | divided_by: section.settings.grid | minus: 1 %}
+{% style %}
+  .sale-cards-section-wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .sale-cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin-bottom: 4%;
+    flex-wrap: wrap;
+    /* gap: 5%; */
+  }
+  .sale-col-heading {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .sale-card {
+    width: {{ card_width }}%;
+    margin-bottom: 4%;
+  }
+  .sale-card-image-wrapper {
+    position: relative;
+  }
+  .sale-card-heading-inner,
+  .sale-card-heading-below {
+    font-family: 'Bebas Neue';
+    font-size: 1.2rem;
+  }
+  .sale-card-heading-inner {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    padding-left: 3%;
+  }
+  .sale-card-item-list {
+    margin: 0;
+    margin-inline-start: 1rem;
+    font-size: 0.8rem;
+  }
+  .sale-compare {
+    text-decoration: line-through;
+    color: rgba(0,0,0,0.3);
+    padding-left: 8px;
+  }
+  @media (max-width: 768px) {
+    .sale-cards-wrapper {
+      padding: 0 4%;
+      /* margin-bottom: 7%; */
+      /* justify-content: space-around; */
+    }
+    .sale-card {
+      width: 48%;
+    }
+    .sale-card-heading-inner,
+    .sale-card-heading-below,
+    .sale-card-item-list li {
+      font-size: 0.8rem;
+    }
+    .sale-card ul.sale-card-item-list li span {
+      /* margin-block-start: 0.5em; */
+      position: relative;
+      left: -5px;
+    }
+    .sale-card-item-list li {
+      font-size: 0.6rem;
+    }
+  }
+{% endstyle %}
+
+{% assign collection = section.settings.collection %}
+
+<div class="sale-cards-section-wrapper">
+  <div class="sale-col-heading">{{ section.settings.title }}</div>
+  <div class="sale-cards-wrapper" id="section-{{ section.id }}">
+    {% for product in collection.products %}
+      {% if product.available %}
+        <div class="sale-card">
+          <div class="sale-card-image-wrapper">
+            <a href="{{ product.url }}">
+              {{ product.featured_image | image_url: width: '400' | image_tag }}
+            </a>
+            <div class="sale-card-heading-inner">{{ product.metafields.custom.discount }} off</div>
+          </div>
+          {% assign prod_title = product.title | split: ' - ' | first %}
+          {% assign prod_color = product.title | split: ' - ' | last %}
+          <div class="sale-card-prod-info">
+            <div class="">{{ prod_title }}</div>
+            <div class="">{{ prod_color }}</div>
+            <div class="">
+              {{ product.price | money -}}
+              {%- if product.compare_at_price -%}
+                <span class="sale-compare">{{ product.compare_at_price | money }}</span>
+              {%- endif %}
+            </div>
+          </div>
+          <ul class="sale-card-item-list"></ul>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Sale collection",
+  "max_blocks": 20,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Collection list"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "label": "Cards per row",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 4
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Sale collection",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

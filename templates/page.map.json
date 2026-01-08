@@ -1,0 +1,148 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "full_width": false
+      }
+    },
+    "655eb8eb-5df3-4063-973c-11967f701dcf": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14937071452239__655eb8eb-5df3-4063-973c-11967f701dcf-1675131274ee8ebc5e-0": {
+          "type": "heading",
+          "settings": {
+            "title": "TKEES MINIMUM ADVERTISED PRICE (MAP) POLICY",
+            "use_h1": true
+          }
+        },
+        "55d1143c-bfa6-49f8-bb45-fff566e9c461": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "INTENT & APPLICATION"
+          }
+        },
+        "template--14937071452239__655eb8eb-5df3-4063-973c-11967f701dcf-1675131274ee8ebc5e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>INTENT & APPLICATION<\/strong><\/p><p>TKEES is a premium brand that invests in quality over quantity. We take a great deal of time and effort to design and manufacture our products, and wish to protect against price-based advertising that harms our ability to maintain a high level of support and service to our consumers. To protect our brand and our premium image, which is the basis of our hard-won and well-earned reputation with our consumers, we are unilaterally announcing this Minimum Advertised Policy (“MAP Policy”). Our goal is to ensure that the advertising practices of TKEES Sellers and Resellers support our brand, best serve our consumers, and allow for the continued investment in, and competitive position of, our products.<\/p><p>This MAP Policy applies to our distributors, wholesalers, and retailers (referred to as “Sellers”) and any resellers of TKEES products whether authorized or not (collectively referred to in this Policy as “Resellers”) so that their advertising practices protect and do not undermine the integrity and competitive position of our brands. This MAP Policy covers all of the items listed in the attached Schedule. TKEES is solely and unilaterally responsible for establishing the minimum advertised price (“MAP”) for each item listed in the Schedule. The MAP for each listed item will be communicated to our Sellers and Resellers by TKEES.<br\/><br\/>This Policy is exclusively concerned with minimum advertised prices; Sellers and Resellers are and will remain free to establish their own selling prices. This Policy is established unilaterally and without the involvement of or any consultation with our Sellers and Resellers.<br\/><br\/><br\/><strong>Non-Compliant Advertising<\/strong> <br\/><\/p><p>Sellers and Resellers shall not advertise TKEES products at prices less than the minimum advertised price (“MAP”) as set forth in the Schedule. Any advertising that contains prices lower than those listed in the Schedule will be in violation of this MAP Policy. Advertising that will be considered as non-compliant with this MAP Policy will include:<br\/>Advertising a price lower than the MAP set out in the Schedule in any advertising format and on any platform, including a website not owned or controlled by the reseller<br\/>Displaying items listed in the Schedule with no price displayed, accompanied by language such as “click to view price” or “add to cart to view price”<br\/>Suggesting by words or images that a lower price is available in the shopping cart, or by clicking on a link<br\/>Using strikethrough to suggest that the MAP Policy price is not the real advertised price. For example “this item just $99.99”<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "086f72f4-049b-4d38-99dd-9cfb9a28a8b7": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Non-Compliant Advertising"
+          }
+        }
+      },
+      "block_order": [
+        "template--14937071452239__655eb8eb-5df3-4063-973c-11967f701dcf-1675131274ee8ebc5e-0",
+        "55d1143c-bfa6-49f8-bb45-fff566e9c461",
+        "template--14937071452239__655eb8eb-5df3-4063-973c-11967f701dcf-1675131274ee8ebc5e-1",
+        "086f72f4-049b-4d38-99dd-9cfb9a28a8b7"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "225c15f8-5498-4637-b547-7c2a76401875": {
+      "type": "image-with-text",
+      "settings": {
+        "image_width": 700,
+        "subheading": "",
+        "title": "Image with text",
+        "use_h1": false,
+        "text": "<p>Pair text with an image to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.<\/p>",
+        "button_label": "Read more",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "d694542d-ba62-4b9b-8e65-cb62ac28dc69": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "Tell your story",
+        "title": "Two line\ntext heading",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "<p>And optional subtext<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "Shop this",
+        "button_url_1": "",
+        "button_label_2": "Shop all",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "844dde9e-673b-4865-a716-303a70eef329": {
+      "type": "faq-header",
+      "settings": {
+        "title": "",
+        "use_h1": false,
+        "text": "",
+        "show_search": false,
+        "show_index": true,
+        "index_heading": "How can we help?"
+      }
+    },
+    "3c5158d3-2b7e-4c4e-bcb1-bb1ea7b69385": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "template--14937071452239__3c5158d3-2b7e-4c4e-bcb1-bb1ea7b69385-1675135957590b7763-0": {
+          "type": "question",
+          "settings": {
+            "title": "MAP POLICY",
+            "answer": "<p><strong>NTENT & APPLICATION<\/strong><\/p><p><\/p><p>TKEES is a premium brand that invests in quality over quantity.  We take a great deal of time and effort to design and manufacture our products, and wish to protect against price-based advertising that harms our ability to maintain a high level of support and service to our consumers.  To protect our brand and our premium image, which is the basis of our hard-won and well-earned reputation with our consumers, we are unilaterally announcing this Minimum Advertised Policy (“MAP Policy”).   Our goal is to ensure that the advertising practices of TKEES Sellers and Resellers support our brand, best serve our consumers, and allow for the continued investment in, and competitive position of, our products.   <\/p><p>This MAP Policy applies to our distributors, wholesalers, and retailers (referred to as “Sellers”) and any resellers of TKEES products whether authorized or not (collectively referred to in this Policy as “Resellers”) so that their advertising practices protect and do not undermine the integrity and competitive position of our brands.  This MAP Policy covers all of the items listed in the attached Schedule.  TKEES is solely and unilaterally responsible for establishing the minimum advertised price (“MAP”) for each item listed in the Schedule.  The MAP for each listed item will be communicated to our Sellers and Resellers by TKEES. <\/p><p>This Policy is exclusively concerned with minimum advertised prices; Sellers and Resellers are and will remain free to establish their own selling prices.  This Policy is established unilaterally and without the involvement of or any consultation with our Sellers and Resellers. <\/p><p><\/p><p><strong>Non-Compliant Advertising <\/strong><\/p><p>Sellers and Resellers shall not advertise TKEES products at prices less than the minimum advertised price (“MAP”) as set forth in the Schedule. Any advertising that contains prices lower than those listed in the Schedule will be in violation of this MAP Policy. Advertising that will be considered as non-compliant with this MAP Policy will include:<br\/>Advertising a price lower than the MAP set out in the Schedule in any advertising format and on any platform, including a website not owned or controlled by the reseller<br\/>Displaying items listed in the Schedule with no price displayed, accompanied by language such as “click to view price” or “add to cart to view price”<br\/>Suggesting by words or images that a lower price is available in the shopping cart, or by clicking on a link<br\/>Using strikethrough to suggest that the MAP Policy price is not the real advertised price. For example “this item just $99.99”<\/p>"
+          }
+        },
+        "template--14937071452239__3c5158d3-2b7e-4c4e-bcb1-bb1ea7b69385-1675135957590b7763-1": {
+          "type": "question",
+          "settings": {
+            "title": "PRIVACY POLICY",
+            "answer": "<p>Effective: February 19, 2021<\/p><p>This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from <a href=\"https:\/\/tkees.com\/\">www.tkees.com<\/a> (the “Site”).<\/p><p>PERSONAL INFORMATION WE COLLECT<\/p><p>When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products that you view, what websites or search terms referred you to the Site, and information about how you interact with the Site. We refer to this automatically-collected information as “Device Information.”<\/p><p>We collect Device Information using the following technologies:<\/p><p>- “Cookies” are data files that are placed on your device or computer and often include an anonymous unique identifier. For more information about cookies, and how to disable cookies, visit <a href=\"http:\/\/www.allaboutcookies.org\/\">http:\/\/www.allaboutcookies.org<\/a>. <\/p><p>- “Log files” track actions occurring on the Site, and collect data including your IP address, browser type, Internet service provider, referring\/exit pages, and date\/time stamps.<\/p><p>- “Web beacons,” “tags,” and “pixels” are electronic files used to record information about how you browse the Site. <\/p><p>Additionally when you make a purchase or attempt to make a purchase through the Site, we collect certain information from you, including your name, billing address, shipping address, payment information (including credit card numbers), email address, and phone number.  We refer to this information as “Order Information.\"<\/p><p>When we talk about “Personal Information” in this Privacy Policy, we are talking both about Device Information and Order Information.<\/p><p>Text marketing (if applicable): With your permission, we may send text messages about our store, new products, and other updates. Updates include Checkout Reminders. Webhooks will be used to trigger the Checkout Reminders messaging system.<\/p><p> <\/p><p>HOW DO WE USE YOUR PERSONAL INFORMATION?<\/p><p>We use the Order Information that we collect generally to fulfill any orders placed through the Site (including processing your payment information, arranging for shipping, and providing you with invoices and\/or order confirmations).  Additionally, we use this Order Information to:<\/p><p>Communicate with you;<\/p><p>Screen our orders for potential risk or fraud; and<\/p><p>When in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services.<\/p><p>We use the Device Information that we collect to help us screen for potential risk and fraud (in particular, your IP address), and more generally to improve and optimize our Site (for example, by generating analytics about how our customers browse and interact with the Site, and to assess the success of our marketing and advertising campaigns).<\/p><p>SHARING YOUR PERSONAL INFORMATION<\/p><p>We share your Personal Information with third parties to help us use your Personal Information, as described above.  For example, we use Shopify to power our online store--you can read more about how Shopify uses your Personal Information here:  <a href=\"https:\/\/www.shopify.com\/legal\/privacy\">https:\/\/www.shopify.com\/legal\/privacy<\/a>.  We also use Google Analytics to help us understand how our customers use the Site--you can read more about how Google uses your Personal Information here:  <a href=\"https:\/\/www.google.com\/intl\/en\/policies\/privacy\/\">https:\/\/www.google.com\/intl\/en\/policies\/privacy\/<\/a>.  You can also opt-out of Google Analytics here:  <a href=\"https:\/\/tools.google.com\/dlpage\/gaoptout\">https:\/\/tools.google.com\/dlpage\/gaoptout<\/a>.<\/p><p>Additionally, in an effort to improve how we communicate with our customers, we may utilize 3rd party technology and\/or services to advance our marketing, products, and services.  We may also share personal information with third party marketing partners for commercial use.<\/p><p>As such, we may share your information with third parties who perform services on our behalf. For example, this may include third party merchandise vendors, providers of order fulfillment and package delivery services for our products or payment processors. It may also include companies that send emails on our behalf, process subscriptions to our contact list, provide marketing assistance, data analysis or search results. We do not authorize these service providers to use or disclose your personal information except as necessary to perform services on our behalf or comply with legal requirements.<\/p><p>You may opt-out of receiving email, SMS, or other marketing communications from us by using the “unsubscribe” link in our emails, SMS messages, or by emailing us at help@tkees.com. To opt-out of physical mailings and telephone communications, or to add your name to our do-not-share list, you may email us at the above email address. When opting out, please include your full name, email address, telephone number, and mailing address so that we can ensure we are removing the correct individual off our contact list.  We will be sure your name is removed from our list (and the list we may share with third parties) as soon as possible after we receive your request. Please be aware, however, that even after your request is processed, we may, for a time, retain residual information about you in backup and\/or archival copies of our database.<\/p><p>Finally, we may also share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights.<\/p><p>BEHAVIOURAL ADVERTISING<\/p><p>As described above, we use your Personal Information to provide you with targeted advertisements or marketing communications we believe may be of interest to you.  For more information about how targeted advertising works, you can visit the Network Advertising Initiative’s (“NAI”) educational page at <a href=\"https:\/\/www.networkadvertising.org\/understanding-online-advertising\/how-does-it-work\">http:\/\/www.networkadvertising.org\/understanding-online-advertising\/how-does-it-work<\/a>.<\/p><p>You can opt out of targeted advertising by:<\/p><p>FACEBOOK - <a href=\"https:\/\/www.facebook.com\/settings\/?tab=ads\">https:\/\/www.facebook.com\/settings\/?tab=ads<\/a><\/p><p>GOOGLE - <a href=\"https:\/\/www.google.com\/settings\/ads\/anonymous\">https:\/\/www.google.com\/settings\/ads\/anonymous<\/a><\/p><p>Additionally, you can opt out of some of these services by visiting the Digital Advertising Alliance’s opt-out portal at:  http:\/\/optout.aboutads.info\/.<\/p><p>DO NOT TRACK<\/p><p>Please note that we do not alter our Site’s data collection and use practices when we see a Do Not Track signal from your browser.<\/p><p>YOUR RIGHTS<\/p><p>You have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below. <\/p><p>Additionally, we are processing your information in order to fulfill contracts we might have with you (for example if you make an order through the Site), or otherwise to pursue our legitimate business interests listed above. Please note that if you are a European resident, your information will be transferred outside of Europe, including to Canada and the United States.<\/p><p>DATA RETENTION<\/p><p>When you place an order through the Site, we will maintain your Order Information for our records unless and until you ask us to delete this information.<\/p><p>CHANGES<\/p><p>We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons.<\/p><p>CONTACT US<\/p><p>For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at info@tkees.com or by mail using the details provided below:<\/p><p>2300 East Las Olas Blvd, 5th Floor, Ft. Lauderdale, FL, 33301, United States<\/p>"
+          }
+        },
+        "350b1db2-cab3-4756-b25c-c16dca9eea12": {
+          "type": "question",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Answer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14937071452239__3c5158d3-2b7e-4c4e-bcb1-bb1ea7b69385-1675135957590b7763-0",
+        "template--14937071452239__3c5158d3-2b7e-4c4e-bcb1-bb1ea7b69385-1675135957590b7763-1",
+        "350b1db2-cab3-4756-b25c-c16dca9eea12"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "655eb8eb-5df3-4063-973c-11967f701dcf",
+    "225c15f8-5498-4637-b547-7c2a76401875",
+    "d694542d-ba62-4b9b-8e65-cb62ac28dc69",
+    "844dde9e-673b-4865-a716-303a70eef329",
+    "3c5158d3-2b7e-4c4e-bcb1-bb1ea7b69385"
+  ]
+}

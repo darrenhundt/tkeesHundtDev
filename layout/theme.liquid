@@ -1,0 +1,806 @@
+<!doctype html>
+{%- liquid
+  assign rtl_langs = 'ar,arc,dv,fa,ha,he,khw,ks,ku,ps,ur,yi' | split: ','
+  if rtl_langs contains localization.language.iso_code
+    assign lang_dir = 'rtl'
+  else
+    assign lang_dir = 'ltr'
+  endif
+-%}
+<html lang="{{ request.locale.iso_code }}" dir="{{ lang_dir }}">
+  <head>
+    <link rel="preconnect dns-prefetch" href="https://api.config-security.com/" crossorigin>
+    <link rel="preconnect dns-prefetch" href="https://conf.config-security.com/" crossorigin>
+    <link rel="preconnect dns-prefetch" href="https://whale.camera/" crossorigin>
+    {% if page.template == 'ig-landing' %}
+      <meta name="robots" content="noindex">
+    {% endif %}
+
+    <script>
+      /* >> TriplePixel :: start*/
+      (window.TriplePixelData = {
+        TripleName: 'tkees1.myshopify.com',
+        ver: '2.12',
+        plat: 'SHOPIFY',
+        isHeadless: false,
+      }),
+        (function (W, H, A, L, E, _, B, N) {
+          function O(U, T, P, H, R) {
+            void 0 === R && (R = !1),
+              (H = new XMLHttpRequest()),
+              P ? (H.open('POST', U, !0), H.setRequestHeader('Content-Type', 'text/plain')) : H.open('GET', U, !0),
+              H.send(JSON.stringify(P || {})),
+              (H.onreadystatechange = function () {
+                4 === H.readyState && 200 === H.status
+                  ? ((R = H.responseText), U.includes('.txt') ? eval(R) : P || (N[B] = R))
+                  : (299 < H.status || H.status < 200) && T && !R && ((R = !0), O(U, T - 1, P));
+              });
+          }
+          if (((N = window), !N[H + 'sn'])) {
+            (N[H + 'sn'] = 1),
+              (L = function () {
+                return Date.now().toString(36) + '_' + Math.random().toString(36);
+              });
+            try {
+              A.setItem(H, 1 + (0 | A.getItem(H) || 0)),
+                (E = JSON.parse(A.getItem(H + 'U') || '[]')).push({
+                  u: location.href,
+                  r: document.referrer,
+                  t: Date.now(),
+                  id: L(),
+                }),
+                A.setItem(H + 'U', JSON.stringify(E));
+            } catch (e) {}
+            var i, m, p;
+            A.getItem('"!nC`') ||
+              ((_ = A),
+              (A = N),
+              A[H] ||
+                ((E = A[H] =
+                  function (t, e, a) {
+                    return (
+                      void 0 === a && (a = []),
+                      'State' == t ? E.s : ((W = L()), (E._q = E._q || []).push([W, t, e].concat(a)), W)
+                    );
+                  }),
+                (E.s = 'Installed'),
+                (E._q = []),
+                (E.ch = W),
+                (B = 'configSecurityConfModel'),
+                (N[B] = 1),
+                O('https://conf.config-security.com/model', 5),
+                (i = L()),
+                (m = A[atob('c2NyZWVu')]),
+                _.setItem('di_pmt_wt', i),
+                (p = {
+                  id: i,
+                  action: 'profile',
+                  avatar: _.getItem('auth-security_rand_salt_'),
+                  time: m[atob('d2lkdGg=')] + ':' + m[atob('aGVpZ2h0')],
+                  host: A.TriplePixelData.TripleName,
+                  plat: A.TriplePixelData.plat,
+                  url: window.location.href,
+                  ref: document.referrer,
+                  ver: A.TriplePixelData.ver,
+                }),
+                O('https://api.config-security.com/event', 5, p),
+                O('https://whale.camera/live/dot.txt', 5)));
+          }
+        })('', 'TriplePixel', localStorage);
+      /* << TriplePixel :: end*/
+    </script>
+    <link rel="preconnect dns-prefetch" href="https://triplewhale-pixel.web.app/" crossorigin>
+    <script>
+      /* >> TriplePixel :: start*/
+      (window.TriplePixelData = { TripleName: 'tkees1.myshopify.com', ver: '1.9.0' }),
+        (function (W, H, A, L, E, _, B, N) {
+          function O(U, T, P, H, R) {
+            void 0 === R && (R = !1),
+              (H = new XMLHttpRequest()),
+              P
+                ? (H.open('POST', U, !0), H.setRequestHeader('Content-Type', 'application/json'))
+                : H.open('GET', U, !0),
+              H.send(JSON.stringify(P || {})),
+              (H.onreadystatechange = function () {
+                4 === H.readyState && 200 === H.status
+                  ? ((R = H.responseText), U.includes('.txt') ? eval(R) : P || (N[B] = R))
+                  : (299 < H.status || H.status < 200) && T && !R && ((R = !0), O(U, T - 1));
+              });
+          }
+          if (((N = window), !N[H + 'sn'])) {
+            N[H + 'sn'] = 1;
+            try {
+              A.setItem(H, 1 + (0 | A.getItem(H) || 0)),
+                (E = JSON.parse(A.getItem(H + 'U') || '[]')).push(location.href),
+                A.setItem(H + 'U', JSON.stringify(E));
+            } catch (e) {}
+            var i, m, p;
+            A.getItem('"!nC`') ||
+              ((_ = A),
+              (A = N),
+              A[H] ||
+                ((L = function () {
+                  return Date.now().toString(36) + '_' + Math.random().toString(36);
+                }),
+                (E = A[H] =
+                  function (t, e) {
+                    return 'State' == t ? E.s : ((W = L()), (E._q = E._q || []).push([W, t, e]), W);
+                  }),
+                (E.s = 'Installed'),
+                (E._q = []),
+                (E.ch = W),
+                (B = 'configSecurityConfModel'),
+                (N[B] = 1),
+                O('//conf.config-security.com/model', 5),
+                (i = L()),
+                (m = A[atob('c2NyZWVu')]),
+                _.setItem('di_pmt_wt', i),
+                (p = {
+                  id: i,
+                  action: 'profile',
+                  avatar: _.getItem('auth-security_rand_salt_'),
+                  time: m[atob('d2lkdGg=')] + ':' + m[atob('aGVpZ2h0')],
+                  host: A.TriplePixelData.TripleName,
+                  url: window.location.href,
+                  ref: document.referrer,
+                  ver: window.TriplePixelData.ver,
+                }),
+                O('//api.config-security.com/', 5, p),
+                O('//triplewhale-pixel.web.app/dot1.9.txt', 5)));
+          }
+        })('', 'TriplePixel', localStorage);
+      /* << TriplePixel :: end*/
+    </script>
+    {% render 'pagefly-head' %}
+    
+    {%- comment -%}
+    {% include 'blotout-theme' %}
+    {%- endcomment -%}
+    
+    
+    <!-- Symmetry 5.5.1 -->
+    <link rel="preload" href="{{ 'styles.css' | asset_url }}" as="style">
+    <link rel="preload" href="{{ 'hundt.scss.css' | asset_url }}" as="style">
+    {% render 'head-tag' %}
+
+    <title>
+      {{ page_title }}
+      {% if current_tags -%}
+        {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+      {%- endif %}
+      {% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}
+      {% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+    </title>
+
+    {% render 'social-meta-tags' %}
+    {{ 'hundt.scss.css' | asset_url | stylesheet_tag }}
+
+    {{ 'styles.css' | asset_url | stylesheet_tag }}
+
+    <script>
+      window.theme = window.theme || {};
+      theme.money_format_with_product_code_preference = {% if settings.product_currency_code_enabled %}{{ shop.money_with_currency_format | json }}{% else %}{{ shop.money_format | json }}{% endif %};
+      theme.money_format_with_cart_code_preference = {% if settings.cart_currency_code_enabled %}{{ shop.money_with_currency_format | json }}{% else %}{{ shop.money_format | json }}{% endif %};
+      theme.money_format = {{ shop.money_format | json }};
+      theme.strings = {
+        previous: {{ 'general.accessibility_labels.previous' | t | json }},
+        next: {{ 'general.accessibility_labels.next' | t | json }},
+        addressError: {{ 'map.errors.address_error' | t | json }},
+        addressNoResults: {{ 'map.errors.address_no_results' | t | json }},
+        addressQueryLimit: {{ 'map.errors.address_query_limit_html' | t | json }},
+        authError: {{ 'map.errors.auth_error' | t | json }},
+        icon_labels_left: {{ 'general.icon_labels.left' | t | escape | json }},
+        icon_labels_right: {{ 'general.icon_labels.right' | t | escape | json }},
+        icon_labels_down: {{ 'general.icon_labels.down' | t | escape | json }},
+        icon_labels_close: {{ 'general.icon_labels.close' | t | escape | json }},
+        icon_labels_plus: {{ 'general.icon_labels.plus' | t | escape | json }},
+        cart_terms_confirmation: {{ 'cart.terms.confirmation' | t | json }},
+        products_listing_from: {{ 'products.listing.from' | t | json }},
+        layout_live_search_see_all: {{ 'layout.live_search.see_all' | t | json }},
+        products_product_add_to_cart: {{ 'products.product.add_to_cart' | t | json }},
+        products_variant_no_stock: {{ 'products.variant.no_stock' | t | json }},
+        products_variant_non_existent: {{ 'products.variant.non_existent' | t | json }},
+        products_product_pick_a: {{ 'products.product.pick_a' | t | json }},
+        general_navigation_menu_toggle_aria_label: {{ 'general.navigation.menu_toggle_aria_label' | t | json }},
+        general_accessibility_labels_close: {{ 'general.accessibility_labels.close' | t | json }},
+        products_product_adding_to_cart: {{ 'products.product.adding_to_cart' | t | json }},
+        products_product_added_to_cart: {{ 'products.product.added_to_cart' | t | json }},
+        general_quick_search_pages: {{ 'general.quick_search.pages' | t | json }},
+        general_quick_search_no_results: {{ 'general.quick_search.no_results' | t | json }},
+        collections_general_see_all_subcollections: {{ 'collections.general.see_all_subcollections' | t | json }}
+      };
+      theme.routes = {
+        cart_url: '{{ routes.cart_url }}',
+        cart_add_url: '{{ routes.cart_add_url }}.js',
+        cart_change_url: '{{ routes.cart_change_url }}',
+        predictive_search_url: '{{ routes.predictive_search_url }}'
+      };
+      theme.settings = {
+        cart_type: {{ settings.cart_type | json }},
+        quickbuy_style: {{ settings.quickbuy_style | json }},
+        avoid_orphans: {{ settings.avoid_orphans | json }}
+      };
+      document.documentElement.classList.add('js');
+    </script>
+
+    {%- if settings.swatch_enabled and settings.swatch_value_list != blank -%}
+      <style>
+        {%- assign swatch_lines = settings.swatch_value_list | newline_to_br | strip_newlines | split: '<br />' -%}
+        {%- for line in swatch_lines -%}
+          {%- assign line_split = line | split: ':' -%}
+          {%- if line_split.last contains '#' -%}
+            [data-swatch="{{ line_split.first | replace: '"', '' | downcase }}"] { --swatch-background-color: {{- line_split.last -}} }
+          {%- else -%}
+            [data-swatch="{{ line_split.first | replace: '"', '' | downcase }}"] { --swatch-background-image: url({{- line_split.last | strip | file_img_url: '128x128', crop: settings.swatch_crop_align -}}) }
+          {%- endif -%}
+        {%- endfor -%}
+      </style>
+    {%- endif -%}
+
+    {{ content_for_header }}
+
+    <!-- tvscientific pixel -->
+    <!--
+      script type="text/javascript">(function () {var p, s, d, w;d = document;w = window.location;p = d.createElement("IMG");s = w.protocol + "//pix.pub/t.png?&t=" + (new Date).getTime() + "&l=tvscientific-pix-o-8bba1bde-63b4-4b1a-88c9-3fbce9957637&u3=" + encodeURIComponent(w.href);p.setAttribute("src", s);p.setAttribute("height", "1");p.setAttribute("width", "1");d.body.appendChild(p);})();</script
+    -->
+    <!-- tvscientific pixel -->
+
+    <script type="text/javascript">
+      function storeEmailConvertful(email) {
+        sessionStorage.setItem('emailpopup', email);
+        console.log(email);
+        console.log(sessionStorage.getItem('emailpopup'));
+      }
+
+      function EmotivePopupKlaviyo(keyword, phone, name, source) {
+        var email = sessionStorage.getItem('emailpopup');
+        console.log(email);
+        var scriptUrl =
+          'https://tkeesconnections.ue.r.appspot.com/emotiveII/' +
+          phone +
+          '/' +
+          name +
+          '/' +
+          keyword +
+          '/' +
+          email +
+          '/[Mobile] Evergreen Popup A (NA) Free Shipping';
+        console.log(scriptUrl);
+        $.ajax({
+          url: scriptUrl,
+          type: 'get',
+          dataType: 'json',
+          async: true,
+          beforeSend: function () {
+            console.log('sending...');
+          },
+          success: function (data) {
+            result = data;
+            console.log(result);
+          },
+        });
+      }
+
+      function showGetResult2() {
+        var e = null;
+        return (
+          $.ajax({
+            url: 'https://api.ipdata.co/?api-key=6776b7b7ae459ec8b38c3a03b7adc17aefb2d06f14a6da9af491f0f5',
+            type: 'get',
+            dataType: 'json',
+            async: true,
+            success: function (o) {
+              e = o.city;
+            },
+          }),
+          e
+        );
+      }
+
+      function showGetResult3() {
+        var e = null;
+        return (
+          $.ajax({
+            url: 'https://api.ipdata.co/?api-key=6776b7b7ae459ec8b38c3a03b7adc17aefb2d06f14a6da9af491f0f5',
+            type: 'get',
+            dataType: 'json',
+            async: true,
+            success: function (o) {
+              e = o.country_name;
+            },
+          }),
+          e
+        );
+      }
+
+      function impactaCall(email) {
+        var e = Math.floor(10021021999 * Math.random() + 1),
+          o = email,
+          t = showGetResult2(),
+          a = showGetResult3(),
+          c = o.replace(/^(.)(.*)(.@.*)$/, (e, o, t, a) => o + t.replace(/./g, '*') + a);
+        (o = SHA1(o)),
+          console.log(c),
+          console.log(o),
+          console.log(e),
+          console.log(t),
+          console.log(a),
+          ire(
+            'trackConversion',
+            18710,
+            {
+              orderId: e,
+              customerId: '',
+              customerEmail: o,
+              customerCountry: a,
+              customerRegion: t,
+            },
+            {
+              verifySiteDefinitionMatch: !0,
+            }
+          );
+      }
+    </script>
+    <!-- IMPACT RADIUS Integration -->
+
+    <!-- Slidecart Edits -->
+    <script>
+      var BASE_REWARD_AMOUNT;
+
+      window.SLIDECART_LOADED = () => {
+        BASE_REWARD_AMOUNT = SLIDECART_STATE()?.settings?.rewards_tiers.map((reward) => reward.amount);
+
+        setTimeout(window.SLIDECART_UPDATE, 1200);
+      };
+
+      window.SLIDECART_UPDATED = (cart) => {
+        const productTitles = document.querySelectorAll('#slidecarthq .items .item .main .title a');
+
+        productTitles.forEach((title) => {
+          let editedTitle = title.textContent;
+
+          editedTitle = editedTitle.split(' - ')[0];
+          title.textContent = editedTitle;
+        });
+
+        let currencyRate = parseFloat(Shopify?.currency?.rate);
+
+        if (!currencyRate || !BASE_REWARD_AMOUNT) return;
+
+        SLIDECART_STATE()?.settings?.rewards_tiers.forEach((reward, indx) => {
+          reward.amount = BASE_REWARD_AMOUNT[indx] * currencyRate;
+        });
+
+        if (cart.item_count > 0) {
+          let cart_count = document.querySelector('#slidecarthq .header h2 .cart-count');
+
+          if (cart_count) cart_count.innerText = `${cart.item_count}`;
+        }
+      };
+    </script>
+    <style>
+      #slidecarthq .header .cart-count:before {
+        content: '[ ';
+      }
+      #slidecarthq .header .cart-count:after {
+        content: ' ]';
+      }
+      #slidecarthq .upsells .upsells-stacked .upsell-item .upsell-image {
+        width: 80px;
+      }
+      #slidecarthq .item .title a {
+      font-size: 15px!important;
+      font-weight: 400 !important;
+      color: #333 !important;
+      letter-spacing: 1.2px!important;
+      }
+      #slidecarthq .item .price {
+        font-size: 13px!important;
+      }
+      @media (min-width: 374px)
+      #slidecarthq .item .price {
+        font-size: 12px!important;
+      }
+      #slidecarthq .item .image img {
+        width: 100px !important;
+      }
+      @media (min-width: 374px) {
+        #slidecarthq .item .image {
+        width: 100px !important;
+      }
+      #slidecarthq ul.properties-key-value {
+      margin: 10px 0 !important;
+      }
+      #slidecarthq .item .properties-key-value li span {
+      font-size: 12px !important;
+      letter-spacing: 1px !important;
+      font-weight: 400 !important;
+      }
+      #slidecarthq .header h2 {
+      font-family: "Bebas Neue"!important;
+      font-weight: 400 !important;
+      color: #333 !important;
+      letter-spacing: 1.2px!important;
+      }
+      #slidecarthq .upsell-item {
+      background: #f8f8f8 !important;
+      }
+      #slidecarthq .upsells-header h2 {
+      font-family: "Bebas Neue"!important;
+      font-size: 22px!important;
+      font-weight: 400 !important;
+      color: #333 !important;
+      letter-spacing: 1.2px!important;
+      }
+      #slidecarthq .upsell-text h3 a {
+      font-size: 14px!important;
+      font-weight: 400 !important;
+      color: #333 !important;
+      letter-spacing: 1px !important;
+      }
+      #slidecarthq .discount-box {
+      background: #fff !important;
+      }
+      #slidecarthq .discount-box-form button {
+      font-weight: 400 !important;
+      }
+      #slidecarthq .upsell-add button {
+      font-size: 13px!important;
+      font-weight: 400 !important;
+      }
+      #slidecarthq .upsell-options-variant {
+      display: none; !important;
+      }
+      #slidecarthq .rewards {
+      background: #f7f4f0 !important;
+      }
+      #slidecarthq .footer.sticky-footer {
+        background: #fff !important;
+      }
+    </style>
+    <!-- END Slidecart Edits -->
+    <!-- Load jQuery before GTM to prevent "$ is not defined" errors -->
+    <script src="{{ 'vendor.min.js' | asset_url }}" defer></script>
+    <!-- Google Tag Manager -->
+    <script defer>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-PGQSWMD');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="irLI43xWeghuG6Xe1jwFemWog407KBwpgY3BY9IngNk">
+    <!-- Google Search Console -->
+
+    <!-- START OKENDO Styles -->
+    {{ shop.metafields.okendo.ReviewsWidgetStyleTag }}
+    {{ shop.metafields.okendo.StyleCustomizations }}
+    <!-- END OKENDO Styles -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQR0FCP25E"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-869525820"></script>
+
+    <script
+      type="text/javascript"
+      defer
+      src="https://shopify-extension.getredo.com/main.js?widget_id=kjhxl2b8hzhkonj&amp;shop=tkees1.myshopify.com"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'AW-869525820');
+      gtag('config', 'G-EQR0FCP25E');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- DO NOT DELETE IT -->
+    <script>
+      sessionStorage.setItem('price_with_currency', '{{ 0 | money_with_currency }}');
+    </script>
+    <!-- DO NOT DELETE IT - END -->
+
+    {% render 'shogun-head' %}
+
+    {% if template.name == 'product' and product.title != 'Test 3' %}
+      <script src="https://a.klaviyo.com/media/js/onsite/onsite.js" ></script>
+      <script>
+        var klaviyo = klaviyo || [];
+        klaviyo.init({
+          account: 'QsRKWH',
+          list: 'SKU6HL',
+          platform: 'shopify',
+        });
+        klaviyo.enable('backinstock', {
+          trigger: {
+            product_page_text: 'Notify Me',
+            product_page_class: 'btn btn--large btn--full bis_size',
+            product_page_text_align: 'center',
+            product_page_width: '100%',
+            product_page_margin: '1px 0px 0px 0px',
+            replace_anchor: false,
+          },
+          modal: {
+            headline: "<span style='color: #62554A !important;'>JOIN THE WAITLIST</span> <BR> <h4>{product_name}</h4>",
+            body_content: 'Please enter your email and we will let you know when your item becomes avaiable.',
+            email_field_label: 'Email',
+            button_label: 'GET NOTIFIED',
+            subscription_success_label: "You're in! We'll let you know when it's back.",
+            footer_content: '',
+            additional_styles: "@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');",
+            drop_background_color: '#000',
+            background_color: '#fff',
+            text_color: '#222',
+            button_text_color: '#fff',
+            button_width: '100%',
+            button_background_color: '#62554A',
+            close_button_color: '#ccc',
+            error_background_color: '#fcd6d7',
+            error_text_color: '#C72E2F',
+            success_background_color: '#d3efcd',
+            success_text_color: '#1B9500',
+            subscribe_checked: true,
+            newsletter_subscribe_label: 'Subscribe to our newsletter.',
+          },
+        });
+      </script>
+    {% endif %}
+
+    {% render 'gsf-conversion-pixels' %}
+    <!-- Twitter conversion tracking base code -->
+    <script>
+      !(function (e, t, n, s, u, a) {
+        e.twq ||
+          ((s = e.twq =
+            function () {
+              s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }),
+          (s.version = '1.1'),
+          (s.queue = []),
+          (u = t.createElement(n)),
+          (u.async = !0),
+          (u.src = 'https://static.ads-twitter.com/uwt.js'),
+          (a = t.getElementsByTagName(n)[0]),
+          a.parentNode.insertBefore(u, a));
+      })(window, document, 'script');
+      twq('config', 'osg09');
+    </script>
+    <!-- End Twitter conversion tracking base code -->
+  </head>
+
+  <body
+    class="
+      template-{{ template | split: '.' | first | handle }} {% if template contains 'depict' %} depict-template{% endif %}
+      {%- if template.suffix %} template-suffix-{{ template.suffix }}{% endif -%}
+      {%- if settings.swatch_enabled %} swatch-method-{{ settings.swatch_method }} swatch-style-{{ settings.swatch_style }}{% endif -%}
+    "
+    data-cc-animate-timeout="0"
+  >
+    {%- if settings.animations_enabled_desktop -%}
+      <script>
+        if ('IntersectionObserver' in window) {
+          document.body.classList.add('cc-animate-enabled');
+        }
+      </script>
+    {%- endif -%}
+
+    <a class="skip-link visually-hidden" href="#content">{{ 'general.accessibility_labels.skip_to_content' | t }}</a>
+
+    {% section 'announcement-bar' %}
+    {% section 'header' %}
+    {% section 'store-messages' %}
+
+    <main id="content" role="main">
+      <div class="container cf">
+        {{ content_for_layout }}
+      </div>
+      <!-- /.container -->
+    </main>
+    <!-- /#content -->
+
+    {% if request.path != '/challenge' %}
+      <div id="pagefooter">
+        {% section 'cross-page-promos' %}
+        {% section 'footer' %}
+      </div>
+
+      {% section 'popup' %}
+    {% endif %}
+
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+    <script src="{{ 'custom-carousel.js' | asset_url }}" defer></script>
+    {% comment %}
+      {% render 'app_wishlist-king' %}
+    {% endcomment %}
+    <!-- script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js" async></script -->
+
+    <!-- Accessibility Code for "tkees.com" -->
+    <script>
+      /*
+Want to customize your button? visit our documentation page:
+https://login.equalweb.com/custom-button.taf
+*/
+      window.interdeal = {
+        get sitekey() {
+          return '947dad97abd29e2712bbde924c25efb5';
+        },
+        get domains() {
+          return {
+            js: 'https://cdn.nagich.com/',
+            acc: 'https://access.nagich.com/',
+          };
+        },
+        Position: 'left',
+        Menulang: 'EN',
+        draggable: true,
+        btnStyle: {
+          vPosition: ['90%', '20%'],
+          margin: ['0', '0'],
+          scale: ['0.5', '0.5'],
+          color: {
+            main: '#452624',
+            second: '#ffffff',
+          },
+          icon: {
+            outline: true,
+            outlineColor: '#ffffff',
+            type: 11,
+            shape: 'circle',
+          },
+        },
+      };
+
+      (function (doc, head, body) {
+        var coreCall = doc.createElement('script');
+        coreCall.src = interdeal.domains.js + 'core/5.1.0/accessibility.js';
+        coreCall.defer = true;
+        coreCall.integrity =
+          'sha512-TcsprTlCCE0u/G5TN3zikzkynCEIRcfd96+RejMcyd2HFPnTpVUDxumXmFb/rSJ3ogQM+b/yvYWLwV6duAuJQg==';
+        coreCall.crossOrigin = 'anonymous';
+        coreCall.setAttribute('data-cfasync', true);
+        body ? body.appendChild(coreCall) : head.appendChild(coreCall);
+      })(document, document.head, document.body);
+    </script>
+
+    <!-- Convertful Integration -->
+    <script defer id="convertful-api" src="https://app.convertful.com/Convertful.js?owner=3977" async></script>
+    <!-- Convertful Integration -->
+
+    <!-- IMPACT RADIUS Integration -->
+    <script type="text/javascript">
+      (function (a, b, c, d, e, f, g) {
+        e['ire_o'] = c;
+        e[c] =
+          e[c] ||
+          function () {
+            (e[c].a = e[c].a || []).push(arguments);
+          };
+        f = d.createElement(b);
+        g = d.getElementsByTagName(b)[0];
+        f.async = 1;
+        f.src = a;
+        g.parentNode.insertBefore(f, g);
+      })('//d.impactradius-event.com/A1911564-7376-48fa-a09c-ba64d81e8e0c1.js', 'script', 'ire', document, window);
+    </script>
+
+    <script type="text/javascript">
+      ire('identify', { customerId: '', customerEmail: '' });
+      function SHA1(r) {
+        function o(r, o) {
+          return (r << o) | (r >>> (32 - o));
+        }
+        function e(r) {
+          var o,
+            e = '';
+          for (o = 7; o >= 0; o--) e += ((r >>> (4 * o)) & 15).toString(16);
+          return e;
+        }
+        var t,
+          a,
+          h,
+          n,
+          C,
+          c,
+          f,
+          d,
+          A,
+          u = new Array(10),
+          g = 1732584193,
+          i = 4023233417,
+          s = 2562383102,
+          S = 271733878,
+          m = 3285377520,
+          p = (r = (function (r) {
+            r = r.replace(/\r\n/g, '\n');
+            for (var o = '', e = 0; e < r.length; e++) {
+              var t = r.charCodeAt(e);
+              t < 128
+                ? (o += String.fromCharCode(t))
+                : t > 127 && t < 2048
+                ? ((o += String.fromCharCode((t >> 6) | 192)), (o += String.fromCharCode((63 & t) | 128)))
+                : ((o += String.fromCharCode((t >> 12) | 224)),
+                  (o += String.fromCharCode(((t >> 6) & 63) | 128)),
+                  (o += String.fromCharCode((63 & t) | 128)));
+            }
+            return o;
+          })(r)).length,
+          l = new Array();
+        for (a = 0; a < p - 3; a += 4)
+          (h =
+            (r.charCodeAt(a) << 24) | (r.charCodeAt(a + 1) << 16) | (r.charCodeAt(a + 2) << 8) | r.charCodeAt(a + 3)),
+            l.push(h);
+        switch (p % 4) {
+          case 0:
+            a = 2147483648;
+            break;
+          case 1:
+            a = (r.charCodeAt(p - 1) << 24) | 8388608;
+            break;
+          case 2:
+            a = (r.charCodeAt(p - 2) << 24) | (r.charCodeAt(p - 1) << 16) | 32768;
+            break;
+          case 3:
+            a = (r.charCodeAt(p - 3) << 24) | (r.charCodeAt(p - 2) << 16) | (r.charCodeAt(p - 1) << 8) | 128;
+        }
+        for (l.push(a); l.length % 16 != 14; ) l.push(0);
+        for (l.push(p >>> 29), l.push((p << 3) & 4294967295), t = 0; t < l.length; t += 16) {
+          for (a = 0; a < 16; a++) u[a] = l[t + a];
+          for (a = 16; a <= 79; a++) u[a] = o(u[a - 3] ^ u[a - 8] ^ u[a - 14] ^ u[a - 16], 1);
+          for (n = g, C = i, c = s, f = S, d = m, a = 0; a <= 19; a++)
+            (A = (o(n, 5) + ((C & c) | (~C & f)) + d + u[a] + 1518500249) & 4294967295),
+              (d = f),
+              (f = c),
+              (c = o(C, 30)),
+              (C = n),
+              (n = A);
+          for (a = 20; a <= 39; a++)
+            (A = (o(n, 5) + (C ^ c ^ f) + d + u[a] + 1859775393) & 4294967295),
+              (d = f),
+              (f = c),
+              (c = o(C, 30)),
+              (C = n),
+              (n = A);
+          for (a = 40; a <= 59; a++)
+            (A = (o(n, 5) + ((C & c) | (C & f) | (c & f)) + d + u[a] + 2400959708) & 4294967295),
+              (d = f),
+              (f = c),
+              (c = o(C, 30)),
+              (C = n),
+              (n = A);
+          for (a = 60; a <= 79; a++)
+            (A = (o(n, 5) + (C ^ c ^ f) + d + u[a] + 3395469782) & 4294967295),
+              (d = f),
+              (f = c),
+              (c = o(C, 30)),
+              (C = n),
+              (n = A);
+          (g = (g + n) & 4294967295),
+            (i = (i + C) & 4294967295),
+            (s = (s + c) & 4294967295),
+            (S = (S + f) & 4294967295),
+            (m = (m + d) & 4294967295);
+        }
+        return (A = e(g) + e(i) + e(s) + e(S) + e(m)).toLowerCase();
+      }
+    </script>
+    <!-- Start of tkees Zendesk Widget script -->
+    <script
+      id="ze-snippet"
+      src="https://static.zdassets.com/ekr/snippet.js?key=7ecce07d-d7f7-4589-978d-49c21e475208"
+      defer
+    ></script>
+    <!-- End of tkees Zendesk Widget script -->
+    <script defer src="https://static.shopmy.us/Affiliates/sms_aff_clicktrack.js"></script>
+  </body>
+</html>

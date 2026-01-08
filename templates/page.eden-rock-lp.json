@@ -1,0 +1,327 @@
+{
+  "sections": {
+    "image_with_text_overlay_custom_8mccVC": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        ".title-cont-font {font-size: 5rem;}",
+        ".subheading-adjust {font-size: 2em; margin-top: -10px;}",
+        "@media (max-width: 990px) {.subheading-adjust {font-size: 0.9em; margin-top: -10px; } .title-cont-font {font-size: 1.5rem; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hero_headerfont.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "primary_heading_font": "Bebas Neue",
+        "title_cont": "",
+        "separate_heading_text": false,
+        "second_heading_font": "Snell Roundhand",
+        "title_size": 96,
+        "title_size_mobile": 32,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "default",
+        "text_alignment": "center end",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "active_time": "",
+        "inactive_time": ""
+      }
+    },
+    "rich_text_9E3WTC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_4f9Hd3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Some places stay with you long after you leave - <br\/>Eden Rock - St Barths is one of them.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_N8Fgz3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop Tkees x Eden Rock",
+            "button_link": "shopify:\/\/collections\/tkees-x-eden-rock",
+            "button_style": "infinity"
+          }
+        },
+        "image_RybEnP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/button.jpg",
+            "image_width": 260,
+            "url": "shopify:\/\/collections\/tkees-x-eden-rock"
+          }
+        }
+      },
+      "block_order": [
+        "text_4f9Hd3",
+        "button_N8Fgz3",
+        "image_RybEnP"
+      ],
+      "custom_css": [
+        ".rte p {color: black;}",
+        "@media (max-width: 768px) {.rimage-wrapper {max-width: 175px; margin: auto; }}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_bBgQ6f": {
+      "type": "gallery",
+      "blocks": {
+        "image_3Uex8d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Collage.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_3Uex8d"
+      ],
+      "custom_css": [
+        ".gallery {padding: 0 3%;}"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 460,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_4enh9c": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YyDQjn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Available in 2 soft, neutral colors over 5 silhouettes.",
+            "use_h1": false
+          }
+        },
+        "text_H6qGfV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Time slows, the ocean shimmers, and ease becomes second nature.<br\/>We've spent time there taking it all in.  Together, we're bringing you a collection that feels just like that - easy, sun-kissed, and made for beach-hopping, sunset toasts, and doing absolutely nothing.  And just like that feeling, TKEES comes with you, wherever you go.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_7rGcTb": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop Tkees x Eden Rock",
+            "button_link": "shopify:\/\/collections\/tkees-x-eden-rock",
+            "button_style": "infinity"
+          }
+        },
+        "image_cdzzTM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/button.jpg",
+            "image_width": 260,
+            "url": "shopify:\/\/collections\/tkees-x-eden-rock"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YyDQjn",
+        "text_H6qGfV",
+        "button_7rGcTb",
+        "image_cdzzTM"
+      ],
+      "custom_css": [
+        ".rte p {color: black;}",
+        "@media (max-width: 768px) {.rimage-wrapper {max-width: 175px; margin: auto; }}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "gallery_jHqXme": {
+      "type": "gallery",
+      "blocks": {
+        "image_PcGFqd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/EdenRoc_white.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "CREAM",
+            "button_label": "",
+            "link": "shopify:\/\/products\/tkees-x-eden-rock-cream",
+            "text_alignment": "bottom right",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_eqRNQW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/EdenRoc_red.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "RED",
+            "button_label": "",
+            "link": "shopify:\/\/products\/tkees-x-eden-rock-red",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        },
+        "image_KhJELr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/EdenRoc_stripes_c8285857-8434-4eef-af3b-3313b08139ec.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "STRIPE",
+            "button_label": "",
+            "link": "shopify:\/\/products\/tkees-x-eden-rock-stripe",
+            "text_alignment": "bottom left",
+            "show_text_below": false,
+            "title_below": "Color name",
+            "show_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "image_PcGFqd",
+        "image_eqRNQW",
+        "image_KhJELr"
+      ],
+      "custom_css": [
+        ".overlay-text__inner {justify-content: flex-end;}",
+        ".overlay-text__title {font-family: \"Bebas Neue\";}",
+        ".image-overlay--bg-full::after {background: transparent;}",
+        "@media (max-width: 768px) {.overlay-text__inner {padding: 0 3% 0; } .overlay-text__title {font-size: 1rem;}}"
+      ],
+      "settings": {
+        "grid": 3,
+        "desktop_image_height": 900,
+        "height_override": true,
+        "mobile_image_height": 400,
+        "mobile_grid": true,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "remove_horizontal_padding": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_QYftj3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mbnkzh": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "You can never have too much of the right shimmer.  Our delicate, handcrafted straps do just that, creating an active glow making your feet feel irresitibly sexy.",
+            "use_h1": false
+          }
+        },
+        "text_exfbPm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Drawing inspiration from the hotel's iconic red and white colors, this collaboration blends the charm of the island with TKEES' effortless style, creating the perfect look for relaxed island days.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_DJFbmj": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop Tkees x Eden Rock",
+            "button_link": "shopify:\/\/collections\/tkees-x-eden-rock",
+            "button_style": "infinity"
+          }
+        },
+        "image_ecN6AQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/button.jpg",
+            "image_width": 260,
+            "url": "shopify:\/\/collections\/tkees-x-eden-rock"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mbnkzh",
+        "text_exfbPm",
+        "button_DJFbmj",
+        "image_ecN6AQ"
+      ],
+      "custom_css": [
+        ".rte p {color: black;}",
+        "@media (max-width: 768px) {.rimage-wrapper {max-width: 175px; margin: auto; }}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_custom_8mccVC",
+    "rich_text_9E3WTC",
+    "gallery_bBgQ6f",
+    "rich_text_4enh9c",
+    "gallery_jHqXme",
+    "rich_text_QYftj3"
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "393a7d48-5a65-4792-9d0e-128382c3661e": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "h2 {font-family: bebas neue; letter-spacing: 1px; color: #fff;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/25-800.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/place-holder-1-1.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 700,
+        "height_mobile": 600,
+        "image_link": "",
+        "subheading": "",
+        "title": "Welcome to TKEES",
+        "title_size": 66,
+        "title_size_mobile": 28,
+        "use_h1": false,
+        "text": "<p>Where Timeless Meets Contemporary<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full"
+      }
+    },
+    "0a70291e-53e1-42ee-b17c-d8aaf98d5acc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15976017559727__0a70291e-53e1-42ee-b17c-d8aaf98d5acc-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "use_h1": false
+          }
+        },
+        "template--15976017559727__0a70291e-53e1-42ee-b17c-d8aaf98d5acc-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15976017559727__0a70291e-53e1-42ee-b17c-d8aaf98d5acc-heading-1",
+        "template--15976017559727__0a70291e-53e1-42ee-b17c-d8aaf98d5acc-text-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "664f9c1c-ccc9-4402-85a7-1bbf93544edb": {
+      "type": "image-with-text",
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}",
+        ".btn {font-family: bebas neue; font-size: 16px; letter-spacing: 1px; padding: .9em 50px 0.9em;"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/place-holder-1-1.jpg",
+        "image_2": "shopify:\/\/shop_images\/place-holder-1-1.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Our Roots",
+        "use_h1": false,
+        "text": "<p>TKEES was founded in 2009 by wife and husband duo, Carly and Jesse Burnett. After searching for the perfect, barely-there flip-flop that was accessible and responsibly produced, they created their own.<\/p><p>The now-iconic Lily was launched in five nude shades and set the pace for future collections of timeless wardrobe staples. <\/p>",
+        "button_label": "Explore Lily",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "center",
+        "use_alt_bg": false
+      }
+    },
+    "d1498e20-dd60-4aa4-bb80-5611ba1695ce": {
+      "type": "multi-column",
+      "blocks": {
+        "template--15989059846319__d1498e20-dd60-4aa4-bb80-5611ba1695ce-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/5-4-placeholder.jpg",
+            "image_width": 700,
+            "title": "Timelessness",
+            "text": "<p>We run a minimalist eye over everything we create. Instead of chasing trends and releasing seasonal collections, we focus on designing pieces that you can continue to reach for, year after year. <\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--15989059846319__d1498e20-dd60-4aa4-bb80-5611ba1695ce-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/5-4-placeholder.jpg",
+            "image_width": 700,
+            "title": "INCLUSIVITY",
+            "text": "<p>From color palette to sizing, our success is measured by how you feel in our pieces. We value our customers’ feedback and are always looking for ways to create products that are a reflection of<em> you<\/em>. <\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--15989059846319__d1498e20-dd60-4aa4-bb80-5611ba1695ce-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/5-4-placeholder.jpg",
+            "image_width": 700,
+            "title": "VERSATILITY",
+            "text": "<p>Dressed up or down, our pieces are made to be lived in and we go the extra mile to perfect every detail. It’s important to us that your favorite flip flops or hoodie can be woven in with what you already own. <\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15989059846319__d1498e20-dd60-4aa4-bb80-5611ba1695ce-text_block-1",
+        "template--15989059846319__d1498e20-dd60-4aa4-bb80-5611ba1695ce-text_block-2",
+        "template--15989059846319__d1498e20-dd60-4aa4-bb80-5611ba1695ce-text_block-3"
+      ],
+      "custom_css": [
+        ".h4-style {font-family: \"Bebas Neue\"; font-size: 24px; color: #333; letter-spacing: 1px;}",
+        ".text-column__title {font-family: \"Bebas Neue\"; font-size: 20px; color: #333; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px;}",
+        ".text-column__text {margin-bottom: 12px;}",
+        ".container {margin-top: -40px;}"
+      ],
+      "settings": {
+        "title": "Our Values",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "bd7dba03-1929-42f7-ae21-726af3f3830a": {
+      "type": "gallery",
+      "blocks": {
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/versatility_5.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/versatility_1.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/versatility_7.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "dac5a436-2a82-45ea-aa01-99d5a0344944": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/versatility_6.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-2",
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-1",
+        "template--15976017559727__bd7dba03-1929-42f7-ae21-726af3f3830a-image-3",
+        "dac5a436-2a82-45ea-aa01-99d5a0344944"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".slick-slider-overlay-dots {fill: #ffffff;}"
+      ],
+      "settings": {
+        "grid": 4,
+        "desktop_image_height": 400,
+        "mobile_image_height": 450,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": false,
+        "use_alt_bg": false,
+        "enable_carousel": true,
+        "overlay_style": "no_background",
+        "button_style": "primary"
+      }
+    },
+    "82a8b8b7-a2bc-49d4-9e3e-d4e3ae5007d1": {
+      "type": "rich-text",
+      "blocks": {
+        "1879506b-80e0-470d-b625-8d2dff33e919": {
+          "type": "heading",
+          "settings": {
+            "title": "Craftsmanship",
+            "use_h1": false
+          }
+        },
+        "template--15976017559727__82a8b8b7-a2bc-49d4-9e3e-d4e3ae5007d1-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our sandals effortlessly adapt, whether they're paired with jeans, a summer dress, or your favorite beachwear. <\/p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "1879506b-80e0-470d-b625-8d2dff33e919",
+        "template--15976017559727__82a8b8b7-a2bc-49d4-9e3e-d4e3ae5007d1-text-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}",
+        ".fully-spaced-row--small {margin-top: 20px;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    },
+    "87521aed-e631-405e-97e8-230a0ec3ffca": {
+      "type": "image-with-text",
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}",
+        ".btn {font-family: bebas neue; font-size: 16px; letter-spacing: 1px; padding: .9em 50px 0.9em;"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/place-holder-4-3.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Our Responsibility",
+        "use_h1": false,
+        "text": "<p>We believe in buying less by buying better and the same philosophy applies to how our products are made. <\/p><p>By investing in quality over quantity, we’re able to create products and collections that outlive trends. Avoiding overproduction, our season-less approach allows us to make long term design decisions that lead to reduced waste with our trusted partners in Canada, Brazil, and China.<\/p>",
+        "button_label": "Explore Tkees",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "center",
+        "use_alt_bg": false
+      }
+    },
+    "65b0711d-ffb0-465f-977e-ff06997d8ac9": {
+      "type": "custom-row",
+      "blocks": {
+        "5078818f-a5b2-40e3-99af-780e0140cb76": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/place-holder-4-3.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 380,
+            "height_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "e8bbf4d2-c440-4acc-acd3-d0a4f1aba0f7": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Our Responsibility",
+            "text": "<p>We believe in buying less by buying better and the same philosophy applies to how our products are made. <\/p><p>By investing in quality over quantity, we’re able to create products and collections that outlive trends. Avoiding overproduction, our season-less approach allows us to make long term design decisions that lead to reduced waste with our trusted partners in Canada, Brazil, and China.<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "5078818f-a5b2-40e3-99af-780e0140cb76",
+        "e8bbf4d2-c440-4acc-acd3-d0a4f1aba0f7"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}",
+        ".btn {font-family: bebas neue; font-size: 16px; letter-spacing: 1px; padding: .9em 50px 0.9em;"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "83b496a1-cfb0-41d4-b56b-92f914e0bb1a": {
+      "type": "custom-row",
+      "blocks": {
+        "d50abee6-8223-43a8-b347-c25eba372255": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/place-holder-4-3.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 400,
+            "height_mobile": 1000,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "4af695b8-baa7-4e41-b4d2-06baeadeec4c": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "",
+            "text": "<p>Step into a world of fundamentals. Discover sandals that aren't just about walking but about journeying through life with elegance, empowerment, and purpose.<\/p>",
+            "button_label": "Shop now",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "d50abee6-8223-43a8-b347-c25eba372255",
+        "4af695b8-baa7-4e41-b4d2-06baeadeec4c"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-family: bebas neue; font-size: 24px; letter-spacing: 1px; font-color: #333; margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "516a7a52-0ad1-4031-9851-d7115e38e113": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15989059846319__516a7a52-0ad1-4031-9851-d7115e38e113-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Add customer reviews and testimonials to showcase your store’s happy customers.",
+            "author": "Author's name",
+            "image_alignment": "center center",
+            "image_caption": "",
+            "link": ""
+          }
+        },
+        "template--15989059846319__516a7a52-0ad1-4031-9851-d7115e38e113-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Add customer reviews and testimonials to showcase your store’s happy customers.",
+            "author": "Author's name",
+            "image_alignment": "center center",
+            "image_caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15989059846319__516a7a52-0ad1-4031-9851-d7115e38e113-testimonial-1",
+        "template--15989059846319__516a7a52-0ad1-4031-9851-d7115e38e113-testimonial-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Our Community",
+        "layout": "no-image",
+        "text_caps": false,
+        "quote_text_size": 14,
+        "quote_text_size_mobile": 14,
+        "image_shape": "square",
+        "use_alt_bg": false,
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    }
+  },
+  "order": [
+    "main",
+    "393a7d48-5a65-4792-9d0e-128382c3661e",
+    "0a70291e-53e1-42ee-b17c-d8aaf98d5acc",
+    "664f9c1c-ccc9-4402-85a7-1bbf93544edb",
+    "d1498e20-dd60-4aa4-bb80-5611ba1695ce",
+    "bd7dba03-1929-42f7-ae21-726af3f3830a",
+    "82a8b8b7-a2bc-49d4-9e3e-d4e3ae5007d1",
+    "87521aed-e631-405e-97e8-230a0ec3ffca",
+    "65b0711d-ffb0-465f-977e-ff06997d8ac9",
+    "83b496a1-cfb0-41d4-b56b-92f914e0bb1a",
+    "516a7a52-0ad1-4031-9851-d7115e38e113"
+  ]
+}

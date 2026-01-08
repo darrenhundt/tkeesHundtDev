@@ -1,0 +1,41 @@
+<div class="section-id-{{ section.id }} links-list-wrapper">
+  {% for block in section.blocks %}
+    {% assign collection = collections[block.settings.collection] %}
+    <a href="{{ collection.url }}">
+      <div class="links-list-link">{{ block.settings.collection_text }}</div>
+    </a>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Links list",
+  "max_blocks": 20,
+  "settings": [],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "text",
+          "id": "collection_text",
+          "label": "Text to show"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Links list",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

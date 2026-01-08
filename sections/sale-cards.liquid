@@ -1,0 +1,155 @@
+{% style %}
+  .sale-cards-section-wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .sale-cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin-bottom: 4%;
+    flex-wrap: wrap;
+    /* gap: 5%; */
+  }
+  .sale-card {
+    width: 24%;
+    margin-bottom: 4%;
+  }
+  .sale-card-image-wrapper {
+    position: relative;
+  }
+  .sale-card-heading-inner,
+  .sale-card-heading-below {
+    font-family: 'Bebas Neue';
+    font-size: 1.2rem;
+  }
+  .sale-card-heading-inner {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    padding-left: 3%;
+  }
+  .sale-card-item-list {
+    margin: 0;
+    margin-inline-start: 1rem;
+    font-size: 0.8rem;
+  }
+  @media (max-width: 768px) {
+    .sale-cards-wrapper {
+      padding: 0 4%;
+      /* margin-bottom: 7%; */
+      /* justify-content: space-around; */
+    }
+    .sale-card {
+      width: 48%;
+    }
+    .sale-card-heading-inner,
+    .sale-card-heading-below,
+    .sale-card-item-list li {
+      font-size: 0.8rem;
+    }
+    .sale-card ul.sale-card-item-list li span {
+      /* margin-block-start: 0.5em; */
+      position: relative;
+      left: -5px;
+    }
+    .sale-card-item-list li {
+      font-size: 0.6rem;
+    }
+  }
+{% endstyle %}
+
+<div class="sale-cards-section-wrapper">
+  <div class="sale-cards-wrapper" id="section-{{ section.id }}">
+    {% for block in section.blocks %}
+      {% assign card_list = block.settings.card_text_list | split: ';' %}
+      <div class="sale-card">
+        <div class="sale-card-image-wrapper">
+          <a href="{{ block.settings.card_link }}">
+            {{ block.settings.card_image | image_url: width: '400' | image_tag }}
+          </a>
+          <div class="sale-card-heading-inner">{{ block.settings.card_heading_inner }}</div>
+        </div>
+        <div class="sale-card-heading-below">{{ block.settings.card_heading_below }}</div>
+        <ul class="sale-card-item-list">
+          {% for item in card_list %}
+            <li>
+              <span>{{ item }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Sale cards",
+  "max_blocks": 20,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Collection list"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_carousel",
+      "label": "Enable carousel",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "label": "Cards per row",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 4
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Sale card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Card image"
+        },
+        {
+          "type": "url",
+          "id": "card_link",
+          "label": "Card link"
+        },
+        {
+          "type": "text",
+          "id": "card_heading_inner",
+          "label": "Card heading (inner)"
+        },
+        {
+          "type": "text",
+          "id": "card_heading_below",
+          "label": "Card heading (below)"
+        },
+        {
+          "type": "text",
+          "id": "card_text_list",
+          "label": "Card list",
+          "info": "Separate items with semicolons"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sale cards",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

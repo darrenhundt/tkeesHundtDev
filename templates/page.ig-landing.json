@@ -1,0 +1,104 @@
+{
+  "sections": {
+    "custom_liquid_FxiyPW": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "code": "{% style %}\n.fully-spaced-row--medium {\n  margin: 0;\n}\n.vip-wrapper {\n  text-align: center;\n  padding: 5vh 16px 40vh;\n  background: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/1569\/8067\/files\/VIP_instagram_LP.jpg?v=1731067290\");\n  background-position: bottom;\n  background-size: cover;\n  height: 90vw;\n  min-height: 100vh;\noverflow-y: hidden;\n}\n.vip-heading {\n  font-family: \"Bebas Neue\";\n  letter-spacing: 1px;\n  font-size: 2rem;\n  margin-bottom: 20px;\n}\n.vip-text {\n  color: white;\n  padding-bottom: 15px;\n  max-width: 700px;\n  margin: auto;\n  font-family: \"Century Gothic\";\n}\nform p {\n  font-family: \"Century Gothic\", sans-serif !important;\npadding: 15px 0;\n}\nform label {\n  font-family: \"Bebas Neue\" !important;\nfont-size: 16px !important;\nletter-spacing: 1px !important;\nfont-weight: normal !important;\n}\nform button {\n  max-width: 200px !important;\n  margin: auto !important;\n}\n@media screen and (max-width: 768px) {\n  .vip-wrapper {\n    padding: 5vh 10% 30vh;\nheight: 130vh;\n  }\n  .vip-form {\n    margin-top: -25px;\n}\n}\n{% endstyle %}"
+      }
+    },
+    "custom_liquid_btYGNj": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "code": "<div class=\"vip-wrapper\">\n  <h1 class=\"vip-heading\">WELCOME, TKEES VIP<\/h1>\n  <div class=\"vip-text\">Thank-you for being part of our community!  Because you're one of us, we've got something special for you - a <strong>25% OFF<\/strong> site-wide thank-you offer, just for our IG followers!<\/div>\n  <div class=\"vip-text\">It's super simple.  Just fill out the info below, and we'll send your exclusive code right to your inbox.<\/div>\n  <div class=\"vip-form\"><div class=\"klaviyo-form-Ruk2ze\"><\/div><\/div>\n<\/div>"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "full_width": true
+      }
+    },
+    "3f8815a5-03f5-43a4-80b5-e305a0fb9746": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subheading": "",
+        "title": "Image with text",
+        "use_h1": false,
+        "text": "<p>Pair text with an image to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.<\/p>",
+        "button_label": "Read more",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "fca9f644-4dbb-47bb-a511-848803cd3f4e": {
+      "type": "custom-row",
+      "blocks": {
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "Subheading",
+            "title": "Tell your story",
+            "text": "<p>Pair text with an image to tell a story<\/p>",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Welcome",
+            "text": "<p>Use this text to share information about your store with your customers.<\/p><p>Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "8db903e9-d622-4d78-974f-8392b1a7c7df": {
+          "type": "html",
+          "settings": {
+            "width": "half",
+            "code": "test"
+          }
+        }
+      },
+      "block_order": [
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-0",
+        "template--14909902848079__fca9f644-4dbb-47bb-a511-848803cd3f4e-16734012866c2cb20b-1",
+        "8db903e9-d622-4d78-974f-8392b1a7c7df"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "middle"
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_FxiyPW",
+    "custom_liquid_btYGNj",
+    "main",
+    "3f8815a5-03f5-43a4-80b5-e305a0fb9746",
+    "fca9f644-4dbb-47bb-a511-848803cd3f4e"
+  ]
+}

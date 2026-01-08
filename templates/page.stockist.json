@@ -1,0 +1,212 @@
+{
+  "sections": {
+    "heading": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "fixed",
+        "height_desktop": 400,
+        "height_mobile": 300,
+        "image_link": "",
+        "subheading": "",
+        "title": "Customer Help",
+        "title_size": 52,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "<p>If talking to a real-life human is more your thing, you can reach our Customer Happiness Team via email (below).<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "main": {
+      "type": "faq-header",
+      "settings": {
+        "title": "Stockists",
+        "use_h1": false,
+        "text": "",
+        "show_search": false,
+        "show_index": true,
+        "index_heading": ""
+      }
+    },
+    "faq-content-1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Florida",
+            "answer": "<p><a href=\"https:\/\/www.thebreakers.com\/activities\/shopping\/\">The Breakers - Palm Beach<\/a><\/p><p><a href=\"https:\/\/modelcitizen.com\/collections\/designer-tkees\">Model Citizen<\/a><\/p><p><a href=\"https:\/\/modelcitizen.com\/collections\/designer-tkees\">Ponte Vedra Beach<\/a><\/p><p><a href=\"http:\/\/www.shoprapunzels.com\/brands\/tkees\/\">Rapunzel's Closet - Palm Beach<\/a><\/p><p><a href=\"https:\/\/www.opheliaswimwear.com\/blog\/category\/santa-rosa-beach-swimsuit\/\">Ophelia - Santa Rosa Beach<\/a><\/p><p><a href=\"https:\/\/www.sohobeachhouse.com\/\">Soho Beach House - Miami Beach<\/a><\/p><p><a href=\"https:\/\/www.grandluxuryhotels.com\/\">St. Regis - Miami Beach<\/a><\/p><p><a href=\"https:\/\/www.eberjey.com\/\">Eberjey - Miami<\/a><\/p><p><a href=\"https:\/\/www.eberjey.com\/\">Eberjey - South Beach Miami<\/a><\/p><p><a href=\"https:\/\/bakersbayclub.com\/\">Bakers Bay - Fort Lauderdale<\/a><\/p><p><a href=\"http:\/\/www.influencestyle.com\/\">Influence - Sarasota<\/a><\/p><p><a href=\"https:\/\/www.shopsplash.com\/designers\/tkees\">Splash - Miami<\/a><\/p><p><a href=\"https:\/\/kith.com\/\">Kith - Miami Beach<\/a><\/p><p><a href=\"https:\/\/www.marissacollections.com\/shop\/catalogsearch\/result?q=tkees\">Marissa Collections - Naples<\/a><\/p><p><a href=\"https:\/\/rosietrue.com\/\" title=\"Roise True\">Rosie True - Jacksonville Beach<\/a><\/p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "California",
+            "answer": "<p><a href=\"https:\/\/elysewalker.com\/\">Elyse Walker - Pacific Palisades & Newport Beach<\/a><\/p><p><a href=\"https:\/\/www.wendyfoster.com\/wendyfosterstatestreet\">Wendy Foster - Santa Barbara<\/a><\/p><p><a href=\"https:\/\/hiptique.com\/\">Hiptique - Santa Monica<\/a> <a href=\"https:\/\/hiptique.com\/\">& Malibu<\/a><\/p><p><a href=\"https:\/\/gotyourshoes.com\/\">4th Basement - Rancho Palos Verdes<\/a><\/p>"
+          }
+        },
+        "28f03f78-c116-4130-afb5-67de1fa26361": {
+          "type": "question",
+          "settings": {
+            "title": "Hawaii",
+            "answer": "<p><a href=\"https:\/\/www.turquoise-shop.com\/\">Turquoise - Honolulu<\/a><\/p><p><a href=\"https:\/\/pinkbynature.com\/search?q=tkees&options%5Bprefix%5D=last\" target=\"_blank\">Pink By Nature - Makawao<\/a><\/p><p><a href=\"https:\/\/tiarerose.com\/\" target=\"_blank\">Tiare Rose - Kamuela<\/a><\/p>"
+          }
+        },
+        "93107cce-32a4-4256-9665-4ce985ccc3f7": {
+          "type": "question",
+          "settings": {
+            "title": "New York",
+            "answer": "<p><a href=\"https:\/\/fivestoryny.com\/\">Fivestory<\/a><\/p><p><a href=\"https:\/\/everaftershop.com\/\">Greenwich Retail Group<\/a><\/p><p><a href=\"https:\/\/www.intermixonline.com\/\">Intermix<\/a><\/p><p><a href=\"https:\/\/www.lesters.com\/\">Lesters<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "28f03f78-c116-4130-afb5-67de1fa26361",
+        "93107cce-32a4-4256-9665-4ce985ccc3f7"
+      ],
+      "settings": {
+        "title": "USA"
+      }
+    },
+    "faq-content-2": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Toronto",
+            "answer": "<p><a href=\"https:\/\/www.tntfashion.ca\/\">TNT<\/a><\/p><p><a href=\"https:\/\/www.sandpipers.ca\/pages\/search-results?q=tkees\">Sand<\/a><a href=\"https:\/\/www.sandpipers.ca\/pages\/search-results?q=tkees\">pipers<\/a><\/p><p><a href=\"https:\/\/releveclothing.com\/collections\/tkees\" target=\"_blank\" title=\"Revelé - Toronto\">revelé<\/a><\/p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Montreal",
+            "answer": "<p><a href=\"https:\/\/www.jamescboutique.com\/\">James Boutique<\/a><\/p><p><a href=\"https:\/\/www.premiumoutlets.com\/\">Premium<\/a><\/p>"
+          }
+        },
+        "8e6c1a53-5bb2-411b-9e64-4f7c691263e4": {
+          "type": "question",
+          "settings": {
+            "title": "Edmonton",
+            "answer": "<p><a href=\"http:\/\/www.whocareswear.com\/\">Who Cares Wear<\/a><\/p>"
+          }
+        },
+        "9b98a94d-1e65-4d0a-b121-9a15f9f476dc": {
+          "type": "question",
+          "settings": {
+            "title": "Regina",
+            "answer": "<p><a href=\"https:\/\/www.swankshoelounge.ca\/\">Swank Shoe Lounge<\/a><\/p>"
+          }
+        },
+        "d82bcea5-d7ad-4ad8-8cde-d539a3cb714a": {
+          "type": "question",
+          "settings": {
+            "title": "Kelowna & Schelt",
+            "answer": "<p><a href=\"https:\/\/fossellos.wordpress.com\/\">Fossello’s<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "8e6c1a53-5bb2-411b-9e64-4f7c691263e4",
+        "9b98a94d-1e65-4d0a-b121-9a15f9f476dc",
+        "d82bcea5-d7ad-4ad8-8cde-d539a3cb714a"
+      ],
+      "settings": {
+        "title": "Canada"
+      }
+    },
+    "9b0446f8-0535-4d79-995a-c67b1c04aafb": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "3f3a7586-8e35-4903-8256-0ac3c61a6a34": {
+          "type": "content",
+          "settings": {
+            "content": ""
+          }
+        },
+        "template--15901843521710__9b0446f8-0535-4d79-995a-c67b1c04aafb-16650834080f512a4d-0": {
+          "type": "question",
+          "settings": {
+            "title": "Tokyo",
+            "answer": "<p><a href=\"https:\/\/www.ronherman.com\/\">Ron Herman<\/a><\/p><p><a href=\"https:\/\/store.united-arrows.co.jp\/shop\/ua\/_search\/search_result.html?p_bid=43771&p_cutyid=2&dstore=2&p_sid=171\">United Arrows<\/a><\/p><p><a href=\"http:\/\/deuxieme-classe.jp\/\">Deuxième Classe<\/a><\/p><p><a href=\"http:\/\/drawingnumbers.jp\/\">Drawing Numbers<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3f3a7586-8e35-4903-8256-0ac3c61a6a34",
+        "template--15901843521710__9b0446f8-0535-4d79-995a-c67b1c04aafb-16650834080f512a4d-0"
+      ],
+      "settings": {
+        "title": "Japan"
+      }
+    },
+    "contact": {
+      "type": "rich-text",
+      "blocks": {
+        "icon": {
+          "type": "icon",
+          "settings": {
+            "icon": "chat_bubble"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Get in touch",
+            "use_h1": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have questions about your order, or a general enquiry?<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact us",
+            "button_link": "mailto:help@tkees.com",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "icon",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": true
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "faq-content-1",
+    "faq-content-2",
+    "9b0446f8-0535-4d79-995a-c67b1c04aafb",
+    "contact"
+  ]
+}
