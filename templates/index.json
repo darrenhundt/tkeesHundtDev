@@ -544,7 +544,7 @@
             "button_text_color": "#ffffff",
             "button_border_color": "#ffffff",
             "button_padding_mobile_vw": 8,
-            "position_x": 0,
+            "position_x": 6,
             "position_y": 23,
             "content_width": 35,
             "position_x_mobile": 54,
