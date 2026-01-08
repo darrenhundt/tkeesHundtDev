@@ -82,6 +82,12 @@
       #section-id-{{ section.id }} .mobile-heading {
         display: none;
       }
+
+      {%- if section.settings.content_horiz_adjustment > 0 -%}
+      #section-id-{{ section.id }} .overlay-text__text {
+        margin-left: {{ section.settings.content_horiz_adjustment }}vw;
+      }
+      {%- endif -%}
     }
     @media (min-width: 1100px) {
       #section-id-{{ section.id }} .overlay-text__title {
@@ -130,6 +136,13 @@
     .black-on-white-button.button.altcolour {
       background-color: #ffffff;
       color: #000000;
+      padding: 15px 30px;
+      border-radius: 0;
+    }
+    .white-transparent-button.button.altcolour {
+      background-color: transparent;
+      color: #ffffff;
+      border: 1.5px solid #ffffff;
       padding: 15px 30px;
       border-radius: 0;
     }
@@ -307,7 +320,7 @@
                 {%- else -%}
                   {%- if section.settings.button_label_1 != blank -%}
                     <a
-                      class="overlay-text__button button altcolour {% if section.settings.button_style == 'nudes' %}nudes-button{% elsif section.settings.button_style == 'eos24' %}eos24-button{% elsif section.settings.button_style == 'black_on_white' %}black-on-white-button{% endif %}"
+                      class="overlay-text__button button altcolour {% if section.settings.button_style == 'nudes' %}nudes-button{% elsif section.settings.button_style == 'eos24' %}eos24-button{% elsif section.settings.button_style == 'black_on_white' %}black-on-white-button{% elsif section.settings.button_style == 'white_transparent' %}white-transparent-button{% endif %}"
                       href="{{ section.settings.button_url_1 }}"
                     >
                       {{- section.settings.button_label_1 -}}
@@ -697,6 +710,10 @@
         {
           "value": "eos24",
           "label": "EOS 24"
+        },
+        {
+          "value": "white_transparent",
+          "label": "White transparent"
         }
       ],
       "default": "default"
@@ -768,6 +785,17 @@
         }
       ],
       "default": "no_change"
+    },
+    {
+      "type": "range",
+      "id": "content_horiz_adjustment",
+      "label": "Content Horiz Adjustment",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "vw",
+      "info": "Adds left margin to content on desktop only",
+      "default": 0
     },
     {
       "type": "header",
