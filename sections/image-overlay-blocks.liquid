@@ -89,6 +89,21 @@
           }
         }
         
+        /* Overlay text alignment */
+        {% if block.settings.overlay_text_alignment == 'left' %}
+        #block-id-{{ block.id }} .overlay-text.overlay-text--for-banner.image-overlay__over.overlay-text--align-left {
+          text-align: left;
+        }
+        {% elsif block.settings.overlay_text_alignment == 'center' %}
+        #block-id-{{ block.id }} .overlay-text.overlay-text--for-banner.image-overlay__over.overlay-text--align-center {
+          text-align: center;
+        }
+        {% elsif block.settings.overlay_text_alignment == 'right' %}
+        #block-id-{{ block.id }} .overlay-text.overlay-text--for-banner.image-overlay__over.overlay-text--align-right {
+          text-align: right;
+        }
+        {% endif %}
+
         {% if block.settings.button_label != blank %}
           #block-id-{{ block.id }} .overlay-text__button {
             {% if block.settings.button_background_color != blank %}
@@ -190,7 +205,7 @@
         {%- endif -%}
 
         {%- if show_overlay_content -%}
-          <div class="overlay-text overlay-text--for-banner image-overlay__over">
+          <div class="overlay-text overlay-text--for-banner image-overlay__over {% if block.settings.overlay_text_alignment != blank %}overlay-text--align-{{ block.settings.overlay_text_alignment }}{% endif %}">
             <div class="overlay-content-box">
               {%- if block.settings.accent_image != blank -%}
                 <div class="overlay-content-box__accent-image">
@@ -524,6 +539,31 @@
           "label": "Button padding (mobile)",
           "info": "Left and right padding in vw units for screens 1000px and below",
           "default": 5
+        },
+        {
+          "type": "select",
+          "id": "overlay_text_alignment",
+          "label": "Overlay text alignment",
+          "info": "Controls text alignment for overlay text content",
+          "options": [
+            {
+              "value": "",
+              "label": "Default"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": ""
         },
         {
           "type": "header",
