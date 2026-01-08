@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_with_text_overlay_custom_MgrBkW": {
@@ -8,11 +17,11 @@
         ".overlay-text__text {padding-right: 12%; color: #333;}",
         ".overlay-text__title {margin-bottom: 0px;}",
         ".overlay-text__rte p {font-weight: bold;}",
-        "@media (max-width: 990px) {.overlay-text__title {font-size: 25px; } .overlay-text__text {padding-right: 0; margin-top: 0%; } .large-text {margin-bottom: 0; } .overlay-text__button.button {font-size: 10px; } .overlay-text__inner.overlay--flex-pos-end {justify-content: end; align-items: center; height: 100%; \/* padding-top: 15%;*\/ }}"
+        "@media (max-width: 990px) {.overlay-text__title {font-size: 25px; } .overlay-text__text {padding-right: 0; margin-top: 0%; } .large-text {margin-bottom: 0; } .overlay-text__button.button {font-size: 10px; } .overlay-text__inner.overlay--flex-pos-end {justify-content: end; align-items: center; height: 100%; /* padding-top: 15%;*/ }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Homepage_banner_desktop_1.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Homepage_banner_mobile_1.jpg",
+        "image": "shopify://shop_images/Homepage_banner_desktop_1.jpg",
+        "mobile_image": "shopify://shop_images/Homepage_banner_mobile_1.jpg",
         "image_position": "center center",
         "mobile_image_position": "center center",
         "height": "adapt",
@@ -29,10 +38,10 @@
         "title_size": 40,
         "title_size_mobile": 40,
         "use_h1": false,
-        "text": "<p>UP TO 75% OFF<\/p>",
+        "text": "<p>UP TO 75% OFF</p>",
         "enlarge_text": true,
         "button_label_1": "SHOP NOW",
-        "button_url_1": "shopify:\/\/collections\/bfcm2025",
+        "button_url_1": "shopify://collections/bfcm2025",
         "button_label_2": "",
         "button_url_2": "",
         "button_style": "black_on_white",
@@ -48,6 +57,7 @@
     },
     "image_with_text_overlay_custom_CP44jT": {
       "type": "image-with-text-overlay__custom",
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 767px) {.overlay-text__text {padding-right: 25px; padding-bottom: 12px; } .overlay-text__inner.overlay--flex-pos-start {justify-content: flex-end; } .overlay-text {align-items: flex-end; } .overlay-text__button {margin-top: 7px !important; }}",
         ".overlay-text__button {background: transparent; border: 1px solid black !important;}",
@@ -55,8 +65,8 @@
         ".overlay-text__title {color: white !important;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Homepage_desktop_julia_3.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Homepage_mobile_julia_3.jpg",
+        "image": "shopify://shop_images/Homepage_desktop_julia_3.jpg",
+        "mobile_image": "shopify://shop_images/Homepage_mobile_julia_3.jpg",
         "image_position": "center center",
         "mobile_image_position": "center bottom",
         "height": "adapt",
@@ -76,7 +86,7 @@
         "text": "",
         "enlarge_text": true,
         "button_label_1": "SHOP JULIA",
-        "button_url_1": "shopify:\/\/collections\/introducing-the-julia",
+        "button_url_1": "shopify://collections/introducing-the-julia",
         "button_label_2": "",
         "button_url_2": "",
         "button_style": "black_on_white",
@@ -90,12 +100,56 @@
         "enable_header_overlap": true
       }
     },
+    "image_with_text_overlay_custom_jaKTzG": {
+      "type": "image-with-text-overlay__custom",
+      "custom_css": [
+        "@media (max-width: 767px) {.overlay-text__text {padding-right: 25px; padding-bottom: 12px; } .overlay-text__inner.overlay--flex-pos-start {justify-content: flex-end; } .overlay-text {align-items: flex-end; } .overlay-text__button {margin-top: 7px !important; }}",
+        ".overlay-text__button {background: transparent; border: 1px solid black !important;}",
+        ".overlay-text__button-row {margin-top: 0;}",
+        ".overlay-text__title {color: white !important;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Homepage_desktop_julia_4.jpg",
+        "mobile_image": "shopify://shop_images/Homepage_mobile_julia_6.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center bottom",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "Elevated In Every Sense",
+        "title_mobile": "Elevated\nIn Every Sense",
+        "primary_heading_font": "Bebas Neue",
+        "title_cont": "",
+        "separate_heading_text": false,
+        "second_heading_font": "theme_default",
+        "title_size": 34,
+        "title_size_mobile": 24,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "SHOP JULIA",
+        "button_url_1": "shopify://collections/introducing-the-julia",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_style": "black_on_white",
+        "text_alignment": "center start",
+        "text_justification": "no_change",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "active_time": "",
+        "inactive_time": "",
+        "enable_header_overlap": true
+      }
+    },
     "image_with_text_overlay_custom_TxRkDh": {
       "type": "image-with-text-overlay__custom",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/New_in_banner_desktop_5.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Hero_mobile_4.jpg",
+        "image": "shopify://shop_images/New_in_banner_desktop_5.jpg",
+        "mobile_image": "shopify://shop_images/Hero_mobile_4.jpg",
         "image_position": "center center",
         "mobile_image_position": "center center",
         "height": "adapt",
@@ -115,7 +169,7 @@
         "text": "",
         "enlarge_text": true,
         "button_label_1": "SHOP PLATFORMS",
-        "button_url_1": "shopify:\/\/collections\/lily-platforms",
+        "button_url_1": "shopify://collections/lily-platforms",
         "button_label_2": "",
         "button_url_2": "",
         "button_style": "black_on_white",
@@ -133,14 +187,14 @@
       "type": "image-with-text-overlay__custom",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/4th_mobile.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/4th_mobile_main.jpg",
+        "image": "shopify://shop_images/4th_mobile.jpg",
+        "mobile_image": "shopify://shop_images/4th_mobile_main.jpg",
         "image_position": "center center",
         "mobile_image_position": "center center",
         "height": "fixed",
         "height_desktop": 600,
         "height_mobile": 460,
-        "image_link": "shopify:\/\/collections\/4th-of-july-sale",
+        "image_link": "shopify://collections/4th-of-july-sale",
         "subheading": "",
         "title": "",
         "title_mobile": "",
@@ -154,9 +208,9 @@
         "text": "",
         "enlarge_text": true,
         "button_label_1": "",
-        "button_url_1": "shopify:\/\/collections\/4th-of-july-sale",
+        "button_url_1": "shopify://collections/4th-of-july-sale",
         "button_label_2": "",
-        "button_url_2": "shopify:\/\/collections\/4th-of-july-sale",
+        "button_url_2": "shopify://collections/4th-of-july-sale",
         "button_style": "nudes",
         "text_alignment": "center center",
         "text_justification": "no_change",
@@ -172,8 +226,8 @@
       "type": "image-with-text-overlay__custom",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/EOS-24-desktop.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/EOS-24-mobile.jpg",
+        "image": "shopify://shop_images/EOS-24-desktop.jpg",
+        "mobile_image": "shopify://shop_images/EOS-24-mobile.jpg",
         "image_position": "center center",
         "mobile_image_position": "center center",
         "height": "adapt",
@@ -190,10 +244,10 @@
         "title_size": 84,
         "title_size_mobile": 46,
         "use_h1": false,
-        "text": "<p>Up To 40% Off<\/p>",
+        "text": "<p>Up To 40% Off</p>",
         "enlarge_text": true,
         "button_label_1": "shop sale",
-        "button_url_1": "shopify:\/\/collections\/end-of-summer-sale-2024",
+        "button_url_1": "shopify://collections/end-of-summer-sale-2024",
         "button_label_2": "",
         "button_url_2": "",
         "button_style": "eos24",
@@ -207,131 +261,6 @@
         "enable_header_overlap": false
       }
     },
-    "image_with_text_overlay_custom_j66qbn": {
-      "type": "image-with-text-overlay__custom",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/banner_desktop_nudes_6.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/banner_mobile_nudes_1.jpg",
-        "image_position": "center center",
-        "mobile_image_position": "center center",
-        "height": "adapt",
-        "height_desktop": 600,
-        "height_mobile": 460,
-        "image_link": "",
-        "subheading": "",
-        "title": "NUDES",
-        "title_mobile": "",
-        "primary_heading_font": "Bebas Neue",
-        "title_cont": "",
-        "separate_heading_text": false,
-        "second_heading_font": "theme_default",
-        "title_size": 50,
-        "title_size_mobile": 46,
-        "use_h1": true,
-        "text": "<p>neutrals at play<\/p>",
-        "enlarge_text": true,
-        "button_label_1": "Shop Nudes",
-        "button_url_1": "shopify:\/\/collections\/lily-nudes",
-        "button_label_2": "",
-        "button_url_2": "",
-        "button_style": "nudes",
-        "text_alignment": "center end",
-        "text_justification": "no_change",
-        "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style": "shadow",
-        "active_time": "",
-        "inactive_time": "",
-        "enable_header_overlap": false
-      }
-    },
-    "image_with_text_overlay_custom_4cHnbD": {
-      "type": "image-with-text-overlay__custom",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/desktop_banner_2.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/mobile_banner_3_dd04495c-832e-43d8-b2e5-ff85ee4d2b33.jpg",
-        "image_position": "center center",
-        "mobile_image_position": "center center",
-        "height": "fixed",
-        "height_desktop": 600,
-        "height_mobile": 460,
-        "image_link": "",
-        "subheading": "",
-        "title": "LE SIMPLE",
-        "title_mobile": "",
-        "primary_heading_font": "theme_default",
-        "title_cont": "",
-        "separate_heading_text": false,
-        "second_heading_font": "theme_default",
-        "title_size": 84,
-        "title_size_mobile": 46,
-        "use_h1": false,
-        "text": "<p>Perfected to a Tee<\/p>",
-        "enlarge_text": true,
-        "button_label_1": "Shop Clothing",
-        "button_url_1": "shopify:\/\/pages\/le-simple",
-        "button_label_2": "",
-        "button_url_2": "",
-        "button_style": "default",
-        "text_alignment": "center end",
-        "text_justification": "no_change",
-        "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style": "shadow",
-        "active_time": "",
-        "inactive_time": "",
-        "enable_header_overlap": false
-      }
-    },
-    "image_with_text_overlay_custom_8Xj8w8": {
-      "type": "image-with-text-overlay__custom",
-      "disabled": true,
-      "custom_css": [
-        ".overlay-text__text {color: black;}",
-        ".overlay-text__title {font-family: \"Bebas Neue\";}",
-        ".overlay-text__button-row,.overlay-text__button {margin-top: -15px;}",
-        ".overlay-text__rte {max-width: 100%; font-size: 2rem;}",
-        ".button.altcolour {background-color: #f8f8f6; color: black; border-radius: 0; border: 1.5px solid #aaa !important;}",
-        "@media (max-width: 768px) {.overlay-text__title {font-size: 2.2rem; } .overlay-text__rte {font-size: 1rem; }}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/HP_desktop_1-opaque.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/HP_mobile_1-opaque.jpg",
-        "image_position": "center center",
-        "mobile_image_position": "center center",
-        "height": "fixed",
-        "height_desktop": 600,
-        "height_mobile": 460,
-        "image_link": "shopify:\/\/pages\/bfcm-24",
-        "subheading": "",
-        "title": "BLACK FRIDAY SALE IS ON",
-        "title_mobile": "",
-        "primary_heading_font": "theme_default",
-        "title_cont": "",
-        "separate_heading_text": true,
-        "second_heading_font": "theme_default",
-        "title_size": 84,
-        "title_size_mobile": 46,
-        "use_h1": false,
-        "text": "<p>Up To 75% OFF<\/p>",
-        "enlarge_text": true,
-        "button_label_1": "HAPPY SHOPPING",
-        "button_url_1": "",
-        "button_label_2": "",
-        "button_url_2": "",
-        "button_style": "default",
-        "text_alignment": "center center",
-        "text_justification": "center",
-        "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style": "shadow",
-        "active_time": "2024-11-22 06:45",
-        "inactive_time": "",
-        "enable_header_overlap": false
-      }
-    },
     "slideshow_mYB9zx": {
       "type": "slideshow",
       "blocks": {
@@ -339,11 +268,11 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_1_2x_d967598f-1ae1-4a17-9e93-836342037f3a.webp",
-            "mobile_image": "shopify:\/\/shop_images\/Artboard_4.png",
+            "image": "shopify://shop_images/Artboard_1_2x_d967598f-1ae1-4a17-9e93-836342037f3a.webp",
+            "mobile_image": "shopify://shop_images/Artboard_4.png",
             "image_position": "center center",
             "mobile_image_position": "center center",
-            "slide_link": "shopify:\/\/collections\/memorial-day-2025",
+            "slide_link": "shopify://collections/memorial-day-2025",
             "subheading": "",
             "title": "",
             "title_size": 84,
@@ -362,11 +291,11 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/desktop.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/mobile.jpg",
+            "image": "shopify://shop_images/desktop.jpg",
+            "mobile_image": "shopify://shop_images/mobile.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
-            "slide_link": "shopify:\/\/collections\/memorial-day-sale-2024",
+            "slide_link": "shopify://collections/memorial-day-sale-2024",
             "subheading": "",
             "title": "",
             "title_size": 20,
@@ -385,8 +314,8 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_desktop_nudes_6.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/banner_mobile_nudes_1.jpg",
+            "image": "shopify://shop_images/banner_desktop_nudes_6.jpg",
+            "mobile_image": "shopify://shop_images/banner_mobile_nudes_1.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
@@ -395,10 +324,10 @@
             "title_size": 84,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>neutrals at play<\/p>",
+            "text": "<p>neutrals at play</p>",
             "enlarge_text": true,
             "button_label_1": "SHOP NUDES",
-            "button_url_1": "shopify:\/\/pages\/nudes",
+            "button_url_1": "shopify://pages/nudes",
             "button_label_2": "",
             "button_url_2": "",
             "text_alignment": "center center"
@@ -408,8 +337,8 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/desktop_banner_2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/mobile_banner_3_dd04495c-832e-43d8-b2e5-ff85ee4d2b33.jpg",
+            "image": "shopify://shop_images/desktop_banner_2.jpg",
+            "mobile_image": "shopify://shop_images/mobile_banner_3_dd04495c-832e-43d8-b2e5-ff85ee4d2b33.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
@@ -418,10 +347,10 @@
             "title_size": 84,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>Perfected to a Tee<\/p>",
+            "text": "<p>Perfected to a Tee</p>",
             "enlarge_text": true,
             "button_label_1": "SHOP CLOTHING",
-            "button_url_1": "shopify:\/\/pages\/le-simple",
+            "button_url_1": "shopify://pages/le-simple",
             "button_label_2": "",
             "button_url_2": "",
             "text_alignment": "center center"
@@ -458,28 +387,28 @@
           "type": "collection",
           "settings": {
             "collection": "best-sellers",
-            "image": "shopify:\/\/shop_images\/Best_sellers_1.jpg"
+            "image": "shopify://shop_images/Best_sellers_1.jpg"
           }
         },
         "collection_RVTh4B": {
           "type": "collection",
           "settings": {
             "collection": "flip-flop",
-            "image": "shopify:\/\/shop_images\/Flipflops_1_802f23c3-20f4-43e0-873f-4101a397f211.jpg"
+            "image": "shopify://shop_images/Flipflops_1_802f23c3-20f4-43e0-873f-4101a397f211.jpg"
           }
         },
         "collection_6UQg43": {
           "type": "collection",
           "settings": {
             "collection": "sandal",
-            "image": "shopify:\/\/shop_images\/sandals_2.jpg"
+            "image": "shopify://shop_images/sandals_2.jpg"
           }
         },
         "collection_hKz7DE": {
           "type": "collection",
           "settings": {
             "collection": "tk-clothing",
-            "image": "shopify:\/\/shop_images\/clothing_3.jpg"
+            "image": "shopify://shop_images/clothing_3.jpg"
           }
         }
       },
@@ -512,8 +441,8 @@
         "overlay_block_dUNqAt": {
           "type": "overlay_block",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/coming_soon_desktop_0.5.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/coming_soon_desktop_0.5.jpg",
+            "background_image": "shopify://shop_images/coming_soon_desktop_0.5.jpg",
+            "mobile_image": "shopify://shop_images/coming_soon_desktop_0.5.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "height": "fixed",
@@ -523,7 +452,7 @@
             "heading": "",
             "heading_size": 84,
             "heading_size_mobile": 46,
-            "custom_html": "<div class=\"klaviyo-form-UTB6WH\"><\/div>",
+            "custom_html": "<div class=\"klaviyo-form-UTB6WH\"></div>",
             "button_label": "",
             "button_link": "",
             "button_style": "default",
@@ -542,21 +471,21 @@
         "overlay_block_rEMNHT": {
           "type": "overlay_block",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/New_In_mobile_0.5.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/New_In_mobile_0.5.jpg",
+            "background_image": "shopify://shop_images/New_In_mobile_0.5.jpg",
+            "mobile_image": "shopify://shop_images/New_In_mobile_0.5.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "height": "fixed",
             "height_desktop_vw": 35,
             "height_mobile": 70,
             "overlay_style": "shadow",
-            "accent_image": "shopify:\/\/shop_images\/SundaySet_logo.png",
+            "accent_image": "shopify://shop_images/SundaySet_logo.png",
             "heading": "",
             "heading_size": 84,
             "heading_size_mobile": 46,
             "custom_html": "",
             "button_label": "NEW IN",
-            "button_link": "shopify:\/\/collections\/sunday-set",
+            "button_link": "shopify://collections/sunday-set",
             "button_style": "default",
             "button_background_color": "rgba(0,0,0,0)",
             "button_text_color": "#ffffff",
@@ -590,21 +519,21 @@
         "overlay_block_ztiFwF": {
           "type": "overlay_block",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/New_In_mobile_0.5.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/New_In_mobile_0.5.jpg",
+            "background_image": "shopify://shop_images/New_In_mobile_0.5.jpg",
+            "mobile_image": "shopify://shop_images/New_In_mobile_0.5.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "height": "fixed",
             "height_desktop_vw": 35,
             "height_mobile": 70,
             "overlay_style": "shadow",
-            "accent_image": "shopify:\/\/shop_images\/SundaySet_logo.png",
+            "accent_image": "shopify://shop_images/SundaySet_logo.png",
             "heading": "",
             "heading_size": 84,
             "heading_size_mobile": 46,
             "custom_html": "",
             "button_label": "NEW IN",
-            "button_link": "shopify:\/\/collections\/sunday-set",
+            "button_link": "shopify://collections/sunday-set",
             "button_style": "default",
             "button_background_color": "rgba(0,0,0,0)",
             "button_text_color": "#ffffff",
@@ -621,8 +550,8 @@
         "overlay_block_QgbiYU": {
           "type": "overlay_block",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/New_in_colette_3.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/New_in_colette_3.jpg",
+            "background_image": "shopify://shop_images/New_in_colette_3.jpg",
+            "mobile_image": "shopify://shop_images/New_in_colette_3.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "height": "fixed",
@@ -634,7 +563,7 @@
             "heading_size_mobile": 32,
             "custom_html": "",
             "button_label": "New In",
-            "button_link": "shopify:\/\/products\/colette-au-naturale",
+            "button_link": "shopify://products/colette-au-naturale",
             "button_style": "default",
             "button_background_color": "rgba(0,0,0,0)",
             "button_text_color": "#ffffff",
@@ -667,8 +596,8 @@
       "disabled": true,
       "name": "Img with Klaviyo form",
       "settings": {
-        "image": "shopify:\/\/shop_images\/coming_soon_desktop_1.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/coming_soon_mobile_1.jpg",
+        "image": "shopify://shop_images/coming_soon_desktop_1.jpg",
+        "mobile_image": "shopify://shop_images/coming_soon_mobile_1.jpg",
         "image_position": "center center",
         "mobile_image_position": "center center",
         "height": "fixed",
@@ -686,7 +615,7 @@
         "use_h1": false,
         "text": "",
         "enlarge_text": true,
-        "custom_html": "<div class=\"klaviyo-form-UTB6WH\"><\/div>",
+        "custom_html": "<div class=\"klaviyo-form-UTB6WH\"></div>",
         "button_label_1": "",
         "button_url_1": "",
         "button_label_2": "",
@@ -714,8 +643,8 @@
       ],
       "name": "Image with text overlay (custom)",
       "settings": {
-        "image": "shopify:\/\/shop_images\/New_In_desktop_4.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/New_In_mobile_3.jpg",
+        "image": "shopify://shop_images/New_In_desktop_4.jpg",
+        "mobile_image": "shopify://shop_images/New_In_mobile_3.jpg",
         "image_position": "center center",
         "mobile_image_position": "center center",
         "height": "fixed",
@@ -735,7 +664,7 @@
         "text": "",
         "enlarge_text": true,
         "button_label_1": "New In",
-        "button_url_1": "shopify:\/\/collections\/sunday-set",
+        "button_url_1": "shopify://collections/sunday-set",
         "button_label_2": "",
         "button_url_2": "",
         "button_style": "black_on_white",
@@ -754,15 +683,15 @@
       "disabled": true,
       "name": "Image with text overlay",
       "settings": {
-        "image": "shopify:\/\/shop_images\/New_in_banner_desktop.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/New_in_banner_mobile.jpg",
+        "image": "shopify://shop_images/New_in_banner_desktop.jpg",
+        "mobile_image": "shopify://shop_images/New_in_banner_mobile.jpg",
         "image_bg_color": "",
         "image_position": "center center",
         "mobile_image_position": "center center",
         "height": "fixed",
         "height_desktop": 600,
         "height_mobile": 460,
-        "image_link": "shopify:\/\/collections\/new-in",
+        "image_link": "shopify://collections/new-in",
         "subheading": "",
         "title": "",
         "title_size": 84,
@@ -807,21 +736,21 @@
         "badge_xLJWAy": {
           "type": "badge",
           "settings": {
-            "badge_image": "shopify:\/\/shop_images\/Worldwide_shipping_2.webp",
+            "badge_image": "shopify://shop_images/Worldwide_shipping_2.webp",
             "badge_text": "Worldwide Shipping"
           }
         },
         "badge_G3JfPQ": {
           "type": "badge",
           "settings": {
-            "badge_image": "shopify:\/\/shop_images\/Stars_reviews_2_2.webp",
+            "badge_image": "shopify://shop_images/Stars_reviews_2_2.webp",
             "badge_text": "2,000,000+ Customers"
           }
         },
         "badge_34K66g": {
           "type": "badge",
           "settings": {
-            "badge_image": "shopify:\/\/shop_images\/30_days_return_2.webp",
+            "badge_image": "shopify://shop_images/30_days_return_2.webp",
             "badge_text": "30 day returns"
           }
         }
@@ -865,36 +794,36 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Flips_2.jpg",
+            "image": "shopify://shop_images/Flips_2.jpg",
             "image_width": 700,
             "title": "BEST SELLERS",
-            "text": "<p>The iconic silhouette. <\/p>",
+            "text": "<p>The iconic silhouette. </p>",
             "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/flip-flop"
+            "link": "shopify://collections/flip-flop"
           }
         },
         "163592857728b8bdc2-2": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/sandals_1.jpg",
+            "image": "shopify://shop_images/sandals_1.jpg",
             "image_width": 700,
             "title": "SANDALS",
-            "text": "<p>Elevated styles for everyday wear.<\/p>",
+            "text": "<p>Elevated styles for everyday wear.</p>",
             "button_label": "SHOP NOW",
-            "link": "shopify:\/\/collections\/sandal"
+            "link": "shopify://collections/sandal"
           }
         },
         "163592857728b8bdc2-0": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Clothing_4.jpg",
+            "image": "shopify://shop_images/Clothing_4.jpg",
             "image_width": 700,
             "title": "CLOTHING",
-            "text": "<p>Refined throw on-and-go pieces.<\/p>",
+            "text": "<p>Refined throw on-and-go pieces.</p>",
             "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/tk-clothing"
+            "link": "shopify://collections/tk-clothing"
           }
         }
       },
@@ -924,28 +853,28 @@
           "type": "collection",
           "settings": {
             "collection": "flip-flop",
-            "image": "shopify:\/\/shop_images\/FlipFlops_final.jpg"
+            "image": "shopify://shop_images/FlipFlops_final.jpg"
           }
         },
         "9a1ddde8-4f29-49c3-b201-48dbc9504a7c": {
           "type": "collection",
           "settings": {
             "collection": "sandal",
-            "image": "shopify:\/\/shop_images\/sandals_final.jpg"
+            "image": "shopify://shop_images/sandals_final.jpg"
           }
         },
         "fe70120f-7bc0-434c-9b70-1384d575da13": {
           "type": "collection",
           "settings": {
             "collection": "ankle-tie-up",
-            "image": "shopify:\/\/shop_images\/ankle_tieups_final.jpg"
+            "image": "shopify://shop_images/ankle_tieups_final.jpg"
           }
         },
         "22121743-8cc5-4cba-aee5-7a97de70b67e": {
           "type": "collection",
           "settings": {
             "collection": "best-sellers",
-            "image": "shopify:\/\/shop_images\/Best_sellers_final.jpg"
+            "image": "shopify://shop_images/Best_sellers_final.jpg"
           }
         }
       },
@@ -975,19 +904,19 @@
         "about_item_EjP8hE": {
           "type": "about_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/about_tkees_1.jpg",
+            "image": "shopify://shop_images/about_tkees_1.jpg",
             "heading": "ABOUT TKEES",
             "subheading": "Why we do what we do",
-            "link": "shopify:\/\/pages\/about-us"
+            "link": "shopify://pages/about-us"
           }
         },
         "about_item_XbrwmT": {
           "type": "about_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/About_carly_large_05446f8a-f593-4169-90c7-b138011c8245.png",
+            "image": "shopify://shop_images/About_carly_large_05446f8a-f593-4169-90c7-b138011c8245.png",
             "heading": "ABOUT CARLY",
             "subheading": "The radiant force behind TKEES",
-            "link": "shopify:\/\/pages\/our-founder"
+            "link": "shopify://pages/our-founder"
           }
         }
       },
@@ -1016,10 +945,10 @@
             "star_rating": 5,
             "testimonial": "I love them! They're simple yet stylish. I wear them everywhere and they can be dressed up, to be honest. They're comfortable and I will be repurchasing in a different style for sure!",
             "author": "Sophie. S",
-            "image": "shopify:\/\/shop_images\/lily-nudes-flip-flop-cocobutter-4.jpg",
+            "image": "shopify://shop_images/lily-nudes-flip-flop-cocobutter-4.jpg",
             "image_alignment": "center center",
             "image_caption": "",
-            "link": "shopify:\/\/products\/lily-nudes-cocobutter"
+            "link": "shopify://products/lily-nudes-cocobutter"
           }
         },
         "template--15870873665711__5352f6e4-d03c-453d-81b3-72d95d2a57f0-167778635059eeb9cb-1": {
@@ -1028,10 +957,10 @@
             "star_rating": 5,
             "testimonial": "I’m obsessed with these sandals! They’re so cute and perfect for summer. They can fit a little snug, so I would definitely size up if you’re a half size.",
             "author": "Tamara W.",
-            "image": "shopify:\/\/shop_images\/gemma-sandal-classics-sable-1.jpg",
+            "image": "shopify://shop_images/gemma-sandal-classics-sable-1.jpg",
             "image_alignment": "center center",
             "image_caption": "",
-            "link": "shopify:\/\/products\/gemma-sable"
+            "link": "shopify://products/gemma-sable"
           }
         },
         "83873159-6b9d-4f95-971c-eb8cf238cfdf": {
@@ -1040,10 +969,10 @@
             "star_rating": 5,
             "testimonial": "So chic and comfortable!\n\nThese slides are chic, comfortable and elevated! I can’t wait to wear these on my holidays this winter. A must!!! I’m usually a 7.5 but 8 fits perfectly with Tkees",
             "author": "Jacqueline J.",
-            "image": "shopify:\/\/shop_images\/betty-slide-vanilla-4.jpg",
+            "image": "shopify://shop_images/betty-slide-vanilla-4.jpg",
             "image_alignment": "center center",
             "image_caption": "",
-            "link": "shopify:\/\/products\/betty-vanilla"
+            "link": "shopify://products/betty-vanilla"
           }
         }
       },
@@ -1077,7 +1006,7 @@
           "type": "image",
           "settings": {
             "width": "two-thirds",
-            "image": "shopify:\/\/shop_images\/closed_toe_2.jpg",
+            "image": "shopify://shop_images/closed_toe_2.jpg",
             "image_position": "center center",
             "height": "adapt",
             "height_desktop": 460,
@@ -1087,7 +1016,7 @@
             "text": "",
             "enlarge_text": false,
             "button_label": "",
-            "image_link": "shopify:\/\/collections\/closed-toe",
+            "image_link": "shopify://collections/closed-toe",
             "text_alignment": "center center",
             "mobile_overlay_under": false,
             "overlay_style": "shadow"
@@ -1099,9 +1028,9 @@
             "width": "third",
             "subheading": "",
             "title": "Closed Toe",
-            "text": "<p>Wear anytime. Anywhere.<br\/><\/p>",
+            "text": "<p>Wear anytime. Anywhere.<br/></p>",
             "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/closed-toe",
+            "button_link": "shopify://collections/closed-toe",
             "button_style": "link",
             "text_alignment": "left"
           }
@@ -1123,12 +1052,10 @@
   "order": [
     "image_with_text_overlay_custom_MgrBkW",
     "image_with_text_overlay_custom_CP44jT",
+    "image_with_text_overlay_custom_jaKTzG",
     "image_with_text_overlay_custom_TxRkDh",
     "image_with_text_overlay_custom_3w3AD7",
     "image_with_text_overlay_custom_AxWjPG",
-    "image_with_text_overlay_custom_j66qbn",
-    "image_with_text_overlay_custom_4cHnbD",
-    "image_with_text_overlay_custom_8Xj8w8",
     "slideshow_mYB9zx",
     "collection_list_whdQkn",
     "image_overlay_blocks_rGdQ8q",
