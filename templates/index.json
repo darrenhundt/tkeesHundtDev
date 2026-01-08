@@ -138,7 +138,7 @@
         "button_style": "white_transparent",
         "text_alignment": "center start",
         "text_justification": "no_change",
-        "content_horiz_adjustment": 0,
+        "content_horiz_adjustment": 11,
         "full_width": true,
         "mobile_overlay_under": false,
         "overlay_style": "shadow",
