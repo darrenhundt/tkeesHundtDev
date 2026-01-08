@@ -522,6 +522,36 @@
     "image_overlay_blocks_7DhF3q": {
       "type": "image-overlay-blocks",
       "blocks": {
+        "overlay_block_QgbiYU": {
+          "type": "overlay_block",
+          "settings": {
+            "background_image": "shopify://shop_images/New_in_platforms_1.jpg",
+            "mobile_image": "shopify://shop_images/New_in_platforms_1.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "height": "fixed",
+            "height_desktop_vw": 35,
+            "height_mobile": 70,
+            "overlay_style": "shadow",
+            "heading": "Colette",
+            "heading_size": 48,
+            "heading_size_mobile": 32,
+            "custom_html": "",
+            "button_label": "New In",
+            "button_link": "shopify://products/colette-au-naturale",
+            "button_style": "default",
+            "button_background_color": "rgba(0,0,0,0)",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#ffffff",
+            "button_padding_mobile_vw": 8,
+            "position_x": 0,
+            "position_y": 23,
+            "content_width": 35,
+            "position_x_mobile": 54,
+            "position_y_mobile": 23,
+            "content_width_mobile": 45
+          }
+        },
         "overlay_block_ztiFwF": {
           "type": "overlay_block",
           "settings": {
@@ -552,41 +582,11 @@
             "position_y_mobile": 54,
             "content_width_mobile": 40
           }
-        },
-        "overlay_block_QgbiYU": {
-          "type": "overlay_block",
-          "settings": {
-            "background_image": "shopify://shop_images/New_in_colette_3.jpg",
-            "mobile_image": "shopify://shop_images/New_in_colette_3.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "height": "fixed",
-            "height_desktop_vw": 35,
-            "height_mobile": 70,
-            "overlay_style": "shadow",
-            "heading": "Colette",
-            "heading_size": 48,
-            "heading_size_mobile": 32,
-            "custom_html": "",
-            "button_label": "New In",
-            "button_link": "shopify://products/colette-au-naturale",
-            "button_style": "default",
-            "button_background_color": "rgba(0,0,0,0)",
-            "button_text_color": "#ffffff",
-            "button_border_color": "#ffffff",
-            "button_padding_mobile_vw": 8,
-            "position_x": 58,
-            "position_y": 23,
-            "content_width": 40,
-            "position_x_mobile": 54,
-            "position_y_mobile": 23,
-            "content_width_mobile": 45
-          }
         }
       },
       "block_order": [
-        "overlay_block_ztiFwF",
-        "overlay_block_QgbiYU"
+        "overlay_block_QgbiYU",
+        "overlay_block_ztiFwF"
       ],
       "custom_css": [
         "h2.overlay-content-box__heading {color: white; text-transform: uppercase; line-height: 128%; font-weight: 500; font-family: \"Bebas Neue\", \"Century Gothic\", CenturyGothic, AppleGothic, sans-serif;}",
