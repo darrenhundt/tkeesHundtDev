@@ -554,13 +554,13 @@
             "button_background_color": "rgba(0,0,0,0)",
             "button_text_color": "#ffffff",
             "button_border_color": "#ffffff",
-            "button_padding_mobile_vw": 8,
+            "button_padding_mobile_vw": 6,
             "overlay_text_alignment": "left",
             "position_x": 6,
             "position_y": 34,
             "content_width": 35,
-            "position_x_mobile": 8,
-            "position_y_mobile": 33,
+            "position_x_mobile": 7,
+            "position_y_mobile": 35,
             "content_width_mobile": 45
           }
         },
