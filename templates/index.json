@@ -604,7 +604,8 @@
       ],
       "custom_css": [
         "h2.overlay-content-box__heading {color: white; text-transform: uppercase; line-height: 100%; font-weight: 500; font-family: \"Bebas Neue\", \"Century Gothic\", CenturyGothic, AppleGothic, sans-serif;}",
-        ".image-overlay-block:last-child .overlay-content-box {display: flex; flex-direction: column; align-items: center; justify-content: center;}"
+        ".image-overlay-block:last-child .overlay-content-box {display: flex; flex-direction: column; align-items: center; justify-content: center;}",
+        ".image-overlay-block:first-child .overlay-content-box__heading {margin-bottom: 15px;}"
       ],
       "name": "Image Overlay Blocks",
       "settings": {
