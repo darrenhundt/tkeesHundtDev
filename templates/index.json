@@ -406,7 +406,7 @@
           "type": "collection",
           "settings": {
             "collection": "flip-flop",
-            "image": "shopify://shop_images/Flipflops_1_802f23c3-20f4-43e0-873f-4101a397f211.jpg"
+            "image": "shopify://shop_images/ff_1.jpg"
           }
         },
         "collection_6UQg43": {
@@ -420,7 +420,7 @@
           "type": "collection",
           "settings": {
             "collection": "tk-clothing",
-            "image": "shopify://shop_images/clothing_3.jpg"
+            "image": "shopify://shop_images/clothing_6.jpg"
           }
         }
       },
