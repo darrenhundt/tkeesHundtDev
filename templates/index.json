@@ -567,8 +567,8 @@
         "overlay_block_ztiFwF": {
           "type": "overlay_block",
           "settings": {
-            "background_image": "shopify://shop_images/New_In_mobile_0.5.jpg",
-            "mobile_image": "shopify://shop_images/New_In_mobile_0.5.jpg",
+            "background_image": "shopify://shop_images/New_in_Sunday_5.jpg",
+            "mobile_image": "shopify://shop_images/New_in_Sunday_5.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "height": "fixed",
