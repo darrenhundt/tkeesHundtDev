@@ -603,7 +603,7 @@
         "overlay_block_ztiFwF"
       ],
       "custom_css": [
-        "h2.overlay-content-box__heading {color: white; text-transform: uppercase; line-height: 128%; font-weight: 500; font-family: \"Bebas Neue\", \"Century Gothic\", CenturyGothic, AppleGothic, sans-serif;}",
+        "h2.overlay-content-box__heading {color: white; text-transform: uppercase; line-height: 100%; font-weight: 500; font-family: \"Bebas Neue\", \"Century Gothic\", CenturyGothic, AppleGothic, sans-serif;}",
         ".image-overlay-block:last-child .overlay-content-box {display: flex; flex-direction: column; align-items: center; justify-content: center;}"
       ],
       "name": "Image Overlay Blocks",
