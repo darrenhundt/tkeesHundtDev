@@ -228,7 +228,11 @@
               
               {%- if block.settings.heading != blank -%}
                 <h2 class="overlay-content-box__heading h1-style">
-                  {{ block.settings.heading | escape }}
+                  {%- if block.settings.heading_word_per_line -%}
+                    {{ block.settings.heading | escape | split: ' ' | join: '<br>' }}
+                  {%- else -%}
+                    {{ block.settings.heading | escape }}
+                  {%- endif -%}
                 </h2>
               {%- endif -%}
               
@@ -462,6 +466,13 @@
           "type": "text",
           "id": "heading",
           "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_word_per_line",
+          "label": "Every word new line",
+          "info": "Display each word of the heading on its own line",
+          "default": false
         },
         {
           "type": "range",
