@@ -107,7 +107,7 @@
     "image_with_text_overlay_custom_jaKTzG": {
       "type": "image-with-text-overlay__custom",
       "custom_css": [
-        "@media (max-width: 767px) {.overlay-text__text {padding-right: 25px; padding-bottom: 12px; } .overlay-text__inner.overlay--flex-pos-start {justify-content: flex-end; } .overlay-text {align-items: flex-end; } .overlay-text__button {margin-top: 7px !important; }}",
+        "@media (max-width: 767px) {.overlay-text__text {padding-right: 25px; padding-bottom: 12px; } .overlay-text__inner.overlay--flex-pos-start {position: absolute; left: 13%; bottom: 16% } .overlay-text {align-items: flex-end; } .overlay-text__button {margin-top: 7px !important; }}",
         ".overlay-text__button {background: transparent; border: 1px solid black !important;}",
         ".overlay-text__button-row {margin-top: 0;}",
         ".overlay-text__title {color: white !important;}"
