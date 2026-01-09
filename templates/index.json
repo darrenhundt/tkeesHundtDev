@@ -538,7 +538,7 @@
             "background_image": "shopify://shop_images/New_in_platforms_1.jpg",
             "mobile_image": "shopify://shop_images/New_in_platforms_1.jpg",
             "image_position": "center center",
-            "mobile_image_position": "center center",
+            "mobile_image_position": "left top",
             "height": "fixed",
             "height_desktop_vw": 35,
             "height_mobile": 70,
@@ -557,10 +557,10 @@
             "button_padding_mobile_vw": 8,
             "overlay_text_alignment": "left",
             "position_x": 6,
-            "position_y": 23,
+            "position_y": 34,
             "content_width": 35,
-            "position_x_mobile": 54,
-            "position_y_mobile": 23,
+            "position_x_mobile": 8,
+            "position_y_mobile": 33,
             "content_width_mobile": 45
           }
         },
