@@ -170,7 +170,16 @@
               -%}
               {% for item in search.results %}
                 {% if item.object_type == 'product' %}
-                  {% render 'product-block', product: item, custom_aspect_ratio: chosen_product_aspect_ratio, animate: true, search: true %}
+                  {%- liquid
+                    assign search_terms_lower = search.terms | downcase
+                    assign should_skip = false
+                    if search_terms_lower contains 'square' and item.tags contains 'round-toe'
+                      assign should_skip = true
+                    endif
+                  -%}
+                  {% unless should_skip %}
+                    {% render 'product-block', product: item, custom_aspect_ratio: chosen_product_aspect_ratio, animate: true, search: true %}
+                  {% endunless %}
                 {% elsif item.object_type == 'collection' %}
                   {% render 'collection-block', collection: item, custom_aspect_ratio: chosen_collection_aspect_ratio, animate: true %}
                 {% else %}
