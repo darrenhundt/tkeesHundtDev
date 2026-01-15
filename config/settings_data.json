@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "presets": {
     "Chantilly": {
@@ -87,13 +96,13 @@
             "1478526632860": {
               "type": "announcement",
               "settings": {
-                "text": "<p>Welcome to our store<\/p>"
+                "text": "<p>Welcome to our store</p>"
               }
             },
             "1478526632861": {
               "type": "announcement",
               "settings": {
-                "text": "<p>Announce <a href=\"#\">something<\/a> here<\/p>"
+                "text": "<p>Announce <a href=\"#\">something</a> here</p>"
               }
             }
           },
@@ -304,13 +313,13 @@
             "1478526632860": {
               "type": "announcement",
               "settings": {
-                "text": "<p>Welcome to our store<\/p>"
+                "text": "<p>Welcome to our store</p>"
               }
             },
             "1478526632861": {
               "type": "announcement",
               "settings": {
-                "text": "<p>Announce <a href=\"#\">something<\/a> here<\/p>"
+                "text": "<p>Announce <a href=\"#\">something</a> here</p>"
               }
             }
           },
@@ -648,13 +657,13 @@
             "1478526632860": {
               "type": "announcement",
               "settings": {
-                "text": "<p>Welcome to our store<\/p>"
+                "text": "<p>Welcome to our store</p>"
               }
             },
             "1478526632861": {
               "type": "announcement",
               "settings": {
-                "text": "<p>Announce <a href=\"#\">something<\/a> here<\/p>"
+                "text": "<p>Announce <a href=\"#\">something</a> here</p>"
               }
             }
           },
@@ -779,13 +788,13 @@
             "1478526632860": {
               "type": "announcement",
               "settings": {
-                "text": "<p>Welcome to our store<\/p>"
+                "text": "<p>Welcome to our store</p>"
               }
             },
             "1478526632861": {
               "type": "announcement",
               "settings": {
-                "text": "<p>Announce <a href=\"#\">something<\/a> here<\/p>"
+                "text": "<p>Announce <a href=\"#\">something</a> here</p>"
               }
             }
           },
@@ -1030,7 +1039,7 @@
     "enable_product_reviews_collection": false,
     "swatch_enabled": true,
     "swatch_method": "standard",
-    "swatch_value_list": "Black Milk:#160c0a\n_BLACK\/WHITE:#160c0a\n_Black\/White:#160c0a\nBlack\/White:#160c0a\nDeep Glow:#3f1f21\nBlack Stone:#0c0c0a\nRose Quartz:#f0d2c0\nStone:#dbd9d5\n_STONE:#dbd9d5\nTerra Cotta:#efac7f\nVanilla:#e6e4d6\nCheetah:cheetah.png\nCoco Snake:coco-snake.png\nZebra:zebra.png\nAngel Wings:angel-wings.png\nGleam:gleam.png\nMoonshine:moonshine.png\nPink Pearl:pink-pearl.png\nSandbeam:sandbeam.png\nCustard:#c9b7aa\nLicorice:#1d1a1b\nSweet Smoke:#797474\nWhipped Cream:#edddd4\nCamel:#ac6e4a\nChocolate:#4f2928\nBleeker:#2a2022\nFossil:#9c9391\nHazelton:#b3906e\nOlive:#5f5c4e\nnili_lotan_x_tkees_olive:#5f5c4e\nPurdy:#d7b399\nBuff:#efc6b8\nBlack:#3c3d42\n_BLACK:#3c3d42\nBlue:#56636f\nGreen:#7e7a64\nGrey:#d7cfc8\nMatte No. 6:#d5b9a8\nAsh:#707a87\nCoffee:#634f44\nForest:#525443\nPort:#742b34\nTwilight:#484456\nTerra:#b45d4a\nBare:#bfa389\nBeach Pearl:#dabab1\nBlink:#c9b496\nFairylust:#E4E2E1\nFrosty Grey:frosty-grey.png\nNeon Orange:#ea784b\nNeon Pink:#fc5475\nNeon Yellow:#d4e671\nClassic Black:#1c1c1e\nCotton Ball:#eeeeea\nSo Pretty:#e4c6c0\nSweet Lavender:#d2b7d0\nGoldrush:goldrush.png\nPink Comet:pink-comet.png\nSilver Star:silver-star.png\nGolden Sparkles:golden-sparkles.png\nPink Sparkles:pink-sparkles.png\nRainbow Cloud:rainbow-cloud.png\nSilver Sparkles:silver-sparkles.png\nAu Naturale:#b87a54\nBeach Bum:#ad896c\nButternut:#ddb384\nCappuccino:#714e45\nCocobutter:#c09b7c\nHazelberry:#c8a090\nHeatwave:#7b3e2c\nLinen:#dfcdbe\nNude Beach:#d7b29c\n_Nude_Beach:#d7b29c\nPout:#e5b192\nPraline:#c89174\nRose:#e2cab7\nPigments Rose:#e2cab7\nSunbliss:#cc9878\nSunkissed:#ecc7a4\nMoss:#7c705b\n_MOSS:#7c705b\nNo. 10:#616b53\nNo. 17:#505378\nWashed Black:#3a3a3a\nNo. 38:#2f3e52\nNo. 39:#907567\nNo.9:#9d9996\nCerise:#e14e64\nClay:#d1926e\nEmerald:#004d24\nNo. 19:#c62f44\nSoft Pink:#e4d3cb\nNo. 28:#e3b30d\nNo. 40:#e6dfd1\nNo. 41:#66a2c6\nNo. 42:#c2b8bb\nNo. 43:#ea8e76\nDusty Rose:#cfb2a5\nSage:#84795d\nTangerine:#e46249\nEarthen:#a38c82\nSand:#ccc0b9\nCream:#f4f1eb\n_CREAM:#f4f1eb\nIris:#38465f\nSable:#212121\n_Sable:#212121\nSeashell:#f8ede1\nSand Snake:sand-snake.png\nBlush:#e5d2c4\nIvory:#f0efec\nBisque:#e2c0a5\nCafe:#98615c\nDove:#c9c9c9\nLatte:#ecd9c0\nNavy:#1a203e\nNutmeg:#b27c67\nToast:#e1ae7d\nLee:#ccc2b8\nMai:#4d5761\nRei:#5f5441\nTaro:#191619\nBurnt Marshmallow:#27292d\nPeanut Brittle:#b78463\nRocky Road:#8a5142\nPutty:#a89686\nVintage Black:#342e35\nVintage black:#342e35\nWhite:#efeef3\nCloudy Rose:#dfd4d3\nSandy Taupe:#d5c3b5\nSmoke:#dadee1\nKhaki:#b59e8d\nEggshell Mix:eggshell-mix.png\nGrey Mix:grey-mix.png\nMidnight Navy:#13192e\nEve Ditsy:eve-ditsy.png\nMini Stace Face:mini-stace-face.png\nPositano Stripe:positano-stripe.png\nSunday Stroll:sunday-stroll.png\nBeige:#D3C8BC\nBlack:#333333\nBlue:#38465F\nBrown:#684E41\nCream:#F7F4EB\nGold:#E0C685\nGreen:#616B53\nGrey:#9D9996\nOrange:#DD8843\nPurple:#B29CB7\nRed:#982F36\nSilver:#D3D3D3\nTan:#b1735b\nWhite:#F7F7F7\nYellow:#efdcac\nSparkling Rose:#f0d2c0\nSilver Showers:#333333\nLush:#cc9878\nGolden Coco:#7b3e2c\nRattlebone:#e2cab7\nGrey Cobra:#5c535b\nDiamondback:#333333\nBiscuit:#8e766d\nSweetie:#f0d2c0\nOrange Peel:#DD8843\nPrint:cheetah.png\nCapri Lemon:#d9da57\nCherry Pink:#d33a6f\nLovely Lavender:#b2afcf\nPeachy Pink:#e7c0ba\nShamrock:#05b7a1\nSky Blue:#8cd4dd\nDusty Mauve:#ab9497\nHunter Green:#403a26\nTannin:#5e1c1a\nCharcoal:#57545a\nCobblestone:#d6baa5\nWarm Silver:#d9cac1\nLoden:#8d6f56\nAlmond:#bd6f47\nMiami Pink:#e5d6d6\nBeach Babe:#a67741\nBlue Lagoon:#293579\nHot Mama:#333333\nMidnight Splash:#2e3572\nPink Dolphin:#c28c86\nPretty Pearl:#ed8a7b\nSundown:#44403d\nCamille:#2c2c32\nCeleste:#6b1c1a\nEmanuel:#64462d\nMargeaux:#d7915f\nMargaux:#d7915f\nOrange Peel:#f9aa6c\nPink Star:#dd6e89\nCupcake:#eb495b\nLemon Drop:#f2e163\nRocket Pop:#38b2d4\nSnow Cone:#3d81c2\nBoy Crush:#8ea6c9\nCotton Candy:#f16f9b\nPeacock:#6dc0c4\nRainbow Sorbet:#e7d982\nCoral:#f0563b\nSienna:#dd936e\nTaupe:#cdbfa9\nBare Bronze:#654e35\nSunfish:#966738\nViolet Stream:#262525\nMilky Way:#edede5\nRockstar:#2f2f30\nSour Grape:#525593\nNo. 15:#0585b0\nNo. 16:#1c59b0\nNo. 20:#ea5a37\nNo. 22:#ee918d\nNo. 4:#e3cf30\nLazer Lime:#c0bc3e\nNautical Blue:#2a3a6b\nNo. 18:#6e3d63\nZinc Pink:#b92953\nRum Snake:#814836\nHoney Leopard:#dabda9\nSoft Sand:#e9d4c3\nPixie Dust:#d2beb4\nCoconut Cream:#e1ded2\nFlamingo:#fea5c9\nMoon Jewel:#959593\nCosmic Purple:#cbc0db\u2028\nLavender Love:#aca0d7\nPink Lemonade:#da5c79\nNo. 12:#aca0d7\nBobcat:#907c69\nWild Violet:#b07f9c\nCinnamon:#d57d49\nGalaxy Glow:#333333\nBright Lavender:#b385c8\nHot Pink:#de5a77\nNeon Yellow#:e9fa3c\nChrome:#d7dbde\nOyster Shell:#B99476\nMocha:#905640\nIvory:#e2ddd1\nHeather Grey:#e2ddd1\n_Heather_Grey:#e2ddd1\nDesert:#bd9a7e\nBlack Croc:#010101\nCognac:#BE7F30\nDark Brown:#542604\nBlack (Original):#000000\nFairylust (Original):#E4E2E1\nBlink (Original):#c9b496\nPout (Original):#e5b192\nIris (Original):#38465f\nPink:#e1c3bd\nBone:#fcf2e3\nMarshmallow:#f3efea\nCarob:#33200c\nMilky Way:#f5faf6\nFrance:#1d211e\nPink Clay:#ffc7ad\nTerracotta:#ff8f66\nMuddy Rose:#ffeae8\nSteel Grey:#a8a4a0\nPetal:#ffeddb\nStripe:#f56042\nVintage Red:#cf0217\nMallorca Mirage:#05a4e8\nSunbleached Coral:#ffb6b3\nWashed Denim:#bad1f7\nPink Star:#eec7c5\nMango Melt:#fbab8c\nCherry Glimmer:#c1141e\nMint Swirl:#66eed9\nMoonberry:#f1b7cb\nBallet Pink:#f7e3dc\nHeather Brown:#a38976\nWhite Lotus:#eff7e4",
+    "swatch_value_list": "Black Milk:#160c0a\n_BLACK/WHITE:#160c0a\n_Black/White:#160c0a\nBlack/White:#160c0a\nDeep Glow:#3f1f21\nBlack Stone:#0c0c0a\nRose Quartz:#f0d2c0\nStone:#dbd9d5\n_STONE:#dbd9d5\nTerra Cotta:#efac7f\nVanilla:#e6e4d6\nCheetah:cheetah.png\nCoco Snake:coco-snake.png\nZebra:zebra.png\nAngel Wings:angel-wings.png\nGleam:gleam.png\nMoonshine:moonshine.png\nPink Pearl:pink-pearl.png\nSandbeam:sandbeam.png\nCustard:#c9b7aa\nLicorice:#1d1a1b\nSweet Smoke:#797474\nWhipped Cream:#edddd4\nCamel:#ac6e4a\nChocolate:#4f2928\nBleeker:#2a2022\nFossil:#9c9391\nHazelton:#b3906e\nOlive:#5f5c4e\nnili_lotan_x_tkees_olive:#5f5c4e\nPurdy:#d7b399\nBuff:#efc6b8\nBlack:#3c3d42\n_BLACK:#3c3d42\nBlue:#56636f\nGreen:#7e7a64\nGrey:#d7cfc8\nMatte No. 6:#d5b9a8\nAsh:#707a87\nCoffee:#634f44\nForest:#525443\nPort:#742b34\nTwilight:#484456\nTerra:#b45d4a\nBare:#bfa389\nBeach Pearl:#dabab1\nBlink:#c9b496\nFairylust:#E4E2E1\nFrosty Grey:frosty-grey.png\nNeon Orange:#ea784b\nNeon Pink:#fc5475\nNeon Yellow:#d4e671\nClassic Black:#1c1c1e\nCotton Ball:#eeeeea\nSo Pretty:#e4c6c0\nSweet Lavender:#d2b7d0\nGoldrush:goldrush.png\nPink Comet:pink-comet.png\nSilver Star:silver-star.png\nGolden Sparkles:golden-sparkles.png\nPink Sparkles:pink-sparkles.png\nRainbow Cloud:rainbow-cloud.png\nSilver Sparkles:silver-sparkles.png\nAu Naturale:#b87a54\nBeach Bum:#ad896c\nButternut:#ddb384\nCappuccino:#714e45\nCocobutter:#c09b7c\nHazelberry:#c8a090\nHeatwave:#7b3e2c\nLinen:#dfcdbe\nNude Beach:#d7b29c\n_Nude_Beach:#d7b29c\nPout:#e5b192\nPraline:#c89174\nRose:#e2cab7\nPigments Rose:#e2cab7\nSunbliss:#cc9878\nSunkissed:#ecc7a4\nMoss:#7c705b\n_MOSS:#7c705b\nNo. 10:#616b53\nNo. 17:#505378\nWashed Black:#3a3a3a\nNo. 38:#2f3e52\nNo. 39:#907567\nNo.9:#9d9996\nCerise:#e14e64\nClay:#d1926e\nEmerald:#004d24\nNo. 19:#c62f44\nSoft Pink:#e4d3cb\nNo. 28:#e3b30d\nNo. 40:#e6dfd1\nNo. 41:#66a2c6\nNo. 42:#c2b8bb\nNo. 43:#ea8e76\nDusty Rose:#cfb2a5\nSage:#84795d\nTangerine:#e46249\nEarthen:#a38c82\nSand:#ccc0b9\nCream:#f4f1eb\n_CREAM:#f4f1eb\nIris:#38465f\nSable:#212121\n_Sable:#212121\nSeashell:#f8ede1\nSand Snake:sand-snake.png\nBlush:#e5d2c4\nIvory:#f0efec\nBisque:#e2c0a5\nCafe:#98615c\nDove:#c9c9c9\nLatte:#ecd9c0\nNavy:#1a203e\nNutmeg:#b27c67\nToast:#e1ae7d\nLee:#ccc2b8\nMai:#4d5761\nRei:#5f5441\nTaro:#191619\nBurnt Marshmallow:#27292d\nPeanut Brittle:#b78463\nRocky Road:#8a5142\nPutty:#a89686\nVintage Black:#342e35\nVintage black:#342e35\nWhite:#efeef3\nCloudy Rose:#dfd4d3\nSandy Taupe:#d5c3b5\nSmoke:#dadee1\nKhaki:#b59e8d\nEggshell Mix:eggshell-mix.png\nGrey Mix:grey-mix.png\nMidnight Navy:#13192e\nEve Ditsy:eve-ditsy.png\nMini Stace Face:mini-stace-face.png\nPositano Stripe:positano-stripe.png\nSunday Stroll:sunday-stroll.png\nBeige:#D3C8BC\nBlack:#333333\nBlue:#38465F\nBrown:#684E41\nCream:#F7F4EB\nGold:#E0C685\nGreen:#616B53\nGrey:#9D9996\nOrange:#DD8843\nPurple:#B29CB7\nRed:#982F36\nSilver:#D3D3D3\nTan:#b1735b\nWhite:#F7F7F7\nYellow:#efdcac\nSparkling Rose:#f0d2c0\nSilver Showers:#333333\nLush:#cc9878\nGolden Coco:#7b3e2c\nRattlebone:#e2cab7\nGrey Cobra:#5c535b\nDiamondback:#333333\nBiscuit:#8e766d\nSweetie:#f0d2c0\nOrange Peel:#DD8843\nPrint:cheetah.png\nCapri Lemon:#d9da57\nCherry Pink:#d33a6f\nLovely Lavender:#b2afcf\nPeachy Pink:#e7c0ba\nShamrock:#05b7a1\nSky Blue:#8cd4dd\nDusty Mauve:#ab9497\nHunter Green:#403a26\nTannin:#5e1c1a\nCharcoal:#57545a\nCobblestone:#d6baa5\nWarm Silver:#d9cac1\nLoden:#8d6f56\nAlmond:#bd6f47\nMiami Pink:#e5d6d6\nBeach Babe:#a67741\nBlue Lagoon:#293579\nHot Mama:#333333\nMidnight Splash:#2e3572\nPink Dolphin:#c28c86\nPretty Pearl:#ed8a7b\nSundown:#44403d\nCamille:#2c2c32\nCeleste:#6b1c1a\nEmanuel:#64462d\nMargeaux:#d7915f\nMargaux:#d7915f\nOrange Peel:#f9aa6c\nPink Star:#dd6e89\nCupcake:#eb495b\nLemon Drop:#f2e163\nRocket Pop:#38b2d4\nSnow Cone:#3d81c2\nBoy Crush:#8ea6c9\nCotton Candy:#f16f9b\nPeacock:#6dc0c4\nRainbow Sorbet:#e7d982\nCoral:#f0563b\nSienna:#dd936e\nTaupe:#cdbfa9\nBare Bronze:#654e35\nSunfish:#966738\nViolet Stream:#262525\nMilky Way:#edede5\nRockstar:#2f2f30\nSour Grape:#525593\nNo. 15:#0585b0\nNo. 16:#1c59b0\nNo. 20:#ea5a37\nNo. 22:#ee918d\nNo. 4:#e3cf30\nLazer Lime:#c0bc3e\nNautical Blue:#2a3a6b\nNo. 18:#6e3d63\nZinc Pink:#b92953\nRum Snake:#814836\nHoney Leopard:#dabda9\nSoft Sand:#e9d4c3\nPixie Dust:#d2beb4\nCoconut Cream:#e1ded2\nFlamingo:#fea5c9\nMoon Jewel:#959593\nCosmic Purple:#cbc0db \nLavender Love:#aca0d7\nPink Lemonade:#da5c79\nNo. 12:#aca0d7\nBobcat:#907c69\nWild Violet:#b07f9c\nCinnamon:#d57d49\nGalaxy Glow:#333333\nBright Lavender:#b385c8\nHot Pink:#de5a77\nNeon Yellow#:e9fa3c\nChrome:#d7dbde\nOyster Shell:#B99476\nMocha:#905640\nIvory:#e2ddd1\nHeather Grey:#e2ddd1\n_Heather_Grey:#e2ddd1\nDesert:#bd9a7e\nBlack Croc:#010101\nCognac:#BE7F30\nDark Brown:#542604\nBlack (Original):#000000\nFairylust (Original):#E4E2E1\nBlink (Original):#c9b496\nPout (Original):#e5b192\nIris (Original):#38465f\nPink:#e1c3bd\nBone:#fcf2e3\nMarshmallow:#f3efea\nCarob:#33200c\nMilky Way:#f5faf6\nFrance:#1d211e\nPink Clay:#ffc7ad\nTerracotta:#ff8f66\nMuddy Rose:#ffeae8\nSteel Grey:#a8a4a0\nPetal:#ffeddb\nStripe:#f56042\nVintage Red:#cf0217\nMallorca Mirage:#05a4e8\nSunbleached Coral:#ffb6b3\nWashed Denim:#bad1f7\nPink Star:#eec7c5\nMango Melt:#fbab8c\nCherry Glimmer:#c1141e\nMint Swirl:#66eed9\nMoonberry:#f1b7cb\nBallet Pink:#f7e3dc\nHeather Brown:#a38976\nWhite Lotus:#eff7e4\nPewter:#614325",
     "swatch_crop_align": "center",
     "swatch_style": "icon_circle",
     "swatch_picker_image_size": 26,
@@ -1039,20 +1048,20 @@
     "prod_thumb_show_options": true,
     "prod_thumb_options_disable_unavailable": false,
     "prod_thumb_options_names": "Color",
-    "social_facebook_url": "https:\/\/www.facebook.com\/LOVETKEES",
-    "social_instagram_url": "https:\/\/www.instagram.com\/TKEES\/",
-    "social_tiktok_url": "https:\/\/www.tiktok.com\/@tkees",
+    "social_facebook_url": "https://www.facebook.com/LOVETKEES",
+    "social_instagram_url": "https://www.instagram.com/TKEES/",
+    "social_tiktok_url": "https://www.tiktok.com/@tkees",
     "search_type": "product",
     "enable_live_search": true,
     "live_search_show_vendor": false,
     "live_search_show_price": true,
     "live_search_search_meta": false,
-    "favicon": "shopify:\/\/shop_images\/tkees-favicon.png",
+    "favicon": "shopify://shop_images/tkees-favicon.png",
     "animations_enabled_desktop": false,
     "cart_type": "page",
     "product_currency_code_enabled": true,
     "cart_currency_code_enabled": true,
-    "checkout_logo_image": "shopify:\/\/shop_images\/tkees-logo.png",
+    "checkout_logo_image": "shopify://shop_images/tkees-logo.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
     "checkout_heading_font": "Lato",
@@ -1068,7 +1077,7 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "<p><strong>Up to 40% off Clothing - <\/strong><a href=\"https:\/\/tkees.com\/pages\/lounge-by-tkees\" title=\"https:\/\/tkees.com\/pages\/lounge-by-tkees\"><strong>Shop Now<\/strong><\/a><\/p>",
+              "text": "<p><strong>Up to 40% off Clothing - </strong><a href=\"https://tkees.com/pages/lounge-by-tkees\" title=\"https://tkees.com/pages/lounge-by-tkees\"><strong>Shop Now</strong></a></p>",
               "active_time": ""
             }
           },
@@ -1076,7 +1085,7 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "<p><strong>50% off Mariana - <\/strong><a href=\"https:\/\/tkees.com\/collections\/mariana1\" title=\"https:\/\/tkees.com\/collections\/mariana1\"><strong>Shop Now<\/strong><\/a><\/p>",
+              "text": "<p><strong>50% off Mariana - </strong><a href=\"https://tkees.com/collections/mariana1\" title=\"https://tkees.com/collections/mariana1\"><strong>Shop Now</strong></a></p>",
               "active_time": ""
             }
           },
@@ -1084,7 +1093,7 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "<p><strong>Labor Day Sale - up to 50% off  <\/strong><a href=\"\/collections\/say-goodbye\" title=\"Say Goodbye\"><strong>Shop Now<\/strong><\/a><\/p>",
+              "text": "<p><strong>Labor Day Sale - up to 50% off  </strong><a href=\"/collections/say-goodbye\" title=\"Say Goodbye\"><strong>Shop Now</strong></a></p>",
               "active_time": ""
             }
           },
@@ -1092,7 +1101,7 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "<p>Cyber Monday: Free Global Shipping on All Orders<\/p>",
+              "text": "<p>Cyber Monday: Free Global Shipping on All Orders</p>",
               "active_time": ""
             }
           }
@@ -1123,27 +1132,27 @@
             "type": "menu-promotion-small",
             "settings": {
               "dropdown_link_title": "Lounge by Tkees",
-              "image": "shopify:\/\/shop_images\/navigation-cropped-tee.jpg",
+              "image": "shopify://shop_images/navigation-cropped-tee.jpg",
               "title": "Shop Cropped Tee",
-              "link_url": "shopify:\/\/products\/cropped-tee-black"
+              "link_url": "shopify://products/cropped-tee-black"
             }
           },
           "ddea8a53-5dc9-44e7-aa63-b7db6f8fd73c": {
             "type": "menu-promotion-small",
             "settings": {
               "dropdown_link_title": "Footwear",
-              "image": "shopify:\/\/shop_images\/Nudes_img_for_mega_2.jpg",
+              "image": "shopify://shop_images/Nudes_img_for_mega_2.jpg",
               "title": "Shop Lily Nudes",
-              "link_url": "shopify:\/\/collections\/lily-nudes"
+              "link_url": "shopify://collections/lily-nudes"
             }
           },
           "821d5c28-081b-450c-9d78-804b4fe0954d": {
             "type": "menu-promotion-small",
             "settings": {
               "dropdown_link_title": "Footwear",
-              "image": "shopify:\/\/shop_images\/Square_toe_for_mega_2.jpg",
+              "image": "shopify://shop_images/Square_toe_for_mega_2.jpg",
               "title": "Shop Square Toe",
-              "link_url": "shopify:\/\/collections\/square-toe-collection"
+              "link_url": "shopify://collections/square-toe-collection"
             }
           },
           "85f26ec4-03fa-4a7f-80f3-2c90e0235918": {
@@ -1151,12 +1160,12 @@
             "disabled": true,
             "settings": {
               "dropdown_link_title": "New In",
-              "desktop_image": "shopify:\/\/shop_images\/collections-warm-core-desktop.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/collections-warm-core-mobile.jpg",
+              "desktop_image": "shopify://shop_images/collections-warm-core-desktop.jpg",
+              "mobile_image": "shopify://shop_images/collections-warm-core-mobile.jpg",
               "enable_fade": true,
               "subheading": "Tell your story",
               "title": "Wide menu promotion",
-              "text": "<p>Pair text with an image to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.<\/p>",
+              "text": "<p>Pair text with an image to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.</p>",
               "button_1_label": "Shop Now",
               "button_1_link": "",
               "button_1_style": "secondary",
@@ -1172,9 +1181,9 @@
             "disabled": true,
             "settings": {
               "dropdown_link_title": "New In",
-              "image": "shopify:\/\/shop_images\/navigation-clothing-winter-whites-focus.jpg",
+              "image": "shopify://shop_images/navigation-clothing-winter-whites-focus.jpg",
               "title": "Warm Core",
-              "link_url": "shopify:\/\/collections\/core-fleece"
+              "link_url": "shopify://collections/core-fleece"
             }
           },
           "272a58f5-f770-4e44-ae49-bd5254ffa5be": {
@@ -1182,9 +1191,9 @@
             "disabled": true,
             "settings": {
               "dropdown_link_title": "New In",
-              "image": "shopify:\/\/shop_images\/light-rib-collections-homepage.jpg",
+              "image": "shopify://shop_images/light-rib-collections-homepage.jpg",
               "title": "Light Rib",
-              "link_url": "shopify:\/\/collections\/light-rib"
+              "link_url": "shopify://collections/light-rib"
             }
           }
         },
@@ -1202,7 +1211,7 @@
           ".logo {padding: 0;}"
         ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/TKEES_logo_1.png",
+          "logo": "shopify://shop_images/TKEES_logo_1.png",
           "logo_img_width_int": 95,
           "mobile_logo_img_width_int": 60,
           "logo_h1": true,
@@ -1348,7 +1357,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Let's Stay Connected",
-              "text": "<p>Enjoy 10% off your first purchase.<br\/>You'll be the first to know about restocks, product launches, and special offers.<\/p>",
+              "text": "<p>Enjoy 10% off your first purchase.<br/>You'll be the first to know about restocks, product launches, and special offers.</p>",
               "button_style": "primary",
               "show_social_icons": true,
               "soc_icons_large": true
@@ -1379,7 +1388,7 @@
           "popup_dismiss_for_days": 2,
           "position": "center",
           "title": "Sign up and save",
-          "text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers.<\/p>",
+          "text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers.</p>",
           "show_newsletter": true,
           "show_social_icons": true
         }
@@ -1388,34 +1397,34 @@
     "content_for_index": [],
     "blocks": {
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
       },
       "733389323033596483": {
-        "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/theme-settings\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+        "type": "shopify://apps/okendo-product-reviews-ugc/blocks/theme-settings/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
         "disabled": false,
         "settings": {
           "show_preview_data": true
         }
       },
       "3acfba32-89f3-4377-ae20-cbb9abc48475": {
-        "type": "shopify:\/\/apps\/order-limits-minmaxify\/blocks\/app-embed-block\/3acfba32-89f3-4377-ae20-cbb9abc48475",
+        "type": "shopify://apps/order-limits-minmaxify/blocks/app-embed-block/3acfba32-89f3-4377-ae20-cbb9abc48475",
         "disabled": false,
         "settings": {}
       },
       "4252583770683550135": {
-        "type": "shopify:\/\/apps\/redo-free-return-automation\/blocks\/redo_app_embed\/c613644b-6df4-4d11-b336-43a5c06745a1",
+        "type": "shopify://apps/redo-free-return-automation/blocks/redo_app_embed/c613644b-6df4-4d11-b336-43a5c06745a1",
         "disabled": false,
         "settings": {}
       },
       "17676059084223943535": {
-        "type": "shopify:\/\/apps\/triplewhale\/blocks\/triple_pixel_snippet\/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
+        "type": "shopify://apps/triplewhale/blocks/triple_pixel_snippet/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
         "disabled": false,
         "settings": {}
       },
       "depict_brand_features": {
-        "type": "shopify:\/\/apps\/depict\/blocks\/depict_brand_features\/ad5c7d1f-ddfb-424b-b936-7f08c4544f6b",
+        "type": "shopify://apps/depict/blocks/depict_brand_features/ad5c7d1f-ddfb-424b-b936-7f08c4544f6b",
         "disabled": false,
         "settings": {}
       }
